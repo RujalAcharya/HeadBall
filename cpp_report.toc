@@ -1,0 +1,33 @@
+\contentsline {chapter}{ABSTRACT}{i}%
+\contentsline {chapter}{ACKNOWLEDGEMENTS}{ii}%
+\contentsline {chapter}{Contents}{iv}%
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{2}%
+\contentsline {section}{\numberline {1}Background and problem statements}{2}%
+\contentsline {subsection}{\numberline {1.1}DUMMY}{2}%
+\contentsline {section}{\numberline {2}Objectives}{3}%
+\contentsline {section}{\numberline {3}Limitations}{3}%
+\contentsline {section}{\numberline {4}Formatting guidelines}{3}%
+\contentsline {chapter}{\numberline {2}PROBLEM ANALYSIS}{4}%
+\contentsline {section}{\numberline {1}Understanding the problem}{4}%
+\contentsline {section}{\numberline {2}Input Requirements}{4}%
+\contentsline {section}{\numberline {3}Output Requirements}{5}%
+\contentsline {section}{\numberline {4}Processing Requirements}{5}%
+\contentsline {section}{\numberline {5}Technical Feasibility}{5}%
+\contentsline {chapter}{\numberline {3}Review of Related Literatures}{6}%
+\contentsline {chapter}{\numberline {4}ALGORITHM DEVELOPMENT AND FLOWCHART}{7}%
+\contentsline {section}{\numberline {1}Algorithm}{7}%
+\contentsline {subsection}{\numberline {1.1}Algorithm for module x}{7}%
+\contentsline {subsection}{\numberline {1.2}Algorithm for module y}{7}%
+\contentsline {section}{\numberline {2}Flowchart}{7}%
+\contentsline {subsection}{\numberline {2.1}Flowchart for module x}{7}%
+\contentsline {subsection}{\numberline {2.2}Flowchart for module y}{7}%
+\contentsline {section}{\numberline {3}UML}{7}%
+\contentsline {subsection}{\numberline {3.1}Structural UML diagrams}{7}%
+\contentsline {subsection}{\numberline {3.2}Behavioral UML diagrams}{7}%
+\contentsline {chapter}{\numberline {5}IMPLEMENTATION AND CODING}{9}%
+\contentsline {section}{\numberline {1}Implementation}{9}%
+\contentsline {section}{\numberline {2}Coding of the project}{9}%
+\contentsline {chapter}{\numberline {6}RESULTS AND DISCUSSION}{10}%
+\contentsline {chapter}{\numberline {7}CONCLUSIONS}{11}%
+\contentsline {chapter}{REFERENCES}{12}%
+\contentsline {chapter}{APPENDIX A}{13}%
