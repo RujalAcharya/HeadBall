@@ -19,9 +19,6 @@
 #define GROUND_COLOR Green
 #define GROUND_FRICTION 2.0f
 
-#define UPHILL_WIDTH 300.0f
-#define UPHILL_HEIGHT 100.0f
-
 #define BALL_DIAMETER 50.0f
 #define BALL_DENSITY 2.0f
 #define BALL_FRICTION 1.5f
