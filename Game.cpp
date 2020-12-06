@@ -6,7 +6,7 @@ namespace HeadBall {
         this->_data->window.create (sf::VideoMode (width, height), title, sf::Style::Titlebar | sf::Style::Close);
         this->_data->machine.addState (StateRef (new SplashScreen (this->_data)));
 
-        this->run ();
+        this->run ( );
     }
 
     void Game::run ( ) {

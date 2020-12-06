@@ -5,19 +5,22 @@
 #include "GameOver.hpp"
 
 namespace HeadBall {
-    GameState::GameState (GameDataRef data) : _data (data) { }
+    GameState::GameState (GameDataRef data) : _data (data), _ground (data, this->_world), _ball (data, this->_world) { }
 
     void GameState::init () {
         this->_font.loadFromFile (TEXT_FONT);
 
         this->_text.setString ("Timer");
-        this->_text.setFont (_font);
+        this->_text.setFont (this->_font);
         this->_text.setCharacterSize (30);
-        this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
+        this->_text.setOrigin (this->_text.getGlobalBounds( ).width / 2, this->_text.getGlobalBounds( ).height / 2);
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
 
         this->_isPaused = false;
         this->_isSecondHalf = false;
+
+        this->_ground.init ( );
+        this->_ball.init ( );
     }
 
     void GameState::handleInput ( ) {
@@ -50,13 +53,25 @@ namespace HeadBall {
             if (this->_timer.getTime ( ) >= GAME_TIME) {
                 this->_data->machine.addState (StateRef (new GameOver (this->_data)));
             }
+
+            this->_world->Step (1 / 20.0, VELOCITY_ITERATIONS, POSITION_ITERATIONS);    
+            // for (b2Body *body_iterator = this->_world->GetBodyList(); body_iterator != 0; body_iterator = body_iterator->GetNext()) {
+            //     if (body_iterator->GetType ( ) == b2_dynamicBody) {
+            //         this->_ball.processPosition (body_iterator);
+            //     }
+            // }
+
+            this->_ball.processPosition ( );
+
         }
     }
 
     void GameState::draw (float dt) {
         if (!this->_isPaused) {
-            this->_data->window.clear(sf::Color::Red);
-            this->_data->window.draw(this->_text );
+            this->_data->window.clear (sf::Color::Red);
+            this->_data->window.draw (this->_text );
+            this->_data->window.draw (this->_ground.shape ( ));
+            this->_data->window.draw (this->_ball.shape ( ));
             this->_data->window.display( );
         }
     }

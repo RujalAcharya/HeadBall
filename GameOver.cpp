@@ -35,9 +35,7 @@ namespace HeadBall {
         }
     }
 
-    void GameOver::update (float dt) {
-        
-    }
+    void GameOver::update (float dt) { }
 
     void GameOver::draw (float dt) {
         this->_data->window.clear(sf::Color::Green );

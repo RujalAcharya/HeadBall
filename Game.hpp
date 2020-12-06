@@ -1,11 +1,13 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <box2d/box2d.h>
 #include <string>
 #include <memory>
 
 #include "StateMachine.hpp"
 #include "InputManager.hpp"
+
 
 namespace HeadBall {
     struct GameData {
@@ -15,6 +17,8 @@ namespace HeadBall {
     };
 
     typedef std::shared_ptr <GameData> GameDataRef;
+    typedef std::shared_ptr<b2World> WorldRef;
+
 
     class Game {
         public:
