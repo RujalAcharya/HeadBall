@@ -3,13 +3,17 @@
 #include "MenuScreen.hpp"
 
 namespace HeadBall {
-    GameOver::GameOver (GameDataRef data) : _data (data) { }
+    GameOver::GameOver (GameDataRef data) : _data{data} { }
 
     void GameOver::init () {
-        this->_font.loadFromFile (TEXT_FONT);
+        
+        if (!this->_data->assets.isFontPresent("Text Font")){
+            this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
+        }
 
-        this->_text.setString ("GameOver");
-        this->_text.setFont (_font);
+        this->_text.setString ("Game Over");
+        this->_text.setFont (this->_data->assets.getFont("Text Font"));
+        
         this->_text.setCharacterSize (30);
         this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);

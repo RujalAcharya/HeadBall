@@ -3,16 +3,24 @@
 #include "MenuScreen.hpp"
 
 namespace HeadBall {
-    SplashScreen::SplashScreen (GameDataRef data) : _data (data) { }
+    SplashScreen::SplashScreen (GameDataRef data) : _data{data} { }
 
     void SplashScreen::init () {
-        this->_font.loadFromFile (TEXT_FONT);
+    
+        if (!this->_data->assets.isFontPresent("Text Font")){
+            this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
+        }
 
-        this->_text.setString ("Splash Screen");
-        this->_text.setFont (_font);
-        this->_text.setCharacterSize (30);
-        this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
-        this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
+        this->_data->assets.loadTexture("Nepal flag", NEPAL_FLAG_FILEPATH);
+        this->_flagSprite.setTexture(this->_data->assets.getTexture("Nepal flag"));
+        this->_flagSprite.setOrigin(this->_flagSprite.getGlobalBounds( ).width / 4, this->_flagSprite.getGlobalBounds( ).height / 4);
+
+ 
+        this->_data->assets.loadTexture("Splash Screen Background", SPLASH_SCREEN_BACKGROUND_FILEPATH);
+        this->_backgroundSprite.setTexture(this->_data->assets.getTexture("Splash Screen Background"));
+        this->_backgroundSprite.setOrigin(this->_backgroundSprite.getGlobalBounds( ).width / 2, this->_backgroundSprite.getGlobalBounds( ).height / 2);
+
+        this->_backgroundSprite.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
 
         this->_clock.restart( );
     }
@@ -36,8 +44,8 @@ namespace HeadBall {
     }
 
     void SplashScreen::draw (float dt) {
-        this->_data->window.clear( );
-        this->_data->window.draw(this->_text );
+        this->_data->window.clear(sf::Color::White);
+        this->_data->window.draw(_backgroundSprite);
         this->_data->window.display( );
     }
 }

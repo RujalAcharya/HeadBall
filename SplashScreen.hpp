@@ -18,7 +18,7 @@ namespace HeadBall {
             GameDataRef _data;
             sf::Clock _clock;
 
-            sf::Font _font;
-            sf::Text _text;
+            sf::Sprite _backgroundSprite;
+            sf::Sprite _flagSprite;
     };
 }

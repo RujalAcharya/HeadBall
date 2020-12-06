@@ -5,22 +5,30 @@
 #include "GameOver.hpp"
 
 namespace HeadBall {
-    GameState::GameState (GameDataRef data) : _data (data), _ground (data, this->_world), _ball (data, this->_world) { }
+    GameState::GameState (GameDataRef data) : _data{data}, _ground{data, this->_world}, _ball{data, this->_world}, _rightUpHill{data, this->_world}, _leftUpHill{data, this->_world}, _p1{data, this->_world}, _p2{data, this->_world}   { }
 
     void GameState::init () {
-        this->_font.loadFromFile (TEXT_FONT);
+        if (!this->_data->assets.isFontPresent("Digit Font")){
+            this->_data->assets.loadFont("Digit Font", DIGIT_FONT_FILEPATH);
+        }
 
         this->_text.setString ("Timer");
-        this->_text.setFont (this->_font);
-        this->_text.setCharacterSize (30);
+        this->_text.setFont (this->_data->assets.getFont("Digit Font"));
+        this->_text.setCharacterSize (50);
         this->_text.setOrigin (this->_text.getGlobalBounds( ).width / 2, this->_text.getGlobalBounds( ).height / 2);
-        this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
+        this->_text.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 200);
 
         this->_isPaused = false;
         this->_isSecondHalf = false;
 
         this->_ground.init ( );
+        this->_leftUpHill.init (sf::Vector2i (UPHILL_WIDTH / 2, WINDOW_HEIGHT - (UPHILL_HEIGHT / 2 + GROUND_HEIGHT)));
+        this->_rightUpHill.init (sf::Vector2i (WINDOW_WIDTH - (UPHILL_WIDTH / 2), WINDOW_HEIGHT - ( UPHILL_HEIGHT / 2 + GROUND_HEIGHT)));
+
         this->_ball.init ( );
+        this->_p1.init ("P1 Still", P1_STILL_FILEPATH, sf::Vector2f (WINDOW_WIDTH / 3, WINDOW_HEIGHT / 2));
+        this->_p2.init ("P2 Still", P2_STILL_FILEPATH, sf::Vector2f (2 * WINDOW_WIDTH / 3, WINDOW_WIDTH / 2));
+
     }
 
     void GameState::handleInput ( ) {
@@ -55,13 +63,10 @@ namespace HeadBall {
             }
 
             this->_world->Step (1 / 20.0, VELOCITY_ITERATIONS, POSITION_ITERATIONS);    
-            // for (b2Body *body_iterator = this->_world->GetBodyList(); body_iterator != 0; body_iterator = body_iterator->GetNext()) {
-            //     if (body_iterator->GetType ( ) == b2_dynamicBody) {
-            //         this->_ball.processPosition (body_iterator);
-            //     }
-            // }
 
             this->_ball.processPosition ( );
+            this->_p1.processPosition ( );
+            this->_p2.processPosition ( );
 
         }
     }
@@ -72,6 +77,10 @@ namespace HeadBall {
             this->_data->window.draw (this->_text );
             this->_data->window.draw (this->_ground.shape ( ));
             this->_data->window.draw (this->_ball.shape ( ));
+            this->_data->window.draw (this->_leftUpHill.shape ( ));
+            this->_data->window.draw (this->_rightUpHill.shape ( ));
+            this->_data->window.draw (this->_p1.sprite ( ));
+            this->_data->window.draw (this->_p2.sprite ( ));
             this->_data->window.display( );
         }
     }

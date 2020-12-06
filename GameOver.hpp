@@ -17,7 +17,6 @@ namespace HeadBall {
         private:
             GameDataRef _data;
 
-            sf::Font _font;
             sf::Text _text;
     };
 }

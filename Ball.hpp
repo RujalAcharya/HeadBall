@@ -15,6 +15,7 @@ namespace HeadBall {
             WorldRef _world;
 
             sf::CircleShape _shape;
+            sf::Sprite _ballSprite;
 
             b2BodyDef _bodyDef;
             b2Body* _body;

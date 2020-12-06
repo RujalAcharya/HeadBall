@@ -1,16 +1,20 @@
-#include "Definition.hpp"
+ #include "Definition.hpp"
 #include "HalfTime.hpp"
 #include "MenuScreen.hpp"
 
 namespace HeadBall {
-    HalfTime::HalfTime (GameDataRef data) : _data (data) { }
+    HalfTime::HalfTime (GameDataRef data) : _data{data} { }
 
     void HalfTime::init () {
-        this->_font.loadFromFile (TEXT_FONT);
 
-        this->_text.setString ("Half Time");
-        this->_text.setFont (_font);
-        this->_text.setCharacterSize (30);
+        if (!this->_data->assets.isFontPresent("Text Font")){
+            this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
+        }
+        
+        this->_text.setString("Half Time");
+        this->_text.setFont (this->_data->assets.getFont("Text Font"));
+
+        this->_text.setCharacterSize(30);
         this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
     }

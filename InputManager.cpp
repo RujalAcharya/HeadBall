@@ -7,7 +7,7 @@ namespace HeadBall {
             sf::IntRect spriteRect (sprite.getPosition().x, sprite.getPosition().y, sprite.getGlobalBounds().width, sprite.getGlobalBounds().height); 
             if (spriteRect.contains(sf::Mouse::getPosition(window))) {
                 return true;
-            }
+             }
         }
         return false;
     }

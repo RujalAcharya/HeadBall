@@ -3,9 +3,13 @@
 #include "Converter.hpp"
 
 namespace HeadBall {
-    Ball::Ball (GameDataRef data, WorldRef world) : _data (data), _world (world) { }
+    Ball::Ball (GameDataRef data, WorldRef world) : _data{data}, _world{world} { }
 
     void Ball::init ( ) {
+
+        // this->_data->assets.loadTexture("Ball", BALL_FILEPATH);
+        // this->_ballSprite.setTexture(this->_data->assets.getTexture("Ball"));
+
         this->_shape.setRadius (BALL_DIAMETER / 2);
         this->_shape.setOrigin (this->_shape.getRadius ( ) / 2, this->_shape.getRadius ( ) / 2);
         this->_shape.setPosition (WINDOW_WIDTH / 2, 2 * WINDOW_HEIGHT / 3);

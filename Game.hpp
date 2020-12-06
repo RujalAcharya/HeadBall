@@ -7,13 +7,14 @@
 
 #include "StateMachine.hpp"
 #include "InputManager.hpp"
-
+#include "AssetManager.hpp"
 
 namespace HeadBall {
     struct GameData {
         sf::RenderWindow window;
         StateMachine machine;
         InputManager input;
+        AssetManager assets;
     };
 
     typedef std::shared_ptr <GameData> GameDataRef;

@@ -3,13 +3,16 @@
 #include "GameState.hpp"
 
 namespace HeadBall {
-    MenuScreen::MenuScreen (GameDataRef data) : _data (data) { }
+    MenuScreen::MenuScreen (GameDataRef data) : _data{data} { }
 
     void MenuScreen::init () {
-        this->_font.loadFromFile (TEXT_FONT);
+        if (!this->_data->assets.isFontPresent("Text Font")){
+            this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
+        }
 
         this->_text.setString ("Menu Screen");
-        this->_text.setFont (_font);
+        this->_text.setFont (this->_data->assets.getFont("Text Font"));
+
         this->_text.setCharacterSize (30);
         this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
@@ -35,9 +38,7 @@ namespace HeadBall {
         }
     }
 
-    void MenuScreen::update (float dt) {
-        
-    }
+    void MenuScreen::update (float dt) { }
 
     void MenuScreen::draw (float dt) {
         this->_data->window.clear(sf::Color::Blue );

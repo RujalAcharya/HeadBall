@@ -3,7 +3,7 @@
 #include "Converter.hpp"
 
 namespace HeadBall {
-    Ground::Ground (GameDataRef data, WorldRef world) : _data (data), _world (world) { }
+    Ground::Ground (GameDataRef data, WorldRef world) : _data{data}, _world{world} { }
 
     void Ground::init ( ) {
         this->_shape.setSize (sf::Vector2f (WINDOW_WIDTH, GROUND_HEIGHT));

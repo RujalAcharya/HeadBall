@@ -3,16 +3,20 @@
 #include "MenuScreen.hpp"
 
 namespace HeadBall {
-    PausedState::PausedState (GameDataRef data) : _data (data) { }
+    PausedState::PausedState (GameDataRef data) : _data{data} { }
 
     void PausedState::init () {
-        this->_font.loadFromFile (TEXT_FONT);
+        
+        if (!this->_data->assets.isFontPresent("Text Font")){
+            this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
+        }
 
         this->_text.setString ("Paused");
-        this->_text.setFont (_font);
+        this->_text.setFont (this->_data->assets.getFont("Text Font"));
+
         this->_text.setCharacterSize (30);
-        this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
-        this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
+        this->_text.setOrigin (_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
+        this->_text.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
     }
 
     void PausedState::handleInput ( ) {
@@ -29,7 +33,7 @@ namespace HeadBall {
                 }
 
                 if (event.key.code == sf::Keyboard::M) {
-                    this->_data->machine.addState (StateRef (new MenuScreen (_data)) );
+                    this->_data->machine.addState (StateRef (new MenuScreen (_data)));
                 }
 
                 if (event.key.code == sf::Keyboard::Q) {
@@ -39,9 +43,7 @@ namespace HeadBall {
         }
     }
 
-    void PausedState::update (float dt) {
-        
-    }
+    void PausedState::update (float dt) { }
 
     void PausedState::draw (float dt) {
         this->_data->window.clear(sf::Color::Green );

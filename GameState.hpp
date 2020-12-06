@@ -9,7 +9,9 @@
 #include "TimeManager.hpp"
 #include "Ground.hpp"
 #include "Ball.hpp"
+#include "Uphill.hpp"
 #include "Definition.hpp"
+#include "Player.hpp"
 
 namespace HeadBall {
     class GameState : public State {
@@ -27,12 +29,15 @@ namespace HeadBall {
 
             TimeManager _timer;
 
-            sf::Font _font;
             sf::Text _text;
 
             WorldRef _world = std::make_shared <b2World> (b2Vec2(WORLD_GRAVITY_X, WORLD_GRAVITY_Y));
 
             Ground _ground;
+            UpHill _leftUpHill, _rightUpHill;
+
+            Player _p1, _p2;
+            
             Ball _ball;
 
             bool _isPaused;

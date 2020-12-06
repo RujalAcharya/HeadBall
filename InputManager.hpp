@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 
-namespace HeadBall {
+ namespace HeadBall {
     class InputManager {
         public:
             InputManager ( ) { }
