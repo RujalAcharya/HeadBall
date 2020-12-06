@@ -1,0 +1,11 @@
+# Ignore all these
+*.log
+*.aux
+*.toc
+*.synctex.gz
+*.lof
+*lot
+*.pdf
+
+# Exclude these from ignoring
+!main.pdf
