@@ -22,7 +22,7 @@ namespace HeadBall {
         this->_rectShape.SetAsBox (Converter::pixelsToMeters (this->_sprite.getGlobalBounds( ).width / 2), Converter::pixelsToMeters (this->_sprite.getGlobalBounds( ).height / 2));
         this->_fixture.shape = & this->_rectShape;
         this->_fixture.density = PLAYER_DENSITY;
-        this->_fixture.friction= PLAYER_FRICTION;
+        this->_fixture.friction = PLAYER_FRICTION;
 
         this->_body->CreateFixture (& this->_fixture);
         this->_body->SetFixedRotation (true);
@@ -40,7 +40,7 @@ namespace HeadBall {
     
     void Player::jump ( ) {
         b2Vec2 currentVelocity = this->_body->GetLinearVelocity ( );
-        this->_body->SetLinearVelocity (b2Vec2 (currentVelocity.x, -MOVEMENT_VELOCITY));
+        this->_body->SetLinearVelocity (b2Vec2 (currentVelocity.x, - MOVEMENT_VELOCITY));
     }
 
 

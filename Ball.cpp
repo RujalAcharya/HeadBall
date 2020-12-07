@@ -6,10 +6,6 @@ namespace HeadBall {
     Ball::Ball (GameDataRef data, WorldRef world) : _data{data}, _world{world} { }
 
     void Ball::init ( ) {
-
-        // this->_data->assets.loadTexture("Ball", BALL_FILEPATH);
-        // this->_ballSprite.setTexture(this->_data->assets.getTexture("Ball"));
-
         this->_shape.setRadius (BALL_DIAMETER / 2);
         this->_shape.setOrigin (this->_shape.getRadius ( ) / 2, this->_shape.getRadius ( ) / 2);
         this->_shape.setPosition (WINDOW_WIDTH / 2, 2 * WINDOW_HEIGHT / 3);
@@ -19,7 +15,7 @@ namespace HeadBall {
         this->_body = this->_world->CreateBody (& this->_bodyDef);
 
 
-        this->_circleShape.m_p.Set (0, 0);
+        this->_circleShape.m_p.Set (Converter::pixelsToMeters(BALL_DIAMETER / 4) , 0);
         this->_circleShape.m_radius =  Converter::pixelsToMeters (BALL_DIAMETER / 2);
         this->_fixture.shape = & this->_circleShape;
         this->_fixture.density = BALL_DENSITY;
@@ -27,6 +23,7 @@ namespace HeadBall {
         this->_fixture.restitution = BALL_RESTITUTION;
 
         this->_body->CreateFixture (& this->_fixture);
+        this->_body->SetFixedRotation (true);
     }
 
     sf::CircleShape Ball::shape ( ) {

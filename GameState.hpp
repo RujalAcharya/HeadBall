@@ -29,7 +29,7 @@ namespace HeadBall {
         private:
             GameDataRef _data;
 
-            sf::Text _text;
+            sf::Text _timeText, _p1Score, _p2Score;
             ScoreTimeRef _scoretime;
 
             WorldRef _world = std::make_shared <b2World> (b2Vec2(WORLD_GRAVITY_X, WORLD_GRAVITY_Y));

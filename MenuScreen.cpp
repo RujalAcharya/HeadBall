@@ -1,6 +1,8 @@
 #include "Definition.hpp"
 #include "MenuScreen.hpp"
 #include "GameState.hpp"
+#include "AboutState.hpp"
+#include "InstructionsState.hpp"
 
 namespace HeadBall {
     MenuScreen::MenuScreen (GameDataRef data) : _data{data} { }
@@ -57,6 +59,11 @@ namespace HeadBall {
         this->_exitBtn.setOrigin(_exitBtn.getLocalBounds( ).width / 2, _exitBtn.getLocalBounds( ).height / 2);
         this->_exitBtn.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 + 300);
 
+        if (this->_theme.openFromFile(GAME_MUSIC_FILEPATH)) {
+            this->_theme.play();
+            this->_theme.setLoop(true);
+        }
+
     }
 
     void MenuScreen::handleInput ( ) {
@@ -69,6 +76,8 @@ namespace HeadBall {
 
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Enter) {
+                    this->_theme.stop();
+
                     this->_scoretime->p1Score = 0;
                     this->_scoretime->p2Score = 0;
                     this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoretime)));
@@ -78,7 +87,39 @@ namespace HeadBall {
                     this->_data->window.close ( );
                 }
             }
+            if (event.type == sf::Event::MouseButtonPressed) {
+               if (this->_data->input.isSpriteClicked(this->_playBtn, sf::Mouse::Left, this->_data->window)) {
+                this->_theme.stop();
+                this->_scoretime->p1Score = 0;
+                this->_scoretime->p2Score = 0;
+                this->_theme.pause ( );
+                this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoretime)));
+            } 
+            }
+            if (event.type == sf::Event::MouseButtonPressed) {
+                if (this->_data->input.isSpriteClicked(this->_aboutBtn, sf::Mouse::Left, this->_data->window)) {
+                this->_data->machine.addState (StateRef (new AboutState (this->_data)), false);
+            }
+            }
+
+            if (event.type == sf::Event::MouseButtonPressed) {
+                if (this->_data->input.isSpriteClicked(this->_instructionsBtn, sf::Mouse::Left, this->_data->window)) {
+                this->_data->machine.addState (StateRef (new InstructionsState (this->_data)), false);
+            }
+            }
+            if (event.type == sf::Event::MouseButtonPressed) {
+                if (this->_data->input.isSpriteClicked(this->_exitBtn, sf::Mouse::Left, this->_data->window)) {
+                    this->_theme.pause ( );
+                this->_data->window.close ( );
+            }
+            }
+
         }
+
+        
+            
+            
+            
     }
 
     void MenuScreen::update ( ) { }

@@ -4,7 +4,7 @@
 namespace HeadBall {
     bool InputManager::isSpriteClicked (sf::Sprite sprite, sf::Mouse::Button button, sf::RenderWindow& window) {
         if (sf::Mouse::isButtonPressed(button)) {
-            sf::IntRect spriteRect (sprite.getPosition().x, sprite.getPosition().y, sprite.getGlobalBounds().width, sprite.getGlobalBounds().height); 
+            sf::IntRect spriteRect (sprite.getPosition().x - sprite.getGlobalBounds().width / 2, sprite.getPosition().y - sprite.getGlobalBounds().height / 2, sprite.getGlobalBounds().width, sprite.getGlobalBounds().height); 
             if (spriteRect.contains(sf::Mouse::getPosition(window))) {
                 return true;
              }

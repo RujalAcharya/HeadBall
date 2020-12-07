@@ -6,9 +6,9 @@
 #include "Game.hpp"
 
 namespace HeadBall {
-    class GoalState : public State {
+    class AboutState : public State {
         public:
-            GoalState (GameDataRef data, ScoreTimeRef scoretime);
+            AboutState (GameDataRef data);
             void init ( );
             void handleInput ( );
             void update ( );
@@ -16,7 +16,11 @@ namespace HeadBall {
 
         private:
             GameDataRef _data;
-            ScoreTimeRef _scoretime;
+            sf::Sprite _background;            
+            sf::Sprite _backBtn;
+            sf::Sprite _exitBtn;
+            // sf::Sprite _aboutBtn;
+ 
 
             sf::Text _text;
     };

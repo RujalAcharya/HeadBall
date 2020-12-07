@@ -3,6 +3,9 @@
 #include "PausedState.hpp"
 #include "HalfTime.hpp"
 #include "GameOver.hpp"
+#include "GoalState.hpp"
+
+#include <sstream>
 
 namespace HeadBall {
     GameState::GameState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf) : _data{data}, _scoretime{scoretime}, _ground{data, this->_world}, _ball{data, this->_world}, _rightUpHill{data, this->_world}, _leftUpHill{data, this->_world}, _leftPost{data}, _rightPost{data}, _wall{data, this->_world}, _p1{data, this->_world}, _p2{data, this->_world}   {
@@ -14,11 +17,25 @@ namespace HeadBall {
             this->_data->assets.loadFont("Digit Font", DIGIT_FONT_FILEPATH);
         }
 
-        this->_text.setString ("Timer");
-        this->_text.setFont (this->_data->assets.getFont("Digit Font"));
-        this->_text.setCharacterSize (50);
-        this->_text.setOrigin (this->_text.getGlobalBounds( ).width / 2, this->_text.getGlobalBounds( ).height / 2);
-        this->_text.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 500);
+        this->_timeText.setString ("Timer");
+        this->_timeText.setFont (this->_data->assets.getFont("Digit Font"));
+        this->_timeText.setCharacterSize (50);
+        this->_timeText.setOrigin (this->_timeText.getGlobalBounds( ).width / 2, this->_timeText.getGlobalBounds( ).height / 2);
+        this->_timeText.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 500);
+
+        this->_p1Score.setString ("00");
+        this->_p1Score.setFont (this->_data->assets.getFont("Digit Font"));
+        this->_p1Score.setCharacterSize (100);
+        this->_p1Score.setOrigin (this->_p1Score.getGlobalBounds( ).width / 2, this->_p1Score.getGlobalBounds( ).height / 2);
+        this->_p1Score.setPosition (UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT);
+
+        this->_p2Score.setString ("00");
+        this->_p2Score.setFont (this->_data->assets.getFont("Digit Font"));
+        this->_p2Score.setCharacterSize (100);
+        this->_p2Score.setOrigin (this->_p2Score.getGlobalBounds( ).width / 2, this->_p2Score.getGlobalBounds( ).height / 2);
+        this->_p2Score.setPosition (WINDOW_WIDTH - UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT);
+
+
 
         this->_isPaused = false;
 
@@ -63,6 +80,12 @@ namespace HeadBall {
                     this->_data->machine.addState (StateRef (new PausedState (this->_data)), false);
                 }
             }
+
+            if (event.type == sf::Event::MouseButtonPressed) {
+                if (this->_data->input.isSpriteClicked(this->_pauseBtn, sf::Mouse::Left, this->_data->window)) {
+                    this->_data->machine.addState (StateRef (new PausedState (this->_data)), false);
+                }
+            }
         }
 
         if (this->_data->input.isMoving("left")) {
@@ -95,7 +118,7 @@ namespace HeadBall {
         if (!this->_isPaused) {
             this->_scoretime->time.processTime ( );
 
-            this->_text.setString (this->_scoretime->time.displayTimer ( ));
+            this->_timeText.setString (this->_scoretime->time.displayTimer ( ));
 
             if (this->_scoretime->time.getTime ( ) >= GAME_TIME / 2 && !this->_isSecondHalf) {
                 this->_scoretime->time.pause ( );
@@ -112,23 +135,47 @@ namespace HeadBall {
             this->_p1.processPosition ( );
             this->_p2.processPosition ( );
 
+            sf::IntRect leftPostRect (this->_leftPost.sprite( ).getPosition( ).x - this->_leftPost.sprite( ).getGlobalBounds( ).width / 2, this->_leftPost.sprite( ).getPosition( ).y - this->_leftPost.sprite( ).getGlobalBounds( ).height / 2, this->_leftPost.sprite( ).getGlobalBounds( ).width, this->_leftPost.sprite( ).getGlobalBounds( ).height);
+            if (leftPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
+                this->_scoretime->p1Score ++;
+                this->_scoretime->time.pause ( );
+                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoretime)) );
+            }
+
+            sf::IntRect rightPostRect (this->_rightPost.sprite( ).getPosition( ).x - this->_rightPost.sprite( ).getGlobalBounds( ).width / 2, this->_rightPost.sprite( ).getPosition( ).y - this->_rightPost.sprite( ).getGlobalBounds( ).height / 2, this->_rightPost.sprite( ).getGlobalBounds( ).width, this->_rightPost.sprite( ).getGlobalBounds( ).height);
+            if (rightPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
+                this->_scoretime->p2Score ++;
+                this->_scoretime->time.pause ( );
+                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoretime)) );
+            }
+
+            std::stringstream score;
+            score << this->_scoretime->p1Score;
+            this->_p1Score.setString (score.str( ));
+
+            score.str (std::string ( ));
+            score << this->_scoretime->p2Score;
+            this->_p2Score.setString (score.str( ));
+
         }
     }
 
     void GameState::draw ( ) {
         if (!this->_isPaused) {
-            this->_data->window.clear (sf::Color::Red);
-            this->_data->window.draw (this->_text );
+            this->_data->window.clear (sf::Color(135,206,235));
+            this->_data->window.draw (this->_timeText);
             this->_data->window.draw (this->_ground.shape ( ));
             this->_data->window.draw (this->_pauseBtn);
-            this->_data->window.draw (this->_ball.shape ( ));
             this->_data->window.draw (this->_leftUpHill.shape ( ));
             this->_data->window.draw (this->_rightUpHill.shape ( ));
+            this->_data->window.draw (this->_ball.shape ( ));
             this->_data->window.draw (this->_p1.sprite ( ));
             this->_data->window.draw (this->_p2.sprite ( ));
+            this->_data->window.draw (this->_p1Score);
+            this->_data->window.draw (this->_p2Score);
             this->_data->window.draw (this->_leftPost.sprite ( ));
             this->_data->window.draw (this->_rightPost.sprite ( ));
-            this->_data->window.display( );
+            this->_data->window.display ( );
         }
     }
 

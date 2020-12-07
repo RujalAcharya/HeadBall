@@ -1,18 +1,18 @@
-  #include "Definition.hpp"
-#include "HalfTime.hpp"
+#include "Definition.hpp"
+#include "GoalState.hpp"
 #include "GameState.hpp"
 #include "MenuScreen.hpp"
 
 namespace HeadBall {
-    HalfTime::HalfTime (GameDataRef data, ScoreTimeRef scoretime) : _data{data}, _scoretime{scoretime} { }
+    GoalState::GoalState (GameDataRef data, ScoreTimeRef scoretime) : _data{data}, _scoretime{scoretime} { }
 
-    void HalfTime::init () {
+    void GoalState::init () {
 
         if (!this->_data->assets.isFontPresent("Text Font")){
             this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
         }
         
-        this->_text.setString("Half Time");
+        this->_text.setString("Goooooooaaaaaaaal");
         this->_text.setFont (this->_data->assets.getFont("Text Font"));
 
         this->_text.setCharacterSize(30);
@@ -20,7 +20,7 @@ namespace HeadBall {
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
     }
 
-    void HalfTime::handleInput ( ) {
+    void GoalState::handleInput ( ) {
         sf::Event event;
 
         while (this->_data->window.pollEvent(event)) {
@@ -37,9 +37,9 @@ namespace HeadBall {
         }
     }
 
-    void HalfTime::update ( ) { }
+    void GoalState::update ( ) { }
 
-    void HalfTime::draw ( ) {
+    void GoalState::draw ( ) {
         this->_data->window.clear(sf::Color::Green );
         this->_data->window.draw(this->_text );
         this->_data->window.display( );

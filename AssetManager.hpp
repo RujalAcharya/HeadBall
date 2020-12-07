@@ -1,6 +1,7 @@
 #pragma once
 
 #include <map>
+#include<vector>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
@@ -21,6 +22,9 @@ namespace HeadBall {
 
             // void loadMusic(std::string name, std::string fileName);
             // sf::Music &getMusic(std::string name);
+            
+            // void loadMusic(std::string fileName);
+            // sf::Music &getMusic(std::string name);
 
             bool isTexturePresent(std::string textureName);
             bool isFontPresent(std::string fontName);
@@ -36,6 +40,8 @@ namespace HeadBall {
             std::map<std::string, sf::Font> _fonts;
             std::map<std::string, sf::SoundBuffer> _sound_clips;
             // std::map<std::string, sf::Music &> _music_clips;
+            // std::vector<sf::Music> _music_clip;
+
 
     };
 }

@@ -4,6 +4,7 @@
 
 #include "State.hpp"
 #include "Game.hpp"
+#include "InputManager.hpp"
 
 namespace HeadBall {
     class MenuScreen : public State {
@@ -22,6 +23,7 @@ namespace HeadBall {
             sf::Sprite _instructionsBtn;
             sf::Sprite _aboutBtn;
             sf::Sprite _exitBtn;
+            sf::Music _theme;
             sf::Text _text;
     };
 }

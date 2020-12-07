@@ -18,10 +18,10 @@ namespace HeadBall {
             GameDataRef _data;
             sf::Sprite _background;
             sf::Sprite _resumeBtn;
-            sf::Sprite _instructionsBtn;
-            sf::Sprite _aboutBtn;
+            // sf::Sprite _instructionsBtn;
+            // sf::Sprite _aboutBtn;
             sf::Sprite _exitBtn;
 
-            sf::Text _text;
+            // sf::Text _text;
     };
 }

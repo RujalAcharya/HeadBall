@@ -75,6 +75,12 @@
 // background
 #define PAUSED_BG_FILEPATH "assets/graphics/paused_state/paused_state_bg.png"
 
+
+/////////
+// plain background for about and instructions page
+#define PLAIN_BG_FILEPATH "assets/graphics/extra/plain_bg.png"
+
+
 ///////////////
 // all buttons
 #define PLAY_BTN_FILEPATH "assets/graphics/all_buttons/play_btn.png"
@@ -83,11 +89,11 @@
 #define INSTRUCTIONS_BTN_FILEPATH "assets/graphics/all_buttons/instructions_btn.png"
 #define ABOUT_BTN_FILEPATH "assets/graphics/all_buttons/about_btn.png"
 #define EXIT_BTN_FILEPATH "assets/graphics/all_buttons/exit_btn.png"
-
+#define BACK_BTN_FILEPATH "assets/graphics/all_buttons/back_btn.png"
 
 ///////////////
 // music clips
-#define GAME_MUSIC_FILEPATH "assets/music/game_music.wav"
+#define GAME_MUSIC_FILEPATH "assets/music/game_music.ogg"
 
 
 
