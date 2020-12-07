@@ -11,8 +11,8 @@ namespace HeadBall {
             GameOver (GameDataRef data);
             void init ( );
             void handleInput ( );
-            void update (float dt);
-            void draw (float dt);
+            void update ( );
+            void draw ( );
 
         private:
             GameDataRef _data;

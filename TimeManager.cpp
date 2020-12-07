@@ -7,10 +7,6 @@ namespace HeadBall {
         this->vt = 0;
         this->s = 0;
         this->m = 0;
-
-        this->tempTime = sf::Time ();
-
-        this->_clock.restart ( );
     }
 
     void TimeManager::resetTimer ( ) {
@@ -53,5 +49,9 @@ namespace HeadBall {
 
     void TimeManager::resume ( ) {
         this->resetTimer ( );
+    }
+
+    void TimeManager::setTime (sf::Time timer) {
+        this->T = timer;
     }
 }

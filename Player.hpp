@@ -12,6 +12,7 @@ namespace HeadBall{
         void moveLeft ( );
         void moveRight ( );
         void jump ( );
+        void rePosition (sf::Vector2f position);
     
     private:
         GameDataRef _data;

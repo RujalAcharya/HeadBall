@@ -22,7 +22,7 @@
 #define BALL_DIAMETER 50.0f
 #define BALL_DENSITY 2.0f
 #define BALL_FRICTION 1.5f
-#define BALL_RESTITUTION 0.8f
+#define BALL_RESTITUTION 0.95f
 
 #define UPHILL_HEIGHT 200.0f
 #define UPHILL_WIDTH 200.0f
@@ -36,27 +36,56 @@
 #define VELOCITY_ITERATIONS 8
 #define POSITION_ITERATIONS 3
 
+#define WALL_THICKNESS 2
+
+#define GOAL_POST_WIDTH 132.0f
+#define GOAL_POST_HEIGHT 241.0f
 
 // Assets
 // fonts
 #define TEXT_FONT_FILEPATH "assets/fonts/Roboto/Roboto-Bold.ttf"
 #define DIGIT_FONT_FILEPATH "assets/fonts/open24dismay.ttf" // score, time, etc.
 
-// splash screen
-#define SPLASH_SCREEN_BACKGROUND_FILEPATH "assets/graphics/splash_screen.jpg"
-#define NEPAL_FLAG_FILEPATH "assets/graphics/flags/np.png"
+///////////////////////
+// splash screen state
+#define SPLASH_SCREEN_BACKGROUND_FILEPATH "assets/graphics/splash_screen_state/splash_screen.jpg"
+#define NEPAL_FLAG_FILEPATH "assets/graphics/splash_screen_state/flags/np.png"
 
+
+/////////////
+// main menu
+#define MAIN_MENU_BG_FILEPATH "assets/graphics/main_menu/main_menu_bg.png"
+
+//////////////
+// game state
 // characters
-#define P1_STILL_FILEPATH "assets/graphics/player/p1.png"    // STILL: not moving
-#define P2_STILL_FILEPATH "assets/graphics/player/p2.png"
-#define PLAYER_FOOT_FILEPATH "assets/graphics/player/foot.png"
+#define P1_STILL_FILEPATH "assets/graphics/game_state/player/p1.png"    // STILL: not moving
+#define P2_STILL_FILEPATH "assets/graphics/game_state/player/p2.png"
+#define PLAYER_FOOT_FILEPATH "assets/graphics/game_state/player/foot.png"
 
 // ball, field and goalpost
-#define BALL_FILEPATH "assets/graphics/ball/ball1.png"
-#define FIELD_FILEPATH "assets/graphics/environment/grass.png"
-#define GOAL_POST1_FILEPATH "assets/graphics/environment/goal_1.png"
-#define GOAL_POST2_FILEPATH "assets/graphics/environment/goal_2.png"
+#define BALL_FILEPATH "assets/graphics/game_state/ball/ball1.png"
+#define FIELD_FILEPATH "assets/graphics/game_state/environment/grass.png"
+#define GOAL_POST1_FILEPATH "assets/graphics/game_state/environment/goal_1.png"
+#define GOAL_POST2_FILEPATH "assets/graphics/game_state/environment/goal_2.png"
 
+
+////////////////
+// paused state or half time
+// background
+#define PAUSED_BG_FILEPATH "assets/graphics/paused_state/paused_state_bg.png"
+
+///////////////
+// all buttons
+#define PLAY_BTN_FILEPATH "assets/graphics/all_buttons/play_btn.png"
+#define PAUSE_BTN_FILEPATH "assets/graphics/all_buttons/pause_btn.png"
+#define RESUME_BTN_FILEPATH "assets/graphics/all_buttons/resume_btn.png"
+#define INSTRUCTIONS_BTN_FILEPATH "assets/graphics/all_buttons/instructions_btn.png"
+#define ABOUT_BTN_FILEPATH "assets/graphics/all_buttons/about_btn.png"
+#define EXIT_BTN_FILEPATH "assets/graphics/all_buttons/exit_btn.png"
+
+
+///////////////
 // music clips
 #define GAME_MUSIC_FILEPATH "assets/music/game_music.wav"
 
@@ -65,10 +94,10 @@
 // Character Control
 // Simply change the values below and rebuild the game to change the character controls
 
-#define P1_LEFT F
-#define P1_RIGHT H
-#define P1_JUMP T
-#define P1_KICK A
+#define P1_LEFT A
+#define P1_RIGHT D
+#define P1_JUMP W
+#define P1_KICK G
 
 #define P2_LEFT Left
 #define P2_RIGHT Right

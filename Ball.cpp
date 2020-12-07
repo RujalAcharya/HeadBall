@@ -36,4 +36,9 @@ namespace HeadBall {
     void Ball::processPosition ( ) {
         this->_shape.setPosition (Converter::metersToPixels (this->_body->GetPosition( ).x), Converter::metersToPixels (this->_body->GetPosition( ).y));
     }
+
+    void Ball::rePosition ( ) {
+        this->_bodyDef.position.Set (Converter::pixelsToMeters (WINDOW_WIDTH / 2), Converter::pixelsToMeters (WINDOW_HEIGHT / 2));
+        this->_body->SetFixedRotation (true);
+    }
 }

@@ -17,9 +17,6 @@ namespace HeadBall {
         return this->_textures.at(name);
     }
 
-    // void AssetManager::loadSprite(sf::Texture texture){
-
-    // }
 
     ////////////////////////////////////////////////////
     // Fonts

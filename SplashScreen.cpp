@@ -13,8 +13,10 @@ namespace HeadBall {
 
         this->_data->assets.loadTexture("Nepal flag", NEPAL_FLAG_FILEPATH);
         this->_flagSprite.setTexture(this->_data->assets.getTexture("Nepal flag"));
-        this->_flagSprite.setOrigin(this->_flagSprite.getGlobalBounds( ).width / 4, this->_flagSprite.getGlobalBounds( ).height / 4);
-
+        this->_flagSprite.setOrigin(this->_flagSprite.getGlobalBounds( ).width / 2, this->_flagSprite.getGlobalBounds( ).height / 2);
+        // this->_flagSprite.scale(sf::Vector2f(5, 5));
+        this->_flagSprite.setPosition (WINDOW_WIDTH / 2 + 15, WINDOW_HEIGHT / 2 - 325);
+        
  
         this->_data->assets.loadTexture("Splash Screen Background", SPLASH_SCREEN_BACKGROUND_FILEPATH);
         this->_backgroundSprite.setTexture(this->_data->assets.getTexture("Splash Screen Background"));
@@ -35,7 +37,7 @@ namespace HeadBall {
         }
     }
 
-    void SplashScreen::update (float dt) {
+    void SplashScreen::update ( ) {
         float elapsedTime = _clock.getElapsedTime( ).asSeconds ( );
 
         if (elapsedTime >= SPLASH_SCREEN_TIME) {
@@ -43,9 +45,10 @@ namespace HeadBall {
         }
     }
 
-    void SplashScreen::draw (float dt) {
+    void SplashScreen::draw ( ) {
         this->_data->window.clear(sf::Color::White);
         this->_data->window.draw(_backgroundSprite);
+        this->_data->window.draw(_flagSprite);
         this->_data->window.display( );
     }
 }

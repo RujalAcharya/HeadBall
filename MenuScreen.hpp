@@ -11,12 +11,17 @@ namespace HeadBall {
             MenuScreen (GameDataRef data);
             void init ( );
             void handleInput ( );
-            void update (float dt);
-            void draw (float dt);
+            void update ( );
+            void draw ( );
 
         private:
             GameDataRef _data;
-           
+            ScoreTimeRef _scoretime = std::make_shared <ScoreTimeData> ( );
+            sf::Sprite _background;
+            sf::Sprite _playBtn;
+            sf::Sprite _instructionsBtn;
+            sf::Sprite _aboutBtn;
+            sf::Sprite _exitBtn;
             sf::Text _text;
     };
 }

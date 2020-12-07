@@ -10,7 +10,7 @@ namespace HeadBall {
     }
 
     void Game::run ( ) {
-        float newTime, frameTime, interpolation;
+        float newTime, frameTime;
         float currentTime = this->_clock.getElapsedTime().asSeconds();
         float accumulator = 0.0f;
 
@@ -30,13 +30,11 @@ namespace HeadBall {
             
             if (accumulator >= dt) {
                 this->_data->machine.getActiveState()->handleInput();
-                this->_data->machine.getActiveState()->update(dt);
+                this->_data->machine.getActiveState()->update();
 
                 accumulator -= dt;
             }
-
-            interpolation = accumulator / dt;
-            this->_data->machine.getActiveState()->draw (interpolation);
+            this->_data->machine.getActiveState()->draw ( );
         }
 
     }

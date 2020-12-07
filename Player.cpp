@@ -25,18 +25,22 @@ namespace HeadBall {
         this->_fixture.friction= PLAYER_FRICTION;
 
         this->_body->CreateFixture (& this->_fixture);
+        this->_body->SetFixedRotation (true);
     }
 
     void Player::moveLeft ( ) {
-        this->_body->SetLinearVelocity (b2Vec2(- MOVEMENT_VELOCITY , 0.f));
+        b2Vec2 currentVelocity = this->_body->GetLinearVelocity ( );
+        this->_body->SetLinearVelocity (b2Vec2(- MOVEMENT_VELOCITY , currentVelocity.y));
     }
      
     void Player::moveRight(){
-        this->_body->SetLinearVelocity(b2Vec2(MOVEMENT_VELOCITY,0.f));
+        b2Vec2 currentVelocity = this->_body->GetLinearVelocity ( );
+        this->_body->SetLinearVelocity(b2Vec2(MOVEMENT_VELOCITY, currentVelocity.y));
     }
     
     void Player::jump ( ) {
-        this->_body->SetLinearVelocity (b2Vec2 (0.0f, -MOVEMENT_VELOCITY));
+        b2Vec2 currentVelocity = this->_body->GetLinearVelocity ( );
+        this->_body->SetLinearVelocity (b2Vec2 (currentVelocity.x, -MOVEMENT_VELOCITY));
     }
 
 
@@ -47,6 +51,10 @@ namespace HeadBall {
     void Player::processPosition(){
         this->_sprite.setPosition (Converter::metersToPixels (this->_body->GetPosition( ).x), Converter::metersToPixels (this->_body->GetPosition( ).y));
     }
-    
+
+    void Player::rePosition (sf::Vector2f position ) {
+        this->_bodyDef.position.Set (Converter::pixelsToMeters (position.x), Converter::pixelsToMeters (position.y));
+        this->_body->SetFixedRotation (true);
+    }   
     
 }

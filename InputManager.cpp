@@ -19,7 +19,7 @@ namespace HeadBall {
     bool InputManager::isMoving (std::string position, std::string player) {
         bool isp2 = false;
         if (player == "p2") {
-            isp2 = false; 
+            isp2 = true; 
         }
 
         if (!isp2 && position == "left") {
@@ -28,19 +28,19 @@ namespace HeadBall {
             }
         }
 
-        if (!isp2 && position == "right") {
+        else if (!isp2 && position == "right") {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P1_RIGHT)) {
                 return true;
             }
         }
 
-        if (isp2 && position == "left") {
+        else if (isp2 && position == "left") {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P2_LEFT)) {
                 return true;
             }
         }
 
-        if (isp2 && position == "right") {
+        else if (isp2 && position == "right") {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P2_RIGHT)) {
                 return true;
             }
@@ -52,7 +52,7 @@ namespace HeadBall {
     bool InputManager::isDoing (std::string action, std::string player) {
         bool isp2 = false;
         if (player == "p2") {
-            isp2 = false; 
+            isp2 = true; 
         }
 
         if (!isp2 && action == "jump") {
@@ -61,19 +61,19 @@ namespace HeadBall {
             }
         }
 
-        if (!isp2 && action == "kick") {
+        else if (!isp2 && action == "kick") {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P1_KICK)) {
                 return true;
             }
         }
 
-        if (isp2 && action == "jump") {
+        else if (isp2 && action == "jump") {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P2_JUMP)) {
                 return true;
             }
         }
 
-        if (isp2 && action == "kick") {
+        else if (isp2 && action == "kick") {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P2_KICK)) {
                 return true;
             }

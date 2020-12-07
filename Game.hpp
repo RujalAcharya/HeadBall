@@ -8,6 +8,7 @@
 #include "StateMachine.hpp"
 #include "InputManager.hpp"
 #include "AssetManager.hpp"
+#include "TimeManager.hpp"
 
 namespace HeadBall {
     struct GameData {
@@ -17,8 +18,15 @@ namespace HeadBall {
         AssetManager assets;
     };
 
+    struct ScoreTimeData {
+        TimeManager time;
+        int p1Score;
+        int p2Score;
+    };
+
     typedef std::shared_ptr <GameData> GameDataRef;
-    typedef std::shared_ptr<b2World> WorldRef;
+    typedef std::shared_ptr <ScoreTimeData> ScoreTimeRef;
+    typedef std::shared_ptr <b2World> WorldRef;
 
 
     class Game {

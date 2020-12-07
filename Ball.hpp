@@ -9,6 +9,7 @@ namespace HeadBall {
             void init ( );
             sf::CircleShape shape ( );
             void processPosition ( );
+            void rePosition ( );
 
         private:
             GameDataRef _data;
