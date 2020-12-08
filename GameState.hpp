@@ -25,6 +25,7 @@ namespace HeadBall {
             void draw ( );
             void pause ( );
             void resume ( );
+            void animate (std::string player);
 
         private:
             GameDataRef _data;
@@ -51,8 +52,11 @@ namespace HeadBall {
             sf::Music _crowdCheerSfx;
             sf::Sound _longWhistleSfx;  //halftime/fulltime
             sf::Sound _shortWhistleSfx; //start of every half as well as after every goal
-            sf::Sound _playerJumpSfx;
-            sf::Sound _playerKickSfx;
+            // sf::Sound _playerJumpSfx;
+            // sf::Sound _playerKickSfx;
+
+            int _p1MoveCounter;
+            int _p2MoveCounter;
             
     };                                  
 }

@@ -8,7 +8,7 @@
 namespace HeadBall {
     class GameOver : public State {
         public:
-            GameOver (GameDataRef data);
+            GameOver (GameDataRef data, ScoreTimeRef scoreTime);
             void init ( );
             void handleInput ( );
             void update ( );
@@ -16,7 +16,8 @@ namespace HeadBall {
 
         private:
             GameDataRef _data;
-            sf::Sound _crowdCheerOnGoal;
+            ScoreTimeRef _scoreTime;
+            // sf::Sound _crowdCheerOnGoal;
             sf::Text _text;
     };
 }

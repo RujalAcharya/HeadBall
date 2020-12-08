@@ -12,8 +12,8 @@ namespace HeadBall{
         void moveLeft ( );
         void moveRight ( );
         void jump ( );
-        void rePosition (sf::Vector2f position);
-    
+        void setTexture(std::string texture );
+
     private:
         GameDataRef _data;
         WorldRef _world;  

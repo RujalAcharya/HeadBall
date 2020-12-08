@@ -52,9 +52,8 @@ namespace HeadBall {
         this->_sprite.setPosition (Converter::metersToPixels (this->_body->GetPosition( ).x), Converter::metersToPixels (this->_body->GetPosition( ).y));
     }
 
-    void Player::rePosition (sf::Vector2f position ) {
-        this->_bodyDef.position.Set (Converter::pixelsToMeters (position.x), Converter::pixelsToMeters (position.y));
-        this->_body->SetFixedRotation (true);
+    void Player::setTexture (std::string texture ) {
+        this->_sprite.setTexture (this->_data->assets.getTexture(texture));
     }   
     
 }

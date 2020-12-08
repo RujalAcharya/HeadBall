@@ -23,16 +23,40 @@ namespace HeadBall {
         }
 
         if (!this->_data->assets.isSoundPresent("Short Whistle")){
-            this->_data->assets.loadSound("Short Whistle", WHISTLE_START_SFX_FILEPATH);
+            this->_data->assets.loadSound("Short Whistle", WHISTLE_SHORT_SFX_FILEPATH);
         }
 
         if (!this->_data->assets.isSoundPresent("Long Whistle")){
-            this->_data->assets.loadSound("Long Whistle", WHISTLE_HALFTIME_SFX_FILEPATH);
+            this->_data->assets.loadSound("Long Whistle", WHISTLE_LONG_SFX_FILEPATH);
         }
 
         
         if (!this->_data->assets.isTexturePresent("Pause btn")){
             this->_data->assets.loadTexture("Pause btn", PAUSE_BTN_FILEPATH);
+        }
+
+        if (!this->_data->assets.isTexturePresent("P1 idle")){
+            this->_data->assets.loadTexture("P1 idle", P1_IDLE_FILEPATH);
+        } 
+
+        if (!this->_data->assets.isTexturePresent("P1 L")){
+            this->_data->assets.loadTexture("P1 L", P1_L_FILEPATH);
+        } 
+
+        if (!this->_data->assets.isTexturePresent("P1 R")){
+            this->_data->assets.loadTexture("P1 R", P1_R_FILEPATH);
+        } 
+
+        if (!this->_data->assets.isTexturePresent("P2 idle")){
+            this->_data->assets.loadTexture("P2 idle", P2_IDLE_FILEPATH);
+        } 
+
+        if (!this->_data->assets.isTexturePresent("P2 L")){
+            this->_data->assets.loadTexture("P2 L", P2_L_FILEPATH);
+        } 
+
+        if (!this->_data->assets.isTexturePresent("P2 R")){
+            this->_data->assets.loadTexture("P2 R", P2_R_FILEPATH);
         }
         
         
@@ -43,7 +67,7 @@ namespace HeadBall {
 
         this->_timeText.setString ("Timer");
         this->_timeText.setFont (this->_data->assets.getFont("Digit Font"));
-        this->_timeText.setCharacterSize (50);
+        this->_timeText.setCharacterSize (75);
         this->_timeText.setOrigin (this->_timeText.getGlobalBounds( ).width / 2, this->_timeText.getGlobalBounds( ).height / 2);
         this->_timeText.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 500);
 
@@ -51,13 +75,13 @@ namespace HeadBall {
         this->_p1Score.setFont (this->_data->assets.getFont("Digit Font"));
         this->_p1Score.setCharacterSize (100);
         this->_p1Score.setOrigin (this->_p1Score.getGlobalBounds( ).width / 2, this->_p1Score.getGlobalBounds( ).height / 2);
-        this->_p1Score.setPosition (UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT);
+        this->_p1Score.setPosition (UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT - UPHILL_HEIGHT / 2);
 
         this->_p2Score.setString ("00");
         this->_p2Score.setFont (this->_data->assets.getFont("Digit Font"));
         this->_p2Score.setCharacterSize (100);
         this->_p2Score.setOrigin (this->_p2Score.getGlobalBounds( ).width / 2, this->_p2Score.getGlobalBounds( ).height / 2);
-        this->_p2Score.setPosition (WINDOW_WIDTH - UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT);
+        this->_p2Score.setPosition (WINDOW_WIDTH - UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT - UPHILL_HEIGHT / 2);
 
 
 
@@ -72,8 +96,8 @@ namespace HeadBall {
         this->_rightPost.init(sf::Vector2f(WINDOW_WIDTH - GOAL_POST_WIDTH / 2,  WINDOW_HEIGHT - GROUND_HEIGHT - UPHILL_HEIGHT - GOAL_POST_HEIGHT / 2), false);
 
         this->_ball.init ( );
-        this->_p1.init ("P1 Still", P1_STILL_FILEPATH, sf::Vector2f (WINDOW_WIDTH / 3, WINDOW_HEIGHT / 2));
-        this->_p2.init ("P2 Still", P2_STILL_FILEPATH, sf::Vector2f (2 * WINDOW_WIDTH / 3, WINDOW_HEIGHT / 2));
+        this->_p1.init ("P1 Still", P1_IDLE_FILEPATH, sf::Vector2f (WINDOW_WIDTH / 3, WINDOW_HEIGHT / 2));
+        this->_p2.init ("P2 Still", P2_IDLE_FILEPATH, sf::Vector2f (2 * WINDOW_WIDTH / 3, WINDOW_HEIGHT / 2));
 
         if (!_isSecondHalf) {
             this->_scoreTime->time.resetTimer ( );
@@ -83,7 +107,7 @@ namespace HeadBall {
 
         
         this->_pauseBtn.setTexture(this->_data->assets.getTexture("Pause btn"));
-        this->_pauseBtn.setOrigin(_pauseBtn.getLocalBounds( ).width / 2, _pauseBtn.getLocalBounds( ).height / 2);
+        this->_pauseBtn.setOrigin(_pauseBtn.getGlobalBounds( ).width / 2, _pauseBtn.getGlobalBounds( ).height / 2);
         this->_pauseBtn.setPosition(WINDOW_WIDTH - 100, WINDOW_HEIGHT / 2 - 400);
 
 
@@ -93,6 +117,9 @@ namespace HeadBall {
         }
 
         this->_shortWhistleSfx.play ( );
+
+        this->_p1MoveCounter = 0;
+        this->_p2MoveCounter = 0;
 
     }
 
@@ -116,39 +143,49 @@ namespace HeadBall {
                 if (this->_data->input.isSpriteClicked(this->_pauseBtn, sf::Mouse::Left, this->_data->window)) {
                     this->_crowdCheerSfx.stop();
                     this->_btnClickSfx.play();
-
+                    
                     this->_data->machine.addState (StateRef (new PausedState (this->_data)), false);
                 }
             }
         }
 
-        if (this->_data->input.isMoving("left")) {
+        if (this->_data->input.isMoving("left")) {            
             this->_p1.moveLeft ( );
+            this->animate ("p1");
         }
 
         if (this->_data->input.isMoving("right")) {
             this->_p1.moveRight ( );
+            this->animate ("p1");
         }
+
+        
+
+                
 
         if (this->_data->input.isMoving("left", "p2")) {
             this->_p2.moveLeft ( );
+            this->animate("p2");
         }
 
         if (this->_data->input.isMoving("right", "p2")) {
             this->_p2.moveRight ( );
+            this->animate("p2");
         }
 
         if (this->_data->input.isDoing ("jump")) {
-            this->_playerJumpSfx.play();
+            // this->_playerJumpSfx.play();
 
             this->_p1.jump ( );
         }
 
+        
         if (this->_data->input.isDoing ("jump", "p2")) {
-            this->_playerJumpSfx.play();
+            // this->_playerJumpSfx.play();
+        
             this->_p2.jump ( );
         }
-        
+                
     }
 
     void GameState::update ( ) {
@@ -157,15 +194,15 @@ namespace HeadBall {
 
             this->_timeText.setString (this->_scoreTime->time.displayTimer ( ));
 
-            if (this->_scoreTime->time.getTime ( ) >= GAME_TIME / 2 && !this->_isSecondHalf) {
+            if (this->_scoreTime->time.getTime ( ) >= 45 && !this->_isSecondHalf) {
                 this->_scoreTime->time.pause ( );
                 this->_longWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new HalfTime (this->_data, this->_scoreTime)));
             }
 
-            if (this->_scoreTime->time.getTime ( ) >= GAME_TIME) {
+            if (this->_scoreTime->time.getTime ( ) >= 90) {
                 this->_longWhistleSfx.play ( );
-                this->_data->machine.addState (StateRef (new GameOver (this->_data)));
+                this->_data->machine.addState (StateRef (new GameOver (this->_data, this->_scoreTime)));
             }
 
             this->_world->Step (1 / 20.0, VELOCITY_ITERATIONS, POSITION_ITERATIONS);    
@@ -176,17 +213,15 @@ namespace HeadBall {
 
             sf::IntRect leftPostRect (this->_leftPost.sprite( ).getPosition( ).x - this->_leftPost.sprite( ).getGlobalBounds( ).width / 2, this->_leftPost.sprite( ).getPosition( ).y - this->_leftPost.sprite( ).getGlobalBounds( ).height / 2, this->_leftPost.sprite( ).getGlobalBounds( ).width, this->_leftPost.sprite( ).getGlobalBounds( ).height);
             if (leftPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
-                this->_scoreTime->p1Score ++;
+                this->_scoreTime->p2Score ++;
                 this->_scoreTime->time.pause ( );
-                this->_shortWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
             }
 
             sf::IntRect rightPostRect (this->_rightPost.sprite( ).getPosition( ).x - this->_rightPost.sprite( ).getGlobalBounds( ).width / 2, this->_rightPost.sprite( ).getPosition( ).y - this->_rightPost.sprite( ).getGlobalBounds( ).height / 2, this->_rightPost.sprite( ).getGlobalBounds( ).width, this->_rightPost.sprite( ).getGlobalBounds( ).height);
             if (rightPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
-                this->_scoreTime->p2Score ++;
+                this->_scoreTime->p1Score ++;
                 this->_scoreTime->time.pause ( );
-                this->_shortWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
             }
 
@@ -229,4 +264,49 @@ namespace HeadBall {
         this->_scoreTime->time.resume ( );
         this->_isPaused = false;
     }
+
+    void GameState::animate (std::string player) {
+        if (player == "p1") {
+            this->_p1MoveCounter ++;
+
+            if (this->_p1MoveCounter == 3) {
+                this->_p1.setTexture ("P1 L");
+            }
+
+            else if (this->_p1MoveCounter == 6) {
+                this->_p1.setTexture ("P1 idle");
+            }
+
+            else if (this->_p1MoveCounter == 9) {
+                this->_p1.setTexture ("P1 R");
+            }
+
+            else if (this->_p1MoveCounter == 12) {
+                this->_p1.setTexture ("P1 idle");
+                this->_p1MoveCounter = 0;
+            }
+        }
+
+        else if (player == "p2") {
+            this->_p2MoveCounter ++;
+
+            if (this->_p2MoveCounter == 3) {
+                this->_p2.setTexture ("P2 L");
+            }
+
+            else if (this->_p2MoveCounter == 6) {
+                this->_p2.setTexture ("P2 idle");
+            }
+
+            else if (this->_p2MoveCounter == 9) {
+                this->_p2.setTexture ("P2 R");
+            }
+
+            else if (this->_p2MoveCounter == 12) {
+                this->_p2.setTexture ("P2 idle");
+                this->_p2MoveCounter = 0;
+            }
+        }
+    }
+
 }

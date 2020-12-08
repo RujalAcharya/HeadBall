@@ -15,6 +15,7 @@ namespace HeadBall {
             void pause ( );
             void resume ( );
             void setTime (sf::Time timer);
+            void zero ( );
 
         private:
             sf::Clock _clock;
