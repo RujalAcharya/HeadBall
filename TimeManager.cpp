@@ -54,4 +54,12 @@ namespace HeadBall {
     void TimeManager::setTime (sf::Time timer) {
         this->T = timer;
     }
+    
+    void TimeManager::zero ( ) {
+        this->_clock.restart( );
+
+        this-> T = sf::Time ( );
+        this->tempTime = this->T;
+
+    }
 }

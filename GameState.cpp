@@ -51,13 +51,13 @@ namespace HeadBall {
         this->_p1Score.setFont (this->_data->assets.getFont("Digit Font"));
         this->_p1Score.setCharacterSize (100);
         this->_p1Score.setOrigin (this->_p1Score.getGlobalBounds( ).width / 2, this->_p1Score.getGlobalBounds( ).height / 2);
-        this->_p1Score.setPosition (UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT);
+        this->_p1Score.setPosition (UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT - UPHILL_HEIGHT / 2);
 
         this->_p2Score.setString ("00");
         this->_p2Score.setFont (this->_data->assets.getFont("Digit Font"));
         this->_p2Score.setCharacterSize (100);
         this->_p2Score.setOrigin (this->_p2Score.getGlobalBounds( ).width / 2, this->_p2Score.getGlobalBounds( ).height / 2);
-        this->_p2Score.setPosition (WINDOW_WIDTH - UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT);
+        this->_p2Score.setPosition (WINDOW_WIDTH - UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT - UPHILL_HEIGHT / 2);
 
 
 
@@ -157,13 +157,13 @@ namespace HeadBall {
 
             this->_timeText.setString (this->_scoreTime->time.displayTimer ( ));
 
-            if (this->_scoreTime->time.getTime ( ) >= GAME_TIME / 2 && !this->_isSecondHalf) {
+            if (this->_scoreTime->time.getTime ( ) >= 45 && !this->_isSecondHalf) {
                 this->_scoreTime->time.pause ( );
                 this->_longWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new HalfTime (this->_data, this->_scoreTime)));
             }
 
-            if (this->_scoreTime->time.getTime ( ) >= GAME_TIME) {
+            if (this->_scoreTime->time.getTime ( ) >= 90) {
                 this->_longWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new GameOver (this->_data)));
             }
