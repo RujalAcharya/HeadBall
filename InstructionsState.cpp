@@ -10,7 +10,8 @@ namespace HeadBall {
         if (!this->_data->assets.isFontPresent("Text Font")){
             this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
         }
-        std::string instructionsText = "INSTRUCTIONS::\n\nPLAYER 1:       |       PLAYER 2:\n\nMOVE LEFT: A    |       MOVE LEFT: Left\nMOVE RIGHT: D   |       MOVE RIGHT: Right\nJUMP: W         |       JUMP: Up\nKICK: G         |       KICK: Comma";
+        
+        std::string instructionsText = "\n\nINSTRUCTIONS::\n\nPLAYER 1:\t|\tPLAYER 2:\n\nMOVE LEFT: A\t|\tMOVE LEFT: Left\nMOVE RIGHT: D\t|\tMOVE RIGHT: Right\nJUMP: W\t|\tJUMP: Up\nKICK: G\t|\tKICK: Comma";
         this->_text.setString (instructionsText);
         
         this->_text.setFont (this->_data->assets.getFont("Text Font"));

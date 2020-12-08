@@ -38,8 +38,9 @@ namespace HeadBall {
             }
 
             if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::Enter) {
+                if (event.key.code == sf::Keyboard::R) {
                     this->_scoreTime->time.resume ( );
+                    this->_crowdCheerOnGoal.stop ( );
                     this->_data->machine.addState (StateRef(new GameState (this->_data, this->_scoreTime)) );
                 }
             }

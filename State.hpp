@@ -10,5 +10,8 @@ namespace HeadBall {
 
             virtual void pause ( ) { }
             virtual void resume ( ) { }
+            virtual void animate ( ) { }
+
+            virtual ~State ( ) = default;
     };
 }
