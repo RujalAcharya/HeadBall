@@ -13,7 +13,7 @@
 #define WORLD_GRAVITY_Y 10.0f
 
 #define SPLASH_SCREEN_TIME 1.0f
-#define GAME_TIME 8
+#define GAME_TIME 2 //this is how long the game should be in total in real life and is in minutes
 
 #define GROUND_HEIGHT 100.0f
 #define GROUND_COLOR Green
@@ -59,9 +59,14 @@
 //////////////
 // game state
 // characters
-#define P1_STILL_FILEPATH "assets/graphics/game_state/player/p1.png"    // STILL: not moving
-#define P2_STILL_FILEPATH "assets/graphics/game_state/player/p2.png"
-#define PLAYER_FOOT_FILEPATH "assets/graphics/game_state/player/foot.png"
+#define P1_IDLE_FILEPATH "assets/graphics/game_state/player/p1_idle.png"    // STILL: not moving
+#define P1_R_FILEPATH "assets/graphics/game_state/player/p1_R.png"
+#define P1_L_FILEPATH "assets/graphics/game_state/player/p1_L.png"
+
+#define P2_IDLE_FILEPATH "assets/graphics/game_state/player/p2_idle.png"
+#define P2_R_FILEPATH "assets/graphics/game_state/player/p2_R.png"
+#define P2_L_FILEPATH "assets/graphics/game_state/player/p2_L.png"
+
 
 // ball, field and goalpost
 #define BALL_FILEPATH "assets/graphics/game_state/ball/ball1.png"
@@ -98,15 +103,15 @@
 
 // sfx/sound clips
 #define BTN_CLICK_SFX_FILEPATH "assets/audio/sfx/button_click.wav"
-#define WHISTLE_START_SFX_FILEPATH "assets/audio/sfx/whistle_start.wav"
-#define WHISTLE_HALFTIME_SFX_FILEPATH "assets/audio/sfx/whistle_halftime.wav"
+#define WHISTLE_SHORT_SFX_FILEPATH "assets/audio/sfx/whistle_short.wav"
+#define WHISTLE_LONG_SFX_FILEPATH "assets/audio/sfx/whistle_long.wav"
 #define PLAYER_JUMP_SFX_FILEPATH "assets/audio/sfx/player_jump.wav"
 #define PLAYER_KICK_SFX_FILEPATH "assets/audio/sfx/player_kick.wav"
 #define HARD_KICK_SFX_FILEPATH "assets/audio/sfx/ball_kick_hardest.wav"
 #define CROWD_CHEER_ON_GOAL_SFX_FILEPATH "assets/audio/sfx/crowd_cheer_goal.wav"
 
 
-// Character Control
+// Character Controls
 // Simply change the values below and rebuild the game to change the character controls
 
 #define P1_LEFT A

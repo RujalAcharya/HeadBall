@@ -90,12 +90,13 @@ namespace HeadBall {
 
                     this->_scoreTime->p1Score = 0;
                     this->_scoreTime->p2Score = 0;
+                    this->_scoreTime->time.resetTimer ( );
                     this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoreTime)));
                 }
 
                 if (event.key.code == sf::Keyboard::Q) {
                     this->_theme.stop();
-                    
+
                     this->_data->window.close ( );
                 }
             }
@@ -106,6 +107,7 @@ namespace HeadBall {
                     
                     this->_scoreTime->p1Score = 0;
                     this->_scoreTime->p2Score = 0;
+                    this->_scoreTime->time.resetTimer ( );
                     this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoreTime)));
                 }
                 

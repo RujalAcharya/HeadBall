@@ -16,8 +16,8 @@ namespace HeadBall {
     void TimeManager::processTime ( ) {
         this->T = this->_clock.getElapsedTime() + this->tempTime;
         this->t = this->T.asSeconds();
-        this->vt = this->t * 18; //Converting 5 minutes into 90
-        this->m = this->vt / 60;
+        this->vt = this->t * (90  / GAME_TIME); //Increase game time by the factor of (90/GAME_TIME)
+        this->m = this->vt / 60;    //to convert vt to minutes which is in seconds
         this->s = this->vt - this->m * 60;
     }
 

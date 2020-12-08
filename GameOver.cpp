@@ -1,9 +1,10 @@
 #include "Definition.hpp"
 #include "GameOver.hpp"
 #include "MenuScreen.hpp"
+#include "GameState.hpp"
 
 namespace HeadBall {
-    GameOver::GameOver (GameDataRef data) : _data{data} { }
+    GameOver::GameOver (GameDataRef data, ScoreTimeRef scoreTime) : _data{data}, _scoreTime{scoreTime} { }
 
     void GameOver::init () {
         
@@ -18,13 +19,13 @@ namespace HeadBall {
         this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
 
-        if (!this->_data->assets.isSoundPresent("Crowd cheer on goal")){
-            this->_data->assets.loadSound("Crowd cheer on goal", CROWD_CHEER_ON_GOAL_SFX_FILEPATH);
-        }
+        // if (!this->_data->assets.isSoundPresent("Crowd cheer on goal")){
+        //     this->_data->assets.loadSound("Crowd cheer on goal", CROWD_CHEER_ON_GOAL_SFX_FILEPATH);
+        // }
         
         
-        this->_crowdCheerOnGoal.setBuffer (this->_data->assets.getSound("Crowd cheer on goal"));
-        this->_crowdCheerOnGoal.play ( );
+        // this->_crowdCheerOnGoal.setBuffer (this->_data->assets.getSound("Crowd cheer on goal"));
+        // this->_crowdCheerOnGoal.play ( );
 
     }
 
@@ -38,7 +39,11 @@ namespace HeadBall {
 
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Enter) {
-                    this->_data->machine.addState (StateRef (new MenuScreen (_data)) );
+                    // this->_data->machine.addState (StateRef (new MenuScreen (_data)), false );
+                    this->_scoreTime->time.zero ( );
+                    this->_scoreTime->p1Score = 0;
+                    this->_scoreTime->p2Score = 0;
+                    this->_data->machine.addState (StateRef (new GameState (_data, _scoreTime)));
                 }
 
                 if (event.key.code == sf::Keyboard::Q) {

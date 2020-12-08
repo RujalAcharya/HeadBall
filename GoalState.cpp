@@ -12,10 +12,10 @@ namespace HeadBall {
             this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
         }
         
-        this->_text.setString("Goooooooaaaaaaaal");
+        this->_text.setString("GOOOOOOOOOOOAAAAAAAAALLLLLLLLLLLL");
         this->_text.setFont (this->_data->assets.getFont("Text Font"));
 
-        this->_text.setCharacterSize(30);
+        this->_text.setCharacterSize(50);
         this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
 
@@ -34,16 +34,13 @@ namespace HeadBall {
 
         while (this->_data->window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
-                this->_crowdCheerOnGoal.stop ( );
-
                 this->_data->window.close( );
             }
 
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Enter) {
                     this->_scoreTime->time.resume ( );
-                    this->_crowdCheerOnGoal.stop ( );
-                    this->_data->machine.addState (StateRef(new GameState (this->_data, this->_scoreTime, true)) );
+                    this->_data->machine.addState (StateRef(new GameState (this->_data, this->_scoreTime)) );
                 }
             }
         }
