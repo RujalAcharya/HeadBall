@@ -66,6 +66,7 @@ namespace HeadBall {
         this->_exitBtn.setOrigin(_exitBtn.getLocalBounds( ).width / 2, _exitBtn.getLocalBounds( ).height / 2);
         this->_exitBtn.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 + 300);
 
+
         if (this->_theme.openFromFile(GAME_MUSIC_FILEPATH)) {
             this->_theme.play();
             this->_theme.setLoop(true);
@@ -78,6 +79,8 @@ namespace HeadBall {
 
         while (this->_data->window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
+                this->_theme.stop();
+
                 this->_data->window.close( );
             }
 
@@ -91,37 +94,34 @@ namespace HeadBall {
                 }
 
                 if (event.key.code == sf::Keyboard::Q) {
+                    this->_theme.stop();
+                    
                     this->_data->window.close ( );
                 }
             }
             if (event.type == sf::Event::MouseButtonPressed) {
                 if (this->_data->input.isSpriteClicked(this->_playBtn, sf::Mouse::Left, this->_data->window)) {
-                    _theme.setVolume(90);
                     _btnClickSfx.play();
                     this->_theme.stop();
                     
                     this->_scoreTime->p1Score = 0;
                     this->_scoreTime->p2Score = 0;
-                    this->_theme.pause ( );
                     this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoreTime)));
                 }
                 
                 else if (this->_data->input.isSpriteClicked(this->_aboutBtn, sf::Mouse::Left, this->_data->window)) {
-                    _theme.setVolume(90);
                     _btnClickSfx.play();
 
                     this->_data->machine.addState (StateRef (new AboutState (this->_data)), false);
                 }
                 
                 else if (this->_data->input.isSpriteClicked(this->_instructionsBtn, sf::Mouse::Left, this->_data->window)) {
-                    _theme.setVolume(90);
                     _btnClickSfx.play();
 
                     this->_data->machine.addState (StateRef (new InstructionsState (this->_data)), false);
                 }
                 
                 else if (this->_data->input.isSpriteClicked(this->_exitBtn, sf::Mouse::Left, this->_data->window)) {
-                    _theme.setVolume(90);
                     _btnClickSfx.play();
                     this->_theme.stop ( );
 

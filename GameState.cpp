@@ -17,6 +17,30 @@ namespace HeadBall {
             this->_data->assets.loadFont("Digit Font", DIGIT_FONT_FILEPATH);
         }
 
+
+        if (!this->_data->assets.isSoundPresent("Button click")){
+            this->_data->assets.loadSound("Button click", BTN_CLICK_SFX_FILEPATH);
+        }
+
+        if (!this->_data->assets.isSoundPresent("Short Whistle")){
+            this->_data->assets.loadSound("Short Whistle", WHISTLE_START_SFX_FILEPATH);
+        }
+
+        if (!this->_data->assets.isSoundPresent("Long Whistle")){
+            this->_data->assets.loadSound("Long Whistle", WHISTLE_HALFTIME_SFX_FILEPATH);
+        }
+
+        
+        if (!this->_data->assets.isTexturePresent("Pause btn")){
+            this->_data->assets.loadTexture("Pause btn", PAUSE_BTN_FILEPATH);
+        }
+        
+        
+        this->_btnClickSfx.setBuffer(this->_data->assets.getSound("Button click"));
+        this->_shortWhistleSfx.setBuffer(this->_data->assets.getSound("Short Whistle"));
+        this->_longWhistleSfx.setBuffer (this->_data->assets.getSound("Long Whistle"));
+
+
         this->_timeText.setString ("Timer");
         this->_timeText.setFont (this->_data->assets.getFont("Digit Font"));
         this->_timeText.setCharacterSize (50);
@@ -57,13 +81,18 @@ namespace HeadBall {
         this->_scoreTime->time.resume ( );
 
 
-        if (!this->_data->assets.isTexturePresent("Pause btn")){
-            this->_data->assets.loadTexture("Pause btn", PAUSE_BTN_FILEPATH);
-        }
-
+        
         this->_pauseBtn.setTexture(this->_data->assets.getTexture("Pause btn"));
         this->_pauseBtn.setOrigin(_pauseBtn.getLocalBounds( ).width / 2, _pauseBtn.getLocalBounds( ).height / 2);
         this->_pauseBtn.setPosition(WINDOW_WIDTH - 100, WINDOW_HEIGHT / 2 - 400);
+
+
+        if (this->_crowdCheerSfx.openFromFile(CROWD_CHEER_FILEPATH)) {
+            this->_crowdCheerSfx.play();
+            this->_crowdCheerSfx.setLoop(true);
+        }
+
+        this->_shortWhistleSfx.play ( );
 
     }
 
@@ -77,12 +106,17 @@ namespace HeadBall {
 
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Escape) {
+                    this->_crowdCheerSfx.stop();
+                    
                     this->_data->machine.addState (StateRef (new PausedState (this->_data)), false);
                 }
             }
 
             if (event.type == sf::Event::MouseButtonPressed) {
                 if (this->_data->input.isSpriteClicked(this->_pauseBtn, sf::Mouse::Left, this->_data->window)) {
+                    this->_crowdCheerSfx.stop();
+                    this->_btnClickSfx.play();
+
                     this->_data->machine.addState (StateRef (new PausedState (this->_data)), false);
                 }
             }
@@ -105,10 +139,13 @@ namespace HeadBall {
         }
 
         if (this->_data->input.isDoing ("jump")) {
+            this->_playerJumpSfx.play();
+
             this->_p1.jump ( );
         }
 
         if (this->_data->input.isDoing ("jump", "p2")) {
+            this->_playerJumpSfx.play();
             this->_p2.jump ( );
         }
         
@@ -122,10 +159,12 @@ namespace HeadBall {
 
             if (this->_scoreTime->time.getTime ( ) >= GAME_TIME / 2 && !this->_isSecondHalf) {
                 this->_scoreTime->time.pause ( );
+                this->_longWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new HalfTime (this->_data, this->_scoreTime)));
             }
 
             if (this->_scoreTime->time.getTime ( ) >= GAME_TIME) {
+                this->_longWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new GameOver (this->_data)));
             }
 
@@ -139,6 +178,7 @@ namespace HeadBall {
             if (leftPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
                 this->_scoreTime->p1Score ++;
                 this->_scoreTime->time.pause ( );
+                this->_shortWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
             }
 
@@ -146,6 +186,7 @@ namespace HeadBall {
             if (rightPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
                 this->_scoreTime->p2Score ++;
                 this->_scoreTime->time.pause ( );
+                this->_shortWhistleSfx.play ( );
                 this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
             }
 

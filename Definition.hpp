@@ -13,7 +13,7 @@
 #define WORLD_GRAVITY_Y 10.0f
 
 #define SPLASH_SCREEN_TIME 1.0f
-#define GAME_TIME 6
+#define GAME_TIME 8
 
 #define GROUND_HEIGHT 100.0f
 #define GROUND_COLOR Green
@@ -43,7 +43,7 @@
 
 // Assets
 // fonts
-#define TEXT_FONT_FILEPATH "assets/fonts/Roboto/Roboto-Bold.ttf"
+#define TEXT_FONT_FILEPATH "assets/fonts/foo/foo.ttf"
 #define DIGIT_FONT_FILEPATH "assets/fonts/open24dismay.ttf" // score, time, etc.
 
 ///////////////////////
@@ -100,10 +100,10 @@
 #define BTN_CLICK_SFX_FILEPATH "assets/audio/sfx/button_click.wav"
 #define WHISTLE_START_SFX_FILEPATH "assets/audio/sfx/whistle_start.wav"
 #define WHISTLE_HALFTIME_SFX_FILEPATH "assets/audio/sfx/whistle_halftime.wav"
-#define CROWD_CHEER_GOAL_SFX_FILEPATH "assets/audio/sfx/crowd_cheer_goal.wav"
 #define PLAYER_JUMP_SFX_FILEPATH "assets/audio/sfx/player_jump.wav"
 #define PLAYER_KICK_SFX_FILEPATH "assets/audio/sfx/player_kick.wav"
 #define HARD_KICK_SFX_FILEPATH "assets/audio/sfx/ball_kick_hardest.wav"
+#define CROWD_CHEER_ON_GOAL_SFX_FILEPATH "assets/audio/sfx/crowd_cheer_goal.wav"
 
 
 // Character Control

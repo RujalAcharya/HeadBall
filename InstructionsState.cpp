@@ -31,6 +31,13 @@ namespace HeadBall {
             this->_data->assets.loadTexture("Exit btn", EXIT_BTN_FILEPATH);
         }
 
+
+        if (!this->_data->assets.isSoundPresent("Button click")){
+            this->_data->assets.loadSound("Button click", BTN_CLICK_SFX_FILEPATH);
+        }
+        this->_btnClickSfx.setBuffer(this->_data->assets.getSound("Button click"));
+
+
         this->_background.setTexture(this->_data->assets.getTexture("Plain bg"));
         this->_background.setOrigin(_background.getGlobalBounds( ).width / 2, _background.getGlobalBounds( ).height / 2);
         this->_background.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
@@ -64,12 +71,14 @@ namespace HeadBall {
 
             if (event.type == sf::Event::MouseButtonPressed) {
                 if (this->_data->input.isSpriteClicked(this->_backBtn, sf::Mouse::Left, this->_data->window)) {
+                    _btnClickSfx.play();
+                    
                     this->_data->machine.removeState ( );
                 }
-            }
 
-            if (event.type == sf::Event::MouseButtonPressed) {
-                if (this->_data->input.isSpriteClicked(this->_exitBtn, sf::Mouse::Left, this->_data->window)) {
+                else if (this->_data->input.isSpriteClicked(this->_exitBtn, sf::Mouse::Left, this->_data->window)) {
+                    _btnClickSfx.play();
+
                     this->_data->window.close ( );
                 }
             }
@@ -83,6 +92,7 @@ namespace HeadBall {
         this->_data->window.draw(this->_background);
         this->_data->window.draw(this->_backBtn);
         this->_data->window.draw(this->_exitBtn);
+        this->_data->window.draw(this->_text);
         this->_data->window.display ( );
     }
 }

@@ -16,7 +16,7 @@ namespace HeadBall {
 
         private:
             GameDataRef _data;
-
+            sf::Sound _crowdCheerOnGoal;
             sf::Text _text;
     };
 }

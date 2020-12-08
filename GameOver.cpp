@@ -17,6 +17,15 @@ namespace HeadBall {
         this->_text.setCharacterSize (30);
         this->_text.setOrigin(_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
         this->_text.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
+
+        if (!this->_data->assets.isSoundPresent("Crowd cheer on goal")){
+            this->_data->assets.loadSound("Crowd cheer on goal", CROWD_CHEER_ON_GOAL_SFX_FILEPATH);
+        }
+        
+        
+        this->_crowdCheerOnGoal.setBuffer (this->_data->assets.getSound("Crowd cheer on goal"));
+        this->_crowdCheerOnGoal.play ( );
+
     }
 
     void GameOver::handleInput ( ) {

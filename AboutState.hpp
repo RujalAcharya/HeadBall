@@ -19,9 +19,7 @@ namespace HeadBall {
             sf::Sprite _background;            
             sf::Sprite _backBtn;
             sf::Sprite _exitBtn;
-            // sf::Sprite _aboutBtn;
- 
-
             sf::Text _text;
+            sf::Sound _btnClickSfx;
     };
 }

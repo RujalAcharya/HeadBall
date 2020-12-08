@@ -47,5 +47,12 @@ namespace HeadBall {
             bool _isSecondHalf;
 
             sf::Sprite _pauseBtn;
-    };
+            sf::Sound _btnClickSfx;
+            sf::Music _crowdCheerSfx;
+            sf::Sound _longWhistleSfx;  //halftime/fulltime
+            sf::Sound _shortWhistleSfx; //start of every half as well as after every goal
+            sf::Sound _playerJumpSfx;
+            sf::Sound _playerKickSfx;
+            
+    };                                  
 }
