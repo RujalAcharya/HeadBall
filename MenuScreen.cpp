@@ -40,6 +40,13 @@ namespace HeadBall {
             this->_data->assets.loadTexture("Exit btn", EXIT_BTN_FILEPATH);
         }
 
+
+        if (!this->_data->assets.isSoundPresent("Button click")){
+            this->_data->assets.loadSound("Button click", BTN_CLICK_SFX_FILEPATH);
+        }
+        this->_btnClickSfx.setBuffer(this->_data->assets.getSound("Button click"));
+
+
         this->_background.setTexture(this->_data->assets.getTexture("Main menu bg"));
 
 
@@ -78,9 +85,9 @@ namespace HeadBall {
                 if (event.key.code == sf::Keyboard::Enter) {
                     this->_theme.stop();
 
-                    this->_scoretime->p1Score = 0;
-                    this->_scoretime->p2Score = 0;
-                    this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoretime)));
+                    this->_scoreTime->p1Score = 0;
+                    this->_scoreTime->p2Score = 0;
+                    this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoreTime)));
                 }
 
                 if (event.key.code == sf::Keyboard::Q) {
@@ -88,38 +95,44 @@ namespace HeadBall {
                 }
             }
             if (event.type == sf::Event::MouseButtonPressed) {
-               if (this->_data->input.isSpriteClicked(this->_playBtn, sf::Mouse::Left, this->_data->window)) {
-                this->_theme.stop();
-                this->_scoretime->p1Score = 0;
-                this->_scoretime->p2Score = 0;
-                this->_theme.pause ( );
-                this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoretime)));
-            } 
-            }
-            if (event.type == sf::Event::MouseButtonPressed) {
-                if (this->_data->input.isSpriteClicked(this->_aboutBtn, sf::Mouse::Left, this->_data->window)) {
-                this->_data->machine.addState (StateRef (new AboutState (this->_data)), false);
-            }
-            }
-
-            if (event.type == sf::Event::MouseButtonPressed) {
-                if (this->_data->input.isSpriteClicked(this->_instructionsBtn, sf::Mouse::Left, this->_data->window)) {
-                this->_data->machine.addState (StateRef (new InstructionsState (this->_data)), false);
-            }
-            }
-            if (event.type == sf::Event::MouseButtonPressed) {
-                if (this->_data->input.isSpriteClicked(this->_exitBtn, sf::Mouse::Left, this->_data->window)) {
+                if (this->_data->input.isSpriteClicked(this->_playBtn, sf::Mouse::Left, this->_data->window)) {
+                    _theme.setVolume(90);
+                    _btnClickSfx.play();
+                    this->_theme.stop();
+                    
+                    this->_scoreTime->p1Score = 0;
+                    this->_scoreTime->p2Score = 0;
                     this->_theme.pause ( );
-                this->_data->window.close ( );
-            }
-            }
+                    this->_data->machine.addState (StateRef (new GameState (this->_data, this->_scoreTime)));
+                }
+                
+                else if (this->_data->input.isSpriteClicked(this->_aboutBtn, sf::Mouse::Left, this->_data->window)) {
+                    _theme.setVolume(90);
+                    _btnClickSfx.play();
 
-        }
+                    this->_data->machine.addState (StateRef (new AboutState (this->_data)), false);
+                }
+                
+                else if (this->_data->input.isSpriteClicked(this->_instructionsBtn, sf::Mouse::Left, this->_data->window)) {
+                    _theme.setVolume(90);
+                    _btnClickSfx.play();
 
-        
-            
-            
-            
+                    this->_data->machine.addState (StateRef (new InstructionsState (this->_data)), false);
+                }
+                
+                else if (this->_data->input.isSpriteClicked(this->_exitBtn, sf::Mouse::Left, this->_data->window)) {
+                    _theme.setVolume(90);
+                    _btnClickSfx.play();
+                    this->_theme.stop ( );
+
+                    this->_data->window.close ( );
+                }
+                // else {
+                //     _theme.setVolume(90);
+                //     _btnClickSfx.play();
+                // }
+            }
+        }            
     }
 
     void MenuScreen::update ( ) { }

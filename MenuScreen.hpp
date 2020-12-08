@@ -17,7 +17,7 @@ namespace HeadBall {
 
         private:
             GameDataRef _data;
-            ScoreTimeRef _scoretime = std::make_shared <ScoreTimeData> ( );
+            ScoreTimeRef _scoreTime = std::make_shared <ScoreTimeData> ( );
             sf::Sprite _background;
             sf::Sprite _playBtn;
             sf::Sprite _instructionsBtn;
@@ -25,5 +25,6 @@ namespace HeadBall {
             sf::Sprite _exitBtn;
             sf::Music _theme;
             sf::Text _text;
+            sf::Sound _btnClickSfx;
     };
 }

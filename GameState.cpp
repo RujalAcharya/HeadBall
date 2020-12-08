@@ -8,7 +8,7 @@
 #include <sstream>
 
 namespace HeadBall {
-    GameState::GameState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf) : _data{data}, _scoretime{scoretime}, _ground{data, this->_world}, _ball{data, this->_world}, _rightUpHill{data, this->_world}, _leftUpHill{data, this->_world}, _leftPost{data}, _rightPost{data}, _wall{data, this->_world}, _p1{data, this->_world}, _p2{data, this->_world}   {
+    GameState::GameState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf) : _data{data}, _scoreTime{scoretime}, _ground{data, this->_world}, _ball{data, this->_world}, _rightUpHill{data, this->_world}, _leftUpHill{data, this->_world}, _leftPost{data}, _rightPost{data}, _wall{data, this->_world}, _p1{data, this->_world}, _p2{data, this->_world}   {
                 this->_isSecondHalf = isSecondHalf; 
     }
 
@@ -52,9 +52,9 @@ namespace HeadBall {
         this->_p2.init ("P2 Still", P2_STILL_FILEPATH, sf::Vector2f (2 * WINDOW_WIDTH / 3, WINDOW_HEIGHT / 2));
 
         if (!_isSecondHalf) {
-            this->_scoretime->time.resetTimer ( );
+            this->_scoreTime->time.resetTimer ( );
         }
-        this->_scoretime->time.resume ( );
+        this->_scoreTime->time.resume ( );
 
 
         if (!this->_data->assets.isTexturePresent("Pause btn")){
@@ -116,16 +116,16 @@ namespace HeadBall {
 
     void GameState::update ( ) {
         if (!this->_isPaused) {
-            this->_scoretime->time.processTime ( );
+            this->_scoreTime->time.processTime ( );
 
-            this->_timeText.setString (this->_scoretime->time.displayTimer ( ));
+            this->_timeText.setString (this->_scoreTime->time.displayTimer ( ));
 
-            if (this->_scoretime->time.getTime ( ) >= GAME_TIME / 2 && !this->_isSecondHalf) {
-                this->_scoretime->time.pause ( );
-                this->_data->machine.addState (StateRef (new HalfTime (this->_data, this->_scoretime)));
+            if (this->_scoreTime->time.getTime ( ) >= GAME_TIME / 2 && !this->_isSecondHalf) {
+                this->_scoreTime->time.pause ( );
+                this->_data->machine.addState (StateRef (new HalfTime (this->_data, this->_scoreTime)));
             }
 
-            if (this->_scoretime->time.getTime ( ) >= GAME_TIME) {
+            if (this->_scoreTime->time.getTime ( ) >= GAME_TIME) {
                 this->_data->machine.addState (StateRef (new GameOver (this->_data)));
             }
 
@@ -137,24 +137,24 @@ namespace HeadBall {
 
             sf::IntRect leftPostRect (this->_leftPost.sprite( ).getPosition( ).x - this->_leftPost.sprite( ).getGlobalBounds( ).width / 2, this->_leftPost.sprite( ).getPosition( ).y - this->_leftPost.sprite( ).getGlobalBounds( ).height / 2, this->_leftPost.sprite( ).getGlobalBounds( ).width, this->_leftPost.sprite( ).getGlobalBounds( ).height);
             if (leftPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
-                this->_scoretime->p1Score ++;
-                this->_scoretime->time.pause ( );
-                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoretime)) );
+                this->_scoreTime->p1Score ++;
+                this->_scoreTime->time.pause ( );
+                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
             }
 
             sf::IntRect rightPostRect (this->_rightPost.sprite( ).getPosition( ).x - this->_rightPost.sprite( ).getGlobalBounds( ).width / 2, this->_rightPost.sprite( ).getPosition( ).y - this->_rightPost.sprite( ).getGlobalBounds( ).height / 2, this->_rightPost.sprite( ).getGlobalBounds( ).width, this->_rightPost.sprite( ).getGlobalBounds( ).height);
             if (rightPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
-                this->_scoretime->p2Score ++;
-                this->_scoretime->time.pause ( );
-                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoretime)) );
+                this->_scoreTime->p2Score ++;
+                this->_scoreTime->time.pause ( );
+                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
             }
 
             std::stringstream score;
-            score << this->_scoretime->p1Score;
+            score << this->_scoreTime->p1Score;
             this->_p1Score.setString (score.str( ));
 
             score.str (std::string ( ));
-            score << this->_scoretime->p2Score;
+            score << this->_scoreTime->p2Score;
             this->_p2Score.setString (score.str( ));
 
         }
@@ -180,12 +180,12 @@ namespace HeadBall {
     }
 
     void GameState::pause ( ) {
-        this->_scoretime->time.pause ( );
+        this->_scoreTime->time.pause ( );
         this->_isPaused = true;
     }
 
     void GameState::resume ( ) {
-        this->_scoretime->time.resume ( );
+        this->_scoreTime->time.resume ( );
         this->_isPaused = false;
     }
 }

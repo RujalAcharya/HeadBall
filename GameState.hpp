@@ -30,7 +30,7 @@ namespace HeadBall {
             GameDataRef _data;
 
             sf::Text _timeText, _p1Score, _p2Score;
-            ScoreTimeRef _scoretime;
+            ScoreTimeRef _scoreTime;
 
             WorldRef _world = std::make_shared <b2World> (b2Vec2(WORLD_GRAVITY_X, WORLD_GRAVITY_Y));
 

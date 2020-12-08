@@ -4,7 +4,7 @@
 #include "MenuScreen.hpp"
 
 namespace HeadBall {
-    HalfTime::HalfTime (GameDataRef data, ScoreTimeRef scoretime) : _data{data}, _scoretime{scoretime} { }
+    HalfTime::HalfTime (GameDataRef data, ScoreTimeRef scoretime) : _data{data}, _scoreTime{scoretime} { }
 
     void HalfTime::init () {
 
@@ -30,8 +30,8 @@ namespace HeadBall {
 
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Enter) {
-                    this->_scoretime->time.resume ( );
-                    this->_data->machine.addState (StateRef(new GameState (this->_data, this->_scoretime, true)) );
+                    this->_scoreTime->time.resume ( );
+                    this->_data->machine.addState (StateRef(new GameState (this->_data, this->_scoreTime, true)) );
                 }
             }
         }

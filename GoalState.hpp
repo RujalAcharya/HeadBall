@@ -16,7 +16,7 @@ namespace HeadBall {
 
         private:
             GameDataRef _data;
-            ScoreTimeRef _scoretime;
+            ScoreTimeRef _scoreTime;
 
             sf::Text _text;
     };

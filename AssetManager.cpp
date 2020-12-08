@@ -48,24 +48,6 @@ namespace HeadBall {
     }
 
 
-    /*
-    ////////////////////////////////////////////////////
-    // Music clips
-    void AssetManager::loadMusic(std::string name, std::string fileName) {
-        sf::Music *music = new sf::Music;
-
-        if(music->openFromFile(fileName)) {
-            this->_music_clips[name] = &music;  // fix an error in this part
-        }
-    }
-
-    sf::Music &AssetManager::getMusic(std::string name) {
-        return this->_music_clips.at(name);
-        // return music;
-    }
-    */
-
-
    bool AssetManager::isTexturePresent(std::string textureName){
        if (!_textures.count(textureName)){  //i.e. if count value == 0(false), return false
            return false;
@@ -86,20 +68,4 @@ namespace HeadBall {
        }
        return true;
    }
-
-
-    ////////////////////////////////////////////////////
-    // experimental
-    // remove(unload) particular object from map to free up space when not needed:
-    void AssetManager::unloadTexture(std::string name) {
-        this->_textures.erase(name);
-    }
-
-    void AssetManager::unloadFont(std::string name) {
-        this->_fonts.erase(name);
-    }
-
-    void AssetManager::unloadSound(std::string name) {
-        this->_sound_clips.erase(name);
-    }
 }

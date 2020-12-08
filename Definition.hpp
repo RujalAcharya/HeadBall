@@ -93,8 +93,17 @@
 
 ///////////////
 // music clips
-#define GAME_MUSIC_FILEPATH "assets/music/game_music.ogg"
+#define GAME_MUSIC_FILEPATH "assets/audio/music/game_music.ogg"
+#define CROWD_CHEER_FILEPATH "assets/audio/music/crowd_cheer.ogg"
 
+// sfx/sound clips
+#define BTN_CLICK_SFX_FILEPATH "assets/audio/sfx/button_click.wav"
+#define WHISTLE_START_SFX_FILEPATH "assets/audio/sfx/whistle_start.wav"
+#define WHISTLE_HALFTIME_SFX_FILEPATH "assets/audio/sfx/whistle_halftime.wav"
+#define CROWD_CHEER_GOAL_SFX_FILEPATH "assets/audio/sfx/crowd_cheer_goal.wav"
+#define PLAYER_JUMP_SFX_FILEPATH "assets/audio/sfx/player_jump.wav"
+#define PLAYER_KICK_SFX_FILEPATH "assets/audio/sfx/player_kick.wav"
+#define HARD_KICK_SFX_FILEPATH "assets/audio/sfx/ball_kick_hardest.wav"
 
 
 // Character Control
