@@ -1,3 +1,5 @@
+#include <iomanip>
+
 #include "Definition.hpp"
 #include "InputManager.hpp"
 #include "InstructionsState.hpp"
@@ -10,14 +12,6 @@ namespace HeadBall {
         if (!this->_data->assets.isFontPresent("Text Font")){
             this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
         }
-        
-        
-        //std::string instructionsText = "\n\nINSTRUCTIONS::\n\nPLAYER 1:\t|\tPLAYER 2:\n\nMOVE LEFT: A\t|\tMOVE LEFT: Left\nMOVE RIGHT: D\t|\tMOVE RIGHT: Right\nJUMP: W\t|\tJUMP: Up\nKICK: G\t|\tKICK: Comma";
-        this->_text.setString (this->displayInstructions ( ));
-        this->_text.setFont (this->_data->assets.getFont("Text Font"));
-        this->_text.setCharacterSize (50);
-        this->_text.setOrigin (_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
-        this->_text.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 4);
 
 
         /////
@@ -25,7 +19,7 @@ namespace HeadBall {
         this->_instructionsText.setFont (this->_data->assets.getFont("Text Font"));
         this->_instructionsText.setCharacterSize (50);
         this->_instructionsText.setOrigin (_instructionsText.getGlobalBounds( ).width / 2, _instructionsText.getGlobalBounds( ).height / 2);
-        this->_instructionsText.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 4);
+        this->_instructionsText.setPosition (WINDOW_WIDTH / 2,  WINDOW_HEIGHT / 3);
 
         ////
 
@@ -55,11 +49,11 @@ namespace HeadBall {
 
         this->_backBtn.setTexture(this->_data->assets.getTexture("Back btn"));
         this->_backBtn.setOrigin(_backBtn.getGlobalBounds( ).width / 2, _backBtn.getGlobalBounds( ).height / 2);
-        this->_backBtn.setPosition((WINDOW_WIDTH / 2 - WINDOW_WIDTH / 4), (WINDOW_HEIGHT / 2 + WINDOW_HEIGHT / 4));
+        this->_backBtn.setPosition((WINDOW_WIDTH / 2 - WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 25));
 
         this->_exitBtn.setTexture(this->_data->assets.getTexture("Exit btn"));
         this->_exitBtn.setOrigin(_exitBtn.getGlobalBounds( ).width / 2, _exitBtn.getGlobalBounds( ).height / 2);
-        this->_exitBtn.setPosition((WINDOW_WIDTH / 2 + WINDOW_WIDTH / 4), (WINDOW_HEIGHT / 2 + WINDOW_HEIGHT / 4));
+        this->_exitBtn.setPosition((WINDOW_WIDTH / 2 + WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 25));
     }
 
     void InstructionsState::handleInput ( ) {
@@ -99,12 +93,12 @@ namespace HeadBall {
     std::string InstructionsState::displayInstructions () {
         this->ss.str (std::string ( ));
 
-        this->ss << "INSTRUCTIONS: \n----------------------------" << "\nPLAYER CONTROLS:\n\n";
-        this->ss << "Player 1:\t\t" << "Player 2: \n";
-        this->ss << "LEFT : " << TOSTRING ( P1_LEFT ) << "\t\t" << "LEFT : " << TOSTRING( P2_LEFT ) << "\n";
-        this->ss << "RIGHT: " << TOSTRING ( P1_RIGHT ) << "\t\t" << "RIGHT: " << TOSTRING( P2_RIGHT ) << "\n";
-        this->ss << "JUMP : " << TOSTRING ( P1_JUMP ) << "\t\t" << "JUMP : " << TOSTRING( P2_JUMP ) << "\n";
-        this->ss << "KICK : " << TOSTRING ( P1_KICK ) << "\t\t" << "KICK : " <<  TOSTRING( P2_KICK ) << "\n";
+        ss << "INSTRUCTIONS: \n----------------------------" << "\nPLAYER CONTROLS:\n\n";
+        ss << "   PLAYER 1:" <<"\t      PLAYER 2: \n   ---------\t      ---------\n";
+        ss << std::setw(10) << "LEFT : " << TOSTRING ( P1_LEFT ) << std::setw(18) << "LEFT : " << TOSTRING( P2_LEFT ) << "\n";
+        ss << std::setw(10) << "RIGHT: " << TOSTRING ( P1_RIGHT ) << std::setw(18) << "RIGHT: " << TOSTRING( P2_RIGHT ) << "\n";
+        ss << std::setw(10) << "JUMP : " << TOSTRING ( P1_JUMP ) << std::setw(18) << "JUMP : " << TOSTRING( P2_JUMP ) << "\n";
+        ss << std::setw(10) << "KICK : " << TOSTRING ( P1_KICK ) << std::setw(18) << "KICK : " <<  TOSTRING( P2_KICK ) << "\n";
 
        return this->ss.str ( );
     }

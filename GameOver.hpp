@@ -17,7 +17,17 @@ namespace HeadBall {
         private:
             GameDataRef _data;
             ScoreTimeRef _scoreTime;
-            // sf::Sound _crowdCheerOnGoal;
-            sf::Text _text;
+
+            sf::Music _theme;
+            sf::Sound _crowdCheerOnGoal;
+            sf::Sound _btnClickSfx;
+            
+            sf::Sprite _background;
+            sf::Sprite _replayBtn;
+            sf::Sprite _exitBtn;
+
+
+            sf::Text _winnerText;
+            sf::Text _score;
     };
 }

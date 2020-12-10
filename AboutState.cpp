@@ -45,11 +45,11 @@ namespace HeadBall {
 
         this->_backBtn.setTexture(this->_data->assets.getTexture("Back btn"));
         this->_backBtn.setOrigin(_backBtn.getGlobalBounds( ).width / 2, _backBtn.getGlobalBounds( ).height / 2);
-        this->_backBtn.setPosition((WINDOW_WIDTH / 2 - WINDOW_WIDTH / 4), (WINDOW_HEIGHT / 2 + WINDOW_HEIGHT / 4));
+        this->_backBtn.setPosition((WINDOW_WIDTH / 2 - WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 25));
 
         this->_exitBtn.setTexture(this->_data->assets.getTexture("Exit btn"));
         this->_exitBtn.setOrigin(_exitBtn.getGlobalBounds( ).width / 2, _exitBtn.getGlobalBounds( ).height / 2);
-        this->_exitBtn.setPosition((WINDOW_WIDTH / 2 + WINDOW_WIDTH / 4), (WINDOW_HEIGHT / 2 + WINDOW_HEIGHT / 4));
+        this->_exitBtn.setPosition((WINDOW_WIDTH / 2 + WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 25));
     }
 
     void AboutState::handleInput ( ) {

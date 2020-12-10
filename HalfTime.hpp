@@ -18,6 +18,12 @@ namespace HeadBall {
             GameDataRef _data;
             ScoreTimeRef _scoreTime;
 
-            sf::Text _text;
+            sf::Text _score;
+
+            sf::Music _theme;
+            sf::Sound _btnClickSfx;
+
+            sf::Sprite _background;
+            sf::Sprite _resumeBtn;
     };
 }

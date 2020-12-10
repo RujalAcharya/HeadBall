@@ -19,7 +19,9 @@ namespace HeadBall {
             ScoreTimeRef _scoreTime;
             sf::Sound _crowdCheerOnGoal;
             sf::Text _text;
+            sf::Sprite _background;
 
             bool _isSecondHalf;
+            int _animationCounter;
     };
 }

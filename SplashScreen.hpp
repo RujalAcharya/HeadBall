@@ -19,6 +19,11 @@ namespace HeadBall {
             sf::Clock _clock;
 
             sf::Sprite _backgroundSprite;
+            sf::Sprite _logoSprite;
             sf::Sprite _flagSprite;
+            sf::Sprite _testSprite;
+
+            int _animationCounter;
+            int _spriteCounter;
     };
 }

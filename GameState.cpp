@@ -9,7 +9,7 @@
 #include <sstream>
 
 namespace HeadBall {
-    GameState::GameState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf) : _data{data}, _scoreTime{scoretime}, _ground{data, this->_world}, _ball{data, this->_world}, _rightUpHill{data, this->_world}, _leftUpHill{data, this->_world}, _leftPost{data}, _rightPost{data}, _wall{data, this->_world}, _p1{data, this->_world}, _p2{data, this->_world}   {
+    GameState::GameState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf) : _data{data}, _scoreTime{scoretime}, _ground{data, this->_world}, _ball{data, this->_world}, _rightUpHill{data, this->_world}, _leftUpHill{data, this->_world}, _leftPost{data}, _rightPost{data}, _wall{data, this->_world}, _p1{data, this->_world}, _p2{data, this->_world}  {
                 this->_isSecondHalf = isSecondHalf; 
     }
 
@@ -29,6 +29,10 @@ namespace HeadBall {
 
         if (!this->_data->assets.isSoundPresent("Long Whistle")){
             this->_data->assets.loadSound("Long Whistle", WHISTLE_LONG_SFX_FILEPATH);
+        }
+
+        if (!this->_data->assets.isSoundPresent("Kick")){
+            this->_data->assets.loadSound("Kick", HARD_KICK_SFX_FILEPATH);
         }
 
         
@@ -64,6 +68,7 @@ namespace HeadBall {
         this->_btnClickSfx.setBuffer(this->_data->assets.getSound("Button click"));
         this->_shortWhistleSfx.setBuffer(this->_data->assets.getSound("Short Whistle"));
         this->_longWhistleSfx.setBuffer (this->_data->assets.getSound("Long Whistle"));
+        this->_playerKickSfx.setBuffer (this->_data->assets.getSound("Kick"));
 
 
         this->_timeText.setString ("Timer");
@@ -159,9 +164,6 @@ namespace HeadBall {
             this->_p1.moveRight ( );
             this->animate ("p1");
         }
-
-        
-
                 
 
         if (this->_data->input.isMoving("left", "p2")) {
@@ -278,19 +280,19 @@ namespace HeadBall {
         if (player == "p1") {
             this->_p1MoveCounter ++;
 
-            if (this->_p1MoveCounter == 3) {
+            if (this->_p1MoveCounter == FRAMES_PER_ANIMATION) {
                 this->_p1.setTexture ("P1 L");
             }
 
-            else if (this->_p1MoveCounter == 6) {
+            else if (this->_p1MoveCounter == FRAMES_PER_ANIMATION * 2) {
                 this->_p1.setTexture ("P1 idle");
             }
 
-            else if (this->_p1MoveCounter == 9) {
+            else if (this->_p1MoveCounter == FRAMES_PER_ANIMATION * 3) {
                 this->_p1.setTexture ("P1 R");
             }
 
-            else if (this->_p1MoveCounter == 12) {
+            else if (this->_p1MoveCounter == FRAMES_PER_ANIMATION * 4) {
                 this->_p1.setTexture ("P1 idle");
                 this->_p1MoveCounter = 0;
             }
@@ -299,19 +301,19 @@ namespace HeadBall {
         else if (player == "p2") {
             this->_p2MoveCounter ++;
 
-            if (this->_p2MoveCounter == 3) {
+            if (this->_p2MoveCounter == FRAMES_PER_ANIMATION) {
                 this->_p2.setTexture ("P2 L");
             }
 
-            else if (this->_p2MoveCounter == 6) {
+            else if (this->_p2MoveCounter == FRAMES_PER_ANIMATION * 2) {
                 this->_p2.setTexture ("P2 idle");
             }
 
-            else if (this->_p2MoveCounter == 9) {
+            else if (this->_p2MoveCounter == FRAMES_PER_ANIMATION * 3) {
                 this->_p2.setTexture ("P2 R");
             }
 
-            else if (this->_p2MoveCounter == 12) {
+            else if (this->_p2MoveCounter == FRAMES_PER_ANIMATION * 4) {
                 this->_p2.setTexture ("P2 idle");
                 this->_p2MoveCounter = 0;
             }
@@ -321,12 +323,14 @@ namespace HeadBall {
     void GameState::kick (std::string player) {
         if (player == "p1") {
             if (this->_p1.sprite( ).getGlobalBounds( ).intersects (this->_ball.shape( ).getGlobalBounds( ))) {
+                this->_playerKickSfx.play();
                 this->_ball.body( )->ApplyForceToCenter(b2Vec2 (Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).x - this->_p1.sprite( ).getPosition( ).x) * KICK_FORCE_SCALE, Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).y - (this->_p1.sprite( ).getPosition( ).y + this->_p1.sprite( ).getGlobalBounds( ).height / 2)) * KICK_FORCE_SCALE), true);
             }
         }
 
         if (player == "p2") {
             if (this->_p2.sprite( ).getGlobalBounds( ).intersects (this->_ball.shape( ).getGlobalBounds( ))) {
+                this->_playerKickSfx.play();
                 this->_ball.body( )->ApplyForceToCenter(b2Vec2 (Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).x - this->_p2.sprite( ).getPosition( ).x) * KICK_FORCE_SCALE, Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).y - (this->_p2.sprite( ).getPosition( ).y + this->_p2.sprite( ).getGlobalBounds( ).height / 2)) * KICK_FORCE_SCALE), true);               
             }
         }
