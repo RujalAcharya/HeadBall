@@ -4,6 +4,7 @@
 #include "HalfTime.hpp"
 #include "GameOver.hpp"
 #include "GoalState.hpp"
+#include "Converter.hpp"
 
 #include <sstream>
 
@@ -71,13 +72,13 @@ namespace HeadBall {
         this->_timeText.setOrigin (this->_timeText.getGlobalBounds( ).width / 2, this->_timeText.getGlobalBounds( ).height / 2);
         this->_timeText.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 500);
 
-        this->_p1Score.setString ("00");
+        this->_p1Score.setString ("0");
         this->_p1Score.setFont (this->_data->assets.getFont("Digit Font"));
         this->_p1Score.setCharacterSize (100);
         this->_p1Score.setOrigin (this->_p1Score.getGlobalBounds( ).width / 2, this->_p1Score.getGlobalBounds( ).height / 2);
         this->_p1Score.setPosition (UPHILL_WIDTH / 2, WINDOW_HEIGHT - GROUND_HEIGHT - UPHILL_HEIGHT / 2);
 
-        this->_p2Score.setString ("00");
+        this->_p2Score.setString ("0");
         this->_p2Score.setFont (this->_data->assets.getFont("Digit Font"));
         this->_p2Score.setCharacterSize (100);
         this->_p2Score.setOrigin (this->_p2Score.getGlobalBounds( ).width / 2, this->_p2Score.getGlobalBounds( ).height / 2);
@@ -107,7 +108,7 @@ namespace HeadBall {
 
         
         this->_pauseBtn.setTexture(this->_data->assets.getTexture("Pause btn"));
-        this->_pauseBtn.setOrigin(_pauseBtn.getGlobalBounds( ).width / 2, _pauseBtn.getGlobalBounds( ).height / 2);
+        this->_pauseBtn.setOrigin(this->_pauseBtn.getGlobalBounds( ).width / 2, this->_pauseBtn.getGlobalBounds( ).height / 2);
         this->_pauseBtn.setPosition(WINDOW_WIDTH - 100, WINDOW_HEIGHT / 2 - 400);
 
 
@@ -185,6 +186,14 @@ namespace HeadBall {
         
             this->_p2.jump ( );
         }
+
+        if (this->_data->input.isDoing ("kick", "p1")) {
+            this->kick ("p1");
+        }
+
+        if (this->_data->input.isDoing ("kick", "p2")) {
+            this->kick ("p2");
+        }
                 
     }
 
@@ -215,14 +224,14 @@ namespace HeadBall {
             if (leftPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
                 this->_scoreTime->p2Score ++;
                 this->_scoreTime->time.pause ( );
-                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
+                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime, this->_isSecondHalf)) );
             }
 
             sf::IntRect rightPostRect (this->_rightPost.sprite( ).getPosition( ).x - this->_rightPost.sprite( ).getGlobalBounds( ).width / 2, this->_rightPost.sprite( ).getPosition( ).y - this->_rightPost.sprite( ).getGlobalBounds( ).height / 2, this->_rightPost.sprite( ).getGlobalBounds( ).width, this->_rightPost.sprite( ).getGlobalBounds( ).height);
             if (rightPostRect.contains(this->_ball.shape( ).getPosition( ).x, this->_ball.shape( ).getPosition( ).y)) {
                 this->_scoreTime->p1Score ++;
                 this->_scoreTime->time.pause ( );
-                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime)) );
+                this->_data->machine.addState (StateRef (new GoalState (this->_data, this->_scoreTime, this->_isSecondHalf)) );
             }
 
             std::stringstream score;
@@ -305,6 +314,20 @@ namespace HeadBall {
             else if (this->_p2MoveCounter == 12) {
                 this->_p2.setTexture ("P2 idle");
                 this->_p2MoveCounter = 0;
+            }
+        }
+    }
+
+    void GameState::kick (std::string player) {
+        if (player == "p1") {
+            if (this->_p1.sprite( ).getGlobalBounds( ).intersects (this->_ball.shape( ).getGlobalBounds( ))) {
+                this->_ball.body( )->ApplyForceToCenter(b2Vec2 (Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).x - this->_p1.sprite( ).getPosition( ).x) * KICK_FORCE_SCALE, Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).y - (this->_p1.sprite( ).getPosition( ).y + this->_p1.sprite( ).getGlobalBounds( ).height / 2)) * KICK_FORCE_SCALE), true);
+            }
+        }
+
+        if (player == "p2") {
+            if (this->_p2.sprite( ).getGlobalBounds( ).intersects (this->_ball.shape( ).getGlobalBounds( ))) {
+                this->_ball.body( )->ApplyForceToCenter(b2Vec2 (Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).x - this->_p2.sprite( ).getPosition( ).x) * KICK_FORCE_SCALE, Converter::pixelsToMeters (this->_ball.shape( ).getPosition( ).y - (this->_p2.sprite( ).getPosition( ).y + this->_p2.sprite( ).getGlobalBounds( ).height / 2)) * KICK_FORCE_SCALE), true);               
             }
         }
     }

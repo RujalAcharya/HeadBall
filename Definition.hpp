@@ -114,6 +114,9 @@
 // Character Controls
 // Simply change the values below and rebuild the game to change the character controls
 
+#define STRINGIFY(x) #x
+#define TOSTRING(x) STRINGIFY(x)
+
 #define P1_LEFT A
 #define P1_RIGHT D
 #define P1_JUMP W
@@ -124,6 +127,8 @@
 #define P2_JUMP Up
 #define P2_KICK Comma
 
+
+#define KICK_FORCE_SCALE 50
 
 /* trial:
 #define P1_LEFT A

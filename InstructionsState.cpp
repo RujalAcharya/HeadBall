@@ -11,14 +11,23 @@ namespace HeadBall {
             this->_data->assets.loadFont("Text Font", TEXT_FONT_FILEPATH);
         }
         
-        std::string instructionsText = "\n\nINSTRUCTIONS::\n\nPLAYER 1:\t|\tPLAYER 2:\n\nMOVE LEFT: A\t|\tMOVE LEFT: Left\nMOVE RIGHT: D\t|\tMOVE RIGHT: Right\nJUMP: W\t|\tJUMP: Up\nKICK: G\t|\tKICK: Comma";
-        this->_text.setString (instructionsText);
         
+        //std::string instructionsText = "\n\nINSTRUCTIONS::\n\nPLAYER 1:\t|\tPLAYER 2:\n\nMOVE LEFT: A\t|\tMOVE LEFT: Left\nMOVE RIGHT: D\t|\tMOVE RIGHT: Right\nJUMP: W\t|\tJUMP: Up\nKICK: G\t|\tKICK: Comma";
+        this->_text.setString (this->displayInstructions ( ));
         this->_text.setFont (this->_data->assets.getFont("Text Font"));
-
         this->_text.setCharacterSize (50);
         this->_text.setOrigin (_text.getGlobalBounds( ).width / 2, _text.getGlobalBounds( ).height / 2);
         this->_text.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 4);
+
+
+        /////
+        this->_instructionsText.setString (this->displayInstructions());
+        this->_instructionsText.setFont (this->_data->assets.getFont("Text Font"));
+        this->_instructionsText.setCharacterSize (50);
+        this->_instructionsText.setOrigin (_instructionsText.getGlobalBounds( ).width / 2, _instructionsText.getGlobalBounds( ).height / 2);
+        this->_instructionsText.setPosition (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 4);
+
+        ////
 
 
         if (!this->_data->assets.isTexturePresent("Plain bg")){
@@ -87,6 +96,19 @@ namespace HeadBall {
         }
     }
 
+    std::string InstructionsState::displayInstructions () {
+        this->ss.str (std::string ( ));
+
+        this->ss << "INSTRUCTIONS: \n----------------------------" << "\nPLAYER CONTROLS:\n\n";
+        this->ss << "Player 1:\t\t" << "Player 2: \n";
+        this->ss << "LEFT : " << TOSTRING ( P1_LEFT ) << "\t\t" << "LEFT : " << TOSTRING( P2_LEFT ) << "\n";
+        this->ss << "RIGHT: " << TOSTRING ( P1_RIGHT ) << "\t\t" << "RIGHT: " << TOSTRING( P2_RIGHT ) << "\n";
+        this->ss << "JUMP : " << TOSTRING ( P1_JUMP ) << "\t\t" << "JUMP : " << TOSTRING( P2_JUMP ) << "\n";
+        this->ss << "KICK : " << TOSTRING ( P1_KICK ) << "\t\t" << "KICK : " <<  TOSTRING( P2_KICK ) << "\n";
+
+       return this->ss.str ( );
+    }
+
     void InstructionsState::update ( ) { }
 
     void InstructionsState::draw ( ) {
@@ -94,7 +116,8 @@ namespace HeadBall {
         this->_data->window.draw(this->_background);
         this->_data->window.draw(this->_backBtn);
         this->_data->window.draw(this->_exitBtn);
-        this->_data->window.draw(this->_text);
+        // this->_data->window.draw(this->_text);
+        this->_data->window.draw(this->_instructionsText);
         this->_data->window.display ( );
     }
 }

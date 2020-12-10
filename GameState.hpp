@@ -26,6 +26,7 @@ namespace HeadBall {
             void pause ( );
             void resume ( );
             void animate (std::string player);
+            void kick (std::string player);
 
         private:
             GameDataRef _data;

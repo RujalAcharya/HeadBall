@@ -8,7 +8,7 @@
 namespace HeadBall {
     class GoalState : public State {
         public:
-            GoalState (GameDataRef data, ScoreTimeRef scoretime);
+            GoalState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf);
             void init ( );
             void handleInput ( );
             void update ( );
@@ -19,5 +19,7 @@ namespace HeadBall {
             ScoreTimeRef _scoreTime;
             sf::Sound _crowdCheerOnGoal;
             sf::Text _text;
+
+            bool _isSecondHalf;
     };
 }

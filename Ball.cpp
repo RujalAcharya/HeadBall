@@ -15,15 +15,15 @@ namespace HeadBall {
         this->_body = this->_world->CreateBody (& this->_bodyDef);
 
 
-        this->_circleShape.m_p.Set (Converter::pixelsToMeters(BALL_DIAMETER / 4) , 0);
-        this->_circleShape.m_radius =  Converter::pixelsToMeters (BALL_DIAMETER / 2);
+        this->_circleShape.m_p.Set (0, 0);
+        this->_circleShape.m_radius =  Converter::pixelsToMeters (this->_shape.getRadius( ) / 2);
         this->_fixture.shape = & this->_circleShape;
         this->_fixture.density = BALL_DENSITY;
         this->_fixture.friction = BALL_FRICTION;
         this->_fixture.restitution = BALL_RESTITUTION;
 
         this->_body->CreateFixture (& this->_fixture);
-        this->_body->SetFixedRotation (true);
+        //this->_body->SetFixedRotation (true);
     }
 
     sf::CircleShape Ball::shape ( ) {
@@ -37,5 +37,9 @@ namespace HeadBall {
     void Ball::rePosition ( ) {
         this->_bodyDef.position.Set (Converter::pixelsToMeters (WINDOW_WIDTH / 2), Converter::pixelsToMeters (WINDOW_HEIGHT / 2));
         this->_body->SetFixedRotation (true);
+    }
+
+    b2Body* Ball::body ( ) {
+        return this->_body;
     }
 }

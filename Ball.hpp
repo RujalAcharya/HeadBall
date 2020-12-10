@@ -10,6 +10,7 @@ namespace HeadBall {
             sf::CircleShape shape ( );
             void processPosition ( );
             void rePosition ( );
+            b2Body* body( );
 
         private:
             GameDataRef _data;

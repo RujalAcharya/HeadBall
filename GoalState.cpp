@@ -4,7 +4,9 @@
 #include "MenuScreen.hpp"
 
 namespace HeadBall {
-    GoalState::GoalState (GameDataRef data, ScoreTimeRef scoretime) : _data{data}, _scoreTime{scoretime} { }
+    GoalState::GoalState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf) : _data{data}, _scoreTime{scoretime} {
+        this->_isSecondHalf = isSecondHalf;
+    }
 
     void GoalState::init () {
 
@@ -41,7 +43,7 @@ namespace HeadBall {
                 if (event.key.code == sf::Keyboard::R) {
                     this->_scoreTime->time.resume ( );
                     this->_crowdCheerOnGoal.stop ( );
-                    this->_data->machine.addState (StateRef(new GameState (this->_data, this->_scoreTime)) );
+                    this->_data->machine.addState (StateRef(new GameState (this->_data, this->_scoreTime, this->_isSecondHalf)) );
                 }
             }
         }

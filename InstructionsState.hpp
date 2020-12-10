@@ -1,6 +1,8 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <string>
+#include <sstream>
 
 #include "State.hpp"
 #include "Game.hpp"
@@ -10,6 +12,7 @@ namespace HeadBall {
         public:
             InstructionsState (GameDataRef data);
             void init ( );
+            std::string displayInstructions ( );
             void handleInput ( );
             void update ( );
             void draw ( );
@@ -21,5 +24,8 @@ namespace HeadBall {
             sf::Sprite _exitBtn;
             sf::Text _text;
             sf::Sound _btnClickSfx;
+            sf::Text _instructionsText;
+            std::stringstream ss;
+
     };
 }
