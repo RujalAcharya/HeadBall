@@ -55,17 +55,17 @@
 
 //////////////////////
 // splash screen animation
-#define SPLASH_SCREEN_ANIM_1 "assets/graphics/new_anim/1.png"
-#define SPLASH_SCREEN_ANIM_2 "assets/graphics/new_anim/2.png"
-#define SPLASH_SCREEN_ANIM_3 "assets/graphics/new_anim/3.png"
-#define SPLASH_SCREEN_ANIM_4 "assets/graphics/new_anim/4.png"
-#define SPLASH_SCREEN_ANIM_5 "assets/graphics/new_anim/5.png"
-#define SPLASH_SCREEN_ANIM_6 "assets/graphics/new_anim/6.png"
-#define SPLASH_SCREEN_ANIM_7 "assets/graphics/new_anim/7.png"//
-#define SPLASH_SCREEN_ANIM_8 "assets/graphics/new_anim/8.png"
-#define SPLASH_SCREEN_ANIM_9 "assets/graphics/new_anim/9.png"
-#define SPLASH_SCREEN_ANIM_10 "assets/graphics/new_anim/10.png"
-#define SPLASH_SCREEN_ANIM_11 "assets/graphics/new_anim/11.png"
+#define SPLASH_SCREEN_ANIM_1 "assets/graphics/splash_screen_state/animation/1.png"
+#define SPLASH_SCREEN_ANIM_2 "assets/graphics/splash_screen_state/animation/2.png"
+#define SPLASH_SCREEN_ANIM_3 "assets/graphics/splash_screen_state/animation/3.png"
+#define SPLASH_SCREEN_ANIM_4 "assets/graphics/splash_screen_state/animation/4.png"
+#define SPLASH_SCREEN_ANIM_5 "assets/graphics/splash_screen_state/animation/5.png"
+#define SPLASH_SCREEN_ANIM_6 "assets/graphics/splash_screen_state/animation/6.png"
+#define SPLASH_SCREEN_ANIM_7 "assets/graphics/splash_screen_state/animation/7.png"
+#define SPLASH_SCREEN_ANIM_8 "assets/graphics/splash_screen_state/animation/8.png"
+#define SPLASH_SCREEN_ANIM_9 "assets/graphics/splash_screen_state/animation/9.png"
+#define SPLASH_SCREEN_ANIM_10 "assets/graphics/splash_screen_state/animation/10.png"
+#define SPLASH_SCREEN_ANIM_11 "assets/graphics/splash_screen_state/animation/11.png"
 
 
 
@@ -85,9 +85,7 @@
 #define P2_L_FILEPATH "assets/graphics/game_state/player/p2_L.png"
 
 
-// ball, field and goalpost
-#define BALL_FILEPATH "assets/graphics/game_state/ball/ball1.png"
-#define FIELD_FILEPATH "assets/graphics/game_state/environment/grass.png"
+// goalpost
 #define GOAL_POST1_FILEPATH "assets/graphics/game_state/environment/goal_1.png"
 #define GOAL_POST2_FILEPATH "assets/graphics/game_state/environment/goal_2.png"
 

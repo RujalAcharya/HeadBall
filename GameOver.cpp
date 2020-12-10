@@ -63,7 +63,7 @@ namespace HeadBall {
         this->_winnerText.setFont (this->_data->assets.getFont("Digit Font"));
         this->_winnerText.setCharacterSize (80);
         this->_winnerText.setOrigin(_winnerText.getGlobalBounds( ).width / 2, _winnerText.getGlobalBounds( ).height / 2);
-        this->_winnerText.setPosition(WINDOW_WIDTH / 2, 3 * WINDOW_HEIGHT / 4);       
+        this->_winnerText.setPosition(WINDOW_WIDTH / 2, 3 * WINDOW_HEIGHT / 4 - 25);       
         
         this->_crowdCheerOnGoal.setBuffer (this->_data->assets.getSound("Crowd cheer on goal"));
         this->_crowdCheerOnGoal.play ( );

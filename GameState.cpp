@@ -274,6 +274,8 @@ namespace HeadBall {
     void GameState::resume ( ) {
         this->_scoreTime->time.resume ( );
         this->_isPaused = false;
+        this->_crowdCheerSfx.play();
+        this->_crowdCheerSfx.setLoop(true);
     }
 
     void GameState::animate (std::string player) {
