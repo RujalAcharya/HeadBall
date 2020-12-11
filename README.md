@@ -15,4 +15,4 @@ Prajwol Pradhan
 Sanjay KC
 
 
-You can have a look at the online documentation of the project using [this link](RujalAcharya.github.io/HeadBall).
+You can have a look at the online documentation of the project using [this link](https://rujalacharya.github.io/HeadBall/).
