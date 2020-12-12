@@ -4,42 +4,146 @@
 
 {\ttfamily \#include $<$Asset\+Manager.\+hpp$>$}
 
+
+
+Collaboration diagram for Head\+Ball\+::Asset\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classHeadBall_1_1AssetManager__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}\label{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}} 
-void {\bfseries load\+Texture} (std\+::string name, std\+::string file\+Name)
+\mbox{\hyperlink{classHeadBall_1_1AssetManager_ae8a42c763062b1c4e61257d8d144ed83}{Asset\+Manager}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}\label{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}} 
-sf\+::\+Texture \& {\bfseries get\+Texture} (std\+::string name)
+\mbox{\hyperlink{classHeadBall_1_1AssetManager_ad508616e5a8a8ffedf1272a0fbe5816a}{$\sim$\+Asset\+Manager}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}\label{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}} 
-void {\bfseries load\+Font} (std\+::string name, std\+::string file\+Name)
+void \mbox{\hyperlink{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}{load\+Texture}} (std\+::string name, std\+::string file\+Name)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_af632498168418a46b580bd5cc6068f7a}\label{classHeadBall_1_1AssetManager_af632498168418a46b580bd5cc6068f7a}} 
-sf\+::\+Font \& {\bfseries get\+Font} (std\+::string name)
+sf\+::\+Texture \& \mbox{\hyperlink{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}{get\+Texture}} (std\+::string name)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}\label{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}} 
-void {\bfseries load\+Sound} (std\+::string name, std\+::string file\+Name)
+void \mbox{\hyperlink{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}{load\+Font}} (std\+::string name, std\+::string file\+Name)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}\label{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}} 
-sf\+::\+Sound\+Buffer \& {\bfseries get\+Sound} (std\+::string name)
+sf\+::\+Font \& \mbox{\hyperlink{classHeadBall_1_1AssetManager_af632498168418a46b580bd5cc6068f7a}{get\+Font}} (std\+::string name)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}\label{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}} 
-bool {\bfseries is\+Texture\+Present} (std\+::string texture\+Name)
+void \mbox{\hyperlink{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}{load\+Sound}} (std\+::string name, std\+::string file\+Name)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}\label{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}} 
-bool {\bfseries is\+Font\+Present} (std\+::string font\+Name)
+sf\+::\+Sound\+Buffer \& \mbox{\hyperlink{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}{get\+Sound}} (std\+::string name)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}\label{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}} 
-bool {\bfseries is\+Sound\+Present} (std\+::string sound\+Name)
+bool \mbox{\hyperlink{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}{is\+Texture\+Present}} (std\+::string texture\+Name)
+\item 
+bool \mbox{\hyperlink{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}{is\+Font\+Present}} (std\+::string font\+Name)
+\item 
+bool \mbox{\hyperlink{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}{is\+Sound\+Present}} (std\+::string sound\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, sf\+::\+Texture $>$ \mbox{\hyperlink{classHeadBall_1_1AssetManager_a6fbeb3031653c92b4a2c3ede70e73e72}{\+\_\+textures}}
+\item 
+std\+::map$<$ std\+::string, sf\+::\+Font $>$ \mbox{\hyperlink{classHeadBall_1_1AssetManager_a388b9ebf57d8245eb3c91315222311be}{\+\_\+fonts}}
+\item 
+std\+::map$<$ std\+::string, sf\+::\+Sound\+Buffer $>$ \mbox{\hyperlink{classHeadBall_1_1AssetManager_af9d4247a44e104c0e5b4c5fc40192c0d}{\+\_\+sound\+\_\+clips}}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-Manages assets used in the game 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ae8a42c763062b1c4e61257d8d144ed83}\label{classHeadBall_1_1AssetManager_ae8a42c763062b1c4e61257d8d144ed83}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!AssetManager@{AssetManager}}
+\index{AssetManager@{AssetManager}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{AssetManager()}{AssetManager()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+Asset\+Manager\+::\+Asset\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ad508616e5a8a8ffedf1272a0fbe5816a}\label{classHeadBall_1_1AssetManager_ad508616e5a8a8ffedf1272a0fbe5816a}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!````~AssetManager@{$\sim$AssetManager}}
+\index{````~AssetManager@{$\sim$AssetManager}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$AssetManager()}{~AssetManager()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+Asset\+Manager\+::$\sim$\+Asset\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_af632498168418a46b580bd5cc6068f7a}\label{classHeadBall_1_1AssetManager_af632498168418a46b580bd5cc6068f7a}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!getFont@{getFont}}
+\index{getFont@{getFont}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
+{\footnotesize\ttfamily sf\+::\+Font \& Head\+Ball\+::\+Asset\+Manager\+::get\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}\label{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!getSound@{getSound}}
+\index{getSound@{getSound}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{getSound()}{getSound()}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer \& Head\+Ball\+::\+Asset\+Manager\+::get\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}\label{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily sf\+::\+Texture \& Head\+Ball\+::\+Asset\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}\label{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!isFontPresent@{isFontPresent}}
+\index{isFontPresent@{isFontPresent}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{isFontPresent()}{isFontPresent()}}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+Asset\+Manager\+::is\+Font\+Present (\begin{DoxyParamCaption}\item[{std\+::string}]{font\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}\label{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!isSoundPresent@{isSoundPresent}}
+\index{isSoundPresent@{isSoundPresent}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{isSoundPresent()}{isSoundPresent()}}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+Asset\+Manager\+::is\+Sound\+Present (\begin{DoxyParamCaption}\item[{std\+::string}]{sound\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}\label{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!isTexturePresent@{isTexturePresent}}
+\index{isTexturePresent@{isTexturePresent}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{isTexturePresent()}{isTexturePresent()}}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+Asset\+Manager\+::is\+Texture\+Present (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}\label{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!loadFont@{loadFont}}
+\index{loadFont@{loadFont}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{loadFont()}{loadFont()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Asset\+Manager\+::load\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}\label{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!loadSound@{loadSound}}
+\index{loadSound@{loadSound}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{loadSound()}{loadSound()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Asset\+Manager\+::load\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}\label{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Asset\+Manager\+::load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_a388b9ebf57d8245eb3c91315222311be}\label{classHeadBall_1_1AssetManager_a388b9ebf57d8245eb3c91315222311be}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!\_fonts@{\_fonts}}
+\index{\_fonts@{\_fonts}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{\_fonts}{\_fonts}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Font$>$ Head\+Ball\+::\+Asset\+Manager\+::\+\_\+fonts\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_af9d4247a44e104c0e5b4c5fc40192c0d}\label{classHeadBall_1_1AssetManager_af9d4247a44e104c0e5b4c5fc40192c0d}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!\_sound\_clips@{\_sound\_clips}}
+\index{\_sound\_clips@{\_sound\_clips}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{\_sound\_clips}{\_sound\_clips}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Sound\+Buffer$>$ Head\+Ball\+::\+Asset\+Manager\+::\+\_\+sound\+\_\+clips\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1AssetManager_a6fbeb3031653c92b4a2c3ede70e73e72}\label{classHeadBall_1_1AssetManager_a6fbeb3031653c92b4a2c3ede70e73e72}} 
+\index{HeadBall::AssetManager@{HeadBall::AssetManager}!\_textures@{\_textures}}
+\index{\_textures@{\_textures}!HeadBall::AssetManager@{HeadBall::AssetManager}}
+\doxysubsubsection{\texorpdfstring{\_textures}{\_textures}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Texture$>$ Head\+Ball\+::\+Asset\+Manager\+::\+\_\+textures\hspace{0.3cm}{\ttfamily [private]}}
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Asset\+Manager.\+hpp\item 
-Asset\+Manager.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{AssetManager_8hpp}{Asset\+Manager.\+hpp}}\item 
+\mbox{\hyperlink{AssetManager_8cpp}{Asset\+Manager.\+cpp}}\end{DoxyCompactItemize}

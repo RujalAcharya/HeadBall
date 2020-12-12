@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input_345',['input',['../structHeadBall_1_1GameData.html#a71667863711ee3c9c0f037b8fd32f126',1,'HeadBall::GameData']]]
+  ['dt_496',['dt',['../classHeadBall_1_1Game.html#a0de9a2a763c52bbcaeb1c60d7fc75e47',1,'HeadBall::Game']]]
 ];

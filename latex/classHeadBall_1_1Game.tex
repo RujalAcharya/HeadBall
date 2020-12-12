@@ -4,18 +4,77 @@
 
 {\ttfamily \#include $<$Game.\+hpp$>$}
 
+
+
+Collaboration diagram for Head\+Ball\+::Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classHeadBall_1_1Game__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}\label{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}} 
-{\bfseries Game} (int width, int height, std\+::string title)
+\mbox{\hyperlink{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}{Game}} (int width, int height, std\+::string title)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeadBall_1_1Game_a6a4abae653a39dfb76f995d68c334260}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{classHeadBall_1_1Game_a0de9a2a763c52bbcaeb1c60d7fc75e47}{dt}} = 1.\+0f / 60.\+0f
+\item 
+sf\+::\+Clock \mbox{\hyperlink{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b5677c9}{\+\_\+clock}}
+\item 
+\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Game_a5cbad69940f130d6fb14f8e3d068b7c5}{\+\_\+data}} = std\+::make\+\_\+shared $<$\mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}$>$ ( )
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-Manages universal data 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}\label{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}} 
+\index{HeadBall::Game@{HeadBall::Game}!Game@{Game}}
+\index{Game@{Game}!HeadBall::Game@{HeadBall::Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{std\+::string}]{title }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1Game_a6a4abae653a39dfb76f995d68c334260}\label{classHeadBall_1_1Game_a6a4abae653a39dfb76f995d68c334260}} 
+\index{HeadBall::Game@{HeadBall::Game}!run@{run}}
+\index{run@{run}!HeadBall::Game@{HeadBall::Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b5677c9}\label{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b5677c9}} 
+\index{HeadBall::Game@{HeadBall::Game}!\_clock@{\_clock}}
+\index{\_clock@{\_clock}!HeadBall::Game@{HeadBall::Game}}
+\doxysubsubsection{\texorpdfstring{\_clock}{\_clock}}
+{\footnotesize\ttfamily sf\+::\+Clock Head\+Ball\+::\+Game\+::\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Game_a5cbad69940f130d6fb14f8e3d068b7c5}\label{classHeadBall_1_1Game_a5cbad69940f130d6fb14f8e3d068b7c5}} 
+\index{HeadBall::Game@{HeadBall::Game}!\_data@{\_data}}
+\index{\_data@{\_data}!HeadBall::Game@{HeadBall::Game}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Game\+::\+\_\+data = std\+::make\+\_\+shared $<$\mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}$>$ ( )\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Game_a0de9a2a763c52bbcaeb1c60d7fc75e47}\label{classHeadBall_1_1Game_a0de9a2a763c52bbcaeb1c60d7fc75e47}} 
+\index{HeadBall::Game@{HeadBall::Game}!dt@{dt}}
+\index{dt@{dt}!HeadBall::Game@{HeadBall::Game}}
+\doxysubsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily const float Head\+Ball\+::\+Game\+::dt = 1.\+0f / 60.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game.\+hpp\item 
-Game.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{Game_8hpp}{Game.\+hpp}}\item 
+\mbox{\hyperlink{Game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

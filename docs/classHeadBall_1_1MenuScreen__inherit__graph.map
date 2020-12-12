@@ -1,4 +1,4 @@
 <map id="HeadBall::MenuScreen" name="HeadBall::MenuScreen">
-<area shape="rect" id="node1" title=" " alt="" coords="5,204,175,340"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,204,175,472"/>
 <area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title=" " alt="" coords="28,5,152,156"/>
 </map>

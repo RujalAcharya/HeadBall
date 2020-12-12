@@ -1,8 +1,22 @@
 var searchData=
 [
-  ['text_5ffont_5ffilepath_173',['TEXT_FONT_FILEPATH',['../Definition_8hpp.html#af8afa1f24c46debb061ac02d5030e3ad',1,'Definition.hpp']]],
-  ['time_174',['time',['../structHeadBall_1_1ScoreTimeData.html#a018682a0d7ba98d5ebf17ab0cc5abf33',1,'HeadBall::ScoreTimeData']]],
-  ['timemanager_175',['TimeManager',['../classHeadBall_1_1TimeManager.html',1,'HeadBall::TimeManager'],['../classHeadBall_1_1TimeManager.html#a9aa4f117a205484a27cae518ed94bf43',1,'HeadBall::TimeManager::TimeManager()']]],
-  ['timemanager_2ecpp_176',['TimeManager.cpp',['../TimeManager_8cpp.html',1,'']]],
-  ['timemanager_2ehpp_177',['TimeManager.hpp',['../TimeManager_8hpp.html',1,'']]]
+  ['s_231',['s',['../classHeadBall_1_1TimeManager.html#adbd46321867e218ddccf0205ee766d75',1,'HeadBall::TimeManager']]],
+  ['scoretimedata_232',['ScoreTimeData',['../structHeadBall_1_1ScoreTimeData.html',1,'HeadBall']]],
+  ['scoretimeref_233',['ScoreTimeRef',['../namespaceHeadBall.html#a82fea1f794ddb142078227511e71568d',1,'HeadBall']]],
+  ['settexture_234',['setTexture',['../classHeadBall_1_1Player.html#ab949e20bf224478023f901fe469dd5e7',1,'HeadBall::Player']]],
+  ['settime_235',['setTime',['../classHeadBall_1_1TimeManager.html#acf706673de6ce1db7414fb428bb89cab',1,'HeadBall::TimeManager']]],
+  ['shape_236',['shape',['../classHeadBall_1_1Ball.html#af3e775d3483a0c7603231e4b7d455734',1,'HeadBall::Ball::shape()'],['../classHeadBall_1_1Ground.html#a76f064c15d77304429a6317f259c3d88',1,'HeadBall::Ground::shape()'],['../classHeadBall_1_1UpHill.html#ae142a93cc33c40ce5dbb8e7facbd282d',1,'HeadBall::UpHill::shape()']]],
+  ['splash_5fscreen_5fbackground_5ffilepath_237',['SPLASH_SCREEN_BACKGROUND_FILEPATH',['../Definition_8hpp.html#a359386d341404bca714e85a4471f0dfc',1,'Definition.hpp']]],
+  ['splash_5fscreen_5ftime_238',['SPLASH_SCREEN_TIME',['../Definition_8hpp.html#a0f7b3432ea2e9e9aa5dd3ac502b52610',1,'Definition.hpp']]],
+  ['splashscreen_239',['SplashScreen',['../classHeadBall_1_1SplashScreen.html',1,'HeadBall::SplashScreen'],['../classHeadBall_1_1SplashScreen.html#a2804947349f522810e51855342912102',1,'HeadBall::SplashScreen::SplashScreen()']]],
+  ['splashscreen_2ecpp_240',['SplashScreen.cpp',['../SplashScreen_8cpp.html',1,'']]],
+  ['splashscreen_2ehpp_241',['SplashScreen.hpp',['../SplashScreen_8hpp.html',1,'']]],
+  ['sprite_242',['sprite',['../classHeadBall_1_1GoalPost.html#afe3c999b342c63deca1e91b7447263ec',1,'HeadBall::GoalPost::sprite()'],['../classHeadBall_1_1Player.html#a49fbc50f6cfd9b9dc5992a5845095158',1,'HeadBall::Player::sprite()']]],
+  ['ss_243',['ss',['../classHeadBall_1_1TimeManager.html#ac09d09ed6d5ee90ca54a2a7243277397',1,'HeadBall::TimeManager']]],
+  ['state_244',['State',['../classHeadBall_1_1State.html',1,'HeadBall']]],
+  ['state_2ehpp_245',['State.hpp',['../State_8hpp.html',1,'']]],
+  ['statemachine_246',['StateMachine',['../classHeadBall_1_1StateMachine.html',1,'HeadBall::StateMachine'],['../classHeadBall_1_1StateMachine.html#a46679e69e8c4569f970f6dde806e299c',1,'HeadBall::StateMachine::StateMachine()']]],
+  ['statemachine_2ecpp_247',['StateMachine.cpp',['../StateMachine_8cpp.html',1,'']]],
+  ['statemachine_2ehpp_248',['StateMachine.hpp',['../StateMachine_8hpp.html',1,'']]],
+  ['stateref_249',['StateRef',['../namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9',1,'HeadBall']]]
 ];

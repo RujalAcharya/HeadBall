@@ -1,35 +1,157 @@
 \hypertarget{classHeadBall_1_1Player}{}\doxysection{Head\+Ball\+::Player Class Reference}
 \label{classHeadBall_1_1Player}\index{HeadBall::Player@{HeadBall::Player}}
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+
+
+Collaboration diagram for Head\+Ball\+::Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classHeadBall_1_1Player__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_a46b91809bd8d32be4282141ccc827aa9}\label{classHeadBall_1_1Player_a46b91809bd8d32be4282141ccc827aa9}} 
-{\bfseries Player} (Game\+Data\+Ref data, World\+Ref world)
+\mbox{\hyperlink{classHeadBall_1_1Player_a46b91809bd8d32be4282141ccc827aa9}{Player}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} world)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_a5a0307532ed6008016bc2b93274b2c54}\label{classHeadBall_1_1Player_a5a0307532ed6008016bc2b93274b2c54}} 
-void {\bfseries init} (std\+::string texture, std\+::string texture\+Path, sf\+::\+Vector2f position)
+void \mbox{\hyperlink{classHeadBall_1_1Player_a5a0307532ed6008016bc2b93274b2c54}{init}} (std\+::string texture, std\+::string texture\+Path, sf\+::\+Vector2f position)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_a49fbc50f6cfd9b9dc5992a5845095158}\label{classHeadBall_1_1Player_a49fbc50f6cfd9b9dc5992a5845095158}} 
-sf\+::\+Sprite {\bfseries sprite} ()
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1Player_a49fbc50f6cfd9b9dc5992a5845095158}{sprite}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_af0e43b17976383f565838582d18b7281}\label{classHeadBall_1_1Player_af0e43b17976383f565838582d18b7281}} 
-void {\bfseries process\+Position} ()
+void \mbox{\hyperlink{classHeadBall_1_1Player_af0e43b17976383f565838582d18b7281}{process\+Position}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_a514b0aa3e79d75af62c0198ca3b46673}\label{classHeadBall_1_1Player_a514b0aa3e79d75af62c0198ca3b46673}} 
-void {\bfseries move\+Left} ()
+void \mbox{\hyperlink{classHeadBall_1_1Player_a514b0aa3e79d75af62c0198ca3b46673}{move\+Left}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_a1ffd34b898a943cd1fa88798dd215deb}\label{classHeadBall_1_1Player_a1ffd34b898a943cd1fa88798dd215deb}} 
-void {\bfseries move\+Right} ()
+void \mbox{\hyperlink{classHeadBall_1_1Player_a1ffd34b898a943cd1fa88798dd215deb}{move\+Right}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_aa51bd3a3c5c954ddf9d7396dbbcf4052}\label{classHeadBall_1_1Player_aa51bd3a3c5c954ddf9d7396dbbcf4052}} 
-void {\bfseries jump} ()
+void \mbox{\hyperlink{classHeadBall_1_1Player_aa51bd3a3c5c954ddf9d7396dbbcf4052}{jump}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1Player_ab949e20bf224478023f901fe469dd5e7}\label{classHeadBall_1_1Player_ab949e20bf224478023f901fe469dd5e7}} 
-void {\bfseries set\+Texture} (std\+::string texture)
+void \mbox{\hyperlink{classHeadBall_1_1Player_ab949e20bf224478023f901fe469dd5e7}{set\+Texture}} (std\+::string texture)
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Player_a2633045d4659a58dec25e3e642928a01}{\+\_\+data}}
+\item 
+\mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Player_ab447ca5422e0d4cfe1dadb52047dbdac}{\+\_\+world}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1Player_aa2d7695904d5d85fb0db29c7839d41c6}{\+\_\+sprite}}
+\item 
+b2\+Body\+Def \mbox{\hyperlink{classHeadBall_1_1Player_a0b6e9862079c0e9f2a379a57d984f887}{\+\_\+body\+Def}}
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classHeadBall_1_1Player_a6db0d8774cb7fac507b90a4b38c4a793}{\+\_\+body}}
+\item 
+b2\+Polygon\+Shape \mbox{\hyperlink{classHeadBall_1_1Player_ab14e6ce962a59d00a4e749e9f264d384}{\+\_\+rect\+Shape}}
+\item 
+b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Player_a90b0b2561d9ede67036a5eb1fa259758}{\+\_\+fixture}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1Player_a46b91809bd8d32be4282141ccc827aa9}\label{classHeadBall_1_1Player_a46b91809bd8d32be4282141ccc827aa9}} 
+\index{HeadBall::Player@{HeadBall::Player}!Player@{Player}}
+\index{Player@{Player}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}}}]{data,  }\item[{\mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}}}]{world }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1Player_a5a0307532ed6008016bc2b93274b2c54}\label{classHeadBall_1_1Player_a5a0307532ed6008016bc2b93274b2c54}} 
+\index{HeadBall::Player@{HeadBall::Player}!init@{init}}
+\index{init@{init}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Player\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{texture,  }\item[{std\+::string}]{texture\+Path,  }\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_aa51bd3a3c5c954ddf9d7396dbbcf4052}\label{classHeadBall_1_1Player_aa51bd3a3c5c954ddf9d7396dbbcf4052}} 
+\index{HeadBall::Player@{HeadBall::Player}!jump@{jump}}
+\index{jump@{jump}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Player\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_a514b0aa3e79d75af62c0198ca3b46673}\label{classHeadBall_1_1Player_a514b0aa3e79d75af62c0198ca3b46673}} 
+\index{HeadBall::Player@{HeadBall::Player}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Player\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_a1ffd34b898a943cd1fa88798dd215deb}\label{classHeadBall_1_1Player_a1ffd34b898a943cd1fa88798dd215deb}} 
+\index{HeadBall::Player@{HeadBall::Player}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Player\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_af0e43b17976383f565838582d18b7281}\label{classHeadBall_1_1Player_af0e43b17976383f565838582d18b7281}} 
+\index{HeadBall::Player@{HeadBall::Player}!processPosition@{processPosition}}
+\index{processPosition@{processPosition}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{processPosition()}{processPosition()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Player\+::process\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_ab949e20bf224478023f901fe469dd5e7}\label{classHeadBall_1_1Player_ab949e20bf224478023f901fe469dd5e7}} 
+\index{HeadBall::Player@{HeadBall::Player}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{setTexture()}{setTexture()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Player\+::set\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_a49fbc50f6cfd9b9dc5992a5845095158}\label{classHeadBall_1_1Player_a49fbc50f6cfd9b9dc5992a5845095158}} 
+\index{HeadBall::Player@{HeadBall::Player}!sprite@{sprite}}
+\index{sprite@{sprite}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{sprite()}{sprite()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Player\+::sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1Player_a6db0d8774cb7fac507b90a4b38c4a793}\label{classHeadBall_1_1Player_a6db0d8774cb7fac507b90a4b38c4a793}} 
+\index{HeadBall::Player@{HeadBall::Player}!\_body@{\_body}}
+\index{\_body@{\_body}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{\_body}{\_body}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Head\+Ball\+::\+Player\+::\+\_\+body\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_a0b6e9862079c0e9f2a379a57d984f887}\label{classHeadBall_1_1Player_a0b6e9862079c0e9f2a379a57d984f887}} 
+\index{HeadBall::Player@{HeadBall::Player}!\_bodyDef@{\_bodyDef}}
+\index{\_bodyDef@{\_bodyDef}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{\_bodyDef}{\_bodyDef}}
+{\footnotesize\ttfamily b2\+Body\+Def Head\+Ball\+::\+Player\+::\+\_\+body\+Def\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_a2633045d4659a58dec25e3e642928a01}\label{classHeadBall_1_1Player_a2633045d4659a58dec25e3e642928a01}} 
+\index{HeadBall::Player@{HeadBall::Player}!\_data@{\_data}}
+\index{\_data@{\_data}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Player\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_a90b0b2561d9ede67036a5eb1fa259758}\label{classHeadBall_1_1Player_a90b0b2561d9ede67036a5eb1fa259758}} 
+\index{HeadBall::Player@{HeadBall::Player}!\_fixture@{\_fixture}}
+\index{\_fixture@{\_fixture}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{\_fixture}{\_fixture}}
+{\footnotesize\ttfamily b2\+Fixture\+Def Head\+Ball\+::\+Player\+::\+\_\+fixture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_ab14e6ce962a59d00a4e749e9f264d384}\label{classHeadBall_1_1Player_ab14e6ce962a59d00a4e749e9f264d384}} 
+\index{HeadBall::Player@{HeadBall::Player}!\_rectShape@{\_rectShape}}
+\index{\_rectShape@{\_rectShape}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{\_rectShape}{\_rectShape}}
+{\footnotesize\ttfamily b2\+Polygon\+Shape Head\+Ball\+::\+Player\+::\+\_\+rect\+Shape\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_aa2d7695904d5d85fb0db29c7839d41c6}\label{classHeadBall_1_1Player_aa2d7695904d5d85fb0db29c7839d41c6}} 
+\index{HeadBall::Player@{HeadBall::Player}!\_sprite@{\_sprite}}
+\index{\_sprite@{\_sprite}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{\_sprite}{\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Player\+::\+\_\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1Player_ab447ca5422e0d4cfe1dadb52047dbdac}\label{classHeadBall_1_1Player_ab447ca5422e0d4cfe1dadb52047dbdac}} 
+\index{HeadBall::Player@{HeadBall::Player}!\_world@{\_world}}
+\index{\_world@{\_world}!HeadBall::Player@{HeadBall::Player}}
+\doxysubsubsection{\texorpdfstring{\_world}{\_world}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} Head\+Ball\+::\+Player\+::\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Player.\+hpp\item 
-Player.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{Player_8hpp}{Player.\+hpp}}\item 
+\mbox{\hyperlink{Player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

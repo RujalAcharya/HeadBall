@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classHeadBall_1_1StateMachine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HeadBall::StateMachine Class Reference</div>  </div>
@@ -81,7 +82,7 @@ Collaboration diagram for HeadBall::StateMachine:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1StateMachine__coll__graph.png" border="0" usemap="#aHeadBall_1_1StateMachine_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1StateMachine_coll__map" id="aHeadBall_1_1StateMachine_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,192,156"/>
+<area shape="rect" title=" " alt="" coords="5,5,192,215"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -99,6 +100,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a36b2675a83f91af901520dd3816e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d52455d71aa6f5193d6b5f63cb5560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a57d52455d71aa6f5193d6b5f63cb5560">getActiveState</a> ()</td></tr>
 <tr class="separator:a57d52455d71aa6f5193d6b5f63cb5560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6c6fc866a013c4ae200a8b3d8f951f07"><td class="memItemLeft" align="right" valign="top">std::stack&lt; <a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a6c6fc866a013c4ae200a8b3d8f951f07">_states</a></td></tr>
+<tr class="separator:a6c6fc866a013c4ae200a8b3d8f951f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa042dc19147dd496a77d4010e36ff4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#afa042dc19147dd496a77d4010e36ff4b">_newState</a></td></tr>
+<tr class="separator:afa042dc19147dd496a77d4010e36ff4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39afd50d3c1ab740b0321bfe65788450"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a39afd50d3c1ab740b0321bfe65788450">_isReplacing</a></td></tr>
+<tr class="separator:a39afd50d3c1ab740b0321bfe65788450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e559220c2294c7bd9c388ea183c474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#ac1e559220c2294c7bd9c388ea183c474">_isAdding</a></td></tr>
+<tr class="separator:ac1e559220c2294c7bd9c388ea183c474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d80aa97934d2d55494641bb8633714"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a80d80aa97934d2d55494641bb8633714">_isRemoving</a></td></tr>
+<tr class="separator:a80d80aa97934d2d55494641bb8633714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a46679e69e8c4569f970f6dde806e299c"></a>
@@ -227,6 +241,117 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac1e559220c2294c7bd9c388ea183c474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e559220c2294c7bd9c388ea183c474">&#9670;&nbsp;</a></span>_isAdding</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HeadBall::StateMachine::_isAdding</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80d80aa97934d2d55494641bb8633714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d80aa97934d2d55494641bb8633714">&#9670;&nbsp;</a></span>_isRemoving</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HeadBall::StateMachine::_isRemoving</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39afd50d3c1ab740b0321bfe65788450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39afd50d3c1ab740b0321bfe65788450">&#9670;&nbsp;</a></span>_isReplacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HeadBall::StateMachine::_isReplacing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa042dc19147dd496a77d4010e36ff4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa042dc19147dd496a77d4010e36ff4b">&#9670;&nbsp;</a></span>_newState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a> HeadBall::StateMachine::_newState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c6fc866a013c4ae200a8b3d8f951f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c6fc866a013c4ae200a8b3d8f951f07">&#9670;&nbsp;</a></span>_states</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stack&lt;<a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a>&gt; HeadBall::StateMachine::_states</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

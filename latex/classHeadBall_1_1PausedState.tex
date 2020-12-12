@@ -1,38 +1,183 @@
 \hypertarget{classHeadBall_1_1PausedState}{}\doxysection{Head\+Ball\+::Paused\+State Class Reference}
 \label{classHeadBall_1_1PausedState}\index{HeadBall::PausedState@{HeadBall::PausedState}}
-Inheritance diagram for Head\+Ball\+::Paused\+State\+:\begin{figure}[H]
+
+
+{\ttfamily \#include $<$Paused\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Head\+Ball\+::Paused\+State\+:
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classHeadBall_1_1PausedState}
+\includegraphics[width=208pt]{classHeadBall_1_1PausedState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Head\+Ball\+::Paused\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHeadBall_1_1PausedState__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1PausedState_ae055c827e79f32e5af2d3fd9352f72ab}\label{classHeadBall_1_1PausedState_ae055c827e79f32e5af2d3fd9352f72ab}} 
-{\bfseries Paused\+State} (Game\+Data\+Ref data)
+\mbox{\hyperlink{classHeadBall_1_1PausedState_ae055c827e79f32e5af2d3fd9352f72ab}{Paused\+State}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1PausedState_a136c71f30a9af7843e70dbdffb87bf98}\label{classHeadBall_1_1PausedState_a136c71f30a9af7843e70dbdffb87bf98}} 
-void {\bfseries init} ()
+void \mbox{\hyperlink{classHeadBall_1_1PausedState_a136c71f30a9af7843e70dbdffb87bf98}{init}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1PausedState_ae19947ab7a76dcb896078d42b72a34e6}\label{classHeadBall_1_1PausedState_ae19947ab7a76dcb896078d42b72a34e6}} 
-void {\bfseries handle\+Input} ()
+void \mbox{\hyperlink{classHeadBall_1_1PausedState_ae19947ab7a76dcb896078d42b72a34e6}{handle\+Input}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1PausedState_a5a2548bda3966bdadd1ae8f42a0ef0ce}\label{classHeadBall_1_1PausedState_a5a2548bda3966bdadd1ae8f42a0ef0ce}} 
-void {\bfseries update} ()
+void \mbox{\hyperlink{classHeadBall_1_1PausedState_a5a2548bda3966bdadd1ae8f42a0ef0ce}{update}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1PausedState_a7b07d7c6deba0ee5b60c13ca578e543a}\label{classHeadBall_1_1PausedState_a7b07d7c6deba0ee5b60c13ca578e543a}} 
-void {\bfseries draw} ()
+void \mbox{\hyperlink{classHeadBall_1_1PausedState_a7b07d7c6deba0ee5b60c13ca578e543a}{draw}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}\label{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}} 
-virtual void {\bfseries pause} ()
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
-virtual void {\bfseries resume} ()
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1PausedState_a13c0607e2e4a733ff5ccc491ea0e416e}{\+\_\+data}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1PausedState_a6ee42d403c5d6319594224fabc60ffa7}{\+\_\+background}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1PausedState_aa66cbde467c6df403b25f3ef88887cc2}{\+\_\+resume\+Btn}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1PausedState_ab6af48ffee571e2e58d91739981484ec}{\+\_\+instructions\+Btn}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1PausedState_a33382d61d647803281af96d6e55a6971}{\+\_\+exit\+Btn}}
+\item 
+sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1PausedState_af973c803d87dc5cf335b4ca0d0b9c850}{\+\_\+btn\+Click\+Sfx}}
+\item 
+sf\+::\+Music \mbox{\hyperlink{classHeadBall_1_1PausedState_acd965a6bf7fe020253f9f85756e79a4e}{\+\_\+theme}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_ae055c827e79f32e5af2d3fd9352f72ab}\label{classHeadBall_1_1PausedState_ae055c827e79f32e5af2d3fd9352f72ab}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!PausedState@{PausedState}}
+\index{PausedState@{PausedState}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{PausedState()}{PausedState()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+Paused\+State\+::\+Paused\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}}}]{data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_a7b07d7c6deba0ee5b60c13ca578e543a}\label{classHeadBall_1_1PausedState_a7b07d7c6deba0ee5b60c13ca578e543a}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!draw@{draw}}
+\index{draw@{draw}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Paused\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3beff}{Head\+Ball\+::\+State}}.
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_ae19947ab7a76dcb896078d42b72a34e6}\label{classHeadBall_1_1PausedState_ae19947ab7a76dcb896078d42b72a34e6}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Paused\+State\+::handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_a136c71f30a9af7843e70dbdffb87bf98}\label{classHeadBall_1_1PausedState_a136c71f30a9af7843e70dbdffb87bf98}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!init@{init}}
+\index{init@{init}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Paused\+State\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a5197}{Head\+Ball\+::\+State}}.
+
+\mbox{\Hypertarget{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}\label{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!pause@{pause}}
+\index{pause@{pause}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
+
+\mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!resume@{resume}}
+\index{resume@{resume}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af96ca579b142678b}{Head\+Ball\+::\+Game\+State}}.
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_a5a2548bda3966bdadd1ae8f42a0ef0ce}\label{classHeadBall_1_1PausedState_a5a2548bda3966bdadd1ae8f42a0ef0ce}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!update@{update}}
+\index{update@{update}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Paused\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}{Head\+Ball\+::\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_a6ee42d403c5d6319594224fabc60ffa7}\label{classHeadBall_1_1PausedState_a6ee42d403c5d6319594224fabc60ffa7}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!\_background@{\_background}}
+\index{\_background@{\_background}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{\_background}{\_background}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Paused\+State\+::\+\_\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_af973c803d87dc5cf335b4ca0d0b9c850}\label{classHeadBall_1_1PausedState_af973c803d87dc5cf335b4ca0d0b9c850}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!\_btnClickSfx@{\_btnClickSfx}}
+\index{\_btnClickSfx@{\_btnClickSfx}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{\_btnClickSfx}{\_btnClickSfx}}
+{\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+Paused\+State\+::\+\_\+btn\+Click\+Sfx\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_a13c0607e2e4a733ff5ccc491ea0e416e}\label{classHeadBall_1_1PausedState_a13c0607e2e4a733ff5ccc491ea0e416e}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!\_data@{\_data}}
+\index{\_data@{\_data}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Paused\+State\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_a33382d61d647803281af96d6e55a6971}\label{classHeadBall_1_1PausedState_a33382d61d647803281af96d6e55a6971}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!\_exitBtn@{\_exitBtn}}
+\index{\_exitBtn@{\_exitBtn}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{\_exitBtn}{\_exitBtn}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Paused\+State\+::\+\_\+exit\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_ab6af48ffee571e2e58d91739981484ec}\label{classHeadBall_1_1PausedState_ab6af48ffee571e2e58d91739981484ec}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!\_instructionsBtn@{\_instructionsBtn}}
+\index{\_instructionsBtn@{\_instructionsBtn}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{\_instructionsBtn}{\_instructionsBtn}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Paused\+State\+::\+\_\+instructions\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_aa66cbde467c6df403b25f3ef88887cc2}\label{classHeadBall_1_1PausedState_aa66cbde467c6df403b25f3ef88887cc2}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!\_resumeBtn@{\_resumeBtn}}
+\index{\_resumeBtn@{\_resumeBtn}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{\_resumeBtn}{\_resumeBtn}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Paused\+State\+::\+\_\+resume\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1PausedState_acd965a6bf7fe020253f9f85756e79a4e}\label{classHeadBall_1_1PausedState_acd965a6bf7fe020253f9f85756e79a4e}} 
+\index{HeadBall::PausedState@{HeadBall::PausedState}!\_theme@{\_theme}}
+\index{\_theme@{\_theme}!HeadBall::PausedState@{HeadBall::PausedState}}
+\doxysubsubsection{\texorpdfstring{\_theme}{\_theme}}
+{\footnotesize\ttfamily sf\+::\+Music Head\+Ball\+::\+Paused\+State\+::\+\_\+theme\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Paused\+State.\+hpp\item 
-Paused\+State.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{PausedState_8hpp}{Paused\+State.\+hpp}}\item 
+\mbox{\hyperlink{PausedState_8cpp}{Paused\+State.\+cpp}}\end{DoxyCompactItemize}

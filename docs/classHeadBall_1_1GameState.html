@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classHeadBall_1_1GameState-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HeadBall::GameState Class Reference</div>  </div>
@@ -81,7 +82,7 @@ Inheritance diagram for HeadBall::GameState:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1GameState__inherit__graph.png" border="0" usemap="#aHeadBall_1_1GameState_inherit__map" alt="Inheritance graph"/></div>
 <map name="aHeadBall_1_1GameState_inherit__map" id="aHeadBall_1_1GameState_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,204,168,384"/>
+<area shape="rect" title=" " alt="" coords="5,204,168,721"/>
 <area shape="rect" href="classHeadBall_1_1State.html" title=" " alt="" coords="25,5,149,156"/>
 </map>
 </div>
@@ -90,8 +91,14 @@ Collaboration diagram for HeadBall::GameState:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1GameState__coll__graph.png" border="0" usemap="#aHeadBall_1_1GameState_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1GameState_coll__map" id="aHeadBall_1_1GameState_coll__map">
-<area shape="rect" title=" " alt="" coords="5,204,168,384"/>
-<area shape="rect" href="classHeadBall_1_1State.html" title=" " alt="" coords="25,5,149,156"/>
+<area shape="rect" title=" " alt="" coords="474,483,637,868"/>
+<area shape="rect" href="classHeadBall_1_1State.html" title=" " alt="" coords="5,130,129,281"/>
+<area shape="rect" href="classHeadBall_1_1UpHill.html" title=" " alt="" coords="153,108,283,303"/>
+<area shape="rect" href="classHeadBall_1_1Player.html" title=" " alt="" coords="307,71,457,339"/>
+<area shape="rect" href="classHeadBall_1_1Ball.html" title=" " alt="" coords="481,86,630,325"/>
+<area shape="rect" href="classHeadBall_1_1GoalPost.html" title=" " alt="" coords="654,137,801,273"/>
+<area shape="rect" href="classHeadBall_1_1Ground.html" title=" " alt="" coords="825,108,961,303"/>
+<area shape="rect" href="classHeadBall_1_1Wall.html" title=" " alt="" coords="985,5,1104,405"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -113,6 +120,57 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6455ea1fd7aa20af96ca579b142678b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283db979c62ccb7848d489f368d35897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a283db979c62ccb7848d489f368d35897">animate</a> (std::string player)</td></tr>
 <tr class="separator:a283db979c62ccb7848d489f368d35897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a37d85848ed7a509eca055ccbc9288e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a37d85848ed7a509eca055ccbc9288e0d">_data</a></td></tr>
+<tr class="separator:a37d85848ed7a509eca055ccbc9288e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8524789c268732297afeae8c5e26e283"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a8524789c268732297afeae8c5e26e283">_timeText</a></td></tr>
+<tr class="separator:a8524789c268732297afeae8c5e26e283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6b26e15c702e02c653fa1c13645182"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a9d6b26e15c702e02c653fa1c13645182">_p1Score</a></td></tr>
+<tr class="separator:a9d6b26e15c702e02c653fa1c13645182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216ce8b4ea80e100ebea1061d1d76781"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a216ce8b4ea80e100ebea1061d1d76781">_p2Score</a></td></tr>
+<tr class="separator:a216ce8b4ea80e100ebea1061d1d76781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b53cba550507cd9ed7bcd969c664ddb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a82fea1f794ddb142078227511e71568d">ScoreTimeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a4b53cba550507cd9ed7bcd969c664ddb">_scoreTime</a></td></tr>
+<tr class="separator:a4b53cba550507cd9ed7bcd969c664ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c4a021459d5a1c4cafea41c636b480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a56c4a021459d5a1c4cafea41c636b480">_world</a> = std::make_shared &lt;b2World&gt; (b2Vec2(<a class="el" href="Definition_8hpp.html#a66cb9b71d481a5543524f4bafbeec090">WORLD_GRAVITY_X</a>, <a class="el" href="Definition_8hpp.html#afcc8847f17a3601e0b0db295434fa351">WORLD_GRAVITY_Y</a>))</td></tr>
+<tr class="separator:a56c4a021459d5a1c4cafea41c636b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d73fe9771f12d72812c8fa42dc357d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Ground.html">Ground</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#af7d73fe9771f12d72812c8fa42dc357d">_ground</a></td></tr>
+<tr class="separator:af7d73fe9771f12d72812c8fa42dc357d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6d70fb5fe94b8e9d1a198c93a28e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1UpHill.html">UpHill</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a7d6d70fb5fe94b8e9d1a198c93a28e9e">_leftUpHill</a></td></tr>
+<tr class="separator:a7d6d70fb5fe94b8e9d1a198c93a28e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628885236ec2408443b02c34b45ce463"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1UpHill.html">UpHill</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a628885236ec2408443b02c34b45ce463">_rightUpHill</a></td></tr>
+<tr class="separator:a628885236ec2408443b02c34b45ce463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a617b842994ecd2320c47333996c2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Wall.html">Wall</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a07a617b842994ecd2320c47333996c2a">_wall</a></td></tr>
+<tr class="separator:a07a617b842994ecd2320c47333996c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ce4ba72c9c15a21403dec0c5d2fda4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1GoalPost.html">GoalPost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#aa7ce4ba72c9c15a21403dec0c5d2fda4">_leftPost</a></td></tr>
+<tr class="separator:aa7ce4ba72c9c15a21403dec0c5d2fda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ec8d1298b42b30695d4de9e131f14e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1GoalPost.html">GoalPost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a17ec8d1298b42b30695d4de9e131f14e">_rightPost</a></td></tr>
+<tr class="separator:a17ec8d1298b42b30695d4de9e131f14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26de87e72ce1cba6e3b7ab183c8c18f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a26de87e72ce1cba6e3b7ab183c8c18f2">_p1</a></td></tr>
+<tr class="separator:a26de87e72ce1cba6e3b7ab183c8c18f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe773b7871cecea8d56dcdbdbe6180f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#afe773b7871cecea8d56dcdbdbe6180f6">_p2</a></td></tr>
+<tr class="separator:afe773b7871cecea8d56dcdbdbe6180f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae564d96a86f285535d89780729fe7fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#aae564d96a86f285535d89780729fe7fc">_ball</a></td></tr>
+<tr class="separator:aae564d96a86f285535d89780729fe7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576adfc026687c15d7bef9ad845d8a72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a576adfc026687c15d7bef9ad845d8a72">_isPaused</a></td></tr>
+<tr class="separator:a576adfc026687c15d7bef9ad845d8a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799959fa528dd0a3889b86eede41378a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a799959fa528dd0a3889b86eede41378a">_isSecondHalf</a></td></tr>
+<tr class="separator:a799959fa528dd0a3889b86eede41378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709f7e789131834b37425c811948e406"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a709f7e789131834b37425c811948e406">_pauseBtn</a></td></tr>
+<tr class="separator:a709f7e789131834b37425c811948e406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae044f5038ac8d96e734ee75affbef056"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#ae044f5038ac8d96e734ee75affbef056">_btnClickSfx</a></td></tr>
+<tr class="separator:ae044f5038ac8d96e734ee75affbef056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e61f2844e0b5b1648c33dfd8ad069a"><td class="memItemLeft" align="right" valign="top">sf::Music&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#af3e61f2844e0b5b1648c33dfd8ad069a">_crowdCheerSfx</a></td></tr>
+<tr class="separator:af3e61f2844e0b5b1648c33dfd8ad069a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8102617fb964a04c5e5ff8f64926799"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#ab8102617fb964a04c5e5ff8f64926799">_longWhistleSfx</a></td></tr>
+<tr class="separator:ab8102617fb964a04c5e5ff8f64926799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1d1725eb34e29e5b77073d7cc678ec"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#acc1d1725eb34e29e5b77073d7cc678ec">_shortWhistleSfx</a></td></tr>
+<tr class="separator:acc1d1725eb34e29e5b77073d7cc678ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945422bab09538bdc99553148cf340b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a945422bab09538bdc99553148cf340b9">_p1MoveCounter</a></td></tr>
+<tr class="separator:a945422bab09538bdc99553148cf340b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd52fc384505a70f486ca990354999f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a8dd52fc384505a70f486ca990354999f">_p2MoveCounter</a></td></tr>
+<tr class="separator:a8dd52fc384505a70f486ca990354999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a33b835de5a049c2708188e3ef2d71d24"></a>
@@ -327,6 +385,535 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">HeadBall::State</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aae564d96a86f285535d89780729fe7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae564d96a86f285535d89780729fe7fc">&#9670;&nbsp;</a></span>_ball</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1Ball.html">Ball</a> HeadBall::GameState::_ball</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae044f5038ac8d96e734ee75affbef056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae044f5038ac8d96e734ee75affbef056">&#9670;&nbsp;</a></span>_btnClickSfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sound HeadBall::GameState::_btnClickSfx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3e61f2844e0b5b1648c33dfd8ad069a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e61f2844e0b5b1648c33dfd8ad069a">&#9670;&nbsp;</a></span>_crowdCheerSfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Music HeadBall::GameState::_crowdCheerSfx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37d85848ed7a509eca055ccbc9288e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d85848ed7a509eca055ccbc9288e0d">&#9670;&nbsp;</a></span>_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a> HeadBall::GameState::_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7d73fe9771f12d72812c8fa42dc357d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d73fe9771f12d72812c8fa42dc357d">&#9670;&nbsp;</a></span>_ground</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1Ground.html">Ground</a> HeadBall::GameState::_ground</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a576adfc026687c15d7bef9ad845d8a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576adfc026687c15d7bef9ad845d8a72">&#9670;&nbsp;</a></span>_isPaused</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HeadBall::GameState::_isPaused</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a799959fa528dd0a3889b86eede41378a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799959fa528dd0a3889b86eede41378a">&#9670;&nbsp;</a></span>_isSecondHalf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HeadBall::GameState::_isSecondHalf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7ce4ba72c9c15a21403dec0c5d2fda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ce4ba72c9c15a21403dec0c5d2fda4">&#9670;&nbsp;</a></span>_leftPost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1GoalPost.html">GoalPost</a> HeadBall::GameState::_leftPost</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d6d70fb5fe94b8e9d1a198c93a28e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6d70fb5fe94b8e9d1a198c93a28e9e">&#9670;&nbsp;</a></span>_leftUpHill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1UpHill.html">UpHill</a> HeadBall::GameState::_leftUpHill</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8102617fb964a04c5e5ff8f64926799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8102617fb964a04c5e5ff8f64926799">&#9670;&nbsp;</a></span>_longWhistleSfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sound HeadBall::GameState::_longWhistleSfx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26de87e72ce1cba6e3b7ab183c8c18f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26de87e72ce1cba6e3b7ab183c8c18f2">&#9670;&nbsp;</a></span>_p1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1Player.html">Player</a> HeadBall::GameState::_p1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a945422bab09538bdc99553148cf340b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945422bab09538bdc99553148cf340b9">&#9670;&nbsp;</a></span>_p1MoveCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HeadBall::GameState::_p1MoveCounter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d6b26e15c702e02c653fa1c13645182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6b26e15c702e02c653fa1c13645182">&#9670;&nbsp;</a></span>_p1Score</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text HeadBall::GameState::_p1Score</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe773b7871cecea8d56dcdbdbe6180f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe773b7871cecea8d56dcdbdbe6180f6">&#9670;&nbsp;</a></span>_p2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1Player.html">Player</a> HeadBall::GameState::_p2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dd52fc384505a70f486ca990354999f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd52fc384505a70f486ca990354999f">&#9670;&nbsp;</a></span>_p2MoveCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HeadBall::GameState::_p2MoveCounter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a216ce8b4ea80e100ebea1061d1d76781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216ce8b4ea80e100ebea1061d1d76781">&#9670;&nbsp;</a></span>_p2Score</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text HeadBall::GameState::_p2Score</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a709f7e789131834b37425c811948e406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709f7e789131834b37425c811948e406">&#9670;&nbsp;</a></span>_pauseBtn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sprite HeadBall::GameState::_pauseBtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17ec8d1298b42b30695d4de9e131f14e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ec8d1298b42b30695d4de9e131f14e">&#9670;&nbsp;</a></span>_rightPost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1GoalPost.html">GoalPost</a> HeadBall::GameState::_rightPost</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a628885236ec2408443b02c34b45ce463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628885236ec2408443b02c34b45ce463">&#9670;&nbsp;</a></span>_rightUpHill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1UpHill.html">UpHill</a> HeadBall::GameState::_rightUpHill</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b53cba550507cd9ed7bcd969c664ddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b53cba550507cd9ed7bcd969c664ddb">&#9670;&nbsp;</a></span>_scoreTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceHeadBall.html#a82fea1f794ddb142078227511e71568d">ScoreTimeRef</a> HeadBall::GameState::_scoreTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc1d1725eb34e29e5b77073d7cc678ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1d1725eb34e29e5b77073d7cc678ec">&#9670;&nbsp;</a></span>_shortWhistleSfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sound HeadBall::GameState::_shortWhistleSfx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8524789c268732297afeae8c5e26e283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8524789c268732297afeae8c5e26e283">&#9670;&nbsp;</a></span>_timeText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text HeadBall::GameState::_timeText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07a617b842994ecd2320c47333996c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a617b842994ecd2320c47333996c2a">&#9670;&nbsp;</a></span>_wall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeadBall_1_1Wall.html">Wall</a> HeadBall::GameState::_wall</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56c4a021459d5a1c4cafea41c636b480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c4a021459d5a1c4cafea41c636b480">&#9670;&nbsp;</a></span>_world</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a> HeadBall::GameState::_world = std::make_shared &lt;b2World&gt; (b2Vec2(<a class="el" href="Definition_8hpp.html#a66cb9b71d481a5543524f4bafbeec090">WORLD_GRAVITY_X</a>, <a class="el" href="Definition_8hpp.html#afcc8847f17a3601e0b0db295434fa351">WORLD_GRAVITY_Y</a>))</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

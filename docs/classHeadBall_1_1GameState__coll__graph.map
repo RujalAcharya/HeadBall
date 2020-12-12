@@ -1,4 +1,10 @@
 <map id="HeadBall::GameState" name="HeadBall::GameState">
-<area shape="rect" id="node1" title=" " alt="" coords="5,204,168,384"/>
-<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title=" " alt="" coords="25,5,149,156"/>
+<area shape="rect" id="node1" title=" " alt="" coords="474,483,637,868"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title=" " alt="" coords="5,130,129,281"/>
+<area shape="rect" id="node3" href="$classHeadBall_1_1UpHill.html" title=" " alt="" coords="153,108,283,303"/>
+<area shape="rect" id="node4" href="$classHeadBall_1_1Player.html" title=" " alt="" coords="307,71,457,339"/>
+<area shape="rect" id="node5" href="$classHeadBall_1_1Ball.html" title=" " alt="" coords="481,86,630,325"/>
+<area shape="rect" id="node6" href="$classHeadBall_1_1GoalPost.html" title=" " alt="" coords="654,137,801,273"/>
+<area shape="rect" id="node7" href="$classHeadBall_1_1Ground.html" title=" " alt="" coords="825,108,961,303"/>
+<area shape="rect" id="node8" href="$classHeadBall_1_1Wall.html" title=" " alt="" coords="985,5,1104,405"/>
 </map>

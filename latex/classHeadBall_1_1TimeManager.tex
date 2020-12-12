@@ -1,35 +1,181 @@
 \hypertarget{classHeadBall_1_1TimeManager}{}\doxysection{Head\+Ball\+::Time\+Manager Class Reference}
 \label{classHeadBall_1_1TimeManager}\index{HeadBall::TimeManager@{HeadBall::TimeManager}}
+
+
+{\ttfamily \#include $<$Time\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Head\+Ball\+::Time\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classHeadBall_1_1TimeManager__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a718357f3bd05f868f140ada0933fdb91}\label{classHeadBall_1_1TimeManager_a718357f3bd05f868f140ada0933fdb91}} 
-void {\bfseries process\+Time} ()
+\mbox{\hyperlink{classHeadBall_1_1TimeManager_a9aa4f117a205484a27cae518ed94bf43}{Time\+Manager}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_acedfd8d69943cd275bab7c6e10068af6}\label{classHeadBall_1_1TimeManager_acedfd8d69943cd275bab7c6e10068af6}} 
-std\+::string {\bfseries display\+Timer} ()
+\mbox{\hyperlink{classHeadBall_1_1TimeManager_aac7da603c6b0c9af2fafdc4342830889}{$\sim$\+Time\+Manager}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a55a11c6b66228de0cb6a1dc84962c5ad}\label{classHeadBall_1_1TimeManager_a55a11c6b66228de0cb6a1dc84962c5ad}} 
-int {\bfseries get\+Time} ()
+void \mbox{\hyperlink{classHeadBall_1_1TimeManager_a718357f3bd05f868f140ada0933fdb91}{process\+Time}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a7261a8556a7e5b034decc850a78c4736}\label{classHeadBall_1_1TimeManager_a7261a8556a7e5b034decc850a78c4736}} 
-void {\bfseries reset\+Timer} ()
+std\+::string \mbox{\hyperlink{classHeadBall_1_1TimeManager_acedfd8d69943cd275bab7c6e10068af6}{display\+Timer}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a11f5e64c9c510770f7c5bc8b1f7b8632}\label{classHeadBall_1_1TimeManager_a11f5e64c9c510770f7c5bc8b1f7b8632}} 
-void {\bfseries pause} ()
+int \mbox{\hyperlink{classHeadBall_1_1TimeManager_a55a11c6b66228de0cb6a1dc84962c5ad}{get\+Time}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a9cb9cce78bd4211fe55bdc6167986858}\label{classHeadBall_1_1TimeManager_a9cb9cce78bd4211fe55bdc6167986858}} 
-void {\bfseries resume} ()
+void \mbox{\hyperlink{classHeadBall_1_1TimeManager_a7261a8556a7e5b034decc850a78c4736}{reset\+Timer}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_acf706673de6ce1db7414fb428bb89cab}\label{classHeadBall_1_1TimeManager_acf706673de6ce1db7414fb428bb89cab}} 
-void {\bfseries set\+Time} (sf\+::\+Time timer)
+void \mbox{\hyperlink{classHeadBall_1_1TimeManager_a11f5e64c9c510770f7c5bc8b1f7b8632}{pause}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a68169ded6c4f95d824a22b70df207a23}\label{classHeadBall_1_1TimeManager_a68169ded6c4f95d824a22b70df207a23}} 
-void {\bfseries zero} ()
+void \mbox{\hyperlink{classHeadBall_1_1TimeManager_a9cb9cce78bd4211fe55bdc6167986858}{resume}} ()
+\item 
+void \mbox{\hyperlink{classHeadBall_1_1TimeManager_acf706673de6ce1db7414fb428bb89cab}{set\+Time}} (sf\+::\+Time timer)
+\item 
+void \mbox{\hyperlink{classHeadBall_1_1TimeManager_a68169ded6c4f95d824a22b70df207a23}{zero}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Clock \mbox{\hyperlink{classHeadBall_1_1TimeManager_afbcd0e76a0f868a7c9d5840ae2515e09}{\+\_\+clock}}
+\item 
+sf\+::\+Time \mbox{\hyperlink{classHeadBall_1_1TimeManager_a986ba8fa9e6a91c7b66109e0e5842692}{T}}
+\item 
+sf\+::\+Time \mbox{\hyperlink{classHeadBall_1_1TimeManager_a3002df5989d8b8f0ad3384e8714adee7}{temp\+Time}}
+\item 
+std\+::stringstream \mbox{\hyperlink{classHeadBall_1_1TimeManager_ac09d09ed6d5ee90ca54a2a7243277397}{ss}}
+\item 
+int \mbox{\hyperlink{classHeadBall_1_1TimeManager_a880c91d14167e0be2a77e8243b954149}{t}}
+\item 
+int \mbox{\hyperlink{classHeadBall_1_1TimeManager_a76db68e7d6b46cea9d4aa826ce2f9a52}{vt}}
+\item 
+int \mbox{\hyperlink{classHeadBall_1_1TimeManager_adbd46321867e218ddccf0205ee766d75}{s}}
+\item 
+int \mbox{\hyperlink{classHeadBall_1_1TimeManager_adf2685ee8e4f9a1ccb4f42552e793c78}{m}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a9aa4f117a205484a27cae518ed94bf43}\label{classHeadBall_1_1TimeManager_a9aa4f117a205484a27cae518ed94bf43}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!TimeManager@{TimeManager}}
+\index{TimeManager@{TimeManager}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{TimeManager()}{TimeManager()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+Time\+Manager\+::\+Time\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_aac7da603c6b0c9af2fafdc4342830889}\label{classHeadBall_1_1TimeManager_aac7da603c6b0c9af2fafdc4342830889}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!````~TimeManager@{$\sim$TimeManager}}
+\index{````~TimeManager@{$\sim$TimeManager}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TimeManager()}{~TimeManager()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+Time\+Manager\+::$\sim$\+Time\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_acedfd8d69943cd275bab7c6e10068af6}\label{classHeadBall_1_1TimeManager_acedfd8d69943cd275bab7c6e10068af6}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!displayTimer@{displayTimer}}
+\index{displayTimer@{displayTimer}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{displayTimer()}{displayTimer()}}
+{\footnotesize\ttfamily std\+::string Head\+Ball\+::\+Time\+Manager\+::display\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a55a11c6b66228de0cb6a1dc84962c5ad}\label{classHeadBall_1_1TimeManager_a55a11c6b66228de0cb6a1dc84962c5ad}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!getTime@{getTime}}
+\index{getTime@{getTime}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Time\+Manager\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a11f5e64c9c510770f7c5bc8b1f7b8632}\label{classHeadBall_1_1TimeManager_a11f5e64c9c510770f7c5bc8b1f7b8632}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!pause@{pause}}
+\index{pause@{pause}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Time\+Manager\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a718357f3bd05f868f140ada0933fdb91}\label{classHeadBall_1_1TimeManager_a718357f3bd05f868f140ada0933fdb91}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!processTime@{processTime}}
+\index{processTime@{processTime}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{processTime()}{processTime()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Time\+Manager\+::process\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a7261a8556a7e5b034decc850a78c4736}\label{classHeadBall_1_1TimeManager_a7261a8556a7e5b034decc850a78c4736}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!resetTimer@{resetTimer}}
+\index{resetTimer@{resetTimer}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{resetTimer()}{resetTimer()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Time\+Manager\+::reset\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a9cb9cce78bd4211fe55bdc6167986858}\label{classHeadBall_1_1TimeManager_a9cb9cce78bd4211fe55bdc6167986858}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!resume@{resume}}
+\index{resume@{resume}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Time\+Manager\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_acf706673de6ce1db7414fb428bb89cab}\label{classHeadBall_1_1TimeManager_acf706673de6ce1db7414fb428bb89cab}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!setTime@{setTime}}
+\index{setTime@{setTime}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Time\+Manager\+::set\+Time (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{timer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a68169ded6c4f95d824a22b70df207a23}\label{classHeadBall_1_1TimeManager_a68169ded6c4f95d824a22b70df207a23}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!zero@{zero}}
+\index{zero@{zero}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{zero()}{zero()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+Time\+Manager\+::zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_afbcd0e76a0f868a7c9d5840ae2515e09}\label{classHeadBall_1_1TimeManager_afbcd0e76a0f868a7c9d5840ae2515e09}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!\_clock@{\_clock}}
+\index{\_clock@{\_clock}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{\_clock}{\_clock}}
+{\footnotesize\ttfamily sf\+::\+Clock Head\+Ball\+::\+Time\+Manager\+::\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_adf2685ee8e4f9a1ccb4f42552e793c78}\label{classHeadBall_1_1TimeManager_adf2685ee8e4f9a1ccb4f42552e793c78}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!m@{m}}
+\index{m@{m}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Time\+Manager\+::m\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_adbd46321867e218ddccf0205ee766d75}\label{classHeadBall_1_1TimeManager_adbd46321867e218ddccf0205ee766d75}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!s@{s}}
+\index{s@{s}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Time\+Manager\+::s\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_ac09d09ed6d5ee90ca54a2a7243277397}\label{classHeadBall_1_1TimeManager_ac09d09ed6d5ee90ca54a2a7243277397}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!ss@{ss}}
+\index{ss@{ss}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{ss}{ss}}
+{\footnotesize\ttfamily std\+::stringstream Head\+Ball\+::\+Time\+Manager\+::ss\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a986ba8fa9e6a91c7b66109e0e5842692}\label{classHeadBall_1_1TimeManager_a986ba8fa9e6a91c7b66109e0e5842692}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!T@{T}}
+\index{T@{T}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily sf\+::\+Time Head\+Ball\+::\+Time\+Manager\+::T\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a880c91d14167e0be2a77e8243b954149}\label{classHeadBall_1_1TimeManager_a880c91d14167e0be2a77e8243b954149}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!t@{t}}
+\index{t@{t}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Time\+Manager\+::t\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a3002df5989d8b8f0ad3384e8714adee7}\label{classHeadBall_1_1TimeManager_a3002df5989d8b8f0ad3384e8714adee7}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!tempTime@{tempTime}}
+\index{tempTime@{tempTime}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{tempTime}{tempTime}}
+{\footnotesize\ttfamily sf\+::\+Time Head\+Ball\+::\+Time\+Manager\+::temp\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1TimeManager_a76db68e7d6b46cea9d4aa826ce2f9a52}\label{classHeadBall_1_1TimeManager_a76db68e7d6b46cea9d4aa826ce2f9a52}} 
+\index{HeadBall::TimeManager@{HeadBall::TimeManager}!vt@{vt}}
+\index{vt@{vt}!HeadBall::TimeManager@{HeadBall::TimeManager}}
+\doxysubsubsection{\texorpdfstring{vt}{vt}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Time\+Manager\+::vt\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Time\+Manager.\+hpp\item 
-Time\+Manager.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{TimeManager_8hpp}{Time\+Manager.\+hpp}}\item 
+\mbox{\hyperlink{TimeManager_8cpp}{Time\+Manager.\+cpp}}\end{DoxyCompactItemize}

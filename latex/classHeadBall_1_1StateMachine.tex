@@ -1,23 +1,125 @@
 \hypertarget{classHeadBall_1_1StateMachine}{}\doxysection{Head\+Ball\+::State\+Machine Class Reference}
 \label{classHeadBall_1_1StateMachine}\index{HeadBall::StateMachine@{HeadBall::StateMachine}}
+
+
+{\ttfamily \#include $<$State\+Machine.\+hpp$>$}
+
+
+
+Collaboration diagram for Head\+Ball\+::State\+Machine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classHeadBall_1_1StateMachine__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1StateMachine_aa1b8b3adae8520cd4b9c7e11544a60f6}\label{classHeadBall_1_1StateMachine_aa1b8b3adae8520cd4b9c7e11544a60f6}} 
-void {\bfseries add\+State} (State\+Ref new\+State, bool is\+Replacing=true)
+\mbox{\hyperlink{classHeadBall_1_1StateMachine_a46679e69e8c4569f970f6dde806e299c}{State\+Machine}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1StateMachine_ad7b1159950aef7717792ccdb2e2ecc1a}\label{classHeadBall_1_1StateMachine_ad7b1159950aef7717792ccdb2e2ecc1a}} 
-void {\bfseries remove\+State} ()
+\mbox{\hyperlink{classHeadBall_1_1StateMachine_ab378ab057f4dd0a472f297bcebe6cb02}{$\sim$\+State\+Machine}} ()
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a8a36b2675a83f91af901520dd3816e8b}\label{classHeadBall_1_1StateMachine_a8a36b2675a83f91af901520dd3816e8b}} 
-void {\bfseries process\+State\+Changes} ()
+void \mbox{\hyperlink{classHeadBall_1_1StateMachine_aa1b8b3adae8520cd4b9c7e11544a60f6}{add\+State}} (\mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}} new\+State, bool is\+Replacing=true)
 \item 
-\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a57d52455d71aa6f5193d6b5f63cb5560}\label{classHeadBall_1_1StateMachine_a57d52455d71aa6f5193d6b5f63cb5560}} 
-State\+Ref \& {\bfseries get\+Active\+State} ()
+void \mbox{\hyperlink{classHeadBall_1_1StateMachine_ad7b1159950aef7717792ccdb2e2ecc1a}{remove\+State}} ()
+\item 
+void \mbox{\hyperlink{classHeadBall_1_1StateMachine_a8a36b2675a83f91af901520dd3816e8b}{process\+State\+Changes}} ()
+\item 
+\mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}} \& \mbox{\hyperlink{classHeadBall_1_1StateMachine_a57d52455d71aa6f5193d6b5f63cb5560}{get\+Active\+State}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}} $>$ \mbox{\hyperlink{classHeadBall_1_1StateMachine_a6c6fc866a013c4ae200a8b3d8f951f07}{\+\_\+states}}
+\item 
+\mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}} \mbox{\hyperlink{classHeadBall_1_1StateMachine_afa042dc19147dd496a77d4010e36ff4b}{\+\_\+new\+State}}
+\item 
+bool \mbox{\hyperlink{classHeadBall_1_1StateMachine_a39afd50d3c1ab740b0321bfe65788450}{\+\_\+is\+Replacing}}
+\item 
+bool \mbox{\hyperlink{classHeadBall_1_1StateMachine_ac1e559220c2294c7bd9c388ea183c474}{\+\_\+is\+Adding}}
+\item 
+bool \mbox{\hyperlink{classHeadBall_1_1StateMachine_a80d80aa97934d2d55494641bb8633714}{\+\_\+is\+Removing}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a46679e69e8c4569f970f6dde806e299c}\label{classHeadBall_1_1StateMachine_a46679e69e8c4569f970f6dde806e299c}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!StateMachine@{StateMachine}}
+\index{StateMachine@{StateMachine}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{StateMachine()}{StateMachine()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+State\+Machine\+::\+State\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_ab378ab057f4dd0a472f297bcebe6cb02}\label{classHeadBall_1_1StateMachine_ab378ab057f4dd0a472f297bcebe6cb02}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!````~StateMachine@{$\sim$StateMachine}}
+\index{````~StateMachine@{$\sim$StateMachine}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{$\sim$StateMachine()}{~StateMachine()}}
+{\footnotesize\ttfamily Head\+Ball\+::\+State\+Machine\+::$\sim$\+State\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_aa1b8b3adae8520cd4b9c7e11544a60f6}\label{classHeadBall_1_1StateMachine_aa1b8b3adae8520cd4b9c7e11544a60f6}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!addState@{addState}}
+\index{addState@{addState}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{addState()}{addState()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+State\+Machine\+::add\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}}}]{new\+State,  }\item[{bool}]{is\+Replacing = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a57d52455d71aa6f5193d6b5f63cb5560}\label{classHeadBall_1_1StateMachine_a57d52455d71aa6f5193d6b5f63cb5560}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!getActiveState@{getActiveState}}
+\index{getActiveState@{getActiveState}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{getActiveState()}{getActiveState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}} \& Head\+Ball\+::\+State\+Machine\+::get\+Active\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a8a36b2675a83f91af901520dd3816e8b}\label{classHeadBall_1_1StateMachine_a8a36b2675a83f91af901520dd3816e8b}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!processStateChanges@{processStateChanges}}
+\index{processStateChanges@{processStateChanges}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{processStateChanges()}{processStateChanges()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+State\+Machine\+::process\+State\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_ad7b1159950aef7717792ccdb2e2ecc1a}\label{classHeadBall_1_1StateMachine_ad7b1159950aef7717792ccdb2e2ecc1a}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!removeState@{removeState}}
+\index{removeState@{removeState}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{removeState()}{removeState()}}
+{\footnotesize\ttfamily void Head\+Ball\+::\+State\+Machine\+::remove\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_ac1e559220c2294c7bd9c388ea183c474}\label{classHeadBall_1_1StateMachine_ac1e559220c2294c7bd9c388ea183c474}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!\_isAdding@{\_isAdding}}
+\index{\_isAdding@{\_isAdding}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_isAdding}{\_isAdding}}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+State\+Machine\+::\+\_\+is\+Adding\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a80d80aa97934d2d55494641bb8633714}\label{classHeadBall_1_1StateMachine_a80d80aa97934d2d55494641bb8633714}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!\_isRemoving@{\_isRemoving}}
+\index{\_isRemoving@{\_isRemoving}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_isRemoving}{\_isRemoving}}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+State\+Machine\+::\+\_\+is\+Removing\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a39afd50d3c1ab740b0321bfe65788450}\label{classHeadBall_1_1StateMachine_a39afd50d3c1ab740b0321bfe65788450}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!\_isReplacing@{\_isReplacing}}
+\index{\_isReplacing@{\_isReplacing}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_isReplacing}{\_isReplacing}}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+State\+Machine\+::\+\_\+is\+Replacing\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_afa042dc19147dd496a77d4010e36ff4b}\label{classHeadBall_1_1StateMachine_afa042dc19147dd496a77d4010e36ff4b}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!\_newState@{\_newState}}
+\index{\_newState@{\_newState}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_newState}{\_newState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}} Head\+Ball\+::\+State\+Machine\+::\+\_\+new\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeadBall_1_1StateMachine_a6c6fc866a013c4ae200a8b3d8f951f07}\label{classHeadBall_1_1StateMachine_a6c6fc866a013c4ae200a8b3d8f951f07}} 
+\index{HeadBall::StateMachine@{HeadBall::StateMachine}!\_states@{\_states}}
+\index{\_states@{\_states}!HeadBall::StateMachine@{HeadBall::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_states}{\_states}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}}$>$ Head\+Ball\+::\+State\+Machine\+::\+\_\+states\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-State\+Machine.\+hpp\item 
-State\+Machine.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{StateMachine_8hpp}{State\+Machine.\+hpp}}\item 
+\mbox{\hyperlink{StateMachine_8cpp}{State\+Machine.\+cpp}}\end{DoxyCompactItemize}

@@ -3,28 +3,64 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceConverter_a2b75536407802ae71228ef910d7e8e6c}\label{namespaceConverter_a2b75536407802ae71228ef910d7e8e6c}} 
-{\footnotesize template$<$class T $>$ }\\constexpr T {\bfseries pixels\+To\+Meters} (const T \&x)
+{\footnotesize template$<$class T $>$ }\\constexpr T \mbox{\hyperlink{namespaceConverter_a2b75536407802ae71228ef910d7e8e6c}{pixels\+To\+Meters}} (const T \&x)
 \item 
-\mbox{\Hypertarget{namespaceConverter_a92b4bca6fd83ff741003d1967001f77b}\label{namespaceConverter_a92b4bca6fd83ff741003d1967001f77b}} 
-{\footnotesize template$<$class T $>$ }\\constexpr T {\bfseries meters\+To\+Pixels} (const T \&x)
+{\footnotesize template$<$class T $>$ }\\constexpr T \mbox{\hyperlink{namespaceConverter_a92b4bca6fd83ff741003d1967001f77b}{meters\+To\+Pixels}} (const T \&x)
 \item 
-\mbox{\Hypertarget{namespaceConverter_a235875d91b6f6067246c186a61ef2cf6}\label{namespaceConverter_a235875d91b6f6067246c186a61ef2cf6}} 
-{\footnotesize template$<$class T $>$ }\\constexpr T {\bfseries deg\+To\+Rad} (const T \&x)
+{\footnotesize template$<$class T $>$ }\\constexpr T \mbox{\hyperlink{namespaceConverter_a235875d91b6f6067246c186a61ef2cf6}{deg\+To\+Rad}} (const T \&x)
 \item 
-\mbox{\Hypertarget{namespaceConverter_a06fd4ab29977cdbd5bfd72f6640c3f7d}\label{namespaceConverter_a06fd4ab29977cdbd5bfd72f6640c3f7d}} 
-{\footnotesize template$<$class T $>$ }\\constexpr T {\bfseries rad\+To\+Deg} (const T \&x)
+{\footnotesize template$<$class T $>$ }\\constexpr T \mbox{\hyperlink{namespaceConverter_a06fd4ab29977cdbd5bfd72f6640c3f7d}{rad\+To\+Deg}} (const T \&x)
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceConverter_a37352f0ac1e940be1b3fae18a9dce7ca}\label{namespaceConverter_a37352f0ac1e940be1b3fae18a9dce7ca}} 
-const float {\bfseries PPM} = 30.\+0f
+const float \mbox{\hyperlink{namespaceConverter_a37352f0ac1e940be1b3fae18a9dce7ca}{PPM}} = 30.\+0f
 \item 
-\mbox{\Hypertarget{namespaceConverter_a9ffff6f0c8d5f7f62c858f2596b43b3c}\label{namespaceConverter_a9ffff6f0c8d5f7f62c858f2596b43b3c}} 
-const float {\bfseries PI} = 3.\+1415
+const float \mbox{\hyperlink{namespaceConverter_a9ffff6f0c8d5f7f62c858f2596b43b3c}{PI}} = 3.\+1415
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-This namespace is used for easier conversion of units from the box2d units to SFML units and vice-\/versa. SFML uses pixels for position and degree for angle whereas box2d uses SI units (meters and radian). 
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceConverter_a235875d91b6f6067246c186a61ef2cf6}\label{namespaceConverter_a235875d91b6f6067246c186a61ef2cf6}} 
+\index{Converter@{Converter}!degToRad@{degToRad}}
+\index{degToRad@{degToRad}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{degToRad()}{degToRad()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr T Converter\+::deg\+To\+Rad (\begin{DoxyParamCaption}\item[{const T \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespaceConverter_a92b4bca6fd83ff741003d1967001f77b}\label{namespaceConverter_a92b4bca6fd83ff741003d1967001f77b}} 
+\index{Converter@{Converter}!metersToPixels@{metersToPixels}}
+\index{metersToPixels@{metersToPixels}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{metersToPixels()}{metersToPixels()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr T Converter\+::meters\+To\+Pixels (\begin{DoxyParamCaption}\item[{const T \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespaceConverter_a2b75536407802ae71228ef910d7e8e6c}\label{namespaceConverter_a2b75536407802ae71228ef910d7e8e6c}} 
+\index{Converter@{Converter}!pixelsToMeters@{pixelsToMeters}}
+\index{pixelsToMeters@{pixelsToMeters}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{pixelsToMeters()}{pixelsToMeters()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr T Converter\+::pixels\+To\+Meters (\begin{DoxyParamCaption}\item[{const T \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespaceConverter_a06fd4ab29977cdbd5bfd72f6640c3f7d}\label{namespaceConverter_a06fd4ab29977cdbd5bfd72f6640c3f7d}} 
+\index{Converter@{Converter}!radToDeg@{radToDeg}}
+\index{radToDeg@{radToDeg}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{radToDeg()}{radToDeg()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr T Converter\+::rad\+To\+Deg (\begin{DoxyParamCaption}\item[{const T \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceConverter_a9ffff6f0c8d5f7f62c858f2596b43b3c}\label{namespaceConverter_a9ffff6f0c8d5f7f62c858f2596b43b3c}} 
+\index{Converter@{Converter}!PI@{PI}}
+\index{PI@{PI}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily const float Converter\+::\+PI = 3.\+1415}
+
+\mbox{\Hypertarget{namespaceConverter_a37352f0ac1e940be1b3fae18a9dce7ca}\label{namespaceConverter_a37352f0ac1e940be1b3fae18a9dce7ca}} 
+\index{Converter@{Converter}!PPM@{PPM}}
+\index{PPM@{PPM}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{PPM}{PPM}}
+{\footnotesize\ttfamily const float Converter\+::\+PPM = 30.\+0f}
+
