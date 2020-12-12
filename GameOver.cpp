@@ -38,10 +38,11 @@ namespace HeadBall {
 
         this->_replayBtn.setTexture (this->_data->assets.getTexture ("Replay btn"));
         this->_replayBtn.setOrigin (this->_replayBtn.getGlobalBounds ( ).width / 2, this->_replayBtn.getGlobalBounds( ).height / 2);
-        this->_replayBtn.setPosition((WINDOW_WIDTH / 2 - WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 50));
+        this->_replayBtn.setPosition((WINDOW_WIDTH / 2 - WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 100));
 
         this->_exitBtn.setTexture (this->_data->assets.getTexture ("Exit btn"));
-        this->_exitBtn.setPosition((WINDOW_WIDTH / 2 + WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 50));
+        this->_exitBtn.setOrigin (this->_exitBtn.getGlobalBounds( ).width / 2, this->_exitBtn.getGlobalBounds( ).height / 2);
+        this->_exitBtn.setPosition((WINDOW_WIDTH / 2 + WINDOW_WIDTH / 4), (3 * WINDOW_HEIGHT / 4 + 100));
 
         std::stringstream ss;
         ss <<  this->_scoreTime->p1Score << "         " << this->_scoreTime->p2Score;

@@ -10,7 +10,7 @@
 
 namespace HeadBall {
     GameState::GameState (GameDataRef data, ScoreTimeRef scoretime, bool isSecondHalf) : _data{data}, _scoreTime{scoretime}, _ground{data, this->_world}, _ball{data, this->_world}, _rightUpHill{data, this->_world}, _leftUpHill{data, this->_world}, _leftPost{data}, _rightPost{data}, _wall{data, this->_world}, _p1{data, this->_world}, _p2{data, this->_world}  {
-                this->_isSecondHalf = isSecondHalf; 
+        this->_isSecondHalf = isSecondHalf; 
     }
 
     void GameState::init () {
