@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -76,51 +77,71 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for managing assets.  
+ <a href="classHeadBall_1_1AssetManager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="AssetManager_8hpp_source.html">AssetManager.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for HeadBall::AssetManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1AssetManager__coll__graph.png" border="0" usemap="#aHeadBall_1_1AssetManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1AssetManager_coll__map" id="aHeadBall_1_1AssetManager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,188,259"/>
+<area shape="rect" title="Class for managing assets." alt="" coords="5,5,188,259"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8a42c763062b1c4e61257d8d144ed83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#ae8a42c763062b1c4e61257d8d144ed83">AssetManager</a> ()</td></tr>
+<tr class="memdesc:ae8a42c763062b1c4e61257d8d144ed83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Asset Manager object.  <a href="classHeadBall_1_1AssetManager.html#ae8a42c763062b1c4e61257d8d144ed83">More...</a><br /></td></tr>
 <tr class="separator:ae8a42c763062b1c4e61257d8d144ed83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad508616e5a8a8ffedf1272a0fbe5816a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#ad508616e5a8a8ffedf1272a0fbe5816a">~AssetManager</a> ()</td></tr>
+<tr class="memdesc:ad508616e5a8a8ffedf1272a0fbe5816a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Asset Manager object.  <a href="classHeadBall_1_1AssetManager.html#ad508616e5a8a8ffedf1272a0fbe5816a">More...</a><br /></td></tr>
 <tr class="separator:ad508616e5a8a8ffedf1272a0fbe5816a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85a15157707941420c3df4477f787f1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#a85a15157707941420c3df4477f787f1c">loadTexture</a> (std::string name, std::string fileName)</td></tr>
+<tr class="memdesc:a85a15157707941420c3df4477f787f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load Texture from given file into <code>map</code>  <a href="classHeadBall_1_1AssetManager.html#a85a15157707941420c3df4477f787f1c">More...</a><br /></td></tr>
 <tr class="separator:a85a15157707941420c3df4477f787f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ee86390dc7da9c566534a66cadeded"><td class="memItemLeft" align="right" valign="top">sf::Texture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#ab3ee86390dc7da9c566534a66cadeded">getTexture</a> (std::string name)</td></tr>
+<tr class="memdesc:ab3ee86390dc7da9c566534a66cadeded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Texture object.  <a href="classHeadBall_1_1AssetManager.html#ab3ee86390dc7da9c566534a66cadeded">More...</a><br /></td></tr>
 <tr class="separator:ab3ee86390dc7da9c566534a66cadeded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9197ca9367f5e4d0fd712a76fcccd10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#ad9197ca9367f5e4d0fd712a76fcccd10">loadFont</a> (std::string name, std::string fileName)</td></tr>
+<tr class="memdesc:ad9197ca9367f5e4d0fd712a76fcccd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load Font from given file into <code>map</code>  <a href="classHeadBall_1_1AssetManager.html#ad9197ca9367f5e4d0fd712a76fcccd10">More...</a><br /></td></tr>
 <tr class="separator:ad9197ca9367f5e4d0fd712a76fcccd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af632498168418a46b580bd5cc6068f7a"><td class="memItemLeft" align="right" valign="top">sf::Font &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#af632498168418a46b580bd5cc6068f7a">getFont</a> (std::string name)</td></tr>
+<tr class="memdesc:af632498168418a46b580bd5cc6068f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Font object.  <a href="classHeadBall_1_1AssetManager.html#af632498168418a46b580bd5cc6068f7a">More...</a><br /></td></tr>
 <tr class="separator:af632498168418a46b580bd5cc6068f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb06d842ac9a650fda7edbfd879ff596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#abb06d842ac9a650fda7edbfd879ff596">loadSound</a> (std::string name, std::string fileName)</td></tr>
+<tr class="memdesc:abb06d842ac9a650fda7edbfd879ff596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load Sound from given file into <code>map</code>  <a href="classHeadBall_1_1AssetManager.html#abb06d842ac9a650fda7edbfd879ff596">More...</a><br /></td></tr>
 <tr class="separator:abb06d842ac9a650fda7edbfd879ff596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e60cc459c799954f84e0b4c20c61bb"><td class="memItemLeft" align="right" valign="top">sf::SoundBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#af0e60cc459c799954f84e0b4c20c61bb">getSound</a> (std::string name)</td></tr>
+<tr class="memdesc:af0e60cc459c799954f84e0b4c20c61bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Sound object.  <a href="classHeadBall_1_1AssetManager.html#af0e60cc459c799954f84e0b4c20c61bb">More...</a><br /></td></tr>
 <tr class="separator:af0e60cc459c799954f84e0b4c20c61bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab792f46e64a05e7ec271940acb3aa864"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#ab792f46e64a05e7ec271940acb3aa864">isTexturePresent</a> (std::string textureName)</td></tr>
+<tr class="memdesc:ab792f46e64a05e7ec271940acb3aa864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the Texture is present in <code>map</code>  <a href="classHeadBall_1_1AssetManager.html#ab792f46e64a05e7ec271940acb3aa864">More...</a><br /></td></tr>
 <tr class="separator:ab792f46e64a05e7ec271940acb3aa864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac64a27a0168d46cfe85a9bf756df733e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#ac64a27a0168d46cfe85a9bf756df733e">isFontPresent</a> (std::string fontName)</td></tr>
+<tr class="memdesc:ac64a27a0168d46cfe85a9bf756df733e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the Font is present in <code>map</code>  <a href="classHeadBall_1_1AssetManager.html#ac64a27a0168d46cfe85a9bf756df733e">More...</a><br /></td></tr>
 <tr class="separator:ac64a27a0168d46cfe85a9bf756df733e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72dc6b24eddb60eb1b57d09293c32133"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#a72dc6b24eddb60eb1b57d09293c32133">isSoundPresent</a> (std::string soundName)</td></tr>
+<tr class="memdesc:a72dc6b24eddb60eb1b57d09293c32133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the Sound is present in <code>map</code>  <a href="classHeadBall_1_1AssetManager.html#a72dc6b24eddb60eb1b57d09293c32133">More...</a><br /></td></tr>
 <tr class="separator:a72dc6b24eddb60eb1b57d09293c32133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6fbeb3031653c92b4a2c3ede70e73e72"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, sf::Texture &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#a6fbeb3031653c92b4a2c3ede70e73e72">_textures</a></td></tr>
+<tr class="memdesc:a6fbeb3031653c92b4a2c3ede70e73e72"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>map</code> for storing Textures  <a href="classHeadBall_1_1AssetManager.html#a6fbeb3031653c92b4a2c3ede70e73e72">More...</a><br /></td></tr>
 <tr class="separator:a6fbeb3031653c92b4a2c3ede70e73e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a388b9ebf57d8245eb3c91315222311be"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, sf::Font &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#a388b9ebf57d8245eb3c91315222311be">_fonts</a></td></tr>
+<tr class="memdesc:a388b9ebf57d8245eb3c91315222311be"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>map</code> for storing Fonts  <a href="classHeadBall_1_1AssetManager.html#a388b9ebf57d8245eb3c91315222311be">More...</a><br /></td></tr>
 <tr class="separator:a388b9ebf57d8245eb3c91315222311be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9d4247a44e104c0e5b4c5fc40192c0d"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, sf::SoundBuffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1AssetManager.html#af9d4247a44e104c0e5b4c5fc40192c0d">_sound_clips</a></td></tr>
+<tr class="memdesc:af9d4247a44e104c0e5b4c5fc40192c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>map</code> for storing Sound clips/Sound effects  <a href="classHeadBall_1_1AssetManager.html#af9d4247a44e104c0e5b4c5fc40192c0d">More...</a><br /></td></tr>
 <tr class="separator:af9d4247a44e104c0e5b4c5fc40192c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for managing assets. </p>
+<p>Assets managed by this class include Textures, Fonts and Sound. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae8a42c763062b1c4e61257d8d144ed83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8a42c763062b1c4e61257d8d144ed83">&#9670;&nbsp;</a></span>AssetManager()</h2>
 
@@ -143,6 +164,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Construct a new Asset Manager object. </p>
 
 </div>
 </div>
@@ -169,6 +192,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Destroy the Asset Manager object. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -188,6 +213,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the Font object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of Font object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sf::Font&amp; Reference to Font object </dd></dl>
+
 </div>
 </div>
 <a id="af0e60cc459c799954f84e0b4c20c61bb"></a>
@@ -205,6 +239,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the Sound object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of Sound object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sf::SoundBuffer&amp; Reference to Sound object </dd></dl>
 
 </div>
 </div>
@@ -224,6 +267,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the Texture object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of Texture object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sf::Texture&amp; Reference to Texture object </dd></dl>
+
 </div>
 </div>
 <a id="ac64a27a0168d46cfe85a9bf756df733e"></a>
@@ -241,6 +293,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check whether the Font is present in <code>map</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontName</td><td>Name of Font object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if Font is not present </dd>
+<dd>
+false if Font is not present </dd></dl>
 
 </div>
 </div>
@@ -260,6 +323,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Check whether the Sound is present in <code>map</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">soundName</td><td>Name of Sound object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if Sound is not present </dd>
+<dd>
+false if Sound is not present </dd></dl>
+
 </div>
 </div>
 <a id="ab792f46e64a05e7ec271940acb3aa864"></a>
@@ -277,6 +351,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check whether the Texture is present in <code>map</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textureName</td><td>Name of Texture object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if Texture is present </dd>
+<dd>
+false if Texture is not present </dd></dl>
 
 </div>
 </div>
@@ -306,6 +391,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Load Font from given file into <code>map</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the Font object </td></tr>
+    <tr><td class="paramname">fileName</td><td>Path to Font </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="abb06d842ac9a650fda7edbfd879ff596"></a>
@@ -333,6 +427,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Load Sound from given file into <code>map</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of Sound object </td></tr>
+    <tr><td class="paramname">fileName</td><td>Path to Sound </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -362,6 +465,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Load Texture from given file into <code>map</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of Texture object </td></tr>
+    <tr><td class="paramname">fileName</td><td>Path to Texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -385,6 +497,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p><code>map</code> for storing Fonts </p>
+
 </div>
 </div>
 <a id="af9d4247a44e104c0e5b4c5fc40192c0d"></a>
@@ -407,6 +521,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p><code>map</code> for storing Sound clips/Sound effects </p>
+
 </div>
 </div>
 <a id="a6fbeb3031653c92b4a2c3ede70e73e72"></a>
@@ -428,6 +544,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><code>map</code> for storing Textures </p>
 
 </div>
 </div>

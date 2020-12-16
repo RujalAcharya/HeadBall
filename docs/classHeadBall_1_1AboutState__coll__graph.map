@@ -1,4 +1,4 @@
 <map id="HeadBall::AboutState" name="HeadBall::AboutState">
-<area shape="rect" id="node1" title=" " alt="" coords="5,204,167,413"/>
-<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title=" " alt="" coords="24,5,148,156"/>
+<area shape="rect" id="node1" title="Class for About page." alt="" coords="5,233,167,443"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="24,5,148,185"/>
 </map>

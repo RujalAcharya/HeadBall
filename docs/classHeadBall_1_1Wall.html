@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -76,28 +77,37 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for invisible wall around the field and above the goalpost.  
+ <a href="classHeadBall_1_1Wall.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Wall_8hpp_source.html">Wall.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for HeadBall::Wall:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1Wall__coll__graph.png" border="0" usemap="#aHeadBall_1_1Wall_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1Wall_coll__map" id="aHeadBall_1_1Wall_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,124,405"/>
+<area shape="rect" title="Class for invisible wall around the field and above the goalpost." alt="" coords="5,5,124,405"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f2a81228f59cac2175915dee7fb4072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a5f2a81228f59cac2175915dee7fb4072">Wall</a> (<a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a> data, <a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a> world)</td></tr>
+<tr class="memdesc:a5f2a81228f59cac2175915dee7fb4072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classHeadBall_1_1Wall.html" title="Class for invisible wall around the field and above the goalpost.">Wall</a> object.  <a href="classHeadBall_1_1Wall.html#a5f2a81228f59cac2175915dee7fb4072">More...</a><br /></td></tr>
 <tr class="separator:a5f2a81228f59cac2175915dee7fb4072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082d6a797c9c3c4d04edcf85f25be685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a082d6a797c9c3c4d04edcf85f25be685">init</a> ()</td></tr>
+<tr class="memdesc:a082d6a797c9c3c4d04edcf85f25be685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate the wall object.  <a href="classHeadBall_1_1Wall.html#a082d6a797c9c3c4d04edcf85f25be685">More...</a><br /></td></tr>
 <tr class="separator:a082d6a797c9c3c4d04edcf85f25be685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab77580d6beb2bbcd3404eab2c284f0aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#ab77580d6beb2bbcd3404eab2c284f0aa">_data</a></td></tr>
+<tr class="memdesc:ab77580d6beb2bbcd3404eab2c284f0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer for <a class="el" href="structHeadBall_1_1GameData.html" title="Struct where the necessaey game data used by all the states is stored.">GameData</a> <br  />
+  <a href="classHeadBall_1_1Wall.html#ab77580d6beb2bbcd3404eab2c284f0aa">More...</a><br /></td></tr>
 <tr class="separator:ab77580d6beb2bbcd3404eab2c284f0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5835e681d10b166085140ddf6b81c78e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a5835e681d10b166085140ddf6b81c78e">_world</a></td></tr>
+<tr class="memdesc:a5835e681d10b166085140ddf6b81c78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer for b2World <br  />
+  <a href="classHeadBall_1_1Wall.html#a5835e681d10b166085140ddf6b81c78e">More...</a><br /></td></tr>
 <tr class="separator:a5835e681d10b166085140ddf6b81c78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a194f3d34db0fa5f11a5ce7560ded7986"><td class="memItemLeft" align="right" valign="top">b2BodyDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a194f3d34db0fa5f11a5ce7560ded7986">_leftDef</a></td></tr>
 <tr class="separator:a194f3d34db0fa5f11a5ce7560ded7986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,16 +118,26 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aae66ec13e3e565cbb7754a6cabf5ac50"><td class="memItemLeft" align="right" valign="top">b2BodyDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#aae66ec13e3e565cbb7754a6cabf5ac50">_lPostDef</a></td></tr>
 <tr class="separator:aae66ec13e3e565cbb7754a6cabf5ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a555e5e6b4d822e2d6d68523211c5b4"><td class="memItemLeft" align="right" valign="top">b2BodyDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a8a555e5e6b4d822e2d6d68523211c5b4">_rPostDef</a></td></tr>
+<tr class="memdesc:a8a555e5e6b4d822e2d6d68523211c5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of Box2d bodies <br  />
+  <a href="classHeadBall_1_1Wall.html#a8a555e5e6b4d822e2d6d68523211c5b4">More...</a><br /></td></tr>
 <tr class="separator:a8a555e5e6b4d822e2d6d68523211c5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28a2cb3b140d1e7a1914ee4ba0e5c77a"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a28a2cb3b140d1e7a1914ee4ba0e5c77a">_leftBody</a></td></tr>
+<tr class="memdesc:a28a2cb3b140d1e7a1914ee4ba0e5c77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Box2d body of left wall <br  />
+  <a href="classHeadBall_1_1Wall.html#a28a2cb3b140d1e7a1914ee4ba0e5c77a">More...</a><br /></td></tr>
 <tr class="separator:a28a2cb3b140d1e7a1914ee4ba0e5c77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27317ae9d434c96ccec3a2f796e46488"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a27317ae9d434c96ccec3a2f796e46488">_rightBody</a></td></tr>
+<tr class="memdesc:a27317ae9d434c96ccec3a2f796e46488"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Box2d body of right wall <br  />
+  <a href="classHeadBall_1_1Wall.html#a27317ae9d434c96ccec3a2f796e46488">More...</a><br /></td></tr>
 <tr class="separator:a27317ae9d434c96ccec3a2f796e46488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f931b9eff9a49bc81bfdc59baad14e3"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a8f931b9eff9a49bc81bfdc59baad14e3">_topBody</a></td></tr>
+<tr class="memdesc:a8f931b9eff9a49bc81bfdc59baad14e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Box2D body of top wall <br  />
+  <a href="classHeadBall_1_1Wall.html#a8f931b9eff9a49bc81bfdc59baad14e3">More...</a><br /></td></tr>
 <tr class="separator:a8f931b9eff9a49bc81bfdc59baad14e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16fb77ccab0db12ecab77cdf9e89c604"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a16fb77ccab0db12ecab77cdf9e89c604">_leftPost</a></td></tr>
+<tr class="memdesc:a16fb77ccab0db12ecab77cdf9e89c604"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Box2D body of wall for left goal post.  <a href="classHeadBall_1_1Wall.html#a16fb77ccab0db12ecab77cdf9e89c604">More...</a><br /></td></tr>
 <tr class="separator:a16fb77ccab0db12ecab77cdf9e89c604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3488083abf9e222a5391f73d37966ce7"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a3488083abf9e222a5391f73d37966ce7">_rightPost</a></td></tr>
+<tr class="memdesc:a3488083abf9e222a5391f73d37966ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Box2D body of wall for right goal post.  <a href="classHeadBall_1_1Wall.html#a3488083abf9e222a5391f73d37966ce7">More...</a><br /></td></tr>
 <tr class="separator:a3488083abf9e222a5391f73d37966ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae439316587254157a49fea3ee5a82f7a"><td class="memItemLeft" align="right" valign="top">b2PolygonShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#ae439316587254157a49fea3ee5a82f7a">_leftShape</a></td></tr>
 <tr class="separator:ae439316587254157a49fea3ee5a82f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +148,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7e9ee3460cdb2ea7bb67193342988fd5"><td class="memItemLeft" align="right" valign="top">b2PolygonShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a7e9ee3460cdb2ea7bb67193342988fd5">_lPostShape</a></td></tr>
 <tr class="separator:a7e9ee3460cdb2ea7bb67193342988fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dadc2d0ee86b838bbe305eef089f686"><td class="memItemLeft" align="right" valign="top">b2PolygonShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a2dadc2d0ee86b838bbe305eef089f686">_rPostShape</a></td></tr>
+<tr class="memdesc:a2dadc2d0ee86b838bbe305eef089f686"><td class="mdescLeft">&#160;</td><td class="mdescRight">The polygon shape for the fixure definition.  <a href="classHeadBall_1_1Wall.html#a2dadc2d0ee86b838bbe305eef089f686">More...</a><br /></td></tr>
 <tr class="separator:a2dadc2d0ee86b838bbe305eef089f686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe031dd764469758ce450b0967ca8e0"><td class="memItemLeft" align="right" valign="top">b2FixtureDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a6fe031dd764469758ce450b0967ca8e0">_leftFixture</a></td></tr>
 <tr class="separator:a6fe031dd764469758ce450b0967ca8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +159,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a25b6e02f5f8a9183b2d861e2f66708bb"><td class="memItemLeft" align="right" valign="top">b2FixtureDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#a25b6e02f5f8a9183b2d861e2f66708bb">_lPostFixture</a></td></tr>
 <tr class="separator:a25b6e02f5f8a9183b2d861e2f66708bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addb828528cdacdf81260973b61d01b72"><td class="memItemLeft" align="right" valign="top">b2FixtureDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Wall.html#addb828528cdacdf81260973b61d01b72">_rPostFixture</a></td></tr>
+<tr class="memdesc:addb828528cdacdf81260973b61d01b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fixture of wall for defining its properties.  <a href="classHeadBall_1_1Wall.html#addb828528cdacdf81260973b61d01b72">More...</a><br /></td></tr>
 <tr class="separator:addb828528cdacdf81260973b61d01b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for invisible wall around the field and above the goalpost. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5f2a81228f59cac2175915dee7fb4072"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f2a81228f59cac2175915dee7fb4072">&#9670;&nbsp;</a></span>Wall()</h2>
 
@@ -167,6 +191,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="classHeadBall_1_1Wall.html" title="Class for invisible wall around the field and above the goalpost.">Wall</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The Shared Pointer for game data </td></tr>
+    <tr><td class="paramname">world</td><td>The Shared pointer for Box2D world </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -184,6 +217,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initiate the wall object. </p>
 
 </div>
 </div>
@@ -208,6 +243,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The shared pointer for <a class="el" href="structHeadBall_1_1GameData.html" title="Struct where the necessaey game data used by all the states is stored.">GameData</a> <br  />
+ </p>
+
 </div>
 </div>
 <a id="a28a2cb3b140d1e7a1914ee4ba0e5c77a"></a>
@@ -229,6 +267,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The Box2d body of left wall <br  />
+ </p>
 
 </div>
 </div>
@@ -295,6 +336,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The Box2D body of wall for left goal post. </p>
 
 </div>
 </div>
@@ -406,6 +449,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Box2d body of right wall <br  />
+ </p>
+
 </div>
 </div>
 <a id="af3ccee2068ad562b68a92d2ad0c7f59c"></a>
@@ -472,6 +518,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Box2D body of wall for right goal post. </p>
+
 </div>
 </div>
 <a id="a9d3508111118988f6e63ee1b62931c45"></a>
@@ -516,6 +564,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The definition of Box2d bodies <br  />
+ </p>
+
 </div>
 </div>
 <a id="addb828528cdacdf81260973b61d01b72"></a>
@@ -537,6 +588,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The fixture of wall for defining its properties. </p>
 
 </div>
 </div>
@@ -560,6 +613,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The polygon shape for the fixure definition. </p>
+
 </div>
 </div>
 <a id="a8f931b9eff9a49bc81bfdc59baad14e3"></a>
@@ -581,6 +636,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The Box2D body of top wall <br  />
+ </p>
 
 </div>
 </div>
@@ -669,6 +727,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The shared pointer for b2World <br  />
+ </p>
 
 </div>
 </div>

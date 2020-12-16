@@ -1,66 +1,76 @@
 \hypertarget{namespaceHeadBall}{}\doxysection{Head\+Ball Namespace Reference}
 \label{namespaceHeadBall}\index{HeadBall@{HeadBall}}
+
+
+Custom namespace used throughout the project.  
+
+
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classHeadBall_1_1AboutState}{About\+State}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for About page. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1AssetManager}{Asset\+Manager}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for managing assets. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for shape and movement of ball. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1Game}{Game}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class where game loop is processed. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}
-\item 
+\begin{DoxyCompactList}\small\item\em Struct where the necessaey game data used by all the states is stored. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1GameOver}{Game\+Over}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for game over or full-\/time state. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1GameState}{Game\+State}}
-\item 
+\begin{DoxyCompactList}\small\item\em Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that includes main gameplay. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1GoalPost}{Goal\+Post}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Goalpost to be displayed in \mbox{\hyperlink{classHeadBall_1_1GameState}{Game\+State}}. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1GoalState}{Goal\+State}}
-\item 
+\begin{DoxyCompactList}\small\item\em Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that checks whether the player has scored goal or not and updates the state. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for defining the ground in the game world. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1HalfTime}{Half\+Time}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for Half Time \mbox{\hyperlink{classHeadBall_1_1State}{State}}. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1InputManager}{Input\+Manager}}
-\item 
+\begin{DoxyCompactList}\small\item\em Handle the input given by the user. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1InstructionsState}{Instructions\+State}}
-\item 
+\begin{DoxyCompactList}\small\item\em Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that provides a state to instuct the players about basic controls of game. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1MenuScreen}{Menu\+Screen}}
-\item 
+\begin{DoxyCompactList}\small\item\em Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that includes the functionality of menuscreen. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1PausedState}{Paused\+State}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for the screen to be displayed when game is paused. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1Player}{Player}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for shape and movement of player. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}
-\item 
+\begin{DoxyCompactList}\small\item\em Struct where the game time and player score is stored. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1SplashScreen}{Splash\+Screen}}
-\item 
+\begin{DoxyCompactList}\small\item\em Class for the Splash Screen. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1State}{State}}
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract based class which inherits all the states of the game. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1StateMachine}{State\+Machine}}
-\item 
+\begin{DoxyCompactList}\small\item\em The class that manages the states in the project. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1TimeManager}{Time\+Manager}}
-\item 
+\begin{DoxyCompactList}\small\item\em The class that manages the game time. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1UpHill}{Up\+Hill}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Uphill part of the game field, below the goal post and above the ground. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classHeadBall_1_1Wall}{Wall}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Class for invisible wall around the field and above the goalpost. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}} $>$ \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}} Struct. \end{DoxyCompactList}\item 
 typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}} $>$ \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}} struct. \end{DoxyCompactList}\item 
 typedef std\+::shared\+\_\+ptr$<$ b2\+World $>$ \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer that points to the Box2D world. \end{DoxyCompactList}\item 
 typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classHeadBall_1_1State}{State}} $>$ \mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{State\+Ref}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The Unique Pointer for storing the States. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Custom namespace used throughout the project. 
+
+The namespace {\ttfamily Headball} is used throughout the project to refer to the project-\/related classes and their members. 
 
 \doxysubsection{Typedef Documentation}
 \mbox{\Hypertarget{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}\label{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}} 
@@ -69,11 +79,19 @@ typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classHeadBall_1_1State}{State
 \doxysubsubsection{\texorpdfstring{GameDataRef}{GameDataRef}}
 {\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}$>$ \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Head\+Ball\+::\+Game\+Data\+Ref}}}
 
+
+
+The Shared Pointer of \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}} Struct. 
+
 \mbox{\Hypertarget{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}\label{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}} 
 \index{HeadBall@{HeadBall}!ScoreTimeRef@{ScoreTimeRef}}
 \index{ScoreTimeRef@{ScoreTimeRef}!HeadBall@{HeadBall}}
 \doxysubsubsection{\texorpdfstring{ScoreTimeRef}{ScoreTimeRef}}
 {\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}$>$ \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Head\+Ball\+::\+Score\+Time\+Ref}}}
+
+
+
+The Shared Pointer of \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}} struct. 
 
 \mbox{\Hypertarget{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}\label{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}} 
 \index{HeadBall@{HeadBall}!StateRef@{StateRef}}
@@ -81,9 +99,17 @@ typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classHeadBall_1_1State}{State
 \doxysubsubsection{\texorpdfstring{StateRef}{StateRef}}
 {\footnotesize\ttfamily typedef std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classHeadBall_1_1State}{State}}$>$ \mbox{\hyperlink{namespaceHeadBall_afc059c1a4e45e4d019e50a7459f1c7b9}{Head\+Ball\+::\+State\+Ref}}}
 
-\mbox{\Hypertarget{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}\label{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}} 
+
+
+The Unique Pointer for storing the States. 
+
+All the states are inherited from the abstract class {\ttfamily \mbox{\hyperlink{classHeadBall_1_1State}{State}}} that makes it possible to use a same pointer for all the states \mbox{\Hypertarget{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}\label{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}} 
 \index{HeadBall@{HeadBall}!WorldRef@{WorldRef}}
 \index{WorldRef@{WorldRef}!HeadBall@{HeadBall}}
 \doxysubsubsection{\texorpdfstring{WorldRef}{WorldRef}}
 {\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$b2\+World$>$ \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{Head\+Ball\+::\+World\+Ref}}}
+
+
+
+The Shared Pointer that points to the Box2D world. 
 

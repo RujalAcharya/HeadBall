@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['field_5ffilepath_530',['FIELD_FILEPATH',['../Definition_8hpp.html#ab1f0c91f903be65d00df5a5db06db971',1,'Definition.hpp']]]
+  ['frames_5fper_5fanimation_557',['FRAMES_PER_ANIMATION',['../Definition_8hpp.html#aacb988fff541a047d8ce1b3a98553a6f',1,'Definition.hpp']]],
+  ['full_5ftime_5fbg_5ffilepath_558',['FULL_TIME_BG_FILEPATH',['../Definition_8hpp.html#aa0bdd9e922d0feea0bb18e5c9aecbc67',1,'Definition.hpp']]]
 ];

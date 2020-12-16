@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1HalfTime}\index{HeadBall::HalfTime@{HeadBall::HalfTime}}
 
 
+Class for Half Time \mbox{\hyperlink{classHeadBall_1_1State}{State}}.  
+
+
+
+
 {\ttfamily \#include $<$Half\+Time.\+hpp$>$}
 
 
@@ -28,29 +33,42 @@ Collaboration diagram for Head\+Ball\+::Half\+Time\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1HalfTime_ade2a7f5e33748d14500e08a8f36fbe84}{Half\+Time}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} scoretime)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Half Time object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1HalfTime_afeb15413bc10dfbad82357f4ee024005}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize state related data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1HalfTime_a9d4eefe4920dbe226666d46d750a9003}{handle\+Input}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handle user input. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1HalfTime_a71bd648759fb16733211da6fe811371b}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Update state data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1HalfTime_ab0a713797b838e28df007c3631b321af}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Draw state objects. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1HalfTime_a3e9afdf583b874d0e45ff6fa0114840e}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em Shared pointer of all game data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} \mbox{\hyperlink{classHeadBall_1_1HalfTime_a4fb14ef610278fc46e4a1226b4f6c940}{\+\_\+score\+Time}}
-\item 
-sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1HalfTime_ae777255a9fd06537aa7f4fd5f7656fac}{\+\_\+text}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Shared pointer of the score and time. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1HalfTime_a3b328f123c128820bff33c3e77b6de26}{\+\_\+score}}
+\begin{DoxyCompactList}\small\item\em Scores of the players displayed as text. \end{DoxyCompactList}\item 
+sf\+::\+Music \mbox{\hyperlink{classHeadBall_1_1HalfTime_ac5e2f475cd5def776ff1690102289090}{\+\_\+theme}}
+\begin{DoxyCompactList}\small\item\em The theme music. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1HalfTime_a1eb04798564f876bf99b2632e64dcbeb}{\+\_\+btn\+Click\+Sfx}}
+\begin{DoxyCompactList}\small\item\em Sound effect for button click. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1HalfTime_af0d6a9daad6e53b1ef597b10a204b18b}{\+\_\+background}}
+\begin{DoxyCompactList}\small\item\em Background sprite to draw on screen. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1HalfTime_a3d5ae20180be343287e08b5a3e573db1}{\+\_\+resume\+Btn}}
+\begin{DoxyCompactList}\small\item\em Sprite for resume button. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for Half Time \mbox{\hyperlink{classHeadBall_1_1State}{State}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1HalfTime_ade2a7f5e33748d14500e08a8f36fbe84}\label{classHeadBall_1_1HalfTime_ade2a7f5e33748d14500e08a8f36fbe84}} 
@@ -61,12 +79,37 @@ sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1HalfTime_ae777255a9fd06537aa7f4fd
 
 
 
+Construct a new Half Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Shared pointer of game data \\
+\hline
+{\em scoretime} & Shared pointer of score and time \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::HalfTime@{HeadBall::HalfTime}!animate@{animate}}
+\index{animate@{animate}!HeadBall::HalfTime@{HeadBall::HalfTime}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Vitrual function for performing animations. 
+
 \mbox{\Hypertarget{classHeadBall_1_1HalfTime_ab0a713797b838e28df007c3631b321af}\label{classHeadBall_1_1HalfTime_ab0a713797b838e28df007c3631b321af}} 
 \index{HeadBall::HalfTime@{HeadBall::HalfTime}!draw@{draw}}
 \index{draw@{draw}!HeadBall::HalfTime@{HeadBall::HalfTime}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Half\+Time\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw state objects. 
 
 
 
@@ -80,6 +123,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3
 
 
 
+Handle user input. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1HalfTime_afeb15413bc10dfbad82357f4ee024005}\label{classHeadBall_1_1HalfTime_afeb15413bc10dfbad82357f4ee024005}} 
@@ -87,6 +134,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a1284416
 \index{init@{init}!HeadBall::HalfTime@{HeadBall::HalfTime}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Half\+Time\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialize state related data. 
 
 
 
@@ -100,6 +151,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -107,6 +162,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 \index{resume@{resume}!HeadBall::HalfTime@{HeadBall::HalfTime}}
 \doxysubsubsection{\texorpdfstring{resume()}{resume()}}
 {\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Virtual function for resuming the object. 
 
 
 
@@ -120,16 +179,64 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 
 
 
+Update state data. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}{Head\+Ball\+::\+State}}.
 
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1HalfTime_af0d6a9daad6e53b1ef597b10a204b18b}\label{classHeadBall_1_1HalfTime_af0d6a9daad6e53b1ef597b10a204b18b}} 
+\index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_background@{\_background}}
+\index{\_background@{\_background}!HeadBall::HalfTime@{HeadBall::HalfTime}}
+\doxysubsubsection{\texorpdfstring{\_background}{\_background}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Half\+Time\+::\+\_\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Background sprite to draw on screen. 
+
+\mbox{\Hypertarget{classHeadBall_1_1HalfTime_a1eb04798564f876bf99b2632e64dcbeb}\label{classHeadBall_1_1HalfTime_a1eb04798564f876bf99b2632e64dcbeb}} 
+\index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_btnClickSfx@{\_btnClickSfx}}
+\index{\_btnClickSfx@{\_btnClickSfx}!HeadBall::HalfTime@{HeadBall::HalfTime}}
+\doxysubsubsection{\texorpdfstring{\_btnClickSfx}{\_btnClickSfx}}
+{\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+Half\+Time\+::\+\_\+btn\+Click\+Sfx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sound effect for button click. 
+
 \mbox{\Hypertarget{classHeadBall_1_1HalfTime_a3e9afdf583b874d0e45ff6fa0114840e}\label{classHeadBall_1_1HalfTime_a3e9afdf583b874d0e45ff6fa0114840e}} 
 \index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_data@{\_data}}
 \index{\_data@{\_data}!HeadBall::HalfTime@{HeadBall::HalfTime}}
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Half\+Time\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Shared pointer of all game data. 
+
+\mbox{\Hypertarget{classHeadBall_1_1HalfTime_a3d5ae20180be343287e08b5a3e573db1}\label{classHeadBall_1_1HalfTime_a3d5ae20180be343287e08b5a3e573db1}} 
+\index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_resumeBtn@{\_resumeBtn}}
+\index{\_resumeBtn@{\_resumeBtn}!HeadBall::HalfTime@{HeadBall::HalfTime}}
+\doxysubsubsection{\texorpdfstring{\_resumeBtn}{\_resumeBtn}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Half\+Time\+::\+\_\+resume\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite for resume button. 
+
+\mbox{\Hypertarget{classHeadBall_1_1HalfTime_a3b328f123c128820bff33c3e77b6de26}\label{classHeadBall_1_1HalfTime_a3b328f123c128820bff33c3e77b6de26}} 
+\index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_score@{\_score}}
+\index{\_score@{\_score}!HeadBall::HalfTime@{HeadBall::HalfTime}}
+\doxysubsubsection{\texorpdfstring{\_score}{\_score}}
+{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Half\+Time\+::\+\_\+score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scores of the players displayed as text. 
 
 \mbox{\Hypertarget{classHeadBall_1_1HalfTime_a4fb14ef610278fc46e4a1226b4f6c940}\label{classHeadBall_1_1HalfTime_a4fb14ef610278fc46e4a1226b4f6c940}} 
 \index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_scoreTime@{\_scoreTime}}
@@ -137,11 +244,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_scoreTime}{\_scoreTime}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} Head\+Ball\+::\+Half\+Time\+::\+\_\+score\+Time\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHeadBall_1_1HalfTime_ae777255a9fd06537aa7f4fd5f7656fac}\label{classHeadBall_1_1HalfTime_ae777255a9fd06537aa7f4fd5f7656fac}} 
-\index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_text@{\_text}}
-\index{\_text@{\_text}!HeadBall::HalfTime@{HeadBall::HalfTime}}
-\doxysubsubsection{\texorpdfstring{\_text}{\_text}}
-{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Half\+Time\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+Shared pointer of the score and time. 
+
+\mbox{\Hypertarget{classHeadBall_1_1HalfTime_ac5e2f475cd5def776ff1690102289090}\label{classHeadBall_1_1HalfTime_ac5e2f475cd5def776ff1690102289090}} 
+\index{HeadBall::HalfTime@{HeadBall::HalfTime}!\_theme@{\_theme}}
+\index{\_theme@{\_theme}!HeadBall::HalfTime@{HeadBall::HalfTime}}
+\doxysubsubsection{\texorpdfstring{\_theme}{\_theme}}
+{\footnotesize\ttfamily sf\+::\+Music Head\+Ball\+::\+Half\+Time\+::\+\_\+theme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The theme music. 
 
 
 

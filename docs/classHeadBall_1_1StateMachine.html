@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -76,45 +77,62 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The class that manages the states in the project.  
+ <a href="classHeadBall_1_1StateMachine.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="StateMachine_8hpp_source.html">StateMachine.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for HeadBall::StateMachine:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1StateMachine__coll__graph.png" border="0" usemap="#aHeadBall_1_1StateMachine_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1StateMachine_coll__map" id="aHeadBall_1_1StateMachine_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,192,215"/>
+<area shape="rect" title="The class that manages the states in the project." alt="" coords="5,5,192,215"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a46679e69e8c4569f970f6dde806e299c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a46679e69e8c4569f970f6dde806e299c">StateMachine</a> ()</td></tr>
+<tr class="memdesc:a46679e69e8c4569f970f6dde806e299c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> Machine object.  <a href="classHeadBall_1_1StateMachine.html#a46679e69e8c4569f970f6dde806e299c">More...</a><br /></td></tr>
 <tr class="separator:a46679e69e8c4569f970f6dde806e299c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab378ab057f4dd0a472f297bcebe6cb02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#ab378ab057f4dd0a472f297bcebe6cb02">~StateMachine</a> ()</td></tr>
+<tr class="memdesc:ab378ab057f4dd0a472f297bcebe6cb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> Machine object.  <a href="classHeadBall_1_1StateMachine.html#ab378ab057f4dd0a472f297bcebe6cb02">More...</a><br /></td></tr>
 <tr class="separator:ab378ab057f4dd0a472f297bcebe6cb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b8b3adae8520cd4b9c7e11544a60f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#aa1b8b3adae8520cd4b9c7e11544a60f6">addState</a> (<a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a> newState, bool isReplacing=true)</td></tr>
+<tr class="memdesc:aa1b8b3adae8520cd4b9c7e11544a60f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new state to the state machine.  <a href="classHeadBall_1_1StateMachine.html#aa1b8b3adae8520cd4b9c7e11544a60f6">More...</a><br /></td></tr>
 <tr class="separator:aa1b8b3adae8520cd4b9c7e11544a60f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b1159950aef7717792ccdb2e2ecc1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#ad7b1159950aef7717792ccdb2e2ecc1a">removeState</a> ()</td></tr>
+<tr class="memdesc:ad7b1159950aef7717792ccdb2e2ecc1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the state at the top of the stack.  <a href="classHeadBall_1_1StateMachine.html#ad7b1159950aef7717792ccdb2e2ecc1a">More...</a><br /></td></tr>
 <tr class="separator:ad7b1159950aef7717792ccdb2e2ecc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a36b2675a83f91af901520dd3816e8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a8a36b2675a83f91af901520dd3816e8b">processStateChanges</a> ()</td></tr>
+<tr class="memdesc:a8a36b2675a83f91af901520dd3816e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the changes in the state.  <a href="classHeadBall_1_1StateMachine.html#a8a36b2675a83f91af901520dd3816e8b">More...</a><br /></td></tr>
 <tr class="separator:a8a36b2675a83f91af901520dd3816e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d52455d71aa6f5193d6b5f63cb5560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a57d52455d71aa6f5193d6b5f63cb5560">getActiveState</a> ()</td></tr>
+<tr class="memdesc:a57d52455d71aa6f5193d6b5f63cb5560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Active <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> object i.e the state at the top of the stack.  <a href="classHeadBall_1_1StateMachine.html#a57d52455d71aa6f5193d6b5f63cb5560">More...</a><br /></td></tr>
 <tr class="separator:a57d52455d71aa6f5193d6b5f63cb5560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6c6fc866a013c4ae200a8b3d8f951f07"><td class="memItemLeft" align="right" valign="top">std::stack&lt; <a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a6c6fc866a013c4ae200a8b3d8f951f07">_states</a></td></tr>
+<tr class="memdesc:a6c6fc866a013c4ae200a8b3d8f951f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stack where the states in the game are kept.  <a href="classHeadBall_1_1StateMachine.html#a6c6fc866a013c4ae200a8b3d8f951f07">More...</a><br /></td></tr>
 <tr class="separator:a6c6fc866a013c4ae200a8b3d8f951f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa042dc19147dd496a77d4010e36ff4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#afc059c1a4e45e4d019e50a7459f1c7b9">StateRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#afa042dc19147dd496a77d4010e36ff4b">_newState</a></td></tr>
+<tr class="memdesc:afa042dc19147dd496a77d4010e36ff4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Unique Pointer to new state that is beong added.  <a href="classHeadBall_1_1StateMachine.html#afa042dc19147dd496a77d4010e36ff4b">More...</a><br /></td></tr>
 <tr class="separator:afa042dc19147dd496a77d4010e36ff4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39afd50d3c1ab740b0321bfe65788450"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a39afd50d3c1ab740b0321bfe65788450">_isReplacing</a></td></tr>
+<tr class="memdesc:a39afd50d3c1ab740b0321bfe65788450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the state at the top of stack is being popped or another state is being pushed at the top of it.  <a href="classHeadBall_1_1StateMachine.html#a39afd50d3c1ab740b0321bfe65788450">More...</a><br /></td></tr>
 <tr class="separator:a39afd50d3c1ab740b0321bfe65788450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1e559220c2294c7bd9c388ea183c474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#ac1e559220c2294c7bd9c388ea183c474">_isAdding</a></td></tr>
+<tr class="memdesc:ac1e559220c2294c7bd9c388ea183c474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a new state is being added.  <a href="classHeadBall_1_1StateMachine.html#ac1e559220c2294c7bd9c388ea183c474">More...</a><br /></td></tr>
 <tr class="separator:ac1e559220c2294c7bd9c388ea183c474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80d80aa97934d2d55494641bb8633714"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1StateMachine.html#a80d80aa97934d2d55494641bb8633714">_isRemoving</a></td></tr>
+<tr class="memdesc:a80d80aa97934d2d55494641bb8633714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the state at the top of stack is being popped.  <a href="classHeadBall_1_1StateMachine.html#a80d80aa97934d2d55494641bb8633714">More...</a><br /></td></tr>
 <tr class="separator:a80d80aa97934d2d55494641bb8633714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The class that manages the states in the project. </p>
+<p>This class manages all the states in the game in a stack. In every game loop, the state at the top of the stack is resumed. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a46679e69e8c4569f970f6dde806e299c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46679e69e8c4569f970f6dde806e299c">&#9670;&nbsp;</a></span>StateMachine()</h2>
 
@@ -137,6 +155,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> Machine object. </p>
 
 </div>
 </div>
@@ -162,6 +182,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destroy the <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> Machine object. </p>
 
 </div>
 </div>
@@ -192,6 +214,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Add a new state to the state machine. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newState</td><td>The Unique Pointer to new state </td></tr>
+    <tr><td class="paramname">isReplacing</td><td>Whether the top state at the stack is being replaced or another state is being pushed at the top of it </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a57d52455d71aa6f5193d6b5f63cb5560"></a>
@@ -208,6 +239,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the Active <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> object i.e the state at the top of the stack. </p>
+<dl class="section return"><dt>Returns</dt><dd>StateRef&amp; The reference to the state at the top of the stack </dd></dl>
 
 </div>
 </div>
@@ -226,6 +260,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Process the changes in the state. </p>
+
 </div>
 </div>
 <a id="ad7b1159950aef7717792ccdb2e2ecc1a"></a>
@@ -242,6 +278,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Remove the state at the top of the stack. </p>
 
 </div>
 </div>
@@ -266,6 +304,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Whether a new state is being added. </p>
+
 </div>
 </div>
 <a id="a80d80aa97934d2d55494641bb8633714"></a>
@@ -287,6 +327,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Whether the state at the top of stack is being popped. </p>
 
 </div>
 </div>
@@ -310,6 +352,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Whether the state at the top of stack is being popped or another state is being pushed at the top of it. </p>
+
 </div>
 </div>
 <a id="afa042dc19147dd496a77d4010e36ff4b"></a>
@@ -332,6 +376,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Unique Pointer to new state that is beong added. </p>
+
 </div>
 </div>
 <a id="a6c6fc866a013c4ae200a8b3d8f951f07"></a>
@@ -353,6 +399,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The stack where the states in the game are kept. </p>
 
 </div>
 </div>

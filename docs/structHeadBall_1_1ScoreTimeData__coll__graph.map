@@ -1,4 +1,4 @@
 <map id="HeadBall::ScoreTimeData" name="HeadBall::ScoreTimeData">
-<area shape="rect" id="node1" title=" " alt="" coords="5,380,193,472"/>
-<area shape="rect" id="node2" href="$classHeadBall_1_1TimeManager.html" title=" " alt="" coords="10,5,189,317"/>
+<area shape="rect" id="node1" title="Struct where the game time and player score is stored." alt="" coords="5,380,193,472"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1TimeManager.html" title="The class that manages the game time." alt="" coords="10,5,189,317"/>
 </map>

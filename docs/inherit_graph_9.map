@@ -1,12 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classHeadBall_1_1State.html" title=" " alt="" coords="5,208,128,235"/>
-<area shape="rect" id="node2" href="$classHeadBall_1_1AboutState.html" title=" " alt="" coords="195,5,356,32"/>
-<area shape="rect" id="node3" href="$classHeadBall_1_1GameOver.html" title=" " alt="" coords="196,56,355,83"/>
-<area shape="rect" id="node4" href="$classHeadBall_1_1GameState.html" title=" " alt="" coords="194,107,357,133"/>
-<area shape="rect" id="node5" href="$classHeadBall_1_1GoalState.html" title=" " alt="" coords="199,157,352,184"/>
-<area shape="rect" id="node6" href="$classHeadBall_1_1HalfTime.html" title=" " alt="" coords="201,208,349,235"/>
-<area shape="rect" id="node7" href="$classHeadBall_1_1InstructionsState.html" title=" " alt="" coords="176,259,375,285"/>
-<area shape="rect" id="node8" href="$classHeadBall_1_1MenuScreen.html" title=" " alt="" coords="191,309,360,336"/>
-<area shape="rect" id="node9" href="$classHeadBall_1_1PausedState.html" title=" " alt="" coords="190,360,361,387"/>
-<area shape="rect" id="node10" href="$classHeadBall_1_1SplashScreen.html" title=" " alt="" coords="187,411,363,437"/>
+<area shape="rect" id="node1" href="$classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="5,208,128,235"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1AboutState.html" title="Class for About page." alt="" coords="195,5,356,32"/>
+<area shape="rect" id="node3" href="$classHeadBall_1_1GameOver.html" title="Class for game over or full&#45;time state." alt="" coords="196,56,355,83"/>
+<area shape="rect" id="node4" href="$classHeadBall_1_1GameState.html" title="Derived class of State class with visibility mode public that includes main gameplay." alt="" coords="194,107,357,133"/>
+<area shape="rect" id="node5" href="$classHeadBall_1_1GoalState.html" title="Derived class of State class with visibility mode public that checks whether the player has scored go..." alt="" coords="199,157,352,184"/>
+<area shape="rect" id="node6" href="$classHeadBall_1_1HalfTime.html" title="Class for Half Time State." alt="" coords="201,208,349,235"/>
+<area shape="rect" id="node7" href="$classHeadBall_1_1InstructionsState.html" title="Derived class of State class with visibility mode public that provides a state to instuct the players..." alt="" coords="176,259,375,285"/>
+<area shape="rect" id="node8" href="$classHeadBall_1_1MenuScreen.html" title="Derived class of State class with visibility mode public that includes the functionality of menuscree..." alt="" coords="191,309,360,336"/>
+<area shape="rect" id="node9" href="$classHeadBall_1_1PausedState.html" title="Class for the screen to be displayed when game is paused." alt="" coords="190,360,361,387"/>
+<area shape="rect" id="node10" href="$classHeadBall_1_1SplashScreen.html" title="Class for the Splash Screen." alt="" coords="187,411,363,437"/>
 </map>

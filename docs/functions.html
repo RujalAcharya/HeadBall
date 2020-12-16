@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -69,12 +70,19 @@ $(function() {
 <li>_aboutBtn
 : <a class="el" href="classHeadBall_1_1MenuScreen.html#a1c2cc671b1e6d695ed3e0ac456d929d2">HeadBall::MenuScreen</a>
 </li>
+<li>_animationCounter
+: <a class="el" href="classHeadBall_1_1GoalState.html#af3c8604cd53324657b72f357e4fb5fa1">HeadBall::GoalState</a>
+, <a class="el" href="classHeadBall_1_1SplashScreen.html#a795272bafc6b87f68b41c750e22548f5">HeadBall::SplashScreen</a>
+</li>
 <li>_backBtn
 : <a class="el" href="classHeadBall_1_1AboutState.html#ab2dc1043cfe7330ea9a42894ae059226">HeadBall::AboutState</a>
 , <a class="el" href="classHeadBall_1_1InstructionsState.html#a13ce8d58c28e1c1fa444d878e4a59b5a">HeadBall::InstructionsState</a>
 </li>
 <li>_background
 : <a class="el" href="classHeadBall_1_1AboutState.html#aaebc24cb810535cad4b6f7693695a28e">HeadBall::AboutState</a>
+, <a class="el" href="classHeadBall_1_1GameOver.html#a68e1c0b9354d6dd57f3f6dc259872ce1">HeadBall::GameOver</a>
+, <a class="el" href="classHeadBall_1_1GoalState.html#a456b2ead80e65c5ddbd1679c21420602">HeadBall::GoalState</a>
+, <a class="el" href="classHeadBall_1_1HalfTime.html#af0d6a9daad6e53b1ef597b10a204b18b">HeadBall::HalfTime</a>
 , <a class="el" href="classHeadBall_1_1InstructionsState.html#ac3779ca6dad4d8760652044b8bb257aa">HeadBall::InstructionsState</a>
 , <a class="el" href="classHeadBall_1_1MenuScreen.html#a92a4837201f58ea7e3c7b92fc8d51a42">HeadBall::MenuScreen</a>
 , <a class="el" href="classHeadBall_1_1PausedState.html#a6ee42d403c5d6319594224fabc60ffa7">HeadBall::PausedState</a>
@@ -84,9 +92,6 @@ $(function() {
 </li>
 <li>_ball
 : <a class="el" href="classHeadBall_1_1GameState.html#aae564d96a86f285535d89780729fe7fc">HeadBall::GameState</a>
-</li>
-<li>_ballSprite
-: <a class="el" href="classHeadBall_1_1Ball.html#a287953d340994f44fbe5bcd803777a39">HeadBall::Ball</a>
 </li>
 <li>_body
 : <a class="el" href="classHeadBall_1_1Ball.html#a3d3e4a555e859b291ea6023e733a810f">HeadBall::Ball</a>
@@ -102,7 +107,9 @@ $(function() {
 </li>
 <li>_btnClickSfx
 : <a class="el" href="classHeadBall_1_1AboutState.html#a227eca8b295be691abbd6d5cd90057f1">HeadBall::AboutState</a>
+, <a class="el" href="classHeadBall_1_1GameOver.html#a0e96e165acd7d94242d5609c3b45a368">HeadBall::GameOver</a>
 , <a class="el" href="classHeadBall_1_1GameState.html#ae044f5038ac8d96e734ee75affbef056">HeadBall::GameState</a>
+, <a class="el" href="classHeadBall_1_1HalfTime.html#a1eb04798564f876bf99b2632e64dcbeb">HeadBall::HalfTime</a>
 , <a class="el" href="classHeadBall_1_1InstructionsState.html#ab3b0d484d0dcfb14469a52b8d3d79b06">HeadBall::InstructionsState</a>
 , <a class="el" href="classHeadBall_1_1MenuScreen.html#aa02654b064dd7da28355d76944bf8c53">HeadBall::MenuScreen</a>
 , <a class="el" href="classHeadBall_1_1PausedState.html#af973c803d87dc5cf335b4ca0d0b9c850">HeadBall::PausedState</a>
@@ -112,11 +119,11 @@ $(function() {
 </li>
 <li>_clock
 : <a class="el" href="classHeadBall_1_1Game.html#ae6514880f3b548d2b722ad0e4b5677c9">HeadBall::Game</a>
-, <a class="el" href="classHeadBall_1_1SplashScreen.html#a21cfc06491eb23a008471629a1b9bf31">HeadBall::SplashScreen</a>
 , <a class="el" href="classHeadBall_1_1TimeManager.html#afbcd0e76a0f868a7c9d5840ae2515e09">HeadBall::TimeManager</a>
 </li>
 <li>_crowdCheerOnGoal
-: <a class="el" href="classHeadBall_1_1GoalState.html#a2407fb319c38496f4398c8d8ce124f37">HeadBall::GoalState</a>
+: <a class="el" href="classHeadBall_1_1GameOver.html#ad5c76aed2523ec46ae4882ca1ed6bd15">HeadBall::GameOver</a>
+, <a class="el" href="classHeadBall_1_1GoalState.html#a2407fb319c38496f4398c8d8ce124f37">HeadBall::GoalState</a>
 </li>
 <li>_crowdCheerSfx
 : <a class="el" href="classHeadBall_1_1GameState.html#af3e61f2844e0b5b1648c33dfd8ad069a">HeadBall::GameState</a>
@@ -141,6 +148,7 @@ $(function() {
 </li>
 <li>_exitBtn
 : <a class="el" href="classHeadBall_1_1AboutState.html#a4ac869f6805bd881eb149aa646c234d1">HeadBall::AboutState</a>
+, <a class="el" href="classHeadBall_1_1GameOver.html#a6ee2290da3eeec3f0d05998a972a3d78">HeadBall::GameOver</a>
 , <a class="el" href="classHeadBall_1_1InstructionsState.html#a81f8f20058e95607f68e4e5467797a2b">HeadBall::InstructionsState</a>
 , <a class="el" href="classHeadBall_1_1MenuScreen.html#a509611625035eec50e31ac99a1c2f3dc">HeadBall::MenuScreen</a>
 , <a class="el" href="classHeadBall_1_1PausedState.html#a33382d61d647803281af96d6e55a6971">HeadBall::PausedState</a>
@@ -151,9 +159,6 @@ $(function() {
 , <a class="el" href="classHeadBall_1_1Player.html#a90b0b2561d9ede67036a5eb1fa259758">HeadBall::Player</a>
 , <a class="el" href="classHeadBall_1_1UpHill.html#ad58501ec8db40d8ff72af7901080d09a">HeadBall::UpHill</a>
 </li>
-<li>_flagSprite
-: <a class="el" href="classHeadBall_1_1SplashScreen.html#a2a7e6263282a76bfec561dcead86ab27">HeadBall::SplashScreen</a>
-</li>
 <li>_fonts
 : <a class="el" href="classHeadBall_1_1AssetManager.html#a388b9ebf57d8245eb3c91315222311be">HeadBall::AssetManager</a>
 </li>
@@ -163,6 +168,9 @@ $(function() {
 <li>_instructionsBtn
 : <a class="el" href="classHeadBall_1_1MenuScreen.html#a775577ba336f4322876e1e2474a455d9">HeadBall::MenuScreen</a>
 , <a class="el" href="classHeadBall_1_1PausedState.html#ab6af48ffee571e2e58d91739981484ec">HeadBall::PausedState</a>
+</li>
+<li>_instructionsText
+: <a class="el" href="classHeadBall_1_1InstructionsState.html#a7f62cf7f0ce36cbbbc42c330d0df6a3c">HeadBall::InstructionsState</a>
 </li>
 <li>_isAdding
 : <a class="el" href="classHeadBall_1_1StateMachine.html#ac1e559220c2294c7bd9c388ea183c474">HeadBall::StateMachine</a>
@@ -178,6 +186,7 @@ $(function() {
 </li>
 <li>_isSecondHalf
 : <a class="el" href="classHeadBall_1_1GameState.html#a799959fa528dd0a3889b86eede41378a">HeadBall::GameState</a>
+, <a class="el" href="classHeadBall_1_1GoalState.html#a9257150e457e20b730491b599b3d046f">HeadBall::GoalState</a>
 </li>
 <li>_leftBody
 : <a class="el" href="classHeadBall_1_1Wall.html#a28a2cb3b140d1e7a1914ee4ba0e5c77a">HeadBall::Wall</a>
@@ -197,6 +206,9 @@ $(function() {
 </li>
 <li>_leftUpHill
 : <a class="el" href="classHeadBall_1_1GameState.html#a7d6d70fb5fe94b8e9d1a198c93a28e9e">HeadBall::GameState</a>
+</li>
+<li>_logoSprite
+: <a class="el" href="classHeadBall_1_1SplashScreen.html#a06817e1c088ceff0f69ccf357d7ea777">HeadBall::SplashScreen</a>
 </li>
 <li>_longWhistleSfx
 : <a class="el" href="classHeadBall_1_1GameState.html#ab8102617fb964a04c5e5ff8f64926799">HeadBall::GameState</a>
@@ -237,6 +249,9 @@ $(function() {
 <li>_playBtn
 : <a class="el" href="classHeadBall_1_1MenuScreen.html#acd8d1c6fea014039450b1acff8f7e143">HeadBall::MenuScreen</a>
 </li>
+<li>_playerKickSfx
+: <a class="el" href="classHeadBall_1_1GameState.html#a5d7256dca5aa8ece9db6b462a5abf062">HeadBall::GameState</a>
+</li>
 <li>_polyShape
 : <a class="el" href="classHeadBall_1_1Ground.html#ad18576137f5ec400b86b8209bd4c8840">HeadBall::Ground</a>
 , <a class="el" href="classHeadBall_1_1UpHill.html#a99a4a73d3f739832c803348f963a1461">HeadBall::UpHill</a>
@@ -244,8 +259,12 @@ $(function() {
 <li>_rectShape
 : <a class="el" href="classHeadBall_1_1Player.html#ab14e6ce962a59d00a4e749e9f264d384">HeadBall::Player</a>
 </li>
+<li>_replayBtn
+: <a class="el" href="classHeadBall_1_1GameOver.html#a54d6c631da4d8a3f082efe22d1b2b334">HeadBall::GameOver</a>
+</li>
 <li>_resumeBtn
-: <a class="el" href="classHeadBall_1_1PausedState.html#aa66cbde467c6df403b25f3ef88887cc2">HeadBall::PausedState</a>
+: <a class="el" href="classHeadBall_1_1HalfTime.html#a3d5ae20180be343287e08b5a3e573db1">HeadBall::HalfTime</a>
+, <a class="el" href="classHeadBall_1_1PausedState.html#aa66cbde467c6df403b25f3ef88887cc2">HeadBall::PausedState</a>
 </li>
 <li>_rightBody
 : <a class="el" href="classHeadBall_1_1Wall.html#a27317ae9d434c96ccec3a2f796e46488">HeadBall::Wall</a>
@@ -275,6 +294,10 @@ $(function() {
 <li>_rPostShape
 : <a class="el" href="classHeadBall_1_1Wall.html#a2dadc2d0ee86b838bbe305eef089f686">HeadBall::Wall</a>
 </li>
+<li>_score
+: <a class="el" href="classHeadBall_1_1GameOver.html#aed029acddf6b530182138c72ef3384ae">HeadBall::GameOver</a>
+, <a class="el" href="classHeadBall_1_1HalfTime.html#a3b328f123c128820bff33c3e77b6de26">HeadBall::HalfTime</a>
+</li>
 <li>_scoreTime
 : <a class="el" href="classHeadBall_1_1GameOver.html#a4e4623f95645217c552bca88d56f8d55">HeadBall::GameOver</a>
 , <a class="el" href="classHeadBall_1_1GameState.html#a4b53cba550507cd9ed7bcd969c664ddb">HeadBall::GameState</a>
@@ -297,22 +320,22 @@ $(function() {
 : <a class="el" href="classHeadBall_1_1GoalPost.html#a2815a3e15e514fe2cc7c45883ead2eb4">HeadBall::GoalPost</a>
 , <a class="el" href="classHeadBall_1_1Player.html#aa2d7695904d5d85fb0db29c7839d41c6">HeadBall::Player</a>
 </li>
+<li>_spriteCounter
+: <a class="el" href="classHeadBall_1_1SplashScreen.html#a991998a5b7eba4d722d2b4167321e04e">HeadBall::SplashScreen</a>
+</li>
 <li>_states
 : <a class="el" href="classHeadBall_1_1StateMachine.html#a6c6fc866a013c4ae200a8b3d8f951f07">HeadBall::StateMachine</a>
 </li>
 <li>_text
 : <a class="el" href="classHeadBall_1_1AboutState.html#aa7b0a9d142c4dfed09b69d8da588e5b8">HeadBall::AboutState</a>
-, <a class="el" href="classHeadBall_1_1GameOver.html#a4c8511cfbfd4a980f0de795a5ab6e9d5">HeadBall::GameOver</a>
-, <a class="el" href="classHeadBall_1_1GoalState.html#aaed3f0f35e4fb0880681cfacea01bc64">HeadBall::GoalState</a>
-, <a class="el" href="classHeadBall_1_1HalfTime.html#ae777255a9fd06537aa7f4fd5f7656fac">HeadBall::HalfTime</a>
-, <a class="el" href="classHeadBall_1_1InstructionsState.html#a26a58e88b497036c36f20873f4ca29dd">HeadBall::InstructionsState</a>
 , <a class="el" href="classHeadBall_1_1MenuScreen.html#aa97015b3a98b8373c1ea20a4d4558fb7">HeadBall::MenuScreen</a>
 </li>
 <li>_textures
 : <a class="el" href="classHeadBall_1_1AssetManager.html#a6fbeb3031653c92b4a2c3ede70e73e72">HeadBall::AssetManager</a>
 </li>
 <li>_theme
-: <a class="el" href="classHeadBall_1_1MenuScreen.html#aafa4911bd3ceace1f9276f469ca487fd">HeadBall::MenuScreen</a>
+: <a class="el" href="classHeadBall_1_1HalfTime.html#ac5e2f475cd5def776ff1690102289090">HeadBall::HalfTime</a>
+, <a class="el" href="classHeadBall_1_1MenuScreen.html#aafa4911bd3ceace1f9276f469ca487fd">HeadBall::MenuScreen</a>
 , <a class="el" href="classHeadBall_1_1PausedState.html#acd965a6bf7fe020253f9f85756e79a4e">HeadBall::PausedState</a>
 </li>
 <li>_timeText
@@ -333,10 +356,12 @@ $(function() {
 <li>_wall
 : <a class="el" href="classHeadBall_1_1GameState.html#a07a617b842994ecd2320c47333996c2a">HeadBall::GameState</a>
 </li>
+<li>_winnerText
+: <a class="el" href="classHeadBall_1_1GameOver.html#a2fd52bfac5f4b8fd4a44a8fb63bb3b3e">HeadBall::GameOver</a>
+</li>
 <li>_world
 : <a class="el" href="classHeadBall_1_1Ball.html#a381eba2a448b8b1f10f49594565c0596">HeadBall::Ball</a>
 , <a class="el" href="classHeadBall_1_1GameState.html#a56c4a021459d5a1c4cafea41c636b480">HeadBall::GameState</a>
-, <a class="el" href="classHeadBall_1_1GoalPost.html#a688496c648a722f2dba85147ce95a510">HeadBall::GoalPost</a>
 , <a class="el" href="classHeadBall_1_1Ground.html#ae830bd2b05c4da5984ea6c5348cc0eaf">HeadBall::Ground</a>
 , <a class="el" href="classHeadBall_1_1Player.html#ab447ca5422e0d4cfe1dadb52047dbdac">HeadBall::Player</a>
 , <a class="el" href="classHeadBall_1_1UpHill.html#a0f9e27c6732877a2ed5eaf533fbc5d11">HeadBall::UpHill</a>

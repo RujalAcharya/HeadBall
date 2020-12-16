@@ -1,9 +1,10 @@
 <map id="Converter.hpp" name="Converter.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="284,5,399,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="372,5,487,32"/>
 <area shape="rect" id="node2" href="$Ball_8cpp.html" title=" " alt="" coords="5,80,80,107"/>
-<area shape="rect" id="node3" href="$GoalPost_8cpp.html" title=" " alt="" coords="104,80,211,107"/>
-<area shape="rect" id="node4" href="$Ground_8cpp.html" title=" " alt="" coords="235,80,331,107"/>
-<area shape="rect" id="node5" href="$Player_8cpp.html" title=" " alt="" coords="355,80,445,107"/>
-<area shape="rect" id="node6" href="$Uphill_8cpp.html" title=" " alt="" coords="470,80,557,107"/>
-<area shape="rect" id="node7" href="$Wall_8cpp.html" title=" " alt="" coords="581,80,659,107"/>
+<area shape="rect" id="node3" href="$GameState_8cpp.html" title=" " alt="" coords="104,80,227,107"/>
+<area shape="rect" id="node4" href="$GoalPost_8cpp.html" title=" " alt="" coords="251,80,357,107"/>
+<area shape="rect" id="node5" href="$Ground_8cpp.html" title=" " alt="" coords="381,80,477,107"/>
+<area shape="rect" id="node6" href="$Player_8cpp.html" title=" " alt="" coords="501,80,592,107"/>
+<area shape="rect" id="node7" href="$Uphill_8cpp.html" title=" " alt="" coords="617,80,703,107"/>
+<area shape="rect" id="node8" href="$Wall_8cpp.html" title=" " alt="" coords="727,80,806,107"/>
 </map>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['velocity_5fiterations_576',['VELOCITY_ITERATIONS',['../Definition_8hpp.html#a68fe3a5294134994226dc4bd21f7b91b',1,'Definition.hpp']]]
+  ['uphill_5fheight_620',['UPHILL_HEIGHT',['../Definition_8hpp.html#adde2fd89f6d62661ac409b800cf485d1',1,'Definition.hpp']]],
+  ['uphill_5fwidth_621',['UPHILL_WIDTH',['../Definition_8hpp.html#abbeac3926a9115e064e3e1fd6a2bcea6',1,'Definition.hpp']]]
 ];

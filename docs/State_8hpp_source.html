@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -70,25 +71,35 @@ $(function() {
 <a href="State_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceHeadBall.html">HeadBall</a> {</div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html">    4</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classHeadBall_1_1State.html">State</a> {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">    6</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">init</a> ( ) = 0; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">    7</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">handleInput</a> ( ) = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">    8</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">update</a> ( ) = 0;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">    9</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">draw</a> ( ) = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">   11</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">pause</a> ( ) { }</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">   12</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">resume</a> ( ) { }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
-<div class="ttc" id="aclassHeadBall_1_1State_html"><div class="ttname"><a href="classHeadBall_1_1State.html">HeadBall::State</a></div><div class="ttdef"><b>Definition:</b> State.hpp:4</div></div>
-<div class="ttc" id="aclassHeadBall_1_1State_html_a1afe45b3ea3a1849842bf5c4994c6ab9"><div class="ttname"><a href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">HeadBall::State::resume</a></div><div class="ttdeci">virtual void resume()</div><div class="ttdef"><b>Definition:</b> State.hpp:12</div></div>
-<div class="ttc" id="aclassHeadBall_1_1State_html_a391302cebb78ec26959c0947ae9a5197"><div class="ttname"><a href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">HeadBall::State::init</a></div><div class="ttdeci">virtual void init()=0</div></div>
-<div class="ttc" id="aclassHeadBall_1_1State_html_a8c495aa18cc8e6adec7cfdaec1f3beff"><div class="ttname"><a href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">HeadBall::State::draw</a></div><div class="ttdeci">virtual void draw()=0</div></div>
-<div class="ttc" id="aclassHeadBall_1_1State_html_a9c7f17de4c29786c8568ff43a9c5ad83"><div class="ttname"><a href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">HeadBall::State::update</a></div><div class="ttdeci">virtual void update()=0</div></div>
-<div class="ttc" id="aclassHeadBall_1_1State_html_aa9e51feceae21a6e583ab40498877e87"><div class="ttname"><a href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">HeadBall::State::pause</a></div><div class="ttdeci">virtual void pause()</div><div class="ttdef"><b>Definition:</b> State.hpp:11</div></div>
-<div class="ttc" id="aclassHeadBall_1_1State_html_ab90a052b20b2bc499fb2a12844166ef7"><div class="ttname"><a href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">HeadBall::State::handleInput</a></div><div class="ttdeci">virtual void handleInput()=0</div></div>
-<div class="ttc" id="anamespaceHeadBall_html"><div class="ttname"><a href="namespaceHeadBall.html">HeadBall</a></div><div class="ttdef"><b>Definition:</b> AboutState.cpp:6</div></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classHeadBall_1_1State.html">State</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">   14</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">init</a> ( ) = 0; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">   20</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">handleInput</a> ( ) = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">   26</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">update</a> ( ) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">   32</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">draw</a> ( ) = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">   38</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">pause</a> ( ) { }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">   44</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">resume</a> ( ) { }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a279ec7f16a0044d13f1c7bd4c992eea7">   50</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classHeadBall_1_1State.html#a279ec7f16a0044d13f1c7bd4c992eea7">animate</a> ( ) { }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classHeadBall_1_1State.html#a2ce95543808b809c9370a4ca5fd6cad9">   56</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classHeadBall_1_1State.html#a2ce95543808b809c9370a4ca5fd6cad9">~State</a> ( ) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="ttc" id="aclassHeadBall_1_1State_html"><div class="ttname"><a href="classHeadBall_1_1State.html">HeadBall::State</a></div><div class="ttdoc">Abstract based class which inherits all the states of the game.</div><div class="ttdef"><b>Definition:</b> State.hpp:8</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_a1afe45b3ea3a1849842bf5c4994c6ab9"><div class="ttname"><a href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">HeadBall::State::resume</a></div><div class="ttdeci">virtual void resume()</div><div class="ttdoc">Virtual function for resuming the object.</div><div class="ttdef"><b>Definition:</b> State.hpp:44</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_a279ec7f16a0044d13f1c7bd4c992eea7"><div class="ttname"><a href="classHeadBall_1_1State.html#a279ec7f16a0044d13f1c7bd4c992eea7">HeadBall::State::animate</a></div><div class="ttdeci">virtual void animate()</div><div class="ttdoc">Vitrual function for performing animations.</div><div class="ttdef"><b>Definition:</b> State.hpp:50</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_a2ce95543808b809c9370a4ca5fd6cad9"><div class="ttname"><a href="classHeadBall_1_1State.html#a2ce95543808b809c9370a4ca5fd6cad9">HeadBall::State::~State</a></div><div class="ttdeci">virtual ~State()=default</div><div class="ttdoc">Destroy the State object.</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_a391302cebb78ec26959c0947ae9a5197"><div class="ttname"><a href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">HeadBall::State::init</a></div><div class="ttdeci">virtual void init()=0</div><div class="ttdoc">Pure virtual function for initializing state related data.</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_a8c495aa18cc8e6adec7cfdaec1f3beff"><div class="ttname"><a href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">HeadBall::State::draw</a></div><div class="ttdeci">virtual void draw()=0</div><div class="ttdoc">Pure virtual function for drawing state objects.</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_a9c7f17de4c29786c8568ff43a9c5ad83"><div class="ttname"><a href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">HeadBall::State::update</a></div><div class="ttdeci">virtual void update()=0</div><div class="ttdoc">Pure virtual function for updating state data.</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_aa9e51feceae21a6e583ab40498877e87"><div class="ttname"><a href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">HeadBall::State::pause</a></div><div class="ttdeci">virtual void pause()</div><div class="ttdoc">Virtual function for pausing the state.</div><div class="ttdef"><b>Definition:</b> State.hpp:38</div></div>
+<div class="ttc" id="aclassHeadBall_1_1State_html_ab90a052b20b2bc499fb2a12844166ef7"><div class="ttname"><a href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">HeadBall::State::handleInput</a></div><div class="ttdeci">virtual void handleInput()=0</div><div class="ttdoc">Pure virtual function for handling user input.</div></div>
+<div class="ttc" id="anamespaceHeadBall_html"><div class="ttname"><a href="namespaceHeadBall.html">HeadBall</a></div><div class="ttdoc">Custom namespace used throughout the project.</div><div class="ttdef"><b>Definition:</b> AboutState.cpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

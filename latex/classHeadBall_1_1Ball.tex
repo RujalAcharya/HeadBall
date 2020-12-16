@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1Ball}\index{HeadBall::Ball@{HeadBall::Ball}}
 
 
+Class for shape and movement of ball.  
+
+
+
+
 {\ttfamily \#include $<$Ball.\+hpp$>$}
 
 
@@ -18,35 +23,38 @@ Collaboration diagram for Head\+Ball\+::Ball\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1Ball_af263bf3377afef6041db8bb228bdeb9b}{Ball}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} world)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1Ball_a9b3cd8c1632e3b25421868a533910c08}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initiate the \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. \end{DoxyCompactList}\item 
 sf\+::\+Circle\+Shape \mbox{\hyperlink{classHeadBall_1_1Ball_af3e775d3483a0c7603231e4b7d455734}{shape}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Return the shape of the \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1Ball_afcfacbcf0077758ea331263a5cee6cff}{process\+Position}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Process the position of the \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1Ball_ad4224a70965e74c8d2e815f605403eda}{re\+Position}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Place the ball at the starting position. \end{DoxyCompactList}\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classHeadBall_1_1Ball_a9516e14a5afe58a3ef8b117a1071a049}{body}} ()
+\begin{DoxyCompactList}\small\item\em Return the Box2D body of the ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Ball_a629ccb8a1ab3fa19713f3ecdfccc90c4}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of the game data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Ball_a381eba2a448b8b1f10f49594565c0596}{\+\_\+world}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of Box2D World. \end{DoxyCompactList}\item 
 sf\+::\+Circle\+Shape \mbox{\hyperlink{classHeadBall_1_1Ball_ade068dd55618cd9a572cf0162ff82c4d}{\+\_\+shape}}
-\item 
-sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1Ball_a287953d340994f44fbe5bcd803777a39}{\+\_\+ball\+Sprite}}
-\item 
+\begin{DoxyCompactList}\small\item\em The SFML shape of the ball. \end{DoxyCompactList}\item 
 b2\+Body\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_a27ce992bc83951fbfe9a4ea31c723098}{\+\_\+body\+Def}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Definition of Box2D body. \end{DoxyCompactList}\item 
 b2\+Body $\ast$ \mbox{\hyperlink{classHeadBall_1_1Ball_a3d3e4a555e859b291ea6023e733a810f}{\+\_\+body}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Box2D body of ball. \end{DoxyCompactList}\item 
 b2\+Circle\+Shape \mbox{\hyperlink{classHeadBall_1_1Ball_a72bf6d4f7f99e1da22de6ec75257a9b4}{\+\_\+circle\+Shape}}
-\item 
+\begin{DoxyCompactList}\small\item\em The circle shape for fixture definition. \end{DoxyCompactList}\item 
 b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_af5a3a9f577546452440573f5ec2bbcb4}{\+\_\+fixture}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The fixture of ball for defining its properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for shape and movement of ball. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1Ball_af263bf3377afef6041db8bb228bdeb9b}\label{classHeadBall_1_1Ball_af263bf3377afef6041db8bb228bdeb9b}} 
@@ -57,12 +65,40 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_af5a3a9f577546452440573f
 
 
 
+Construct a new \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The Shared Pointer for game data \\
+\hline
+{\em world} & The Shared pointer for Box2D world \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1Ball_a9516e14a5afe58a3ef8b117a1071a049}\label{classHeadBall_1_1Ball_a9516e14a5afe58a3ef8b117a1071a049}} 
+\index{HeadBall::Ball@{HeadBall::Ball}!body@{body}}
+\index{body@{body}!HeadBall::Ball@{HeadBall::Ball}}
+\doxysubsubsection{\texorpdfstring{body()}{body()}}
+{\footnotesize\ttfamily b2\+Body $\ast$ Head\+Ball\+::\+Ball\+::body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the Box2D body of the ball. 
+
+\begin{DoxyReturn}{Returns}
+b2\+Body$\ast$ The Box2D body of the ball 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1Ball_a9b3cd8c1632e3b25421868a533910c08}\label{classHeadBall_1_1Ball_a9b3cd8c1632e3b25421868a533910c08}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!init@{init}}
 \index{init@{init}!HeadBall::Ball@{HeadBall::Ball}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Ball\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initiate the \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ball_afcfacbcf0077758ea331263a5cee6cff}\label{classHeadBall_1_1Ball_afcfacbcf0077758ea331263a5cee6cff}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!processPosition@{processPosition}}
@@ -70,11 +106,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_af5a3a9f577546452440573f
 \doxysubsubsection{\texorpdfstring{processPosition()}{processPosition()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Ball\+::process\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classHeadBall_1_1Ball_ad4224a70965e74c8d2e815f605403eda}\label{classHeadBall_1_1Ball_ad4224a70965e74c8d2e815f605403eda}} 
+
+
+Process the position of the \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. 
+
+This function processes the position of the Circle\+Shape as per the position of body in Box2D \mbox{\Hypertarget{classHeadBall_1_1Ball_ad4224a70965e74c8d2e815f605403eda}\label{classHeadBall_1_1Ball_ad4224a70965e74c8d2e815f605403eda}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!rePosition@{rePosition}}
 \index{rePosition@{rePosition}!HeadBall::Ball@{HeadBall::Ball}}
 \doxysubsubsection{\texorpdfstring{rePosition()}{rePosition()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Ball\+::re\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Place the ball at the starting position. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ball_af3e775d3483a0c7603231e4b7d455734}\label{classHeadBall_1_1Ball_af3e775d3483a0c7603231e4b7d455734}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!shape@{shape}}
@@ -84,18 +128,23 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_af5a3a9f577546452440573f
 
 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classHeadBall_1_1Ball_a287953d340994f44fbe5bcd803777a39}\label{classHeadBall_1_1Ball_a287953d340994f44fbe5bcd803777a39}} 
-\index{HeadBall::Ball@{HeadBall::Ball}!\_ballSprite@{\_ballSprite}}
-\index{\_ballSprite@{\_ballSprite}!HeadBall::Ball@{HeadBall::Ball}}
-\doxysubsubsection{\texorpdfstring{\_ballSprite}{\_ballSprite}}
-{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Ball\+::\+\_\+ball\+Sprite\hspace{0.3cm}{\ttfamily [private]}}
+Return the shape of the \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object. 
 
+\begin{DoxyReturn}{Returns}
+sf\+::\+Circle\+Shape the shape of \mbox{\hyperlink{classHeadBall_1_1Ball}{Ball}} object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1Ball_a3d3e4a555e859b291ea6023e733a810f}\label{classHeadBall_1_1Ball_a3d3e4a555e859b291ea6023e733a810f}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!\_body@{\_body}}
 \index{\_body@{\_body}!HeadBall::Ball@{HeadBall::Ball}}
 \doxysubsubsection{\texorpdfstring{\_body}{\_body}}
 {\footnotesize\ttfamily b2\+Body$\ast$ Head\+Ball\+::\+Ball\+::\+\_\+body\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Box2D body of ball. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ball_a27ce992bc83951fbfe9a4ea31c723098}\label{classHeadBall_1_1Ball_a27ce992bc83951fbfe9a4ea31c723098}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!\_bodyDef@{\_bodyDef}}
@@ -103,11 +152,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_af5a3a9f577546452440573f
 \doxysubsubsection{\texorpdfstring{\_bodyDef}{\_bodyDef}}
 {\footnotesize\ttfamily b2\+Body\+Def Head\+Ball\+::\+Ball\+::\+\_\+body\+Def\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The Definition of Box2D body. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Ball_a72bf6d4f7f99e1da22de6ec75257a9b4}\label{classHeadBall_1_1Ball_a72bf6d4f7f99e1da22de6ec75257a9b4}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!\_circleShape@{\_circleShape}}
 \index{\_circleShape@{\_circleShape}!HeadBall::Ball@{HeadBall::Ball}}
 \doxysubsubsection{\texorpdfstring{\_circleShape}{\_circleShape}}
 {\footnotesize\ttfamily b2\+Circle\+Shape Head\+Ball\+::\+Ball\+::\+\_\+circle\+Shape\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The circle shape for fixture definition. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ball_a629ccb8a1ab3fa19713f3ecdfccc90c4}\label{classHeadBall_1_1Ball_a629ccb8a1ab3fa19713f3ecdfccc90c4}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!\_data@{\_data}}
@@ -115,11 +172,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_af5a3a9f577546452440573f
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Ball\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The Shared Pointer of the game data. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Ball_af5a3a9f577546452440573f5ec2bbcb4}\label{classHeadBall_1_1Ball_af5a3a9f577546452440573f5ec2bbcb4}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!\_fixture@{\_fixture}}
 \index{\_fixture@{\_fixture}!HeadBall::Ball@{HeadBall::Ball}}
 \doxysubsubsection{\texorpdfstring{\_fixture}{\_fixture}}
 {\footnotesize\ttfamily b2\+Fixture\+Def Head\+Ball\+::\+Ball\+::\+\_\+fixture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The fixture of ball for defining its properties. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ball_ade068dd55618cd9a572cf0162ff82c4d}\label{classHeadBall_1_1Ball_ade068dd55618cd9a572cf0162ff82c4d}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!\_shape@{\_shape}}
@@ -127,11 +192,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ball_af5a3a9f577546452440573f
 \doxysubsubsection{\texorpdfstring{\_shape}{\_shape}}
 {\footnotesize\ttfamily sf\+::\+Circle\+Shape Head\+Ball\+::\+Ball\+::\+\_\+shape\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The SFML shape of the ball. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Ball_a381eba2a448b8b1f10f49594565c0596}\label{classHeadBall_1_1Ball_a381eba2a448b8b1f10f49594565c0596}} 
 \index{HeadBall::Ball@{HeadBall::Ball}!\_world@{\_world}}
 \index{\_world@{\_world}!HeadBall::Ball@{HeadBall::Ball}}
 \doxysubsubsection{\texorpdfstring{\_world}{\_world}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} Head\+Ball\+::\+Ball\+::\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Shared Pointer of Box2D World. 
 
 
 

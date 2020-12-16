@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1InputManager}\index{HeadBall::InputManager@{HeadBall::InputManager}}
 
 
+Handle the input given by the user.  
+
+
+
+
 {\ttfamily \#include $<$Input\+Manager.\+hpp$>$}
 
 
@@ -18,18 +23,23 @@ Collaboration diagram for Head\+Ball\+::Input\+Manager\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1InputManager_acbee2b3556c4ebf688be036fefd3ee0d}{Input\+Manager}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Input Manager object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classHeadBall_1_1InputManager_a67a0976542ea716b1c02876bad7d7b31}{$\sim$\+Input\+Manager}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destroy the Input Manager object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classHeadBall_1_1InputManager_aefa4b42f103f7fdc49b80af0513da5ac}{is\+Sprite\+Clicked}} (sf\+::\+Sprite sprite, sf\+::\+Mouse\+::\+Button button, sf\+::\+Render\+Window \&window)
-\item 
+\begin{DoxyCompactList}\small\item\em Check whether a sprite is clicked or not. \end{DoxyCompactList}\item 
 sf\+::\+Vector2i \mbox{\hyperlink{classHeadBall_1_1InputManager_a51f384d0d059630ecedebfb36bb8ed7a}{get\+Mouse\+Position}} (sf\+::\+Render\+Window \&window)
-\item 
-bool \mbox{\hyperlink{classHeadBall_1_1InputManager_af7fbaf4063e9952f5f8bbb0870d8541a}{is\+Moving}} (std\+::string position, std\+::string player=\char`\"{}p1\char`\"{})
-\item 
+\begin{DoxyCompactList}\small\item\em Get the Mouse Position object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHeadBall_1_1InputManager_af18e542596fae1ba7d71293e283a50ad}{is\+Moving}} (std\+::string direction, std\+::string player=\char`\"{}p1\char`\"{})
+\begin{DoxyCompactList}\small\item\em Check whether the player is moving or not. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classHeadBall_1_1InputManager_a485a3661d0419813a8d93c3cb244e259}{is\+Doing}} (std\+::string action, std\+::string player=\char`\"{}p1\char`\"{})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Check whether the player is performing a certain action or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Handle the input given by the user. 
+
+The class handles the input given by the user, whether it is the clicking of a button(sprite) or movement and action of the player in the main game. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1InputManager_acbee2b3556c4ebf688be036fefd3ee0d}\label{classHeadBall_1_1InputManager_acbee2b3556c4ebf688be036fefd3ee0d}} 
@@ -38,11 +48,19 @@ bool \mbox{\hyperlink{classHeadBall_1_1InputManager_a485a3661d0419813a8d93c3cb24
 \doxysubsubsection{\texorpdfstring{InputManager()}{InputManager()}}
 {\footnotesize\ttfamily Head\+Ball\+::\+Input\+Manager\+::\+Input\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Construct a new Input Manager object. 
+
 \mbox{\Hypertarget{classHeadBall_1_1InputManager_a67a0976542ea716b1c02876bad7d7b31}\label{classHeadBall_1_1InputManager_a67a0976542ea716b1c02876bad7d7b31}} 
 \index{HeadBall::InputManager@{HeadBall::InputManager}!````~InputManager@{$\sim$InputManager}}
 \index{````~InputManager@{$\sim$InputManager}!HeadBall::InputManager@{HeadBall::InputManager}}
 \doxysubsubsection{\texorpdfstring{$\sim$InputManager()}{~InputManager()}}
 {\footnotesize\ttfamily Head\+Ball\+::\+Input\+Manager\+::$\sim$\+Input\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the Input Manager object. 
 
 
 
@@ -53,24 +71,86 @@ bool \mbox{\hyperlink{classHeadBall_1_1InputManager_a485a3661d0419813a8d93c3cb24
 \doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
 {\footnotesize\ttfamily sf\+::\+Vector2i Head\+Ball\+::\+Input\+Manager\+::get\+Mouse\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
 
+
+
+Get the Mouse Position object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+::\+Vector2i The position of the mouse in with respect to the render window object 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1InputManager_a485a3661d0419813a8d93c3cb244e259}\label{classHeadBall_1_1InputManager_a485a3661d0419813a8d93c3cb244e259}} 
 \index{HeadBall::InputManager@{HeadBall::InputManager}!isDoing@{isDoing}}
 \index{isDoing@{isDoing}!HeadBall::InputManager@{HeadBall::InputManager}}
 \doxysubsubsection{\texorpdfstring{isDoing()}{isDoing()}}
 {\footnotesize\ttfamily bool Head\+Ball\+::\+Input\+Manager\+::is\+Doing (\begin{DoxyParamCaption}\item[{std\+::string}]{action,  }\item[{std\+::string}]{player = {\ttfamily \char`\"{}p1\char`\"{}} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classHeadBall_1_1InputManager_af7fbaf4063e9952f5f8bbb0870d8541a}\label{classHeadBall_1_1InputManager_af7fbaf4063e9952f5f8bbb0870d8541a}} 
+
+
+Check whether the player is performing a certain action or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & The action \+: \char`\"{}kick\char`\"{} or \char`\"{}jump\char`\"{} \\
+\hline
+{\em player} & The player \+: \char`\"{}p1\char`\"{} or \char`\"{}p2\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is performing the action 
+
+false if the player is not performing the action 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHeadBall_1_1InputManager_af18e542596fae1ba7d71293e283a50ad}\label{classHeadBall_1_1InputManager_af18e542596fae1ba7d71293e283a50ad}} 
 \index{HeadBall::InputManager@{HeadBall::InputManager}!isMoving@{isMoving}}
 \index{isMoving@{isMoving}!HeadBall::InputManager@{HeadBall::InputManager}}
 \doxysubsubsection{\texorpdfstring{isMoving()}{isMoving()}}
-{\footnotesize\ttfamily bool Head\+Ball\+::\+Input\+Manager\+::is\+Moving (\begin{DoxyParamCaption}\item[{std\+::string}]{position,  }\item[{std\+::string}]{player = {\ttfamily \char`\"{}p1\char`\"{}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+Input\+Manager\+::is\+Moving (\begin{DoxyParamCaption}\item[{std\+::string}]{direction,  }\item[{std\+::string}]{player = {\ttfamily \char`\"{}p1\char`\"{}} }\end{DoxyParamCaption})}
 
+
+
+Check whether the player is moving or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction \+: \char`\"{}left\char`\"{} or \char`\"{}right\char`\"{} \\
+\hline
+{\em player} & The player \+: \char`\"{}p1\char`\"{} or \char`\"{}p2\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is moving in certain direction 
+
+false if the player is not moving in certain direction 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1InputManager_aefa4b42f103f7fdc49b80af0513da5ac}\label{classHeadBall_1_1InputManager_aefa4b42f103f7fdc49b80af0513da5ac}} 
 \index{HeadBall::InputManager@{HeadBall::InputManager}!isSpriteClicked@{isSpriteClicked}}
 \index{isSpriteClicked@{isSpriteClicked}!HeadBall::InputManager@{HeadBall::InputManager}}
 \doxysubsubsection{\texorpdfstring{isSpriteClicked()}{isSpriteClicked()}}
 {\footnotesize\ttfamily bool Head\+Ball\+::\+Input\+Manager\+::is\+Sprite\+Clicked (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite}]{sprite,  }\item[{sf\+::\+Mouse\+::\+Button}]{button,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
 
+
+
+Check whether a sprite is clicked or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Sprite which is to be checked \\
+\hline
+{\em button} & The mouse button whose click is checked\+: left, right or middle \\
+\hline
+{\em window} & The SFML render window object where the click is checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the sprite is clicked 
+
+false if the sprite is not clicked 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

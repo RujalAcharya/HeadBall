@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['radtodeg_402',['radToDeg',['../namespaceConverter.html#a06fd4ab29977cdbd5bfd72f6640c3f7d',1,'Converter']]],
-  ['removestate_403',['removeState',['../classHeadBall_1_1StateMachine.html#ad7b1159950aef7717792ccdb2e2ecc1a',1,'HeadBall::StateMachine']]],
-  ['reposition_404',['rePosition',['../classHeadBall_1_1Ball.html#ad4224a70965e74c8d2e815f605403eda',1,'HeadBall::Ball']]],
-  ['resettimer_405',['resetTimer',['../classHeadBall_1_1TimeManager.html#a7261a8556a7e5b034decc850a78c4736',1,'HeadBall::TimeManager']]],
-  ['resume_406',['resume',['../classHeadBall_1_1GameState.html#ac6455ea1fd7aa20af96ca579b142678b',1,'HeadBall::GameState::resume()'],['../classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9',1,'HeadBall::State::resume()'],['../classHeadBall_1_1TimeManager.html#a9cb9cce78bd4211fe55bdc6167986858',1,'HeadBall::TimeManager::resume()']]],
-  ['run_407',['run',['../classHeadBall_1_1Game.html#a6a4abae653a39dfb76f995d68c334260',1,'HeadBall::Game']]]
+  ['pause_419',['pause',['../classHeadBall_1_1GameState.html#a6c1de96a0d88a79e0a390e17e6dee229',1,'HeadBall::GameState::pause()'],['../classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87',1,'HeadBall::State::pause()'],['../classHeadBall_1_1TimeManager.html#a11f5e64c9c510770f7c5bc8b1f7b8632',1,'HeadBall::TimeManager::pause()']]],
+  ['pausedstate_420',['PausedState',['../classHeadBall_1_1PausedState.html#ae055c827e79f32e5af2d3fd9352f72ab',1,'HeadBall::PausedState']]],
+  ['pixelstometers_421',['pixelsToMeters',['../namespaceConverter.html#a2b75536407802ae71228ef910d7e8e6c',1,'Converter']]],
+  ['player_422',['Player',['../classHeadBall_1_1Player.html#a46b91809bd8d32be4282141ccc827aa9',1,'HeadBall::Player']]],
+  ['processposition_423',['processPosition',['../classHeadBall_1_1Ball.html#afcfacbcf0077758ea331263a5cee6cff',1,'HeadBall::Ball::processPosition()'],['../classHeadBall_1_1Player.html#af0e43b17976383f565838582d18b7281',1,'HeadBall::Player::processPosition()']]],
+  ['processstatechanges_424',['processStateChanges',['../classHeadBall_1_1StateMachine.html#a8a36b2675a83f91af901520dd3816e8b',1,'HeadBall::StateMachine']]],
+  ['processtime_425',['processTime',['../classHeadBall_1_1TimeManager.html#a718357f3bd05f868f140ada0933fdb91',1,'HeadBall::TimeManager']]]
 ];

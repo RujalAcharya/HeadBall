@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1AboutState}\index{HeadBall::AboutState@{HeadBall::AboutState}}
 
 
+Class for About page.  
+
+
+
+
 {\ttfamily \#include $<$About\+State.\+hpp$>$}
 
 
@@ -28,35 +33,40 @@ Collaboration diagram for Head\+Ball\+::About\+State\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1AboutState_a933b5f310417f11e3fad9656c097847d}{About\+State}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new About \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1AboutState_aa7a9992a5ad22599dcc1cb0557b9d7a2}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize state related data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1AboutState_a6d35b06a5cedfaf89052006700ea43ff}{handle\+Input}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handle user input. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1AboutState_a17c7c59ad3ac9483d2484b1a0a836689}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Update state data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1AboutState_a37f466142c4dfd7ee07caef2cbfc43c4}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Draw state objects. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1AboutState_ac26d2b781b54f5ddc3102930b0637f30}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em The shared pointer for all the game data. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1AboutState_aaebc24cb810535cad4b6f7693695a28e}{\+\_\+background}}
-\item 
+\begin{DoxyCompactList}\small\item\em Background sprite to draw on the screen. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1AboutState_ab2dc1043cfe7330ea9a42894ae059226}{\+\_\+back\+Btn}}
-\item 
+\begin{DoxyCompactList}\small\item\em Button to return back. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1AboutState_a4ac869f6805bd881eb149aa646c234d1}{\+\_\+exit\+Btn}}
-\item 
-sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1AboutState_aa7b0a9d142c4dfed09b69d8da588e5b8}{\+\_\+text}}
-\item 
+\begin{DoxyCompactList}\small\item\em Button to exit from the game. \end{DoxyCompactList}\item 
 sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1AboutState_a227eca8b295be691abbd6d5cd90057f1}{\+\_\+btn\+Click\+Sfx}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sound effect for button click. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1AboutState_aa7b0a9d142c4dfed09b69d8da588e5b8}{\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em Text to display {\ttfamily about} information. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for About page. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_a933b5f310417f11e3fad9656c097847d}\label{classHeadBall_1_1AboutState_a933b5f310417f11e3fad9656c097847d}} 
@@ -67,12 +77,35 @@ sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1AboutState_a227eca8b295be691abbd
 
 
 
+Construct a new About \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Shared pointer for game data \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::AboutState@{HeadBall::AboutState}!animate@{animate}}
+\index{animate@{animate}!HeadBall::AboutState@{HeadBall::AboutState}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Vitrual function for performing animations. 
+
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_a37f466142c4dfd7ee07caef2cbfc43c4}\label{classHeadBall_1_1AboutState_a37f466142c4dfd7ee07caef2cbfc43c4}} 
 \index{HeadBall::AboutState@{HeadBall::AboutState}!draw@{draw}}
 \index{draw@{draw}!HeadBall::AboutState@{HeadBall::AboutState}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+About\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw state objects. 
 
 
 
@@ -86,6 +119,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3
 
 
 
+Handle user input. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_aa7a9992a5ad22599dcc1cb0557b9d7a2}\label{classHeadBall_1_1AboutState_aa7a9992a5ad22599dcc1cb0557b9d7a2}} 
@@ -93,6 +130,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a1284416
 \index{init@{init}!HeadBall::AboutState@{HeadBall::AboutState}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+About\+State\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialize state related data. 
 
 
 
@@ -106,6 +147,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -116,6 +161,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 
 
 
+Virtual function for resuming the object. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af96ca579b142678b}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_a17c7c59ad3ac9483d2484b1a0a836689}\label{classHeadBall_1_1AboutState_a17c7c59ad3ac9483d2484b1a0a836689}} 
@@ -123,6 +172,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 \index{update@{update}!HeadBall::AboutState@{HeadBall::AboutState}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+About\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update state data. 
 
 
 
@@ -137,11 +190,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_backBtn}{\_backBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+About\+State\+::\+\_\+back\+Btn\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Button to return back. 
+
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_aaebc24cb810535cad4b6f7693695a28e}\label{classHeadBall_1_1AboutState_aaebc24cb810535cad4b6f7693695a28e}} 
 \index{HeadBall::AboutState@{HeadBall::AboutState}!\_background@{\_background}}
 \index{\_background@{\_background}!HeadBall::AboutState@{HeadBall::AboutState}}
 \doxysubsubsection{\texorpdfstring{\_background}{\_background}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+About\+State\+::\+\_\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Background sprite to draw on the screen. 
 
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_a227eca8b295be691abbd6d5cd90057f1}\label{classHeadBall_1_1AboutState_a227eca8b295be691abbd6d5cd90057f1}} 
 \index{HeadBall::AboutState@{HeadBall::AboutState}!\_btnClickSfx@{\_btnClickSfx}}
@@ -149,11 +210,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_btnClickSfx}{\_btnClickSfx}}
 {\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+About\+State\+::\+\_\+btn\+Click\+Sfx\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Sound effect for button click. 
+
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_ac26d2b781b54f5ddc3102930b0637f30}\label{classHeadBall_1_1AboutState_ac26d2b781b54f5ddc3102930b0637f30}} 
 \index{HeadBall::AboutState@{HeadBall::AboutState}!\_data@{\_data}}
 \index{\_data@{\_data}!HeadBall::AboutState@{HeadBall::AboutState}}
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+About\+State\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shared pointer for all the game data. 
 
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_a4ac869f6805bd881eb149aa646c234d1}\label{classHeadBall_1_1AboutState_a4ac869f6805bd881eb149aa646c234d1}} 
 \index{HeadBall::AboutState@{HeadBall::AboutState}!\_exitBtn@{\_exitBtn}}
@@ -161,11 +230,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_exitBtn}{\_exitBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+About\+State\+::\+\_\+exit\+Btn\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Button to exit from the game. 
+
 \mbox{\Hypertarget{classHeadBall_1_1AboutState_aa7b0a9d142c4dfed09b69d8da588e5b8}\label{classHeadBall_1_1AboutState_aa7b0a9d142c4dfed09b69d8da588e5b8}} 
 \index{HeadBall::AboutState@{HeadBall::AboutState}!\_text@{\_text}}
 \index{\_text@{\_text}!HeadBall::AboutState@{HeadBall::AboutState}}
 \doxysubsubsection{\texorpdfstring{\_text}{\_text}}
 {\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+About\+State\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text to display {\ttfamily about} information. 
 
 
 

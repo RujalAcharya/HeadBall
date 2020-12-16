@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -76,49 +77,67 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for shape and movement of ball.  
+ <a href="classHeadBall_1_1Ball.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Ball_8hpp_source.html">Ball.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for HeadBall::Ball:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1Ball__coll__graph.png" border="0" usemap="#aHeadBall_1_1Ball_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1Ball_coll__map" id="aHeadBall_1_1Ball_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,155,244"/>
+<area shape="rect" title="Class for shape and movement of ball." alt="" coords="5,5,155,244"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af263bf3377afef6041db8bb228bdeb9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#af263bf3377afef6041db8bb228bdeb9b">Ball</a> (<a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a> data, <a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a> world)</td></tr>
+<tr class="memdesc:af263bf3377afef6041db8bb228bdeb9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object.  <a href="classHeadBall_1_1Ball.html#af263bf3377afef6041db8bb228bdeb9b">More...</a><br /></td></tr>
 <tr class="separator:af263bf3377afef6041db8bb228bdeb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b3cd8c1632e3b25421868a533910c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a9b3cd8c1632e3b25421868a533910c08">init</a> ()</td></tr>
+<tr class="memdesc:a9b3cd8c1632e3b25421868a533910c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate the <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object.  <a href="classHeadBall_1_1Ball.html#a9b3cd8c1632e3b25421868a533910c08">More...</a><br /></td></tr>
 <tr class="separator:a9b3cd8c1632e3b25421868a533910c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3e775d3483a0c7603231e4b7d455734"><td class="memItemLeft" align="right" valign="top">sf::CircleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#af3e775d3483a0c7603231e4b7d455734">shape</a> ()</td></tr>
+<tr class="memdesc:af3e775d3483a0c7603231e4b7d455734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shape of the <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object.  <a href="classHeadBall_1_1Ball.html#af3e775d3483a0c7603231e4b7d455734">More...</a><br /></td></tr>
 <tr class="separator:af3e775d3483a0c7603231e4b7d455734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcfacbcf0077758ea331263a5cee6cff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#afcfacbcf0077758ea331263a5cee6cff">processPosition</a> ()</td></tr>
+<tr class="memdesc:afcfacbcf0077758ea331263a5cee6cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the position of the <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object.  <a href="classHeadBall_1_1Ball.html#afcfacbcf0077758ea331263a5cee6cff">More...</a><br /></td></tr>
 <tr class="separator:afcfacbcf0077758ea331263a5cee6cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4224a70965e74c8d2e815f605403eda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#ad4224a70965e74c8d2e815f605403eda">rePosition</a> ()</td></tr>
+<tr class="memdesc:ad4224a70965e74c8d2e815f605403eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place the ball at the starting position.  <a href="classHeadBall_1_1Ball.html#ad4224a70965e74c8d2e815f605403eda">More...</a><br /></td></tr>
 <tr class="separator:ad4224a70965e74c8d2e815f605403eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9516e14a5afe58a3ef8b117a1071a049"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a9516e14a5afe58a3ef8b117a1071a049">body</a> ()</td></tr>
+<tr class="memdesc:a9516e14a5afe58a3ef8b117a1071a049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Box2D body of the ball.  <a href="classHeadBall_1_1Ball.html#a9516e14a5afe58a3ef8b117a1071a049">More...</a><br /></td></tr>
+<tr class="separator:a9516e14a5afe58a3ef8b117a1071a049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a629ccb8a1ab3fa19713f3ecdfccc90c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a629ccb8a1ab3fa19713f3ecdfccc90c4">_data</a></td></tr>
+<tr class="memdesc:a629ccb8a1ab3fa19713f3ecdfccc90c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Shared Pointer of the game data.  <a href="classHeadBall_1_1Ball.html#a629ccb8a1ab3fa19713f3ecdfccc90c4">More...</a><br /></td></tr>
 <tr class="separator:a629ccb8a1ab3fa19713f3ecdfccc90c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381eba2a448b8b1f10f49594565c0596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a381eba2a448b8b1f10f49594565c0596">_world</a></td></tr>
+<tr class="memdesc:a381eba2a448b8b1f10f49594565c0596"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Shared Pointer of Box2D World.  <a href="classHeadBall_1_1Ball.html#a381eba2a448b8b1f10f49594565c0596">More...</a><br /></td></tr>
 <tr class="separator:a381eba2a448b8b1f10f49594565c0596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade068dd55618cd9a572cf0162ff82c4d"><td class="memItemLeft" align="right" valign="top">sf::CircleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#ade068dd55618cd9a572cf0162ff82c4d">_shape</a></td></tr>
+<tr class="memdesc:ade068dd55618cd9a572cf0162ff82c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SFML shape of the ball.  <a href="classHeadBall_1_1Ball.html#ade068dd55618cd9a572cf0162ff82c4d">More...</a><br /></td></tr>
 <tr class="separator:ade068dd55618cd9a572cf0162ff82c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287953d340994f44fbe5bcd803777a39"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a287953d340994f44fbe5bcd803777a39">_ballSprite</a></td></tr>
-<tr class="separator:a287953d340994f44fbe5bcd803777a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ce992bc83951fbfe9a4ea31c723098"><td class="memItemLeft" align="right" valign="top">b2BodyDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a27ce992bc83951fbfe9a4ea31c723098">_bodyDef</a></td></tr>
+<tr class="memdesc:a27ce992bc83951fbfe9a4ea31c723098"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Definition of Box2D body.  <a href="classHeadBall_1_1Ball.html#a27ce992bc83951fbfe9a4ea31c723098">More...</a><br /></td></tr>
 <tr class="separator:a27ce992bc83951fbfe9a4ea31c723098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d3e4a555e859b291ea6023e733a810f"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a3d3e4a555e859b291ea6023e733a810f">_body</a></td></tr>
+<tr class="memdesc:a3d3e4a555e859b291ea6023e733a810f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Box2D body of ball.  <a href="classHeadBall_1_1Ball.html#a3d3e4a555e859b291ea6023e733a810f">More...</a><br /></td></tr>
 <tr class="separator:a3d3e4a555e859b291ea6023e733a810f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72bf6d4f7f99e1da22de6ec75257a9b4"><td class="memItemLeft" align="right" valign="top">b2CircleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#a72bf6d4f7f99e1da22de6ec75257a9b4">_circleShape</a></td></tr>
+<tr class="memdesc:a72bf6d4f7f99e1da22de6ec75257a9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The circle shape for fixture definition.  <a href="classHeadBall_1_1Ball.html#a72bf6d4f7f99e1da22de6ec75257a9b4">More...</a><br /></td></tr>
 <tr class="separator:a72bf6d4f7f99e1da22de6ec75257a9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5a3a9f577546452440573f5ec2bbcb4"><td class="memItemLeft" align="right" valign="top">b2FixtureDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Ball.html#af5a3a9f577546452440573f5ec2bbcb4">_fixture</a></td></tr>
+<tr class="memdesc:af5a3a9f577546452440573f5ec2bbcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fixture of ball for defining its properties.  <a href="classHeadBall_1_1Ball.html#af5a3a9f577546452440573f5ec2bbcb4">More...</a><br /></td></tr>
 <tr class="separator:af5a3a9f577546452440573f5ec2bbcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for shape and movement of ball. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af263bf3377afef6041db8bb228bdeb9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af263bf3377afef6041db8bb228bdeb9b">&#9670;&nbsp;</a></span>Ball()</h2>
 
@@ -145,9 +164,38 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The Shared Pointer for game data </td></tr>
+    <tr><td class="paramname">world</td><td>The Shared pointer for Box2D world </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9516e14a5afe58a3ef8b117a1071a049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9516e14a5afe58a3ef8b117a1071a049">&#9670;&nbsp;</a></span>body()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">b2Body * HeadBall::Ball::body </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the Box2D body of the ball. </p>
+<dl class="section return"><dt>Returns</dt><dd>b2Body* The Box2D body of the ball </dd></dl>
+
+</div>
+</div>
 <a id="a9b3cd8c1632e3b25421868a533910c08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b3cd8c1632e3b25421868a533910c08">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -162,6 +210,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initiate the <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object. </p>
 
 </div>
 </div>
@@ -180,6 +230,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Process the position of the <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object. </p>
+<p>This function processes the position of the CircleShape as per the position of body in Box2D </p>
+
 </div>
 </div>
 <a id="ad4224a70965e74c8d2e815f605403eda"></a>
@@ -196,6 +249,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Place the ball at the starting position. </p>
 
 </div>
 </div>
@@ -214,31 +269,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the shape of the <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>sf::CircleShape the shape of <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> object </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a287953d340994f44fbe5bcd803777a39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a287953d340994f44fbe5bcd803777a39">&#9670;&nbsp;</a></span>_ballSprite</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Sprite HeadBall::Ball::_ballSprite</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3d3e4a555e859b291ea6023e733a810f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d3e4a555e859b291ea6023e733a810f">&#9670;&nbsp;</a></span>_body</h2>
 
@@ -258,6 +294,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The Box2D body of ball. </p>
 
 </div>
 </div>
@@ -281,6 +319,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Definition of Box2D body. </p>
+
 </div>
 </div>
 <a id="a72bf6d4f7f99e1da22de6ec75257a9b4"></a>
@@ -302,6 +342,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The circle shape for fixture definition. </p>
 
 </div>
 </div>
@@ -325,6 +367,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Shared Pointer of the game data. </p>
+
 </div>
 </div>
 <a id="af5a3a9f577546452440573f5ec2bbcb4"></a>
@@ -346,6 +390,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The fixture of ball for defining its properties. </p>
 
 </div>
 </div>
@@ -369,6 +415,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The SFML shape of the ball. </p>
+
 </div>
 </div>
 <a id="a381eba2a448b8b1f10f49594565c0596"></a>
@@ -390,6 +438,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The Shared Pointer of Box2D World. </p>
 
 </div>
 </div>

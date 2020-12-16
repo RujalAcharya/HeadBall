@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['m_501',['m',['../classHeadBall_1_1TimeManager.html#adf2685ee8e4f9a1ccb4f42552e793c78',1,'HeadBall::TimeManager']]],
-  ['machine_502',['machine',['../structHeadBall_1_1GameData.html#a05ac9e346a7ec04562c1bdba51ae18f9',1,'HeadBall::GameData']]]
+  ['s_535',['s',['../classHeadBall_1_1TimeManager.html#adbd46321867e218ddccf0205ee766d75',1,'HeadBall::TimeManager']]],
+  ['ss_536',['ss',['../classHeadBall_1_1InstructionsState.html#a64de7681d03ec83a05ec681ef64c5b58',1,'HeadBall::InstructionsState::ss()'],['../classHeadBall_1_1TimeManager.html#ac09d09ed6d5ee90ca54a2a7243277397',1,'HeadBall::TimeManager::ss()']]]
 ];

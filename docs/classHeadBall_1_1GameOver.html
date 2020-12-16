@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -76,14 +77,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for game over or full-time state.  
+ <a href="classHeadBall_1_1GameOver.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="GameOver_8hpp_source.html">GameOver.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for HeadBall::GameOver:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1GameOver__inherit__graph.png" border="0" usemap="#aHeadBall_1_1GameOver_inherit__map" alt="Inheritance graph"/></div>
 <map name="aHeadBall_1_1GameOver_inherit__map" id="aHeadBall_1_1GameOver_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,204,164,369"/>
-<area shape="rect" href="classHeadBall_1_1State.html" title=" " alt="" coords="23,5,147,156"/>
+<area shape="rect" title="Class for game over or full&#45;time state." alt="" coords="5,233,168,487"/>
+<area shape="rect" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="25,5,149,185"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,38 +95,71 @@ Collaboration diagram for HeadBall::GameOver:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1GameOver__coll__graph.png" border="0" usemap="#aHeadBall_1_1GameOver_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1GameOver_coll__map" id="aHeadBall_1_1GameOver_coll__map">
-<area shape="rect" title=" " alt="" coords="5,204,164,369"/>
-<area shape="rect" href="classHeadBall_1_1State.html" title=" " alt="" coords="23,5,147,156"/>
+<area shape="rect" title="Class for game over or full&#45;time state." alt="" coords="5,233,168,487"/>
+<area shape="rect" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="25,5,149,185"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab345b888d25179a20e448a4656f4eccf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#ab345b888d25179a20e448a4656f4eccf">GameOver</a> (<a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a> data, <a class="el" href="namespaceHeadBall.html#a82fea1f794ddb142078227511e71568d">ScoreTimeRef</a> scoreTime)</td></tr>
+<tr class="memdesc:ab345b888d25179a20e448a4656f4eccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> Over object.  <a href="classHeadBall_1_1GameOver.html#ab345b888d25179a20e448a4656f4eccf">More...</a><br /></td></tr>
 <tr class="separator:ab345b888d25179a20e448a4656f4eccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8d05d6b841096bb5d39c94a4adbc3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a1a8d05d6b841096bb5d39c94a4adbc3d">init</a> ()</td></tr>
+<tr class="memdesc:a1a8d05d6b841096bb5d39c94a4adbc3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize state related data.  <a href="classHeadBall_1_1GameOver.html#a1a8d05d6b841096bb5d39c94a4adbc3d">More...</a><br /></td></tr>
 <tr class="separator:a1a8d05d6b841096bb5d39c94a4adbc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a2031e60478d460b5a9028ecc132c04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a7a2031e60478d460b5a9028ecc132c04">handleInput</a> ()</td></tr>
+<tr class="memdesc:a7a2031e60478d460b5a9028ecc132c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle user input.  <a href="classHeadBall_1_1GameOver.html#a7a2031e60478d460b5a9028ecc132c04">More...</a><br /></td></tr>
 <tr class="separator:a7a2031e60478d460b5a9028ecc132c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69542d189a8aae4344608bd0b6438c81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a69542d189a8aae4344608bd0b6438c81">update</a> ()</td></tr>
+<tr class="memdesc:a69542d189a8aae4344608bd0b6438c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update state data.  <a href="classHeadBall_1_1GameOver.html#a69542d189a8aae4344608bd0b6438c81">More...</a><br /></td></tr>
 <tr class="separator:a69542d189a8aae4344608bd0b6438c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa76a7d76332d9a7402a7e105b0d2ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#aaa76a7d76332d9a7402a7e105b0d2ee5">draw</a> ()</td></tr>
+<tr class="memdesc:aaa76a7d76332d9a7402a7e105b0d2ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw state objects.  <a href="classHeadBall_1_1GameOver.html#aaa76a7d76332d9a7402a7e105b0d2ee5">More...</a><br /></td></tr>
 <tr class="separator:aaa76a7d76332d9a7402a7e105b0d2ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9e51feceae21a6e583ab40498877e87"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">pause</a> ()</td></tr>
+<tr class="memdesc:aa9e51feceae21a6e583ab40498877e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function for pausing the state.  <a href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">More...</a><br /></td></tr>
 <tr class="separator:aa9e51feceae21a6e583ab40498877e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1afe45b3ea3a1849842bf5c4994c6ab9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">resume</a> ()</td></tr>
+<tr class="memdesc:a1afe45b3ea3a1849842bf5c4994c6ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function for resuming the object.  <a href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">More...</a><br /></td></tr>
 <tr class="separator:a1afe45b3ea3a1849842bf5c4994c6ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279ec7f16a0044d13f1c7bd4c992eea7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1State.html#a279ec7f16a0044d13f1c7bd4c992eea7">animate</a> ()</td></tr>
+<tr class="memdesc:a279ec7f16a0044d13f1c7bd4c992eea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vitrual function for performing animations.  <a href="classHeadBall_1_1State.html#a279ec7f16a0044d13f1c7bd4c992eea7">More...</a><br /></td></tr>
+<tr class="separator:a279ec7f16a0044d13f1c7bd4c992eea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5b12dfd279d0337503b53a7cf7af2bc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a5b12dfd279d0337503b53a7cf7af2bc8">_data</a></td></tr>
+<tr class="memdesc:a5b12dfd279d0337503b53a7cf7af2bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer for <a class="el" href="structHeadBall_1_1GameData.html" title="Struct where the necessaey game data used by all the states is stored.">GameData</a>.  <a href="classHeadBall_1_1GameOver.html#a5b12dfd279d0337503b53a7cf7af2bc8">More...</a><br /></td></tr>
 <tr class="separator:a5b12dfd279d0337503b53a7cf7af2bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e4623f95645217c552bca88d56f8d55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a82fea1f794ddb142078227511e71568d">ScoreTimeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a4e4623f95645217c552bca88d56f8d55">_scoreTime</a></td></tr>
+<tr class="memdesc:a4e4623f95645217c552bca88d56f8d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer for <a class="el" href="structHeadBall_1_1ScoreTimeData.html" title="Struct where the game time and player score is stored.">ScoreTimeData</a>.  <a href="classHeadBall_1_1GameOver.html#a4e4623f95645217c552bca88d56f8d55">More...</a><br /></td></tr>
 <tr class="separator:a4e4623f95645217c552bca88d56f8d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8511cfbfd4a980f0de795a5ab6e9d5"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a4c8511cfbfd4a980f0de795a5ab6e9d5">_text</a></td></tr>
-<tr class="separator:a4c8511cfbfd4a980f0de795a5ab6e9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c76aed2523ec46ae4882ca1ed6bd15"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#ad5c76aed2523ec46ae4882ca1ed6bd15">_crowdCheerOnGoal</a></td></tr>
+<tr class="memdesc:ad5c76aed2523ec46ae4882ca1ed6bd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect for crowd cheering.  <a href="classHeadBall_1_1GameOver.html#ad5c76aed2523ec46ae4882ca1ed6bd15">More...</a><br /></td></tr>
+<tr class="separator:ad5c76aed2523ec46ae4882ca1ed6bd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e96e165acd7d94242d5609c3b45a368"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a0e96e165acd7d94242d5609c3b45a368">_btnClickSfx</a></td></tr>
+<tr class="memdesc:a0e96e165acd7d94242d5609c3b45a368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect for button click.  <a href="classHeadBall_1_1GameOver.html#a0e96e165acd7d94242d5609c3b45a368">More...</a><br /></td></tr>
+<tr class="separator:a0e96e165acd7d94242d5609c3b45a368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e1c0b9354d6dd57f3f6dc259872ce1"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a68e1c0b9354d6dd57f3f6dc259872ce1">_background</a></td></tr>
+<tr class="memdesc:a68e1c0b9354d6dd57f3f6dc259872ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background sprite to draw on the screen.  <a href="classHeadBall_1_1GameOver.html#a68e1c0b9354d6dd57f3f6dc259872ce1">More...</a><br /></td></tr>
+<tr class="separator:a68e1c0b9354d6dd57f3f6dc259872ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d6c631da4d8a3f082efe22d1b2b334"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a54d6c631da4d8a3f082efe22d1b2b334">_replayBtn</a></td></tr>
+<tr class="memdesc:a54d6c631da4d8a3f082efe22d1b2b334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button to replay the game.  <a href="classHeadBall_1_1GameOver.html#a54d6c631da4d8a3f082efe22d1b2b334">More...</a><br /></td></tr>
+<tr class="separator:a54d6c631da4d8a3f082efe22d1b2b334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee2290da3eeec3f0d05998a972a3d78"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a6ee2290da3eeec3f0d05998a972a3d78">_exitBtn</a></td></tr>
+<tr class="memdesc:a6ee2290da3eeec3f0d05998a972a3d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button to exit the game.  <a href="classHeadBall_1_1GameOver.html#a6ee2290da3eeec3f0d05998a972a3d78">More...</a><br /></td></tr>
+<tr class="separator:a6ee2290da3eeec3f0d05998a972a3d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd52bfac5f4b8fd4a44a8fb63bb3b3e"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#a2fd52bfac5f4b8fd4a44a8fb63bb3b3e">_winnerText</a></td></tr>
+<tr class="memdesc:a2fd52bfac5f4b8fd4a44a8fb63bb3b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text to display depending on who won or if it is a draw.  <a href="classHeadBall_1_1GameOver.html#a2fd52bfac5f4b8fd4a44a8fb63bb3b3e">More...</a><br /></td></tr>
+<tr class="separator:a2fd52bfac5f4b8fd4a44a8fb63bb3b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed029acddf6b530182138c72ef3384ae"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameOver.html#aed029acddf6b530182138c72ef3384ae">_score</a></td></tr>
+<tr class="memdesc:aed029acddf6b530182138c72ef3384ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final score of the game.  <a href="classHeadBall_1_1GameOver.html#aed029acddf6b530182138c72ef3384ae">More...</a><br /></td></tr>
+<tr class="separator:aed029acddf6b530182138c72ef3384ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for game over or full-time state. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab345b888d25179a20e448a4656f4eccf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab345b888d25179a20e448a4656f4eccf">&#9670;&nbsp;</a></span>GameOver()</h2>
 
@@ -149,9 +186,45 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> Over object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td></td></tr>
+    <tr><td class="paramname">scoreTime</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a279ec7f16a0044d13f1c7bd4c992eea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279ec7f16a0044d13f1c7bd4c992eea7">&#9670;&nbsp;</a></span>animate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HeadBall::State::animate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vitrual function for performing animations. </p>
+
+</div>
+</div>
 <a id="aaa76a7d76332d9a7402a7e105b0d2ee5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa76a7d76332d9a7402a7e105b0d2ee5">&#9670;&nbsp;</a></span>draw()</h2>
 
@@ -174,6 +247,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Draw state objects. </p>
 
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">HeadBall::State</a>.</p>
 
@@ -202,6 +277,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handle user input. </p>
+
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">HeadBall::State</a>.</p>
 
 </div>
@@ -228,6 +305,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initialize state related data. </p>
 
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">HeadBall::State</a>.</p>
 
@@ -256,6 +335,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Virtual function for pausing the state. </p>
+
 <p>Reimplemented in <a class="el" href="classHeadBall_1_1GameState.html#a6c1de96a0d88a79e0a390e17e6dee229">HeadBall::GameState</a>.</p>
 
 </div>
@@ -282,6 +363,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Virtual function for resuming the object. </p>
 
 <p>Reimplemented in <a class="el" href="classHeadBall_1_1GameState.html#ac6455ea1fd7aa20af96ca579b142678b">HeadBall::GameState</a>.</p>
 
@@ -310,11 +393,85 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Update state data. </p>
+
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">HeadBall::State</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a68e1c0b9354d6dd57f3f6dc259872ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e1c0b9354d6dd57f3f6dc259872ce1">&#9670;&nbsp;</a></span>_background</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sprite HeadBall::GameOver::_background</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Background sprite to draw on the screen. </p>
+
+</div>
+</div>
+<a id="a0e96e165acd7d94242d5609c3b45a368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e96e165acd7d94242d5609c3b45a368">&#9670;&nbsp;</a></span>_btnClickSfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sound HeadBall::GameOver::_btnClickSfx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sound effect for button click. </p>
+
+</div>
+</div>
+<a id="ad5c76aed2523ec46ae4882ca1ed6bd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c76aed2523ec46ae4882ca1ed6bd15">&#9670;&nbsp;</a></span>_crowdCheerOnGoal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sound HeadBall::GameOver::_crowdCheerOnGoal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sound effect for crowd cheering. </p>
+
+</div>
+</div>
 <a id="a5b12dfd279d0337503b53a7cf7af2bc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b12dfd279d0337503b53a7cf7af2bc8">&#9670;&nbsp;</a></span>_data</h2>
 
@@ -334,6 +491,80 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The shared pointer for <a class="el" href="structHeadBall_1_1GameData.html" title="Struct where the necessaey game data used by all the states is stored.">GameData</a>. </p>
+
+</div>
+</div>
+<a id="a6ee2290da3eeec3f0d05998a972a3d78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee2290da3eeec3f0d05998a972a3d78">&#9670;&nbsp;</a></span>_exitBtn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sprite HeadBall::GameOver::_exitBtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Button to exit the game. </p>
+
+</div>
+</div>
+<a id="a54d6c631da4d8a3f082efe22d1b2b334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d6c631da4d8a3f082efe22d1b2b334">&#9670;&nbsp;</a></span>_replayBtn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sprite HeadBall::GameOver::_replayBtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Button to replay the game. </p>
+
+</div>
+</div>
+<a id="aed029acddf6b530182138c72ef3384ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed029acddf6b530182138c72ef3384ae">&#9670;&nbsp;</a></span>_score</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text HeadBall::GameOver::_score</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Final score of the game. </p>
 
 </div>
 </div>
@@ -357,10 +588,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The shared pointer for <a class="el" href="structHeadBall_1_1ScoreTimeData.html" title="Struct where the game time and player score is stored.">ScoreTimeData</a>. </p>
+
 </div>
 </div>
-<a id="a4c8511cfbfd4a980f0de795a5ab6e9d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c8511cfbfd4a980f0de795a5ab6e9d5">&#9670;&nbsp;</a></span>_text</h2>
+<a id="a2fd52bfac5f4b8fd4a44a8fb63bb3b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd52bfac5f4b8fd4a44a8fb63bb3b3e">&#9670;&nbsp;</a></span>_winnerText</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +602,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">sf::Text HeadBall::GameOver::_text</td>
+          <td class="memname">sf::Text HeadBall::GameOver::_winnerText</td>
         </tr>
       </table>
   </td>
@@ -378,6 +611,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Text to display depending on who won or if it is a draw. </p>
 
 </div>
 </div>

@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1AssetManager}\index{HeadBall::AssetManager@{HeadBall::AssetManager}}
 
 
+Class for managing assets.  
+
+
+
+
 {\ttfamily \#include $<$Asset\+Manager.\+hpp$>$}
 
 
@@ -18,37 +23,42 @@ Collaboration diagram for Head\+Ball\+::Asset\+Manager\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1AssetManager_ae8a42c763062b1c4e61257d8d144ed83}{Asset\+Manager}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Asset Manager object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classHeadBall_1_1AssetManager_ad508616e5a8a8ffedf1272a0fbe5816a}{$\sim$\+Asset\+Manager}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destroy the Asset Manager object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}{load\+Texture}} (std\+::string name, std\+::string file\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Load Texture from given file into {\ttfamily map} \end{DoxyCompactList}\item 
 sf\+::\+Texture \& \mbox{\hyperlink{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}{get\+Texture}} (std\+::string name)
-\item 
+\begin{DoxyCompactList}\small\item\em Get the Texture object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}{load\+Font}} (std\+::string name, std\+::string file\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Load Font from given file into {\ttfamily map} \end{DoxyCompactList}\item 
 sf\+::\+Font \& \mbox{\hyperlink{classHeadBall_1_1AssetManager_af632498168418a46b580bd5cc6068f7a}{get\+Font}} (std\+::string name)
-\item 
+\begin{DoxyCompactList}\small\item\em Get the Font object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}{load\+Sound}} (std\+::string name, std\+::string file\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Load Sound from given file into {\ttfamily map} \end{DoxyCompactList}\item 
 sf\+::\+Sound\+Buffer \& \mbox{\hyperlink{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}{get\+Sound}} (std\+::string name)
-\item 
+\begin{DoxyCompactList}\small\item\em Get the Sound object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}{is\+Texture\+Present}} (std\+::string texture\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Check whether the Texture is present in {\ttfamily map} \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}{is\+Font\+Present}} (std\+::string font\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Check whether the Font is present in {\ttfamily map} \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}{is\+Sound\+Present}} (std\+::string sound\+Name)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Check whether the Sound is present in {\ttfamily map} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::map$<$ std\+::string, sf\+::\+Texture $>$ \mbox{\hyperlink{classHeadBall_1_1AssetManager_a6fbeb3031653c92b4a2c3ede70e73e72}{\+\_\+textures}}
-\item 
+\begin{DoxyCompactList}\small\item\em {\ttfamily map} for storing Textures \end{DoxyCompactList}\item 
 std\+::map$<$ std\+::string, sf\+::\+Font $>$ \mbox{\hyperlink{classHeadBall_1_1AssetManager_a388b9ebf57d8245eb3c91315222311be}{\+\_\+fonts}}
-\item 
+\begin{DoxyCompactList}\small\item\em {\ttfamily map} for storing Fonts \end{DoxyCompactList}\item 
 std\+::map$<$ std\+::string, sf\+::\+Sound\+Buffer $>$ \mbox{\hyperlink{classHeadBall_1_1AssetManager_af9d4247a44e104c0e5b4c5fc40192c0d}{\+\_\+sound\+\_\+clips}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em {\ttfamily map} for storing Sound clips/\+Sound effects \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for managing assets. 
+
+Assets managed by this class include Textures, Fonts and Sound. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_ae8a42c763062b1c4e61257d8d144ed83}\label{classHeadBall_1_1AssetManager_ae8a42c763062b1c4e61257d8d144ed83}} 
@@ -57,11 +67,19 @@ std\+::map$<$ std\+::string, sf\+::\+Sound\+Buffer $>$ \mbox{\hyperlink{classHea
 \doxysubsubsection{\texorpdfstring{AssetManager()}{AssetManager()}}
 {\footnotesize\ttfamily Head\+Ball\+::\+Asset\+Manager\+::\+Asset\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Construct a new Asset Manager object. 
+
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_ad508616e5a8a8ffedf1272a0fbe5816a}\label{classHeadBall_1_1AssetManager_ad508616e5a8a8ffedf1272a0fbe5816a}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!````~AssetManager@{$\sim$AssetManager}}
 \index{````~AssetManager@{$\sim$AssetManager}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{$\sim$AssetManager()}{~AssetManager()}}
 {\footnotesize\ttfamily Head\+Ball\+::\+Asset\+Manager\+::$\sim$\+Asset\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the Asset Manager object. 
 
 
 
@@ -72,54 +90,165 @@ std\+::map$<$ std\+::string, sf\+::\+Sound\+Buffer $>$ \mbox{\hyperlink{classHea
 \doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
 {\footnotesize\ttfamily sf\+::\+Font \& Head\+Ball\+::\+Asset\+Manager\+::get\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
+
+
+Get the Font object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of Font object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+::\+Font\& Reference to Font object 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}\label{classHeadBall_1_1AssetManager_af0e60cc459c799954f84e0b4c20c61bb}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!getSound@{getSound}}
 \index{getSound@{getSound}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{getSound()}{getSound()}}
 {\footnotesize\ttfamily sf\+::\+Sound\+Buffer \& Head\+Ball\+::\+Asset\+Manager\+::get\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
+
+
+Get the Sound object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of Sound object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+::\+Sound\+Buffer\& Reference to Sound object 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}\label{classHeadBall_1_1AssetManager_ab3ee86390dc7da9c566534a66cadeded}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!getTexture@{getTexture}}
 \index{getTexture@{getTexture}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
 {\footnotesize\ttfamily sf\+::\+Texture \& Head\+Ball\+::\+Asset\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
+
+
+Get the Texture object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of Texture object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+::\+Texture\& Reference to Texture object 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}\label{classHeadBall_1_1AssetManager_ac64a27a0168d46cfe85a9bf756df733e}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!isFontPresent@{isFontPresent}}
 \index{isFontPresent@{isFontPresent}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{isFontPresent()}{isFontPresent()}}
 {\footnotesize\ttfamily bool Head\+Ball\+::\+Asset\+Manager\+::is\+Font\+Present (\begin{DoxyParamCaption}\item[{std\+::string}]{font\+Name }\end{DoxyParamCaption})}
 
+
+
+Check whether the Font is present in {\ttfamily map} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & Name of Font object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Font is not present 
+
+false if Font is not present 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}\label{classHeadBall_1_1AssetManager_a72dc6b24eddb60eb1b57d09293c32133}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!isSoundPresent@{isSoundPresent}}
 \index{isSoundPresent@{isSoundPresent}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{isSoundPresent()}{isSoundPresent()}}
 {\footnotesize\ttfamily bool Head\+Ball\+::\+Asset\+Manager\+::is\+Sound\+Present (\begin{DoxyParamCaption}\item[{std\+::string}]{sound\+Name }\end{DoxyParamCaption})}
 
+
+
+Check whether the Sound is present in {\ttfamily map} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound\+Name} & Name of Sound object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Sound is not present 
+
+false if Sound is not present 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}\label{classHeadBall_1_1AssetManager_ab792f46e64a05e7ec271940acb3aa864}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!isTexturePresent@{isTexturePresent}}
 \index{isTexturePresent@{isTexturePresent}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{isTexturePresent()}{isTexturePresent()}}
 {\footnotesize\ttfamily bool Head\+Ball\+::\+Asset\+Manager\+::is\+Texture\+Present (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+Name }\end{DoxyParamCaption})}
 
+
+
+Check whether the Texture is present in {\ttfamily map} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & Name of Texture object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Texture is present 
+
+false if Texture is not present 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}\label{classHeadBall_1_1AssetManager_ad9197ca9367f5e4d0fd712a76fcccd10}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!loadFont@{loadFont}}
 \index{loadFont@{loadFont}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{loadFont()}{loadFont()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Asset\+Manager\+::load\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
 
+
+
+Load Font from given file into {\ttfamily map} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Font object \\
+\hline
+{\em file\+Name} & Path to Font \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}\label{classHeadBall_1_1AssetManager_abb06d842ac9a650fda7edbfd879ff596}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!loadSound@{loadSound}}
 \index{loadSound@{loadSound}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{loadSound()}{loadSound()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Asset\+Manager\+::load\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
 
+
+
+Load Sound from given file into {\ttfamily map} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of Sound object \\
+\hline
+{\em file\+Name} & Path to Sound \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}\label{classHeadBall_1_1AssetManager_a85a15157707941420c3df4477f787f1c}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!loadTexture@{loadTexture}}
 \index{loadTexture@{loadTexture}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Asset\+Manager\+::load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
 
+
+
+Load Texture from given file into {\ttfamily map} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of Texture object \\
+\hline
+{\em file\+Name} & Path to Texture \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
@@ -129,17 +258,29 @@ std\+::map$<$ std\+::string, sf\+::\+Sound\+Buffer $>$ \mbox{\hyperlink{classHea
 \doxysubsubsection{\texorpdfstring{\_fonts}{\_fonts}}
 {\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Font$>$ Head\+Ball\+::\+Asset\+Manager\+::\+\_\+fonts\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+{\ttfamily map} for storing Fonts 
+
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_af9d4247a44e104c0e5b4c5fc40192c0d}\label{classHeadBall_1_1AssetManager_af9d4247a44e104c0e5b4c5fc40192c0d}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!\_sound\_clips@{\_sound\_clips}}
 \index{\_sound\_clips@{\_sound\_clips}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{\_sound\_clips}{\_sound\_clips}}
 {\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Sound\+Buffer$>$ Head\+Ball\+::\+Asset\+Manager\+::\+\_\+sound\+\_\+clips\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+{\ttfamily map} for storing Sound clips/\+Sound effects 
+
 \mbox{\Hypertarget{classHeadBall_1_1AssetManager_a6fbeb3031653c92b4a2c3ede70e73e72}\label{classHeadBall_1_1AssetManager_a6fbeb3031653c92b4a2c3ede70e73e72}} 
 \index{HeadBall::AssetManager@{HeadBall::AssetManager}!\_textures@{\_textures}}
 \index{\_textures@{\_textures}!HeadBall::AssetManager@{HeadBall::AssetManager}}
 \doxysubsubsection{\texorpdfstring{\_textures}{\_textures}}
 {\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Texture$>$ Head\+Ball\+::\+Asset\+Manager\+::\+\_\+textures\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\ttfamily map} for storing Textures 
 
 
 

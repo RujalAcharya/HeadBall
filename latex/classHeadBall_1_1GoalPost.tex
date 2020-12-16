@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1GoalPost}\index{HeadBall::GoalPost@{HeadBall::GoalPost}}
 
 
+The Goalpost to be displayed in \mbox{\hyperlink{classHeadBall_1_1GameState}{Game\+State}}.  
+
+
+
+
 {\ttfamily \#include $<$Goal\+Post.\+hpp$>$}
 
 
@@ -18,21 +23,22 @@ Collaboration diagram for Head\+Ball\+::Goal\+Post\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1GoalPost_a913830081406ce59ae23d645f9e03612}{Goal\+Post}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Goal Post object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GoalPost_acc1ffaf797f89ecc073b875ce30df1b3}{init}} (sf\+::\+Vector2f position, bool is\+Left=true)
-\item 
+\begin{DoxyCompactList}\small\item\em Initiate the \mbox{\hyperlink{classHeadBall_1_1GoalPost}{Goal\+Post}} object. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GoalPost_afe3c999b342c63deca1e91b7447263ec}{sprite}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return the sprite to be displayed in the \mbox{\hyperlink{classHeadBall_1_1GameState}{Game\+State}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1GoalPost_a4fe9181b80f67a573430e808ff6b79bf}{\+\_\+data}}
-\item 
-\mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} \mbox{\hyperlink{classHeadBall_1_1GoalPost_a688496c648a722f2dba85147ce95a510}{\+\_\+world}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of game data. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GoalPost_a2815a3e15e514fe2cc7c45883ead2eb4}{\+\_\+sprite}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The sprite of the goal post. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The Goalpost to be displayed in \mbox{\hyperlink{classHeadBall_1_1GameState}{Game\+State}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1GoalPost_a913830081406ce59ae23d645f9e03612}\label{classHeadBall_1_1GoalPost_a913830081406ce59ae23d645f9e03612}} 
@@ -43,6 +49,15 @@ sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GoalPost_a2815a3e15e514fe2cc7c4
 
 
 
+Construct a new Goal Post object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The Shared Pointer of game data \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1GoalPost_acc1ffaf797f89ecc073b875ce30df1b3}\label{classHeadBall_1_1GoalPost_acc1ffaf797f89ecc073b875ce30df1b3}} 
 \index{HeadBall::GoalPost@{HeadBall::GoalPost}!init@{init}}
@@ -50,12 +65,30 @@ sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GoalPost_a2815a3e15e514fe2cc7c4
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Goal\+Post\+::init (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position,  }\item[{bool}]{is\+Left = {\ttfamily true} }\end{DoxyParamCaption})}
 
+
+
+Initiate the \mbox{\hyperlink{classHeadBall_1_1GoalPost}{Goal\+Post}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position where the \mbox{\hyperlink{classHeadBall_1_1GoalPost}{Goal\+Post}} is placed \\
+\hline
+{\em is\+Left} & To specify whether the \mbox{\hyperlink{classHeadBall_1_1GoalPost}{Goal\+Post}} is left post or right post, for keeping appropriate sprite for appropriate post \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHeadBall_1_1GoalPost_afe3c999b342c63deca1e91b7447263ec}\label{classHeadBall_1_1GoalPost_afe3c999b342c63deca1e91b7447263ec}} 
 \index{HeadBall::GoalPost@{HeadBall::GoalPost}!sprite@{sprite}}
 \index{sprite@{sprite}!HeadBall::GoalPost@{HeadBall::GoalPost}}
 \doxysubsubsection{\texorpdfstring{sprite()}{sprite()}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Goal\+Post\+::sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Return the sprite to be displayed in the \mbox{\hyperlink{classHeadBall_1_1GameState}{Game\+State}}. 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Sprite The sprite to be displayed 
+\end{DoxyReturn}
 
 
 \doxysubsection{Member Data Documentation}
@@ -65,17 +98,19 @@ sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GoalPost_a2815a3e15e514fe2cc7c4
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Goal\+Post\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The Shared Pointer of game data. 
+
 \mbox{\Hypertarget{classHeadBall_1_1GoalPost_a2815a3e15e514fe2cc7c45883ead2eb4}\label{classHeadBall_1_1GoalPost_a2815a3e15e514fe2cc7c45883ead2eb4}} 
 \index{HeadBall::GoalPost@{HeadBall::GoalPost}!\_sprite@{\_sprite}}
 \index{\_sprite@{\_sprite}!HeadBall::GoalPost@{HeadBall::GoalPost}}
 \doxysubsubsection{\texorpdfstring{\_sprite}{\_sprite}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Goal\+Post\+::\+\_\+sprite\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHeadBall_1_1GoalPost_a688496c648a722f2dba85147ce95a510}\label{classHeadBall_1_1GoalPost_a688496c648a722f2dba85147ce95a510}} 
-\index{HeadBall::GoalPost@{HeadBall::GoalPost}!\_world@{\_world}}
-\index{\_world@{\_world}!HeadBall::GoalPost@{HeadBall::GoalPost}}
-\doxysubsubsection{\texorpdfstring{\_world}{\_world}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} Head\+Ball\+::\+Goal\+Post\+::\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+
+The sprite of the goal post. 
 
 
 

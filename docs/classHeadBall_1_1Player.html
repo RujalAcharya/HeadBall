@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -76,53 +77,73 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for shape and movement of player.  
+ <a href="classHeadBall_1_1Player.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Player_8hpp_source.html">Player.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for HeadBall::Player:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1Player__coll__graph.png" border="0" usemap="#aHeadBall_1_1Player_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1Player_coll__map" id="aHeadBall_1_1Player_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,155,273"/>
+<area shape="rect" title="Class for shape and movement of player." alt="" coords="5,5,155,273"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a46b91809bd8d32be4282141ccc827aa9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a46b91809bd8d32be4282141ccc827aa9">Player</a> (<a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a> data, <a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a> world)</td></tr>
+<tr class="memdesc:a46b91809bd8d32be4282141ccc827aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object.  <a href="classHeadBall_1_1Player.html#a46b91809bd8d32be4282141ccc827aa9">More...</a><br /></td></tr>
 <tr class="separator:a46b91809bd8d32be4282141ccc827aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0307532ed6008016bc2b93274b2c54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a5a0307532ed6008016bc2b93274b2c54">init</a> (std::string texture, std::string texturePath, sf::Vector2f position)</td></tr>
+<tr class="memdesc:a5a0307532ed6008016bc2b93274b2c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate the <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object.  <a href="classHeadBall_1_1Player.html#a5a0307532ed6008016bc2b93274b2c54">More...</a><br /></td></tr>
 <tr class="separator:a5a0307532ed6008016bc2b93274b2c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fbc50f6cfd9b9dc5992a5845095158"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a49fbc50f6cfd9b9dc5992a5845095158">sprite</a> ()</td></tr>
+<tr class="memdesc:a49fbc50f6cfd9b9dc5992a5845095158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sprite of the <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object.  <a href="classHeadBall_1_1Player.html#a49fbc50f6cfd9b9dc5992a5845095158">More...</a><br /></td></tr>
 <tr class="separator:a49fbc50f6cfd9b9dc5992a5845095158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e43b17976383f565838582d18b7281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#af0e43b17976383f565838582d18b7281">processPosition</a> ()</td></tr>
+<tr class="memdesc:af0e43b17976383f565838582d18b7281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the position of <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object.  <a href="classHeadBall_1_1Player.html#af0e43b17976383f565838582d18b7281">More...</a><br /></td></tr>
 <tr class="separator:af0e43b17976383f565838582d18b7281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514b0aa3e79d75af62c0198ca3b46673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a514b0aa3e79d75af62c0198ca3b46673">moveLeft</a> ()</td></tr>
+<tr class="memdesc:a514b0aa3e79d75af62c0198ca3b46673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the player left.  <a href="classHeadBall_1_1Player.html#a514b0aa3e79d75af62c0198ca3b46673">More...</a><br /></td></tr>
 <tr class="separator:a514b0aa3e79d75af62c0198ca3b46673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ffd34b898a943cd1fa88798dd215deb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a1ffd34b898a943cd1fa88798dd215deb">moveRight</a> ()</td></tr>
+<tr class="memdesc:a1ffd34b898a943cd1fa88798dd215deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the player right.  <a href="classHeadBall_1_1Player.html#a1ffd34b898a943cd1fa88798dd215deb">More...</a><br /></td></tr>
 <tr class="separator:a1ffd34b898a943cd1fa88798dd215deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa51bd3a3c5c954ddf9d7396dbbcf4052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#aa51bd3a3c5c954ddf9d7396dbbcf4052">jump</a> ()</td></tr>
+<tr class="memdesc:aa51bd3a3c5c954ddf9d7396dbbcf4052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the player jump.  <a href="classHeadBall_1_1Player.html#aa51bd3a3c5c954ddf9d7396dbbcf4052">More...</a><br /></td></tr>
 <tr class="separator:aa51bd3a3c5c954ddf9d7396dbbcf4052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab949e20bf224478023f901fe469dd5e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#ab949e20bf224478023f901fe469dd5e7">setTexture</a> (std::string texture)</td></tr>
+<tr class="memdesc:ab949e20bf224478023f901fe469dd5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Texture of the sprite.  <a href="classHeadBall_1_1Player.html#ab949e20bf224478023f901fe469dd5e7">More...</a><br /></td></tr>
 <tr class="separator:ab949e20bf224478023f901fe469dd5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2633045d4659a58dec25e3e642928a01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a2633045d4659a58dec25e3e642928a01">_data</a></td></tr>
+<tr class="memdesc:a2633045d4659a58dec25e3e642928a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Shared Pointer of the game data.  <a href="classHeadBall_1_1Player.html#a2633045d4659a58dec25e3e642928a01">More...</a><br /></td></tr>
 <tr class="separator:a2633045d4659a58dec25e3e642928a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab447ca5422e0d4cfe1dadb52047dbdac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#ab447ca5422e0d4cfe1dadb52047dbdac">_world</a></td></tr>
+<tr class="memdesc:ab447ca5422e0d4cfe1dadb52047dbdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Shared Pointer of Box2D World.  <a href="classHeadBall_1_1Player.html#ab447ca5422e0d4cfe1dadb52047dbdac">More...</a><br /></td></tr>
 <tr class="separator:ab447ca5422e0d4cfe1dadb52047dbdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d7695904d5d85fb0db29c7839d41c6"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#aa2d7695904d5d85fb0db29c7839d41c6">_sprite</a></td></tr>
+<tr class="memdesc:aa2d7695904d5d85fb0db29c7839d41c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SFML sprite of the player.  <a href="classHeadBall_1_1Player.html#aa2d7695904d5d85fb0db29c7839d41c6">More...</a><br /></td></tr>
 <tr class="separator:aa2d7695904d5d85fb0db29c7839d41c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b6e9862079c0e9f2a379a57d984f887"><td class="memItemLeft" align="right" valign="top">b2BodyDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a0b6e9862079c0e9f2a379a57d984f887">_bodyDef</a></td></tr>
+<tr class="memdesc:a0b6e9862079c0e9f2a379a57d984f887"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of Box2D body.  <a href="classHeadBall_1_1Player.html#a0b6e9862079c0e9f2a379a57d984f887">More...</a><br /></td></tr>
 <tr class="separator:a0b6e9862079c0e9f2a379a57d984f887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db0d8774cb7fac507b90a4b38c4a793"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a6db0d8774cb7fac507b90a4b38c4a793">_body</a></td></tr>
+<tr class="memdesc:a6db0d8774cb7fac507b90a4b38c4a793"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Box2D body of player.  <a href="classHeadBall_1_1Player.html#a6db0d8774cb7fac507b90a4b38c4a793">More...</a><br /></td></tr>
 <tr class="separator:a6db0d8774cb7fac507b90a4b38c4a793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab14e6ce962a59d00a4e749e9f264d384"><td class="memItemLeft" align="right" valign="top">b2PolygonShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#ab14e6ce962a59d00a4e749e9f264d384">_rectShape</a></td></tr>
+<tr class="memdesc:ab14e6ce962a59d00a4e749e9f264d384"><td class="mdescLeft">&#160;</td><td class="mdescRight">The polygon shape for fixture definition.  <a href="classHeadBall_1_1Player.html#ab14e6ce962a59d00a4e749e9f264d384">More...</a><br /></td></tr>
 <tr class="separator:ab14e6ce962a59d00a4e749e9f264d384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b0b2561d9ede67036a5eb1fa259758"><td class="memItemLeft" align="right" valign="top">b2FixtureDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Player.html#a90b0b2561d9ede67036a5eb1fa259758">_fixture</a></td></tr>
+<tr class="memdesc:a90b0b2561d9ede67036a5eb1fa259758"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fixture of player for defining its properties.  <a href="classHeadBall_1_1Player.html#a90b0b2561d9ede67036a5eb1fa259758">More...</a><br /></td></tr>
 <tr class="separator:a90b0b2561d9ede67036a5eb1fa259758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for shape and movement of player. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a46b91809bd8d32be4282141ccc827aa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46b91809bd8d32be4282141ccc827aa9">&#9670;&nbsp;</a></span>Player()</h2>
 
@@ -148,6 +169,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Shared pointer of game data </td></tr>
+    <tr><td class="paramname">world</td><td>Shared pointer of Box2D world </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -184,6 +214,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initiate the <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Texture of the player as defined in the <code>map</code> </td></tr>
+    <tr><td class="paramname">texturePath</td><td>Path to the texture </td></tr>
+    <tr><td class="paramname">position</td><td>Position of the player </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa51bd3a3c5c954ddf9d7396dbbcf4052"></a>
@@ -200,6 +240,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Make the player jump. </p>
 
 </div>
 </div>
@@ -218,6 +260,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Move the player left. </p>
+
 </div>
 </div>
 <a id="a1ffd34b898a943cd1fa88798dd215deb"></a>
@@ -235,6 +279,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Move the player right. </p>
+
 </div>
 </div>
 <a id="af0e43b17976383f565838582d18b7281"></a>
@@ -251,6 +297,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Process the position of <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object. </p>
+<p>This function processes the position of the sprite as per the position of body in Box2D </p>
 
 </div>
 </div>
@@ -270,6 +319,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the Texture of the sprite. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Texture as defined in the <code>map</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a49fbc50f6cfd9b9dc5992a5845095158"></a>
@@ -286,6 +343,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return the sprite of the <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>sf::Sprite Sprite of the player object </dd></dl>
 
 </div>
 </div>
@@ -310,6 +370,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Box2D body of player. </p>
+
 </div>
 </div>
 <a id="a0b6e9862079c0e9f2a379a57d984f887"></a>
@@ -331,6 +393,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The definition of Box2D body. </p>
 
 </div>
 </div>
@@ -354,6 +418,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Shared Pointer of the game data. </p>
+
 </div>
 </div>
 <a id="a90b0b2561d9ede67036a5eb1fa259758"></a>
@@ -375,6 +441,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The fixture of player for defining its properties. </p>
 
 </div>
 </div>
@@ -398,6 +466,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The polygon shape for fixture definition. </p>
+
 </div>
 </div>
 <a id="aa2d7695904d5d85fb0db29c7839d41c6"></a>
@@ -420,6 +490,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The SFML sprite of the player. </p>
+
 </div>
 </div>
 <a id="ab447ca5422e0d4cfe1dadb52047dbdac"></a>
@@ -441,6 +513,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The Shared Pointer of Box2D World. </p>
 
 </div>
 </div>

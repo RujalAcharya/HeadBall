@@ -1,3 +1,3 @@
 <map id="HeadBall::Ball" name="HeadBall::Ball">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,155,244"/>
+<area shape="rect" id="node1" title="Class for shape and movement of ball." alt="" coords="5,5,155,244"/>
 </map>

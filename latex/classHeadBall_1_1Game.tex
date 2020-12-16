@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1Game}\index{HeadBall::Game@{HeadBall::Game}}
 
 
+Class where game loop is processed.  
+
+
+
+
 {\ttfamily \#include $<$Game.\+hpp$>$}
 
 
@@ -18,22 +23,25 @@ Collaboration diagram for Head\+Ball\+::Game\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}{Game}} (int width, int height, std\+::string title)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHeadBall_1_1Game}{Game}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classHeadBall_1_1Game_a6a4abae653a39dfb76f995d68c334260}{run}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Run the game loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 const float \mbox{\hyperlink{classHeadBall_1_1Game_a0de9a2a763c52bbcaeb1c60d7fc75e47}{dt}} = 1.\+0f / 60.\+0f
-\item 
+\begin{DoxyCompactList}\small\item\em The delta time for framerate management. \end{DoxyCompactList}\item 
 sf\+::\+Clock \mbox{\hyperlink{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b5677c9}{\+\_\+clock}}
-\item 
+\begin{DoxyCompactList}\small\item\em The clock for getting ti. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Game_a5cbad69940f130d6fb14f8e3d068b7c5}{\+\_\+data}} = std\+::make\+\_\+shared $<$\mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}$>$ ( )
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The shared pointer of game data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class where game loop is processed. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}\label{classHeadBall_1_1Game_a0007b5afcb0678e59049687ba4a6d3b8}} 
@@ -42,6 +50,19 @@ sf\+::\+Clock \mbox{\hyperlink{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b
 \doxysubsubsection{\texorpdfstring{Game()}{Game()}}
 {\footnotesize\ttfamily Head\+Ball\+::\+Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{std\+::string}]{title }\end{DoxyParamCaption})}
 
+
+
+Construct a new \mbox{\hyperlink{classHeadBall_1_1Game}{Game}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em title} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -53,6 +74,10 @@ sf\+::\+Clock \mbox{\hyperlink{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b
 
 
 
+Run the game loop. 
+
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b5677c9}\label{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b5677c9}} 
 \index{HeadBall::Game@{HeadBall::Game}!\_clock@{\_clock}}
@@ -60,17 +85,29 @@ sf\+::\+Clock \mbox{\hyperlink{classHeadBall_1_1Game_ae6514880f3b548d2b722ad0e4b
 \doxysubsubsection{\texorpdfstring{\_clock}{\_clock}}
 {\footnotesize\ttfamily sf\+::\+Clock Head\+Ball\+::\+Game\+::\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The clock for getting ti. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Game_a5cbad69940f130d6fb14f8e3d068b7c5}\label{classHeadBall_1_1Game_a5cbad69940f130d6fb14f8e3d068b7c5}} 
 \index{HeadBall::Game@{HeadBall::Game}!\_data@{\_data}}
 \index{\_data@{\_data}!HeadBall::Game@{HeadBall::Game}}
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Game\+::\+\_\+data = std\+::make\+\_\+shared $<$\mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}$>$ ( )\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The shared pointer of game data. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Game_a0de9a2a763c52bbcaeb1c60d7fc75e47}\label{classHeadBall_1_1Game_a0de9a2a763c52bbcaeb1c60d7fc75e47}} 
 \index{HeadBall::Game@{HeadBall::Game}!dt@{dt}}
 \index{dt@{dt}!HeadBall::Game@{HeadBall::Game}}
 \doxysubsubsection{\texorpdfstring{dt}{dt}}
 {\footnotesize\ttfamily const float Head\+Ball\+::\+Game\+::dt = 1.\+0f / 60.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The delta time for framerate management. 
 
 
 

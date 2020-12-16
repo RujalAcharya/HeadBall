@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -77,36 +78,46 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class where game loop is processed.  
+ <a href="classHeadBall_1_1Game.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Game_8hpp_source.html">Game.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for HeadBall::Game:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1Game__coll__graph.png" border="0" usemap="#aHeadBall_1_1Game_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1Game_coll__map" id="aHeadBall_1_1Game_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,133,127"/>
+<area shape="rect" title="Class where game loop is processed." alt="" coords="5,5,133,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0007b5afcb0678e59049687ba4a6d3b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Game.html#a0007b5afcb0678e59049687ba4a6d3b8">Game</a> (int width, int height, std::string title)</td></tr>
+<tr class="memdesc:a0007b5afcb0678e59049687ba4a6d3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> object.  <a href="classHeadBall_1_1Game.html#a0007b5afcb0678e59049687ba4a6d3b8">More...</a><br /></td></tr>
 <tr class="separator:a0007b5afcb0678e59049687ba4a6d3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a6a4abae653a39dfb76f995d68c334260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Game.html#a6a4abae653a39dfb76f995d68c334260">run</a> ()</td></tr>
+<tr class="memdesc:a6a4abae653a39dfb76f995d68c334260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the game loop.  <a href="classHeadBall_1_1Game.html#a6a4abae653a39dfb76f995d68c334260">More...</a><br /></td></tr>
 <tr class="separator:a6a4abae653a39dfb76f995d68c334260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0de9a2a763c52bbcaeb1c60d7fc75e47"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Game.html#a0de9a2a763c52bbcaeb1c60d7fc75e47">dt</a> = 1.0f / 60.0f</td></tr>
+<tr class="memdesc:a0de9a2a763c52bbcaeb1c60d7fc75e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The delta time for framerate management.  <a href="classHeadBall_1_1Game.html#a0de9a2a763c52bbcaeb1c60d7fc75e47">More...</a><br /></td></tr>
 <tr class="separator:a0de9a2a763c52bbcaeb1c60d7fc75e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6514880f3b548d2b722ad0e4b5677c9"><td class="memItemLeft" align="right" valign="top">sf::Clock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Game.html#ae6514880f3b548d2b722ad0e4b5677c9">_clock</a></td></tr>
+<tr class="memdesc:ae6514880f3b548d2b722ad0e4b5677c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The clock for getting ti.  <a href="classHeadBall_1_1Game.html#ae6514880f3b548d2b722ad0e4b5677c9">More...</a><br /></td></tr>
 <tr class="separator:ae6514880f3b548d2b722ad0e4b5677c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cbad69940f130d6fb14f8e3d068b7c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1Game.html#a5cbad69940f130d6fb14f8e3d068b7c5">_data</a> = std::make_shared &lt;<a class="el" href="structHeadBall_1_1GameData.html">GameData</a>&gt; ( )</td></tr>
+<tr class="memdesc:a5cbad69940f130d6fb14f8e3d068b7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer of game data.  <a href="classHeadBall_1_1Game.html#a5cbad69940f130d6fb14f8e3d068b7c5">More...</a><br /></td></tr>
 <tr class="separator:a5cbad69940f130d6fb14f8e3d068b7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class where game loop is processed. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0007b5afcb0678e59049687ba4a6d3b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0007b5afcb0678e59049687ba4a6d3b8">&#9670;&nbsp;</a></span>Game()</h2>
 
@@ -139,6 +150,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td></td></tr>
+    <tr><td class="paramname">height</td><td></td></tr>
+    <tr><td class="paramname">title</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -165,6 +186,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Run the game loop. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -188,6 +211,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The clock for getting ti. </p>
+
 </div>
 </div>
 <a id="a5cbad69940f130d6fb14f8e3d068b7c5"></a>
@@ -210,6 +235,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The shared pointer of game data. </p>
+
 </div>
 </div>
 <a id="a0de9a2a763c52bbcaeb1c60d7fc75e47"></a>
@@ -231,6 +258,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The delta time for framerate management. </p>
 
 </div>
 </div>

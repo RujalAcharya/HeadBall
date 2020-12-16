@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1MenuScreen}\index{HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 
 
+Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that includes the functionality of menuscreen.  
+
+
+
+
 {\ttfamily \#include $<$Menu\+Screen.\+hpp$>$}
 
 
@@ -28,43 +33,48 @@ Collaboration diagram for Head\+Ball\+::Menu\+Screen\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1MenuScreen_a554e2599f1dcc153a1b2d459afbeb78f}{Menu\+Screen}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Menu Screen object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1MenuScreen_aa27741ba859755dfdb34c2b8344e4573}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize a new \mbox{\hyperlink{classHeadBall_1_1MenuScreen}{Menu\+Screen}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1MenuScreen_ad469dc3adb2a46374caccf2f36a19dd5}{handle\+Input}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the user input in Menu screen. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1MenuScreen_af9c7fd3528430bfe4169a7afe4e28b07}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em updates the window according to provided input \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1MenuScreen_a0beb37cfdc07fd44ae54c81b53518da6}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Draw all the SFML objects in the rendering window. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1MenuScreen_ae281e1bef3253ff5898e28591f40d2a1}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em The shared pointer of \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} \mbox{\hyperlink{classHeadBall_1_1MenuScreen_a479b626eead3c468fbf4cc8572ba53b5}{\+\_\+score\+Time}} = std\+::make\+\_\+shared $<$\mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}$>$ ( )
-\item 
+\begin{DoxyCompactList}\small\item\em The shared pointer of \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1MenuScreen_a92a4837201f58ea7e3c7b92fc8d51a42}{\+\_\+background}}
-\item 
+\begin{DoxyCompactList}\small\item\em The sprite object for background of Menu screen. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1MenuScreen_acd8d1c6fea014039450b1acff8f7e143}{\+\_\+play\+Btn}}
-\item 
+\begin{DoxyCompactList}\small\item\em The sprite object for \char`\"{}play\char`\"{} button. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1MenuScreen_a775577ba336f4322876e1e2474a455d9}{\+\_\+instructions\+Btn}}
-\item 
+\begin{DoxyCompactList}\small\item\em The sprite object for \char`\"{}\+Instruction\char`\"{} button. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1MenuScreen_a1c2cc671b1e6d695ed3e0ac456d929d2}{\+\_\+about\+Btn}}
-\item 
+\begin{DoxyCompactList}\small\item\em The sprite object for \char`\"{}\+About\char`\"{} button. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1MenuScreen_a509611625035eec50e31ac99a1c2f3dc}{\+\_\+exit\+Btn}}
-\item 
+\begin{DoxyCompactList}\small\item\em The sprite object for \char`\"{}exit\char`\"{} button. \end{DoxyCompactList}\item 
 sf\+::\+Music \mbox{\hyperlink{classHeadBall_1_1MenuScreen_aafa4911bd3ceace1f9276f469ca487fd}{\+\_\+theme}}
-\item 
+\begin{DoxyCompactList}\small\item\em The music object for theme music. \end{DoxyCompactList}\item 
 sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1MenuScreen_aa97015b3a98b8373c1ea20a4d4558fb7}{\+\_\+text}}
-\item 
+\begin{DoxyCompactList}\small\item\em The text object for text in Menu screen. \end{DoxyCompactList}\item 
 sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1MenuScreen_aa02654b064dd7da28355d76944bf8c53}{\+\_\+btn\+Click\+Sfx}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The sound object for sfx while clicking any button. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that includes the functionality of menuscreen. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_a554e2599f1dcc153a1b2d459afbeb78f}\label{classHeadBall_1_1MenuScreen_a554e2599f1dcc153a1b2d459afbeb78f}} 
@@ -75,12 +85,35 @@ sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1MenuScreen_aa02654b064dd7da28355
 
 
 
+Construct a new Menu Screen object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The shared pointer of \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}} \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!animate@{animate}}
+\index{animate@{animate}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Vitrual function for performing animations. 
+
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_a0beb37cfdc07fd44ae54c81b53518da6}\label{classHeadBall_1_1MenuScreen_a0beb37cfdc07fd44ae54c81b53518da6}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!draw@{draw}}
 \index{draw@{draw}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Menu\+Screen\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw all the SFML objects in the rendering window. 
 
 
 
@@ -94,6 +127,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3
 
 
 
+Handles the user input in Menu screen. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_aa27741ba859755dfdb34c2b8344e4573}\label{classHeadBall_1_1MenuScreen_aa27741ba859755dfdb34c2b8344e4573}} 
@@ -101,6 +138,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a1284416
 \index{init@{init}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Menu\+Screen\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialize a new \mbox{\hyperlink{classHeadBall_1_1MenuScreen}{Menu\+Screen}} object. 
 
 
 
@@ -114,6 +155,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -124,6 +169,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 
 
 
+Virtual function for resuming the object. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af96ca579b142678b}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_af9c7fd3528430bfe4169a7afe4e28b07}\label{classHeadBall_1_1MenuScreen_af9c7fd3528430bfe4169a7afe4e28b07}} 
@@ -131,6 +180,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 \index{update@{update}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Menu\+Screen\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updates the window according to provided input 
 
 
 
@@ -145,11 +198,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_aboutBtn}{\_aboutBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Menu\+Screen\+::\+\_\+about\+Btn\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The sprite object for \char`\"{}\+About\char`\"{} button. 
+
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_a92a4837201f58ea7e3c7b92fc8d51a42}\label{classHeadBall_1_1MenuScreen_a92a4837201f58ea7e3c7b92fc8d51a42}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_background@{\_background}}
 \index{\_background@{\_background}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{\_background}{\_background}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Menu\+Screen\+::\+\_\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The sprite object for background of Menu screen. 
 
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_aa02654b064dd7da28355d76944bf8c53}\label{classHeadBall_1_1MenuScreen_aa02654b064dd7da28355d76944bf8c53}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_btnClickSfx@{\_btnClickSfx}}
@@ -157,11 +218,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_btnClickSfx}{\_btnClickSfx}}
 {\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+Menu\+Screen\+::\+\_\+btn\+Click\+Sfx\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The sound object for sfx while clicking any button. 
+
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_ae281e1bef3253ff5898e28591f40d2a1}\label{classHeadBall_1_1MenuScreen_ae281e1bef3253ff5898e28591f40d2a1}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_data@{\_data}}
 \index{\_data@{\_data}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Menu\+Screen\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shared pointer of \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}. 
 
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_a509611625035eec50e31ac99a1c2f3dc}\label{classHeadBall_1_1MenuScreen_a509611625035eec50e31ac99a1c2f3dc}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_exitBtn@{\_exitBtn}}
@@ -169,11 +238,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_exitBtn}{\_exitBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Menu\+Screen\+::\+\_\+exit\+Btn\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The sprite object for \char`\"{}exit\char`\"{} button. 
+
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_a775577ba336f4322876e1e2474a455d9}\label{classHeadBall_1_1MenuScreen_a775577ba336f4322876e1e2474a455d9}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_instructionsBtn@{\_instructionsBtn}}
 \index{\_instructionsBtn@{\_instructionsBtn}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{\_instructionsBtn}{\_instructionsBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Menu\+Screen\+::\+\_\+instructions\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The sprite object for \char`\"{}\+Instruction\char`\"{} button. 
 
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_acd8d1c6fea014039450b1acff8f7e143}\label{classHeadBall_1_1MenuScreen_acd8d1c6fea014039450b1acff8f7e143}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_playBtn@{\_playBtn}}
@@ -181,11 +258,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_playBtn}{\_playBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Menu\+Screen\+::\+\_\+play\+Btn\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The sprite object for \char`\"{}play\char`\"{} button. 
+
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_a479b626eead3c468fbf4cc8572ba53b5}\label{classHeadBall_1_1MenuScreen_a479b626eead3c468fbf4cc8572ba53b5}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_scoreTime@{\_scoreTime}}
 \index{\_scoreTime@{\_scoreTime}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{\_scoreTime}{\_scoreTime}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} Head\+Ball\+::\+Menu\+Screen\+::\+\_\+score\+Time = std\+::make\+\_\+shared $<$\mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}$>$ ( )\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shared pointer of \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}. 
 
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_aa97015b3a98b8373c1ea20a4d4558fb7}\label{classHeadBall_1_1MenuScreen_aa97015b3a98b8373c1ea20a4d4558fb7}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_text@{\_text}}
@@ -193,11 +278,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_text}{\_text}}
 {\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Menu\+Screen\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The text object for text in Menu screen. 
+
 \mbox{\Hypertarget{classHeadBall_1_1MenuScreen_aafa4911bd3ceace1f9276f469ca487fd}\label{classHeadBall_1_1MenuScreen_aafa4911bd3ceace1f9276f469ca487fd}} 
 \index{HeadBall::MenuScreen@{HeadBall::MenuScreen}!\_theme@{\_theme}}
 \index{\_theme@{\_theme}!HeadBall::MenuScreen@{HeadBall::MenuScreen}}
 \doxysubsubsection{\texorpdfstring{\_theme}{\_theme}}
 {\footnotesize\ttfamily sf\+::\+Music Head\+Ball\+::\+Menu\+Screen\+::\+\_\+theme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The music object for theme music. 
 
 
 

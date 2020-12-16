@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1GoalState}\index{HeadBall::GoalState@{HeadBall::GoalState}}
 
 
+Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that checks whether the player has scored goal or not and updates the state.  
+
+
+
+
 {\ttfamily \#include $<$Goal\+State.\+hpp$>$}
 
 
@@ -27,48 +32,84 @@ Collaboration diagram for Head\+Ball\+::Goal\+State\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classHeadBall_1_1GoalState_afc32a743cf90ca64a8eaab2927077655}{Goal\+State}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} scoretime)
-\item 
+\mbox{\hyperlink{classHeadBall_1_1GoalState_a63fe76b14d5f79688964daa6fe16ae58}{Goal\+State}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} scoretime, bool is\+Second\+Half)
+\begin{DoxyCompactList}\small\item\em Construct a new Goal \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GoalState_a4f4c238743223b5c36210ad2aca2767e}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialze a new \mbox{\hyperlink{classHeadBall_1_1GoalState}{Goal\+State}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GoalState_aca02f777d41ceb947667d05eacce2eb5}{handle\+Input}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handles all the input during goalstate. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GoalState_a4a662b160c682a7ca01783f7d57fc163}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the rendering window as per the provided inputs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GoalState_a063eaa251ed59952ebec4e19725be1f0}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Draws all the SFML objects of Goal state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1GoalState_a224b2e015c41d93466029834dc7faa2e}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em Shared pointer for game data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} \mbox{\hyperlink{classHeadBall_1_1GoalState_a86f82f3fa4e5d9b66c2196e1882c1615}{\+\_\+score\+Time}}
-\item 
+\begin{DoxyCompactList}\small\item\em Shared pointer for score and time. \end{DoxyCompactList}\item 
 sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1GoalState_a2407fb319c38496f4398c8d8ce124f37}{\+\_\+crowd\+Cheer\+On\+Goal}}
-\item 
-sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1GoalState_aaed3f0f35e4fb0880681cfacea01bc64}{\+\_\+text}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Croud cheering sound. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GoalState_a456b2ead80e65c5ddbd1679c21420602}{\+\_\+background}}
+\begin{DoxyCompactList}\small\item\em Background sprite to draw on the screen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHeadBall_1_1GoalState_a9257150e457e20b730491b599b3d046f}{\+\_\+is\+Second\+Half}}
+\begin{DoxyCompactList}\small\item\em Store whether it is first half or second. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHeadBall_1_1GoalState_af3c8604cd53324657b72f357e4fb5fa1}{\+\_\+animation\+Counter}}
+\begin{DoxyCompactList}\small\item\em Counter for animation of movements. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that checks whether the player has scored goal or not and updates the state. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classHeadBall_1_1GoalState_afc32a743cf90ca64a8eaab2927077655}\label{classHeadBall_1_1GoalState_afc32a743cf90ca64a8eaab2927077655}} 
+\mbox{\Hypertarget{classHeadBall_1_1GoalState_a63fe76b14d5f79688964daa6fe16ae58}\label{classHeadBall_1_1GoalState_a63fe76b14d5f79688964daa6fe16ae58}} 
 \index{HeadBall::GoalState@{HeadBall::GoalState}!GoalState@{GoalState}}
 \index{GoalState@{GoalState}!HeadBall::GoalState@{HeadBall::GoalState}}
 \doxysubsubsection{\texorpdfstring{GoalState()}{GoalState()}}
-{\footnotesize\ttfamily Head\+Ball\+::\+Goal\+State\+::\+Goal\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}}}]{data,  }\item[{\mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}}}]{scoretime }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Head\+Ball\+::\+Goal\+State\+::\+Goal\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}}}]{data,  }\item[{\mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}}}]{scoretime,  }\item[{bool}]{is\+Second\+Half }\end{DoxyParamCaption})}
 
+
+
+Construct a new Goal \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The shared pointer of \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}} \\
+\hline
+{\em scoretime} & The shared pointer of \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}} \\
+\hline
+{\em is\+Second\+Half} & The boolean variable that checks whether the half is second or not \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::GoalState@{HeadBall::GoalState}!animate@{animate}}
+\index{animate@{animate}!HeadBall::GoalState@{HeadBall::GoalState}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Vitrual function for performing animations. 
+
 \mbox{\Hypertarget{classHeadBall_1_1GoalState_a063eaa251ed59952ebec4e19725be1f0}\label{classHeadBall_1_1GoalState_a063eaa251ed59952ebec4e19725be1f0}} 
 \index{HeadBall::GoalState@{HeadBall::GoalState}!draw@{draw}}
 \index{draw@{draw}!HeadBall::GoalState@{HeadBall::GoalState}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Goal\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws all the SFML objects of Goal state. 
 
 
 
@@ -82,6 +123,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3
 
 
 
+Handles all the input during goalstate. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1GoalState_a4f4c238743223b5c36210ad2aca2767e}\label{classHeadBall_1_1GoalState_a4f4c238743223b5c36210ad2aca2767e}} 
@@ -89,6 +134,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a1284416
 \index{init@{init}!HeadBall::GoalState@{HeadBall::GoalState}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Goal\+State\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialze a new \mbox{\hyperlink{classHeadBall_1_1GoalState}{Goal\+State}} object. 
 
 
 
@@ -102,6 +151,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -109,6 +162,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 \index{resume@{resume}!HeadBall::GoalState@{HeadBall::GoalState}}
 \doxysubsubsection{\texorpdfstring{resume()}{resume()}}
 {\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Virtual function for resuming the object. 
 
 
 
@@ -122,16 +179,44 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 
 
 
+Updates the rendering window as per the provided inputs. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}{Head\+Ball\+::\+State}}.
 
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1GoalState_af3c8604cd53324657b72f357e4fb5fa1}\label{classHeadBall_1_1GoalState_af3c8604cd53324657b72f357e4fb5fa1}} 
+\index{HeadBall::GoalState@{HeadBall::GoalState}!\_animationCounter@{\_animationCounter}}
+\index{\_animationCounter@{\_animationCounter}!HeadBall::GoalState@{HeadBall::GoalState}}
+\doxysubsubsection{\texorpdfstring{\_animationCounter}{\_animationCounter}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Goal\+State\+::\+\_\+animation\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Counter for animation of movements. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GoalState_a456b2ead80e65c5ddbd1679c21420602}\label{classHeadBall_1_1GoalState_a456b2ead80e65c5ddbd1679c21420602}} 
+\index{HeadBall::GoalState@{HeadBall::GoalState}!\_background@{\_background}}
+\index{\_background@{\_background}!HeadBall::GoalState@{HeadBall::GoalState}}
+\doxysubsubsection{\texorpdfstring{\_background}{\_background}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Goal\+State\+::\+\_\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Background sprite to draw on the screen. 
+
 \mbox{\Hypertarget{classHeadBall_1_1GoalState_a2407fb319c38496f4398c8d8ce124f37}\label{classHeadBall_1_1GoalState_a2407fb319c38496f4398c8d8ce124f37}} 
 \index{HeadBall::GoalState@{HeadBall::GoalState}!\_crowdCheerOnGoal@{\_crowdCheerOnGoal}}
 \index{\_crowdCheerOnGoal@{\_crowdCheerOnGoal}!HeadBall::GoalState@{HeadBall::GoalState}}
 \doxysubsubsection{\texorpdfstring{\_crowdCheerOnGoal}{\_crowdCheerOnGoal}}
 {\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+Goal\+State\+::\+\_\+crowd\+Cheer\+On\+Goal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Croud cheering sound. 
 
 \mbox{\Hypertarget{classHeadBall_1_1GoalState_a224b2e015c41d93466029834dc7faa2e}\label{classHeadBall_1_1GoalState_a224b2e015c41d93466029834dc7faa2e}} 
 \index{HeadBall::GoalState@{HeadBall::GoalState}!\_data@{\_data}}
@@ -139,17 +224,29 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Goal\+State\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Shared pointer for game data. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GoalState_a9257150e457e20b730491b599b3d046f}\label{classHeadBall_1_1GoalState_a9257150e457e20b730491b599b3d046f}} 
+\index{HeadBall::GoalState@{HeadBall::GoalState}!\_isSecondHalf@{\_isSecondHalf}}
+\index{\_isSecondHalf@{\_isSecondHalf}!HeadBall::GoalState@{HeadBall::GoalState}}
+\doxysubsubsection{\texorpdfstring{\_isSecondHalf}{\_isSecondHalf}}
+{\footnotesize\ttfamily bool Head\+Ball\+::\+Goal\+State\+::\+\_\+is\+Second\+Half\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Store whether it is first half or second. 
+
 \mbox{\Hypertarget{classHeadBall_1_1GoalState_a86f82f3fa4e5d9b66c2196e1882c1615}\label{classHeadBall_1_1GoalState_a86f82f3fa4e5d9b66c2196e1882c1615}} 
 \index{HeadBall::GoalState@{HeadBall::GoalState}!\_scoreTime@{\_scoreTime}}
 \index{\_scoreTime@{\_scoreTime}!HeadBall::GoalState@{HeadBall::GoalState}}
 \doxysubsubsection{\texorpdfstring{\_scoreTime}{\_scoreTime}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} Head\+Ball\+::\+Goal\+State\+::\+\_\+score\+Time\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHeadBall_1_1GoalState_aaed3f0f35e4fb0880681cfacea01bc64}\label{classHeadBall_1_1GoalState_aaed3f0f35e4fb0880681cfacea01bc64}} 
-\index{HeadBall::GoalState@{HeadBall::GoalState}!\_text@{\_text}}
-\index{\_text@{\_text}!HeadBall::GoalState@{HeadBall::GoalState}}
-\doxysubsubsection{\texorpdfstring{\_text}{\_text}}
-{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Goal\+State\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+Shared pointer for score and time. 
 
 
 

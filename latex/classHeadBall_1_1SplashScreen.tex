@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1SplashScreen}\index{HeadBall::SplashScreen@{HeadBall::SplashScreen}}
 
 
+Class for the Splash Screen.  
+
+
+
+
 {\ttfamily \#include $<$Splash\+Screen.\+hpp$>$}
 
 
@@ -28,31 +33,38 @@ Collaboration diagram for Head\+Ball\+::Splash\+Screen\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a2804947349f522810e51855342912102}{Splash\+Screen}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Splash Screen object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1SplashScreen_af38e3e150f6b8997fc6fe97e7903142e}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize \mbox{\hyperlink{classHeadBall_1_1SplashScreen}{Splash\+Screen}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1SplashScreen_ad525cc66e872af98ea2f4c54ddbb906f}{handle\+Input}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handle the user inputs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a0843a1830f3a70f1370b3e3f5a2f9e9e}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Update the Animation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a50aad5112ba64abf150dbe1819d7790a}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Draw the Sprites. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a863f2987c1d6ad73e082781d796790f0}{\+\_\+data}}
-\item 
-sf\+::\+Clock \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a21cfc06491eb23a008471629a1b9bf31}{\+\_\+clock}}
-\item 
+\begin{DoxyCompactList}\small\item\em Shared Pointer for all game data. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a2fc8ee71c1575d96eb9376561e86bb63}{\+\_\+background\+Sprite}}
-\item 
-sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a2a7e6263282a76bfec561dcead86ab27}{\+\_\+flag\+Sprite}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initial background sprite. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a06817e1c088ceff0f69ccf357d7ea777}{\+\_\+logo\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Initial logo animation sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a795272bafc6b87f68b41c750e22548f5}{\+\_\+animation\+Counter}}
+\begin{DoxyCompactList}\small\item\em Counter for animation cycles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a991998a5b7eba4d722d2b4167321e04e}{\+\_\+sprite\+Counter}}
+\begin{DoxyCompactList}\small\item\em Counter for sprites. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for the Splash Screen. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a2804947349f522810e51855342912102}\label{classHeadBall_1_1SplashScreen_a2804947349f522810e51855342912102}} 
@@ -63,12 +75,35 @@ sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a2a7e6263282a76bfe
 
 
 
+Construct a new Splash Screen object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Shared pointer of game data \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!animate@{animate}}
+\index{animate@{animate}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Vitrual function for performing animations. 
+
 \mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a50aad5112ba64abf150dbe1819d7790a}\label{classHeadBall_1_1SplashScreen_a50aad5112ba64abf150dbe1819d7790a}} 
 \index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!draw@{draw}}
 \index{draw@{draw}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Splash\+Screen\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw the Sprites. 
 
 
 
@@ -82,6 +117,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3
 
 
 
+Handle the user inputs. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1SplashScreen_af38e3e150f6b8997fc6fe97e7903142e}\label{classHeadBall_1_1SplashScreen_af38e3e150f6b8997fc6fe97e7903142e}} 
@@ -89,6 +128,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a1284416
 \index{init@{init}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Splash\+Screen\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialize \mbox{\hyperlink{classHeadBall_1_1SplashScreen}{Splash\+Screen}} object. 
 
 
 
@@ -102,6 +145,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -109,6 +156,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 \index{resume@{resume}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
 \doxysubsubsection{\texorpdfstring{resume()}{resume()}}
 {\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Virtual function for resuming the object. 
 
 
 
@@ -122,22 +173,34 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 
 
 
+Update the Animation. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}{Head\+Ball\+::\+State}}.
 
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a795272bafc6b87f68b41c750e22548f5}\label{classHeadBall_1_1SplashScreen_a795272bafc6b87f68b41c750e22548f5}} 
+\index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!\_animationCounter@{\_animationCounter}}
+\index{\_animationCounter@{\_animationCounter}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
+\doxysubsubsection{\texorpdfstring{\_animationCounter}{\_animationCounter}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Splash\+Screen\+::\+\_\+animation\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Counter for animation cycles. 
+
 \mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a2fc8ee71c1575d96eb9376561e86bb63}\label{classHeadBall_1_1SplashScreen_a2fc8ee71c1575d96eb9376561e86bb63}} 
 \index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!\_backgroundSprite@{\_backgroundSprite}}
 \index{\_backgroundSprite@{\_backgroundSprite}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
 \doxysubsubsection{\texorpdfstring{\_backgroundSprite}{\_backgroundSprite}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Splash\+Screen\+::\+\_\+background\+Sprite\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a21cfc06491eb23a008471629a1b9bf31}\label{classHeadBall_1_1SplashScreen_a21cfc06491eb23a008471629a1b9bf31}} 
-\index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!\_clock@{\_clock}}
-\index{\_clock@{\_clock}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
-\doxysubsubsection{\texorpdfstring{\_clock}{\_clock}}
-{\footnotesize\ttfamily sf\+::\+Clock Head\+Ball\+::\+Splash\+Screen\+::\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
+
+
+Initial background sprite. 
 
 \mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a863f2987c1d6ad73e082781d796790f0}\label{classHeadBall_1_1SplashScreen_a863f2987c1d6ad73e082781d796790f0}} 
 \index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!\_data@{\_data}}
@@ -145,11 +208,29 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Splash\+Screen\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a2a7e6263282a76bfec561dcead86ab27}\label{classHeadBall_1_1SplashScreen_a2a7e6263282a76bfec561dcead86ab27}} 
-\index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!\_flagSprite@{\_flagSprite}}
-\index{\_flagSprite@{\_flagSprite}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
-\doxysubsubsection{\texorpdfstring{\_flagSprite}{\_flagSprite}}
-{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Splash\+Screen\+::\+\_\+flag\+Sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+Shared Pointer for all game data. 
+
+\mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a06817e1c088ceff0f69ccf357d7ea777}\label{classHeadBall_1_1SplashScreen_a06817e1c088ceff0f69ccf357d7ea777}} 
+\index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!\_logoSprite@{\_logoSprite}}
+\index{\_logoSprite@{\_logoSprite}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
+\doxysubsubsection{\texorpdfstring{\_logoSprite}{\_logoSprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Splash\+Screen\+::\+\_\+logo\+Sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initial logo animation sprite. 
+
+\mbox{\Hypertarget{classHeadBall_1_1SplashScreen_a991998a5b7eba4d722d2b4167321e04e}\label{classHeadBall_1_1SplashScreen_a991998a5b7eba4d722d2b4167321e04e}} 
+\index{HeadBall::SplashScreen@{HeadBall::SplashScreen}!\_spriteCounter@{\_spriteCounter}}
+\index{\_spriteCounter@{\_spriteCounter}!HeadBall::SplashScreen@{HeadBall::SplashScreen}}
+\doxysubsubsection{\texorpdfstring{\_spriteCounter}{\_spriteCounter}}
+{\footnotesize\ttfamily int Head\+Ball\+::\+Splash\+Screen\+::\+\_\+sprite\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Counter for sprites. 
 
 
 

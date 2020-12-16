@@ -1,6 +1,6 @@
 <map id="HeadBall::GameData" name="HeadBall::GameData">
-<area shape="rect" id="node1" title=" " alt="" coords="226,321,385,399"/>
-<area shape="rect" id="node2" href="$classHeadBall_1_1StateMachine.html" title=" " alt="" coords="5,27,192,237"/>
-<area shape="rect" id="node3" href="$classHeadBall_1_1InputManager.html" title=" " alt="" coords="216,57,395,207"/>
-<area shape="rect" id="node4" href="$classHeadBall_1_1AssetManager.html" title=" " alt="" coords="419,5,602,259"/>
+<area shape="rect" id="node1" title="Struct where the necessaey game data used by all the states is stored." alt="" coords="226,321,385,399"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1StateMachine.html" title="The class that manages the states in the project." alt="" coords="5,27,192,237"/>
+<area shape="rect" id="node3" href="$classHeadBall_1_1InputManager.html" title="Handle the input given by the user." alt="" coords="216,57,395,207"/>
+<area shape="rect" id="node4" href="$classHeadBall_1_1AssetManager.html" title="Class for managing assets." alt="" coords="419,5,602,259"/>
 </map>

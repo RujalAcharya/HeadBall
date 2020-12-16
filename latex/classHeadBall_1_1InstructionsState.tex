@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1InstructionsState}\index{HeadBall::InstructionsState@{HeadBall::InstructionsState}}
 
 
+Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that provides a state to instuct the players about basic controls of game.  
+
+
+
+
 {\ttfamily \#include $<$Instructions\+State.\+hpp$>$}
 
 
@@ -28,35 +33,45 @@ Collaboration diagram for Head\+Ball\+::Instructions\+State\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1InstructionsState_adf54906589ac4b0b92c6d2baf9041c3e}{Instructions\+State}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Instructions \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a6b4b44ea4aadbae7e236f1ae46f4ac9d}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes a new \mbox{\hyperlink{classHeadBall_1_1InstructionsState}{Instructions\+State}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a5c2f8b4a5286ff30d7a6857fdfac91da}{display\+Instructions}} ()
+\begin{DoxyCompactList}\small\item\em Takes instruction to be displayed in the window and returns it. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a0c346ee32aed2b3d11e0d5600b9c731f}{handle\+Input}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handles input. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a0583acafb3569d6cf3628a98d7572919}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the state according to the input. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a2604373840f8a82be6acd66fd56ca10a}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Draws SFML objects of Instruction state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a5bd02adba045c5432ddd6bafc8e9df10}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em The shared pointer for all the game data. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1InstructionsState_ac3779ca6dad4d8760652044b8bb257aa}{\+\_\+background}}
-\item 
+\begin{DoxyCompactList}\small\item\em Background sprite to draw on the screen ~\newline
+ \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a13ce8d58c28e1c1fa444d878e4a59b5a}{\+\_\+back\+Btn}}
-\item 
+\begin{DoxyCompactList}\small\item\em Button to return back. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a81f8f20058e95607f68e4e5467797a2b}{\+\_\+exit\+Btn}}
-\item 
-sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a26a58e88b497036c36f20873f4ca29dd}{\+\_\+text}}
-\item 
+\begin{DoxyCompactList}\small\item\em Button to exit from the game. \end{DoxyCompactList}\item 
 sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1InstructionsState_ab3b0d484d0dcfb14469a52b8d3d79b06}{\+\_\+btn\+Click\+Sfx}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sound effect for button click. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a7f62cf7f0ce36cbbbc42c330d0df6a3c}{\+\_\+instructions\+Text}}
+\begin{DoxyCompactList}\small\item\em Text to display {\ttfamily instructions} information. \end{DoxyCompactList}\item 
+std\+::stringstream \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a64de7681d03ec83a05ec681ef64c5b58}{ss}}
+\begin{DoxyCompactList}\small\item\em String stream to update the controls as in definitions.\+hpp. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Derived class of \mbox{\hyperlink{classHeadBall_1_1State}{State}} class with visibility mode public that provides a state to instuct the players about basic controls of game. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_adf54906589ac4b0b92c6d2baf9041c3e}\label{classHeadBall_1_1InstructionsState_adf54906589ac4b0b92c6d2baf9041c3e}} 
@@ -67,12 +82,48 @@ sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1InstructionsState_ab3b0d484d0dcf
 
 
 
+Construct a new Instructions \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The shared pointer of \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}} \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!animate@{animate}}
+\index{animate@{animate}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Vitrual function for performing animations. 
+
+\mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a5c2f8b4a5286ff30d7a6857fdfac91da}\label{classHeadBall_1_1InstructionsState_a5c2f8b4a5286ff30d7a6857fdfac91da}} 
+\index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!displayInstructions@{displayInstructions}}
+\index{displayInstructions@{displayInstructions}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
+\doxysubsubsection{\texorpdfstring{displayInstructions()}{displayInstructions()}}
+{\footnotesize\ttfamily std\+::string Head\+Ball\+::\+Instructions\+State\+::display\+Instructions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Takes instruction to be displayed in the window and returns it. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string returns the instructions 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a2604373840f8a82be6acd66fd56ca10a}\label{classHeadBall_1_1InstructionsState_a2604373840f8a82be6acd66fd56ca10a}} 
 \index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!draw@{draw}}
 \index{draw@{draw}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Instructions\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws SFML objects of Instruction state. 
 
 
 
@@ -86,6 +137,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3
 
 
 
+Handles input. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a6b4b44ea4aadbae7e236f1ae46f4ac9d}\label{classHeadBall_1_1InstructionsState_a6b4b44ea4aadbae7e236f1ae46f4ac9d}} 
@@ -93,6 +148,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a1284416
 \index{init@{init}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Instructions\+State\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes a new \mbox{\hyperlink{classHeadBall_1_1InstructionsState}{Instructions\+State}} object. 
 
 
 
@@ -106,6 +165,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -116,6 +179,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 
 
 
+Virtual function for resuming the object. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af96ca579b142678b}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a0583acafb3569d6cf3628a98d7572919}\label{classHeadBall_1_1InstructionsState_a0583acafb3569d6cf3628a98d7572919}} 
@@ -123,6 +190,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 \index{update@{update}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Instructions\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the state according to the input. 
 
 
 
@@ -137,11 +208,20 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_backBtn}{\_backBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Instructions\+State\+::\+\_\+back\+Btn\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Button to return back. 
+
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_ac3779ca6dad4d8760652044b8bb257aa}\label{classHeadBall_1_1InstructionsState_ac3779ca6dad4d8760652044b8bb257aa}} 
 \index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!\_background@{\_background}}
 \index{\_background@{\_background}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
 \doxysubsubsection{\texorpdfstring{\_background}{\_background}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Instructions\+State\+::\+\_\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Background sprite to draw on the screen ~\newline
+ 
 
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_ab3b0d484d0dcfb14469a52b8d3d79b06}\label{classHeadBall_1_1InstructionsState_ab3b0d484d0dcfb14469a52b8d3d79b06}} 
 \index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!\_btnClickSfx@{\_btnClickSfx}}
@@ -149,11 +229,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_btnClickSfx}{\_btnClickSfx}}
 {\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+Instructions\+State\+::\+\_\+btn\+Click\+Sfx\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Sound effect for button click. 
+
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a5bd02adba045c5432ddd6bafc8e9df10}\label{classHeadBall_1_1InstructionsState_a5bd02adba045c5432ddd6bafc8e9df10}} 
 \index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!\_data@{\_data}}
 \index{\_data@{\_data}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Instructions\+State\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shared pointer for all the game data. 
 
 \mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a81f8f20058e95607f68e4e5467797a2b}\label{classHeadBall_1_1InstructionsState_a81f8f20058e95607f68e4e5467797a2b}} 
 \index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!\_exitBtn@{\_exitBtn}}
@@ -161,11 +249,29 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_exitBtn}{\_exitBtn}}
 {\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Instructions\+State\+::\+\_\+exit\+Btn\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a26a58e88b497036c36f20873f4ca29dd}\label{classHeadBall_1_1InstructionsState_a26a58e88b497036c36f20873f4ca29dd}} 
-\index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!\_text@{\_text}}
-\index{\_text@{\_text}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
-\doxysubsubsection{\texorpdfstring{\_text}{\_text}}
-{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Instructions\+State\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+Button to exit from the game. 
+
+\mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a7f62cf7f0ce36cbbbc42c330d0df6a3c}\label{classHeadBall_1_1InstructionsState_a7f62cf7f0ce36cbbbc42c330d0df6a3c}} 
+\index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!\_instructionsText@{\_instructionsText}}
+\index{\_instructionsText@{\_instructionsText}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
+\doxysubsubsection{\texorpdfstring{\_instructionsText}{\_instructionsText}}
+{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Instructions\+State\+::\+\_\+instructions\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text to display {\ttfamily instructions} information. 
+
+\mbox{\Hypertarget{classHeadBall_1_1InstructionsState_a64de7681d03ec83a05ec681ef64c5b58}\label{classHeadBall_1_1InstructionsState_a64de7681d03ec83a05ec681ef64c5b58}} 
+\index{HeadBall::InstructionsState@{HeadBall::InstructionsState}!ss@{ss}}
+\index{ss@{ss}!HeadBall::InstructionsState@{HeadBall::InstructionsState}}
+\doxysubsubsection{\texorpdfstring{ss}{ss}}
+{\footnotesize\ttfamily std\+::stringstream Head\+Ball\+::\+Instructions\+State\+::ss\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+String stream to update the controls as in definitions.\+hpp. 
 
 
 

@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1GameOver}\index{HeadBall::GameOver@{HeadBall::GameOver}}
 
 
+Class for game over or full-\/time state.  
+
+
+
+
 {\ttfamily \#include $<$Game\+Over.\+hpp$>$}
 
 
@@ -11,7 +16,7 @@ Inheritance diagram for Head\+Ball\+::Game\+Over\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=199pt]{classHeadBall_1_1GameOver__inherit__graph}
+\includegraphics[width=202pt]{classHeadBall_1_1GameOver__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,36 +26,53 @@ Collaboration diagram for Head\+Ball\+::Game\+Over\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=199pt]{classHeadBall_1_1GameOver__coll__graph}
+\includegraphics[width=202pt]{classHeadBall_1_1GameOver__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1GameOver_ab345b888d25179a20e448a4656f4eccf}{Game\+Over}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} score\+Time)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHeadBall_1_1Game}{Game}} Over object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GameOver_a1a8d05d6b841096bb5d39c94a4adbc3d}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize state related data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GameOver_a7a2031e60478d460b5a9028ecc132c04}{handle\+Input}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handle user input. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GameOver_a69542d189a8aae4344608bd0b6438c81}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Update state data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1GameOver_aaa76a7d76332d9a7402a7e105b0d2ee5}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Draw state objects. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1GameOver_a5b12dfd279d0337503b53a7cf7af2bc8}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em The shared pointer for \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} \mbox{\hyperlink{classHeadBall_1_1GameOver_a4e4623f95645217c552bca88d56f8d55}{\+\_\+score\+Time}}
-\item 
-sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1GameOver_a4c8511cfbfd4a980f0de795a5ab6e9d5}{\+\_\+text}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The shared pointer for \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1GameOver_ad5c76aed2523ec46ae4882ca1ed6bd15}{\+\_\+crowd\+Cheer\+On\+Goal}}
+\begin{DoxyCompactList}\small\item\em Sound effect for crowd cheering. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{classHeadBall_1_1GameOver_a0e96e165acd7d94242d5609c3b45a368}{\+\_\+btn\+Click\+Sfx}}
+\begin{DoxyCompactList}\small\item\em Sound effect for button click. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GameOver_a68e1c0b9354d6dd57f3f6dc259872ce1}{\+\_\+background}}
+\begin{DoxyCompactList}\small\item\em Background sprite to draw on the screen. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GameOver_a54d6c631da4d8a3f082efe22d1b2b334}{\+\_\+replay\+Btn}}
+\begin{DoxyCompactList}\small\item\em Button to replay the game. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classHeadBall_1_1GameOver_a6ee2290da3eeec3f0d05998a972a3d78}{\+\_\+exit\+Btn}}
+\begin{DoxyCompactList}\small\item\em Button to exit the game. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1GameOver_a2fd52bfac5f4b8fd4a44a8fb63bb3b3e}{\+\_\+winner\+Text}}
+\begin{DoxyCompactList}\small\item\em Text to display depending on who won or if it is a draw. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1GameOver_aed029acddf6b530182138c72ef3384ae}{\+\_\+score}}
+\begin{DoxyCompactList}\small\item\em Final score of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for game over or full-\/time state. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1GameOver_ab345b888d25179a20e448a4656f4eccf}\label{classHeadBall_1_1GameOver_ab345b888d25179a20e448a4656f4eccf}} 
@@ -61,12 +83,37 @@ sf\+::\+Text \mbox{\hyperlink{classHeadBall_1_1GameOver_a4c8511cfbfd4a980f0de795
 
 
 
+Construct a new \mbox{\hyperlink{classHeadBall_1_1Game}{Game}} Over object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em score\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!animate@{animate}}
+\index{animate@{animate}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Vitrual function for performing animations. 
+
 \mbox{\Hypertarget{classHeadBall_1_1GameOver_aaa76a7d76332d9a7402a7e105b0d2ee5}\label{classHeadBall_1_1GameOver_aaa76a7d76332d9a7402a7e105b0d2ee5}} 
 \index{HeadBall::GameOver@{HeadBall::GameOver}!draw@{draw}}
 \index{draw@{draw}!HeadBall::GameOver@{HeadBall::GameOver}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Game\+Over\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw state objects. 
 
 
 
@@ -80,6 +127,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3
 
 
 
+Handle user input. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{Head\+Ball\+::\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1GameOver_a1a8d05d6b841096bb5d39c94a4adbc3d}\label{classHeadBall_1_1GameOver_a1a8d05d6b841096bb5d39c94a4adbc3d}} 
@@ -87,6 +138,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a1284416
 \index{init@{init}!HeadBall::GameOver@{HeadBall::GameOver}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Game\+Over\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialize state related data. 
 
 
 
@@ -100,6 +155,10 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -107,6 +166,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 \index{resume@{resume}!HeadBall::GameOver@{HeadBall::GameOver}}
 \doxysubsubsection{\texorpdfstring{resume()}{resume()}}
 {\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Virtual function for resuming the object. 
 
 
 
@@ -120,16 +183,84 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 
 
 
+Update state data. 
+
+
+
 Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}{Head\+Ball\+::\+State}}.
 
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1GameOver_a68e1c0b9354d6dd57f3f6dc259872ce1}\label{classHeadBall_1_1GameOver_a68e1c0b9354d6dd57f3f6dc259872ce1}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!\_background@{\_background}}
+\index{\_background@{\_background}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{\_background}{\_background}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Game\+Over\+::\+\_\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Background sprite to draw on the screen. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GameOver_a0e96e165acd7d94242d5609c3b45a368}\label{classHeadBall_1_1GameOver_a0e96e165acd7d94242d5609c3b45a368}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!\_btnClickSfx@{\_btnClickSfx}}
+\index{\_btnClickSfx@{\_btnClickSfx}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{\_btnClickSfx}{\_btnClickSfx}}
+{\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+Game\+Over\+::\+\_\+btn\+Click\+Sfx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sound effect for button click. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GameOver_ad5c76aed2523ec46ae4882ca1ed6bd15}\label{classHeadBall_1_1GameOver_ad5c76aed2523ec46ae4882ca1ed6bd15}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!\_crowdCheerOnGoal@{\_crowdCheerOnGoal}}
+\index{\_crowdCheerOnGoal@{\_crowdCheerOnGoal}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{\_crowdCheerOnGoal}{\_crowdCheerOnGoal}}
+{\footnotesize\ttfamily sf\+::\+Sound Head\+Ball\+::\+Game\+Over\+::\+\_\+crowd\+Cheer\+On\+Goal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sound effect for crowd cheering. 
+
 \mbox{\Hypertarget{classHeadBall_1_1GameOver_a5b12dfd279d0337503b53a7cf7af2bc8}\label{classHeadBall_1_1GameOver_a5b12dfd279d0337503b53a7cf7af2bc8}} 
 \index{HeadBall::GameOver@{HeadBall::GameOver}!\_data@{\_data}}
 \index{\_data@{\_data}!HeadBall::GameOver@{HeadBall::GameOver}}
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Game\+Over\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shared pointer for \mbox{\hyperlink{structHeadBall_1_1GameData}{Game\+Data}}. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GameOver_a6ee2290da3eeec3f0d05998a972a3d78}\label{classHeadBall_1_1GameOver_a6ee2290da3eeec3f0d05998a972a3d78}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!\_exitBtn@{\_exitBtn}}
+\index{\_exitBtn@{\_exitBtn}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{\_exitBtn}{\_exitBtn}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Game\+Over\+::\+\_\+exit\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Button to exit the game. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GameOver_a54d6c631da4d8a3f082efe22d1b2b334}\label{classHeadBall_1_1GameOver_a54d6c631da4d8a3f082efe22d1b2b334}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!\_replayBtn@{\_replayBtn}}
+\index{\_replayBtn@{\_replayBtn}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{\_replayBtn}{\_replayBtn}}
+{\footnotesize\ttfamily sf\+::\+Sprite Head\+Ball\+::\+Game\+Over\+::\+\_\+replay\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Button to replay the game. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GameOver_aed029acddf6b530182138c72ef3384ae}\label{classHeadBall_1_1GameOver_aed029acddf6b530182138c72ef3384ae}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!\_score@{\_score}}
+\index{\_score@{\_score}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{\_score}{\_score}}
+{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Game\+Over\+::\+\_\+score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Final score of the game. 
 
 \mbox{\Hypertarget{classHeadBall_1_1GameOver_a4e4623f95645217c552bca88d56f8d55}\label{classHeadBall_1_1GameOver_a4e4623f95645217c552bca88d56f8d55}} 
 \index{HeadBall::GameOver@{HeadBall::GameOver}!\_scoreTime@{\_scoreTime}}
@@ -137,11 +268,19 @@ Implements \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5
 \doxysubsubsection{\texorpdfstring{\_scoreTime}{\_scoreTime}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a82fea1f794ddb142078227511e71568d}{Score\+Time\+Ref}} Head\+Ball\+::\+Game\+Over\+::\+\_\+score\+Time\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHeadBall_1_1GameOver_a4c8511cfbfd4a980f0de795a5ab6e9d5}\label{classHeadBall_1_1GameOver_a4c8511cfbfd4a980f0de795a5ab6e9d5}} 
-\index{HeadBall::GameOver@{HeadBall::GameOver}!\_text@{\_text}}
-\index{\_text@{\_text}!HeadBall::GameOver@{HeadBall::GameOver}}
-\doxysubsubsection{\texorpdfstring{\_text}{\_text}}
-{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Game\+Over\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+The shared pointer for \mbox{\hyperlink{structHeadBall_1_1ScoreTimeData}{Score\+Time\+Data}}. 
+
+\mbox{\Hypertarget{classHeadBall_1_1GameOver_a2fd52bfac5f4b8fd4a44a8fb63bb3b3e}\label{classHeadBall_1_1GameOver_a2fd52bfac5f4b8fd4a44a8fb63bb3b3e}} 
+\index{HeadBall::GameOver@{HeadBall::GameOver}!\_winnerText@{\_winnerText}}
+\index{\_winnerText@{\_winnerText}!HeadBall::GameOver@{HeadBall::GameOver}}
+\doxysubsubsection{\texorpdfstring{\_winnerText}{\_winnerText}}
+{\footnotesize\ttfamily sf\+::\+Text Head\+Ball\+::\+Game\+Over\+::\+\_\+winner\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text to display depending on who won or if it is a draw. 
 
 
 

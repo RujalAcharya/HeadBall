@@ -20,11 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="game_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HeadBall
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A game of headers</div>
+   <div id="projectbrief">A game</div>
   </td>
  </tr>
  </tbody>
@@ -76,14 +77,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Derived class of <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> class with visibility mode public that includes main gameplay.  
+ <a href="classHeadBall_1_1GameState.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="GameState_8hpp_source.html">GameState.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for HeadBall::GameState:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1GameState__inherit__graph.png" border="0" usemap="#aHeadBall_1_1GameState_inherit__map" alt="Inheritance graph"/></div>
 <map name="aHeadBall_1_1GameState_inherit__map" id="aHeadBall_1_1GameState_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,204,168,721"/>
-<area shape="rect" href="classHeadBall_1_1State.html" title=" " alt="" coords="25,5,149,156"/>
+<area shape="rect" title="Derived class of State class with visibility mode public that includes main gameplay." alt="" coords="5,233,168,780"/>
+<area shape="rect" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="25,5,149,185"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,88 +95,126 @@ Collaboration diagram for HeadBall::GameState:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHeadBall_1_1GameState__coll__graph.png" border="0" usemap="#aHeadBall_1_1GameState_coll__map" alt="Collaboration graph"/></div>
 <map name="aHeadBall_1_1GameState_coll__map" id="aHeadBall_1_1GameState_coll__map">
-<area shape="rect" title=" " alt="" coords="474,483,637,868"/>
-<area shape="rect" href="classHeadBall_1_1State.html" title=" " alt="" coords="5,130,129,281"/>
-<area shape="rect" href="classHeadBall_1_1UpHill.html" title=" " alt="" coords="153,108,283,303"/>
-<area shape="rect" href="classHeadBall_1_1Player.html" title=" " alt="" coords="307,71,457,339"/>
-<area shape="rect" href="classHeadBall_1_1Ball.html" title=" " alt="" coords="481,86,630,325"/>
-<area shape="rect" href="classHeadBall_1_1GoalPost.html" title=" " alt="" coords="654,137,801,273"/>
-<area shape="rect" href="classHeadBall_1_1Ground.html" title=" " alt="" coords="825,108,961,303"/>
-<area shape="rect" href="classHeadBall_1_1Wall.html" title=" " alt="" coords="985,5,1104,405"/>
+<area shape="rect" title="Derived class of State class with visibility mode public that includes main gameplay." alt="" coords="474,483,637,897"/>
+<area shape="rect" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="5,115,129,295"/>
+<area shape="rect" href="classHeadBall_1_1UpHill.html" title="The Uphill part of the game field, below the goal post and above the ground." alt="" coords="153,108,283,303"/>
+<area shape="rect" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player." alt="" coords="307,71,457,339"/>
+<area shape="rect" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball." alt="" coords="481,86,630,325"/>
+<area shape="rect" href="classHeadBall_1_1GoalPost.html" title="The Goalpost to be displayed in GameState." alt="" coords="654,145,801,266"/>
+<area shape="rect" href="classHeadBall_1_1Ground.html" title="Class for defining the ground in the game world." alt="" coords="825,108,961,303"/>
+<area shape="rect" href="classHeadBall_1_1Wall.html" title="Class for invisible wall around the field and above the goalpost." alt="" coords="985,5,1104,405"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a33b835de5a049c2708188e3ef2d71d24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a33b835de5a049c2708188e3ef2d71d24">GameState</a> (<a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a> data, <a class="el" href="namespaceHeadBall.html#a82fea1f794ddb142078227511e71568d">ScoreTimeRef</a> scoretime, bool is2ndHalf=false)</td></tr>
+<tr class="memdesc:a33b835de5a049c2708188e3ef2d71d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> object.  <a href="classHeadBall_1_1GameState.html#a33b835de5a049c2708188e3ef2d71d24">More...</a><br /></td></tr>
 <tr class="separator:a33b835de5a049c2708188e3ef2d71d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28e2c87680d07412f73e6db43f3e49a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#ae28e2c87680d07412f73e6db43f3e49a">init</a> ()</td></tr>
+<tr class="memdesc:ae28e2c87680d07412f73e6db43f3e49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new GameSate Object.  <a href="classHeadBall_1_1GameState.html#ae28e2c87680d07412f73e6db43f3e49a">More...</a><br /></td></tr>
 <tr class="separator:ae28e2c87680d07412f73e6db43f3e49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd088904a663f6a8294b17c7d2447c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a3fd088904a663f6a8294b17c7d2447c1">handleInput</a> ()</td></tr>
+<tr class="memdesc:a3fd088904a663f6a8294b17c7d2447c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all the inputs of <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a>.  <a href="classHeadBall_1_1GameState.html#a3fd088904a663f6a8294b17c7d2447c1">More...</a><br /></td></tr>
 <tr class="separator:a3fd088904a663f6a8294b17c7d2447c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79bb8d5c97e31f0814a4b2605799d01b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a79bb8d5c97e31f0814a4b2605799d01b">update</a> ()</td></tr>
+<tr class="memdesc:a79bb8d5c97e31f0814a4b2605799d01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the rendering window according to the provided input.  <a href="classHeadBall_1_1GameState.html#a79bb8d5c97e31f0814a4b2605799d01b">More...</a><br /></td></tr>
 <tr class="separator:a79bb8d5c97e31f0814a4b2605799d01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a773d3b24f31a3776810ab07f2dbdab65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a773d3b24f31a3776810ab07f2dbdab65">draw</a> ()</td></tr>
+<tr class="memdesc:a773d3b24f31a3776810ab07f2dbdab65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the SFML object in the rendering window.  <a href="classHeadBall_1_1GameState.html#a773d3b24f31a3776810ab07f2dbdab65">More...</a><br /></td></tr>
 <tr class="separator:a773d3b24f31a3776810ab07f2dbdab65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c1de96a0d88a79e0a390e17e6dee229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a6c1de96a0d88a79e0a390e17e6dee229">pause</a> ()</td></tr>
+<tr class="memdesc:a6c1de96a0d88a79e0a390e17e6dee229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses the game.  <a href="classHeadBall_1_1GameState.html#a6c1de96a0d88a79e0a390e17e6dee229">More...</a><br /></td></tr>
 <tr class="separator:a6c1de96a0d88a79e0a390e17e6dee229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6455ea1fd7aa20af96ca579b142678b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#ac6455ea1fd7aa20af96ca579b142678b">resume</a> ()</td></tr>
+<tr class="memdesc:ac6455ea1fd7aa20af96ca579b142678b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes the game.  <a href="classHeadBall_1_1GameState.html#ac6455ea1fd7aa20af96ca579b142678b">More...</a><br /></td></tr>
 <tr class="separator:ac6455ea1fd7aa20af96ca579b142678b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283db979c62ccb7848d489f368d35897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a283db979c62ccb7848d489f368d35897">animate</a> (std::string player)</td></tr>
+<tr class="memdesc:a283db979c62ccb7848d489f368d35897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animates the movement of the players.  <a href="classHeadBall_1_1GameState.html#a283db979c62ccb7848d489f368d35897">More...</a><br /></td></tr>
 <tr class="separator:a283db979c62ccb7848d489f368d35897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbc6ab19f0deb2f59a0bc35e66fa293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a2fbc6ab19f0deb2f59a0bc35e66fa293">kick</a> (std::string player)</td></tr>
+<tr class="memdesc:a2fbc6ab19f0deb2f59a0bc35e66fa293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kicks the ball when called by the player.  <a href="classHeadBall_1_1GameState.html#a2fbc6ab19f0deb2f59a0bc35e66fa293">More...</a><br /></td></tr>
+<tr class="separator:a2fbc6ab19f0deb2f59a0bc35e66fa293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279ec7f16a0044d13f1c7bd4c992eea7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1State.html#a279ec7f16a0044d13f1c7bd4c992eea7">animate</a> ()</td></tr>
+<tr class="memdesc:a279ec7f16a0044d13f1c7bd4c992eea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vitrual function for performing animations.  <a href="classHeadBall_1_1State.html#a279ec7f16a0044d13f1c7bd4c992eea7">More...</a><br /></td></tr>
+<tr class="separator:a279ec7f16a0044d13f1c7bd4c992eea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a37d85848ed7a509eca055ccbc9288e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#ab05112ccaef0def9e05237ffb7d928b2">GameDataRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a37d85848ed7a509eca055ccbc9288e0d">_data</a></td></tr>
+<tr class="memdesc:a37d85848ed7a509eca055ccbc9288e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer of <a class="el" href="structHeadBall_1_1GameData.html" title="Struct where the necessaey game data used by all the states is stored.">GameData</a>.  <a href="classHeadBall_1_1GameState.html#a37d85848ed7a509eca055ccbc9288e0d">More...</a><br /></td></tr>
 <tr class="separator:a37d85848ed7a509eca055ccbc9288e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8524789c268732297afeae8c5e26e283"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a8524789c268732297afeae8c5e26e283">_timeText</a></td></tr>
 <tr class="separator:a8524789c268732297afeae8c5e26e283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d6b26e15c702e02c653fa1c13645182"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a9d6b26e15c702e02c653fa1c13645182">_p1Score</a></td></tr>
 <tr class="separator:a9d6b26e15c702e02c653fa1c13645182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a216ce8b4ea80e100ebea1061d1d76781"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a216ce8b4ea80e100ebea1061d1d76781">_p2Score</a></td></tr>
+<tr class="memdesc:a216ce8b4ea80e100ebea1061d1d76781"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SFML text of Score and Time.  <a href="classHeadBall_1_1GameState.html#a216ce8b4ea80e100ebea1061d1d76781">More...</a><br /></td></tr>
 <tr class="separator:a216ce8b4ea80e100ebea1061d1d76781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b53cba550507cd9ed7bcd969c664ddb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a82fea1f794ddb142078227511e71568d">ScoreTimeRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a4b53cba550507cd9ed7bcd969c664ddb">_scoreTime</a></td></tr>
+<tr class="memdesc:a4b53cba550507cd9ed7bcd969c664ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer of <a class="el" href="structHeadBall_1_1ScoreTimeData.html" title="Struct where the game time and player score is stored.">ScoreTimeData</a>.  <a href="classHeadBall_1_1GameState.html#a4b53cba550507cd9ed7bcd969c664ddb">More...</a><br /></td></tr>
 <tr class="separator:a4b53cba550507cd9ed7bcd969c664ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56c4a021459d5a1c4cafea41c636b480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceHeadBall.html#a3970f1f57225eecdfe88fb926eb3f064">WorldRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a56c4a021459d5a1c4cafea41c636b480">_world</a> = std::make_shared &lt;b2World&gt; (b2Vec2(<a class="el" href="Definition_8hpp.html#a66cb9b71d481a5543524f4bafbeec090">WORLD_GRAVITY_X</a>, <a class="el" href="Definition_8hpp.html#afcc8847f17a3601e0b0db295434fa351">WORLD_GRAVITY_Y</a>))</td></tr>
+<tr class="memdesc:a56c4a021459d5a1c4cafea41c636b480"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pointer of Box2d world.  <a href="classHeadBall_1_1GameState.html#a56c4a021459d5a1c4cafea41c636b480">More...</a><br /></td></tr>
 <tr class="separator:a56c4a021459d5a1c4cafea41c636b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d73fe9771f12d72812c8fa42dc357d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Ground.html">Ground</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#af7d73fe9771f12d72812c8fa42dc357d">_ground</a></td></tr>
+<tr class="memdesc:af7d73fe9771f12d72812c8fa42dc357d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHeadBall_1_1Ground.html" title="Class for defining the ground in the game world.">Ground</a> object.  <a href="classHeadBall_1_1GameState.html#af7d73fe9771f12d72812c8fa42dc357d">More...</a><br /></td></tr>
 <tr class="separator:af7d73fe9771f12d72812c8fa42dc357d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d6d70fb5fe94b8e9d1a198c93a28e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1UpHill.html">UpHill</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a7d6d70fb5fe94b8e9d1a198c93a28e9e">_leftUpHill</a></td></tr>
 <tr class="separator:a7d6d70fb5fe94b8e9d1a198c93a28e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a628885236ec2408443b02c34b45ce463"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1UpHill.html">UpHill</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a628885236ec2408443b02c34b45ce463">_rightUpHill</a></td></tr>
+<tr class="memdesc:a628885236ec2408443b02c34b45ce463"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Uphill objects.  <a href="classHeadBall_1_1GameState.html#a628885236ec2408443b02c34b45ce463">More...</a><br /></td></tr>
 <tr class="separator:a628885236ec2408443b02c34b45ce463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a617b842994ecd2320c47333996c2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Wall.html">Wall</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a07a617b842994ecd2320c47333996c2a">_wall</a></td></tr>
+<tr class="memdesc:a07a617b842994ecd2320c47333996c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHeadBall_1_1Wall.html" title="Class for invisible wall around the field and above the goalpost.">Wall</a> objects.  <a href="classHeadBall_1_1GameState.html#a07a617b842994ecd2320c47333996c2a">More...</a><br /></td></tr>
 <tr class="separator:a07a617b842994ecd2320c47333996c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ce4ba72c9c15a21403dec0c5d2fda4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1GoalPost.html">GoalPost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#aa7ce4ba72c9c15a21403dec0c5d2fda4">_leftPost</a></td></tr>
 <tr class="separator:aa7ce4ba72c9c15a21403dec0c5d2fda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17ec8d1298b42b30695d4de9e131f14e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1GoalPost.html">GoalPost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a17ec8d1298b42b30695d4de9e131f14e">_rightPost</a></td></tr>
+<tr class="memdesc:a17ec8d1298b42b30695d4de9e131f14e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHeadBall_1_1GoalPost.html" title="The Goalpost to be displayed in GameState.">GoalPost</a> objects.  <a href="classHeadBall_1_1GameState.html#a17ec8d1298b42b30695d4de9e131f14e">More...</a><br /></td></tr>
 <tr class="separator:a17ec8d1298b42b30695d4de9e131f14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26de87e72ce1cba6e3b7ab183c8c18f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a26de87e72ce1cba6e3b7ab183c8c18f2">_p1</a></td></tr>
 <tr class="separator:a26de87e72ce1cba6e3b7ab183c8c18f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe773b7871cecea8d56dcdbdbe6180f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#afe773b7871cecea8d56dcdbdbe6180f6">_p2</a></td></tr>
+<tr class="memdesc:afe773b7871cecea8d56dcdbdbe6180f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> objects.  <a href="classHeadBall_1_1GameState.html#afe773b7871cecea8d56dcdbdbe6180f6">More...</a><br /></td></tr>
 <tr class="separator:afe773b7871cecea8d56dcdbdbe6180f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae564d96a86f285535d89780729fe7fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeadBall_1_1Ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#aae564d96a86f285535d89780729fe7fc">_ball</a></td></tr>
+<tr class="memdesc:aae564d96a86f285535d89780729fe7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> objects.  <a href="classHeadBall_1_1GameState.html#aae564d96a86f285535d89780729fe7fc">More...</a><br /></td></tr>
 <tr class="separator:aae564d96a86f285535d89780729fe7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576adfc026687c15d7bef9ad845d8a72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a576adfc026687c15d7bef9ad845d8a72">_isPaused</a></td></tr>
+<tr class="memdesc:a576adfc026687c15d7bef9ad845d8a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The boolean variable to if the game is paused.  <a href="classHeadBall_1_1GameState.html#a576adfc026687c15d7bef9ad845d8a72">More...</a><br /></td></tr>
 <tr class="separator:a576adfc026687c15d7bef9ad845d8a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799959fa528dd0a3889b86eede41378a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a799959fa528dd0a3889b86eede41378a">_isSecondHalf</a></td></tr>
+<tr class="memdesc:a799959fa528dd0a3889b86eede41378a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The boolean variable to check if the state is second half or not.  <a href="classHeadBall_1_1GameState.html#a799959fa528dd0a3889b86eede41378a">More...</a><br /></td></tr>
 <tr class="separator:a799959fa528dd0a3889b86eede41378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709f7e789131834b37425c811948e406"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a709f7e789131834b37425c811948e406">_pauseBtn</a></td></tr>
+<tr class="memdesc:a709f7e789131834b37425c811948e406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite for pause button.  <a href="classHeadBall_1_1GameState.html#a709f7e789131834b37425c811948e406">More...</a><br /></td></tr>
 <tr class="separator:a709f7e789131834b37425c811948e406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae044f5038ac8d96e734ee75affbef056"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#ae044f5038ac8d96e734ee75affbef056">_btnClickSfx</a></td></tr>
-<tr class="separator:ae044f5038ac8d96e734ee75affbef056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3e61f2844e0b5b1648c33dfd8ad069a"><td class="memItemLeft" align="right" valign="top">sf::Music&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#af3e61f2844e0b5b1648c33dfd8ad069a">_crowdCheerSfx</a></td></tr>
+<tr class="memdesc:af3e61f2844e0b5b1648c33dfd8ad069a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crowd cheer sound.  <a href="classHeadBall_1_1GameState.html#af3e61f2844e0b5b1648c33dfd8ad069a">More...</a><br /></td></tr>
 <tr class="separator:af3e61f2844e0b5b1648c33dfd8ad069a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae044f5038ac8d96e734ee75affbef056"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#ae044f5038ac8d96e734ee75affbef056">_btnClickSfx</a></td></tr>
+<tr class="memdesc:ae044f5038ac8d96e734ee75affbef056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect for button click.  <a href="classHeadBall_1_1GameState.html#ae044f5038ac8d96e734ee75affbef056">More...</a><br /></td></tr>
+<tr class="separator:ae044f5038ac8d96e734ee75affbef056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8102617fb964a04c5e5ff8f64926799"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#ab8102617fb964a04c5e5ff8f64926799">_longWhistleSfx</a></td></tr>
+<tr class="memdesc:ab8102617fb964a04c5e5ff8f64926799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect to play at the end of each half.  <a href="classHeadBall_1_1GameState.html#ab8102617fb964a04c5e5ff8f64926799">More...</a><br /></td></tr>
 <tr class="separator:ab8102617fb964a04c5e5ff8f64926799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1d1725eb34e29e5b77073d7cc678ec"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#acc1d1725eb34e29e5b77073d7cc678ec">_shortWhistleSfx</a></td></tr>
+<tr class="memdesc:acc1d1725eb34e29e5b77073d7cc678ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect to play at the start of every half and after every goal.  <a href="classHeadBall_1_1GameState.html#acc1d1725eb34e29e5b77073d7cc678ec">More...</a><br /></td></tr>
 <tr class="separator:acc1d1725eb34e29e5b77073d7cc678ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7256dca5aa8ece9db6b462a5abf062"><td class="memItemLeft" align="right" valign="top">sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a5d7256dca5aa8ece9db6b462a5abf062">_playerKickSfx</a></td></tr>
+<tr class="memdesc:a5d7256dca5aa8ece9db6b462a5abf062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect to play when the ball is kicked.  <a href="classHeadBall_1_1GameState.html#a5d7256dca5aa8ece9db6b462a5abf062">More...</a><br /></td></tr>
+<tr class="separator:a5d7256dca5aa8ece9db6b462a5abf062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a945422bab09538bdc99553148cf340b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a945422bab09538bdc99553148cf340b9">_p1MoveCounter</a></td></tr>
+<tr class="memdesc:a945422bab09538bdc99553148cf340b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The int variable to count Player1 movement.  <a href="classHeadBall_1_1GameState.html#a945422bab09538bdc99553148cf340b9">More...</a><br /></td></tr>
 <tr class="separator:a945422bab09538bdc99553148cf340b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dd52fc384505a70f486ca990354999f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeadBall_1_1GameState.html#a8dd52fc384505a70f486ca990354999f">_p2MoveCounter</a></td></tr>
+<tr class="memdesc:a8dd52fc384505a70f486ca990354999f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The int variable to count Player2 movement.  <a href="classHeadBall_1_1GameState.html#a8dd52fc384505a70f486ca990354999f">More...</a><br /></td></tr>
 <tr class="separator:a8dd52fc384505a70f486ca990354999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Derived class of <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> class with visibility mode public that includes main gameplay. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a33b835de5a049c2708188e3ef2d71d24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33b835de5a049c2708188e3ef2d71d24">&#9670;&nbsp;</a></span>GameState()</h2>
 
@@ -205,11 +247,48 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The shared pointer of <a class="el" href="structHeadBall_1_1GameData.html" title="Struct where the necessaey game data used by all the states is stored.">GameData</a> </td></tr>
+    <tr><td class="paramname">scoretime</td><td>The shared pointer of <a class="el" href="structHeadBall_1_1ScoreTimeData.html" title="Struct where the game time and player score is stored.">ScoreTimeData</a> </td></tr>
+    <tr><td class="paramname">is2ndHalf</td><td>The bool variable with default value false </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a279ec7f16a0044d13f1c7bd4c992eea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279ec7f16a0044d13f1c7bd4c992eea7">&#9670;&nbsp;</a></span>animate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HeadBall::State::animate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vitrual function for performing animations. </p>
+
+</div>
+</div>
 <a id="a283db979c62ccb7848d489f368d35897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a283db979c62ccb7848d489f368d35897">&#9670;&nbsp;</a></span>animate()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a283db979c62ccb7848d489f368d35897">&#9670;&nbsp;</a></span>animate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,6 +302,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Animates the movement of the players. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>String object whose value is either "p1" or "p2" </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -248,6 +335,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Draws all the SFML object in the rendering window. </p>
 
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#a8c495aa18cc8e6adec7cfdaec1f3beff">HeadBall::State</a>.</p>
 
@@ -276,6 +365,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles all the inputs of <a class="el" href="classHeadBall_1_1Game.html" title="Class where game loop is processed.">Game</a> <a class="el" href="classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game.">State</a>. </p>
+
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#ab90a052b20b2bc499fb2a12844166ef7">HeadBall::State</a>.</p>
 
 </div>
@@ -303,7 +394,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Initialize a new GameSate Object. </p>
+
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#a391302cebb78ec26959c0947ae9a5197">HeadBall::State</a>.</p>
+
+</div>
+</div>
+<a id="a2fbc6ab19f0deb2f59a0bc35e66fa293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbc6ab19f0deb2f59a0bc35e66fa293">&#9670;&nbsp;</a></span>kick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HeadBall::GameState::kick </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kicks the ball when called by the player. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>String object whose value is either "p1" or "p2" </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -329,6 +448,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pauses the game. </p>
 
 <p>Reimplemented from <a class="el" href="classHeadBall_1_1State.html#aa9e51feceae21a6e583ab40498877e87">HeadBall::State</a>.</p>
 
@@ -357,6 +478,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Resumes the game. </p>
+
 <p>Reimplemented from <a class="el" href="classHeadBall_1_1State.html#a1afe45b3ea3a1849842bf5c4994c6ab9">HeadBall::State</a>.</p>
 
 </div>
@@ -384,6 +507,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Updates the rendering window according to the provided input. </p>
+
 <p>Implements <a class="el" href="classHeadBall_1_1State.html#a9c7f17de4c29786c8568ff43a9c5ad83">HeadBall::State</a>.</p>
 
 </div>
@@ -409,6 +534,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The <a class="el" href="classHeadBall_1_1Ball.html" title="Class for shape and movement of ball.">Ball</a> objects. </p>
+
 </div>
 </div>
 <a id="ae044f5038ac8d96e734ee75affbef056"></a>
@@ -430,6 +557,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sound effect for button click. </p>
 
 </div>
 </div>
@@ -453,6 +582,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Crowd cheer sound. </p>
+
 </div>
 </div>
 <a id="a37d85848ed7a509eca055ccbc9288e0d"></a>
@@ -474,6 +605,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The shared pointer of <a class="el" href="structHeadBall_1_1GameData.html" title="Struct where the necessaey game data used by all the states is stored.">GameData</a>. </p>
 
 </div>
 </div>
@@ -497,6 +630,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The <a class="el" href="classHeadBall_1_1Ground.html" title="Class for defining the ground in the game world.">Ground</a> object. </p>
+
 </div>
 </div>
 <a id="a576adfc026687c15d7bef9ad845d8a72"></a>
@@ -519,6 +654,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The boolean variable to if the game is paused. </p>
+
 </div>
 </div>
 <a id="a799959fa528dd0a3889b86eede41378a"></a>
@@ -540,6 +677,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The boolean variable to check if the state is second half or not. </p>
 
 </div>
 </div>
@@ -607,6 +746,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sound effect to play at the end of each half. </p>
+
 </div>
 </div>
 <a id="a26de87e72ce1cba6e3b7ab183c8c18f2"></a>
@@ -650,6 +791,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The int variable to count Player1 movement. </p>
 
 </div>
 </div>
@@ -695,6 +838,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The <a class="el" href="classHeadBall_1_1Player.html" title="Class for shape and movement of player.">Player</a> objects. </p>
+
 </div>
 </div>
 <a id="a8dd52fc384505a70f486ca990354999f"></a>
@@ -716,6 +861,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The int variable to count Player2 movement. </p>
 
 </div>
 </div>
@@ -739,6 +886,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The SFML text of Score and Time. </p>
+
 </div>
 </div>
 <a id="a709f7e789131834b37425c811948e406"></a>
@@ -760,6 +909,32 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sprite for pause button. </p>
+
+</div>
+</div>
+<a id="a5d7256dca5aa8ece9db6b462a5abf062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7256dca5aa8ece9db6b462a5abf062">&#9670;&nbsp;</a></span>_playerKickSfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sound HeadBall::GameState::_playerKickSfx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sound effect to play when the ball is kicked. </p>
 
 </div>
 </div>
@@ -783,6 +958,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The <a class="el" href="classHeadBall_1_1GoalPost.html" title="The Goalpost to be displayed in GameState.">GoalPost</a> objects. </p>
+
 </div>
 </div>
 <a id="a628885236ec2408443b02c34b45ce463"></a>
@@ -804,6 +981,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The Uphill objects. </p>
 
 </div>
 </div>
@@ -827,6 +1006,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The shared pointer of <a class="el" href="structHeadBall_1_1ScoreTimeData.html" title="Struct where the game time and player score is stored.">ScoreTimeData</a>. </p>
+
 </div>
 </div>
 <a id="acc1d1725eb34e29e5b77073d7cc678ec"></a>
@@ -848,6 +1029,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sound effect to play at the start of every half and after every goal. </p>
 
 </div>
 </div>
@@ -893,6 +1076,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The <a class="el" href="classHeadBall_1_1Wall.html" title="Class for invisible wall around the field and above the goalpost.">Wall</a> objects. </p>
+
 </div>
 </div>
 <a id="a56c4a021459d5a1c4cafea41c636b480"></a>
@@ -914,6 +1099,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The shared pointer of Box2d world. </p>
 
 </div>
 </div>

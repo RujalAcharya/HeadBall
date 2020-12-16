@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1UpHill}\index{HeadBall::UpHill@{HeadBall::UpHill}}
 
 
+The Uphill part of the game field, below the goal post and above the ground.  
+
+
+
+
 {\ttfamily \#include $<$Uphill.\+hpp$>$}
 
 
@@ -18,29 +23,32 @@ Collaboration diagram for Head\+Ball\+::Up\+Hill\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1UpHill_a761ca145c7d66a5497d01d1e360baf9a}{Up\+Hill}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} world)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Up Hill object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1UpHill_a381832745041ceb006fe957a06f0edb3}{init}} (sf\+::\+Vector2i position)
-\item 
+\begin{DoxyCompactList}\small\item\em Initiate the Up Hill ubject. \end{DoxyCompactList}\item 
 sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classHeadBall_1_1UpHill_ae142a93cc33c40ce5dbb8e7facbd282d}{shape}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return the shape of Up Hill object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1UpHill_a16bf5011daa7231c73ac9c063c17c14d}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of the game data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} \mbox{\hyperlink{classHeadBall_1_1UpHill_a0f9e27c6732877a2ed5eaf533fbc5d11}{\+\_\+world}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of Box2D World. \end{DoxyCompactList}\item 
 sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classHeadBall_1_1UpHill_ad9d6a5ad828932038b5b113cb0272e0c}{\+\_\+shape}}
-\item 
+\begin{DoxyCompactList}\small\item\em The SFML shape of the uphill. \end{DoxyCompactList}\item 
 b2\+Body\+Def \mbox{\hyperlink{classHeadBall_1_1UpHill_a45efeae35cc5916aac0dbb1cb5d8f40c}{\+\_\+body\+Def}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Definition of Box2D body. \end{DoxyCompactList}\item 
 b2\+Body $\ast$ \mbox{\hyperlink{classHeadBall_1_1UpHill_aa8163a628bf1d8518ff2dce07b3aee6a}{\+\_\+body}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Box2D body of uphill. \end{DoxyCompactList}\item 
 b2\+Polygon\+Shape \mbox{\hyperlink{classHeadBall_1_1UpHill_a99a4a73d3f739832c803348f963a1461}{\+\_\+poly\+Shape}}
-\item 
+\begin{DoxyCompactList}\small\item\em The polygon shape for fixture definition. \end{DoxyCompactList}\item 
 b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af7901080d09a}{\+\_\+fixture}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The fixture of uphill for defining its properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The Uphill part of the game field, below the goal post and above the ground. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_a761ca145c7d66a5497d01d1e360baf9a}\label{classHeadBall_1_1UpHill_a761ca145c7d66a5497d01d1e360baf9a}} 
@@ -51,6 +59,17 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af
 
 
 
+Construct a new Up Hill object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The Shared Pointer of game data \\
+\hline
+{\em world} & The Shared Pointer of Box2D world \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_a381832745041ceb006fe957a06f0edb3}\label{classHeadBall_1_1UpHill_a381832745041ceb006fe957a06f0edb3}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!init@{init}}
@@ -58,12 +77,28 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Up\+Hill\+::init (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{position }\end{DoxyParamCaption})}
 
+
+
+Initiate the Up Hill ubject. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position where object is placed \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_ae142a93cc33c40ce5dbb8e7facbd282d}\label{classHeadBall_1_1UpHill_ae142a93cc33c40ce5dbb8e7facbd282d}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!shape@{shape}}
 \index{shape@{shape}!HeadBall::UpHill@{HeadBall::UpHill}}
 \doxysubsubsection{\texorpdfstring{shape()}{shape()}}
 {\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Head\+Ball\+::\+Up\+Hill\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Return the shape of Up Hill object. 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Rectangle\+Shape The shape of Up Hill obkect 
+\end{DoxyReturn}
 
 
 \doxysubsection{Member Data Documentation}
@@ -73,11 +108,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af
 \doxysubsubsection{\texorpdfstring{\_body}{\_body}}
 {\footnotesize\ttfamily b2\+Body$\ast$ Head\+Ball\+::\+Up\+Hill\+::\+\_\+body\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The Box2D body of uphill. 
+
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_a45efeae35cc5916aac0dbb1cb5d8f40c}\label{classHeadBall_1_1UpHill_a45efeae35cc5916aac0dbb1cb5d8f40c}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!\_bodyDef@{\_bodyDef}}
 \index{\_bodyDef@{\_bodyDef}!HeadBall::UpHill@{HeadBall::UpHill}}
 \doxysubsubsection{\texorpdfstring{\_bodyDef}{\_bodyDef}}
 {\footnotesize\ttfamily b2\+Body\+Def Head\+Ball\+::\+Up\+Hill\+::\+\_\+body\+Def\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Definition of Box2D body. 
 
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_a16bf5011daa7231c73ac9c063c17c14d}\label{classHeadBall_1_1UpHill_a16bf5011daa7231c73ac9c063c17c14d}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!\_data@{\_data}}
@@ -85,11 +128,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Up\+Hill\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The Shared Pointer of the game data. 
+
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af7901080d09a}\label{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af7901080d09a}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!\_fixture@{\_fixture}}
 \index{\_fixture@{\_fixture}!HeadBall::UpHill@{HeadBall::UpHill}}
 \doxysubsubsection{\texorpdfstring{\_fixture}{\_fixture}}
 {\footnotesize\ttfamily b2\+Fixture\+Def Head\+Ball\+::\+Up\+Hill\+::\+\_\+fixture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The fixture of uphill for defining its properties. 
 
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_a99a4a73d3f739832c803348f963a1461}\label{classHeadBall_1_1UpHill_a99a4a73d3f739832c803348f963a1461}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!\_polyShape@{\_polyShape}}
@@ -97,17 +148,29 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1UpHill_ad58501ec8db40d8ff72af
 \doxysubsubsection{\texorpdfstring{\_polyShape}{\_polyShape}}
 {\footnotesize\ttfamily b2\+Polygon\+Shape Head\+Ball\+::\+Up\+Hill\+::\+\_\+poly\+Shape\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The polygon shape for fixture definition. 
+
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_ad9d6a5ad828932038b5b113cb0272e0c}\label{classHeadBall_1_1UpHill_ad9d6a5ad828932038b5b113cb0272e0c}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!\_shape@{\_shape}}
 \index{\_shape@{\_shape}!HeadBall::UpHill@{HeadBall::UpHill}}
 \doxysubsubsection{\texorpdfstring{\_shape}{\_shape}}
 {\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Head\+Ball\+::\+Up\+Hill\+::\+\_\+shape\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The SFML shape of the uphill. 
+
 \mbox{\Hypertarget{classHeadBall_1_1UpHill_a0f9e27c6732877a2ed5eaf533fbc5d11}\label{classHeadBall_1_1UpHill_a0f9e27c6732877a2ed5eaf533fbc5d11}} 
 \index{HeadBall::UpHill@{HeadBall::UpHill}!\_world@{\_world}}
 \index{\_world@{\_world}!HeadBall::UpHill@{HeadBall::UpHill}}
 \doxysubsubsection{\texorpdfstring{\_world}{\_world}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} Head\+Ball\+::\+Up\+Hill\+::\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Shared Pointer of Box2D World. 
 
 
 

@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1State}\index{HeadBall::State@{HeadBall::State}}
 
 
+Abstract based class which inherits all the states of the game.  
+
+
+
+
 {\ttfamily \#include $<$State.\+hpp$>$}
 
 
@@ -28,25 +33,59 @@ Collaboration diagram for Head\+Ball\+::State\+:
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a5197}{init}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual function for initializing state related data. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_ab90a052b20b2bc499fb2a12844166ef7}{handle\+Input}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual function for handling user input. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}{update}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual function for updating state data. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3beff}{draw}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual function for drawing state objects. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_aa9e51feceae21a6e583ab40498877e87}{pause}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual function for pausing the state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}{resume}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual function for resuming the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}{animate}} ()
+\begin{DoxyCompactList}\small\item\em Vitrual function for performing animations. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classHeadBall_1_1State_a2ce95543808b809c9370a4ca5fd6cad9}{$\sim$\+State}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract based class which inherits all the states of the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a2ce95543808b809c9370a4ca5fd6cad9}\label{classHeadBall_1_1State_a2ce95543808b809c9370a4ca5fd6cad9}} 
+\index{HeadBall::State@{HeadBall::State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!HeadBall::State@{HeadBall::State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily virtual Head\+Ball\+::\+State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the \mbox{\hyperlink{classHeadBall_1_1State}{State}} object. 
+
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}\label{classHeadBall_1_1State_a279ec7f16a0044d13f1c7bd4c992eea7}} 
+\index{HeadBall::State@{HeadBall::State}!animate@{animate}}
+\index{animate@{animate}!HeadBall::State@{HeadBall::State}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Vitrual function for performing animations. 
+
 \mbox{\Hypertarget{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3beff}\label{classHeadBall_1_1State_a8c495aa18cc8e6adec7cfdaec1f3beff}} 
 \index{HeadBall::State@{HeadBall::State}!draw@{draw}}
 \index{draw@{draw}!HeadBall::State@{HeadBall::State}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function for drawing state objects. 
 
 
 
@@ -60,6 +99,10 @@ Implemented in \mbox{\hyperlink{classHeadBall_1_1SplashScreen_a50aad5112ba64abf1
 
 
 
+Pure virtual function for handling user input. 
+
+
+
 Implemented in \mbox{\hyperlink{classHeadBall_1_1SplashScreen_ad525cc66e872af98ea2f4c54ddbb906f}{Head\+Ball\+::\+Splash\+Screen}}, \mbox{\hyperlink{classHeadBall_1_1PausedState_ae19947ab7a76dcb896078d42b72a34e6}{Head\+Ball\+::\+Paused\+State}}, \mbox{\hyperlink{classHeadBall_1_1MenuScreen_ad469dc3adb2a46374caccf2f36a19dd5}{Head\+Ball\+::\+Menu\+Screen}}, \mbox{\hyperlink{classHeadBall_1_1InstructionsState_a0c346ee32aed2b3d11e0d5600b9c731f}{Head\+Ball\+::\+Instructions\+State}}, \mbox{\hyperlink{classHeadBall_1_1HalfTime_a9d4eefe4920dbe226666d46d750a9003}{Head\+Ball\+::\+Half\+Time}}, \mbox{\hyperlink{classHeadBall_1_1GoalState_aca02f777d41ceb947667d05eacce2eb5}{Head\+Ball\+::\+Goal\+State}}, \mbox{\hyperlink{classHeadBall_1_1GameState_a3fd088904a663f6a8294b17c7d2447c1}{Head\+Ball\+::\+Game\+State}}, \mbox{\hyperlink{classHeadBall_1_1GameOver_a7a2031e60478d460b5a9028ecc132c04}{Head\+Ball\+::\+Game\+Over}}, and \mbox{\hyperlink{classHeadBall_1_1AboutState_a6d35b06a5cedfaf89052006700ea43ff}{Head\+Ball\+::\+About\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a5197}\label{classHeadBall_1_1State_a391302cebb78ec26959c0947ae9a5197}} 
@@ -67,6 +110,10 @@ Implemented in \mbox{\hyperlink{classHeadBall_1_1SplashScreen_ad525cc66e872af98e
 \index{init@{init}!HeadBall::State@{HeadBall::State}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function for initializing state related data. 
 
 
 
@@ -80,6 +127,10 @@ Implemented in \mbox{\hyperlink{classHeadBall_1_1SplashScreen_af38e3e150f6b8997f
 
 
 
+Virtual function for pausing the state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a390e17e6dee229}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}\label{classHeadBall_1_1State_a1afe45b3ea3a1849842bf5c4994c6ab9}} 
@@ -90,6 +141,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_a6c1de96a0d88a79e0a
 
 
 
+Virtual function for resuming the object. 
+
+
+
 Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af96ca579b142678b}{Head\+Ball\+::\+Game\+State}}.
 
 \mbox{\Hypertarget{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}\label{classHeadBall_1_1State_a9c7f17de4c29786c8568ff43a9c5ad83}} 
@@ -97,6 +152,10 @@ Reimplemented in \mbox{\hyperlink{classHeadBall_1_1GameState_ac6455ea1fd7aa20af9
 \index{update@{update}!HeadBall::State@{HeadBall::State}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily virtual void Head\+Ball\+::\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function for updating state data. 
 
 
 

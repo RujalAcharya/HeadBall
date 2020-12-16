@@ -2,6 +2,11 @@
 \label{classHeadBall_1_1Ground}\index{HeadBall::Ground@{HeadBall::Ground}}
 
 
+Class for defining the ground in the game world.  
+
+
+
+
 {\ttfamily \#include $<$Ground.\+hpp$>$}
 
 
@@ -18,29 +23,32 @@ Collaboration diagram for Head\+Ball\+::Ground\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classHeadBall_1_1Ground_ac958673dfc62cb16ffb8e20bde25696a}{Ground}} (\mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} data, \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} world)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classHeadBall_1_1Ground_affadf99445a9b156d68d2e915a5d4de0}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initiate the \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}} Object. \end{DoxyCompactList}\item 
 sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classHeadBall_1_1Ground_a76f064c15d77304429a6317f259c3d88}{shape}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return the shape of the \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Ground_a5e9532e57165709d7f9ea236df248f14}{\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of the game data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} \mbox{\hyperlink{classHeadBall_1_1Ground_ae830bd2b05c4da5984ea6c5348cc0eaf}{\+\_\+world}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Shared Pointer of Box2D World. \end{DoxyCompactList}\item 
 sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classHeadBall_1_1Ground_ae0f69c7246807ac3f5613f198b4aa5cc}{\+\_\+shape}}
-\item 
+\begin{DoxyCompactList}\small\item\em The SFML shape of the ground. \end{DoxyCompactList}\item 
 b2\+Body\+Def \mbox{\hyperlink{classHeadBall_1_1Ground_a0774cdf38205fda7cee8d72135892340}{\+\_\+body\+Def}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Definition of Box2D body. \end{DoxyCompactList}\item 
 b2\+Body $\ast$ \mbox{\hyperlink{classHeadBall_1_1Ground_a9afe017fc81657c923760af6e31b93de}{\+\_\+body}}
-\item 
+\begin{DoxyCompactList}\small\item\em The Box2D body of ground. \end{DoxyCompactList}\item 
 b2\+Polygon\+Shape \mbox{\hyperlink{classHeadBall_1_1Ground_ad18576137f5ec400b86b8209bd4c8840}{\+\_\+poly\+Shape}}
-\item 
+\begin{DoxyCompactList}\small\item\em The polygon shape for fixture definition. \end{DoxyCompactList}\item 
 b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca94376d318450}{\+\_\+fixture}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The fixture of ground for defining its properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for defining the ground in the game world. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1Ground_ac958673dfc62cb16ffb8e20bde25696a}\label{classHeadBall_1_1Ground_ac958673dfc62cb16ffb8e20bde25696a}} 
@@ -51,12 +59,27 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca9
 
 
 
+Construct a new \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The Shared Pointer for game data \\
+\hline
+{\em world} & The Shared pointer for Box2D world \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1Ground_affadf99445a9b156d68d2e915a5d4de0}\label{classHeadBall_1_1Ground_affadf99445a9b156d68d2e915a5d4de0}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!init@{init}}
 \index{init@{init}!HeadBall::Ground@{HeadBall::Ground}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void Head\+Ball\+::\+Ground\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initiate the \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}} Object. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ground_a76f064c15d77304429a6317f259c3d88}\label{classHeadBall_1_1Ground_a76f064c15d77304429a6317f259c3d88}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!shape@{shape}}
@@ -66,6 +89,13 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca9
 
 
 
+Return the shape of the \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}} object. 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Rectangle\+Shape Shape of \mbox{\hyperlink{classHeadBall_1_1Ground}{Ground}} Object 
+\end{DoxyReturn}
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classHeadBall_1_1Ground_a9afe017fc81657c923760af6e31b93de}\label{classHeadBall_1_1Ground_a9afe017fc81657c923760af6e31b93de}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!\_body@{\_body}}
@@ -73,11 +103,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca9
 \doxysubsubsection{\texorpdfstring{\_body}{\_body}}
 {\footnotesize\ttfamily b2\+Body$\ast$ Head\+Ball\+::\+Ground\+::\+\_\+body\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The Box2D body of ground. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Ground_a0774cdf38205fda7cee8d72135892340}\label{classHeadBall_1_1Ground_a0774cdf38205fda7cee8d72135892340}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!\_bodyDef@{\_bodyDef}}
 \index{\_bodyDef@{\_bodyDef}!HeadBall::Ground@{HeadBall::Ground}}
 \doxysubsubsection{\texorpdfstring{\_bodyDef}{\_bodyDef}}
 {\footnotesize\ttfamily b2\+Body\+Def Head\+Ball\+::\+Ground\+::\+\_\+body\+Def\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Definition of Box2D body. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ground_a5e9532e57165709d7f9ea236df248f14}\label{classHeadBall_1_1Ground_a5e9532e57165709d7f9ea236df248f14}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!\_data@{\_data}}
@@ -85,11 +123,19 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca9
 \doxysubsubsection{\texorpdfstring{\_data}{\_data}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_ab05112ccaef0def9e05237ffb7d928b2}{Game\+Data\+Ref}} Head\+Ball\+::\+Ground\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The Shared Pointer of the game data. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca94376d318450}\label{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca94376d318450}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!\_fixture@{\_fixture}}
 \index{\_fixture@{\_fixture}!HeadBall::Ground@{HeadBall::Ground}}
 \doxysubsubsection{\texorpdfstring{\_fixture}{\_fixture}}
 {\footnotesize\ttfamily b2\+Fixture\+Def Head\+Ball\+::\+Ground\+::\+\_\+fixture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The fixture of ground for defining its properties. 
 
 \mbox{\Hypertarget{classHeadBall_1_1Ground_ad18576137f5ec400b86b8209bd4c8840}\label{classHeadBall_1_1Ground_ad18576137f5ec400b86b8209bd4c8840}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!\_polyShape@{\_polyShape}}
@@ -97,17 +143,29 @@ b2\+Fixture\+Def \mbox{\hyperlink{classHeadBall_1_1Ground_a74654bdabfb3a3f59bca9
 \doxysubsubsection{\texorpdfstring{\_polyShape}{\_polyShape}}
 {\footnotesize\ttfamily b2\+Polygon\+Shape Head\+Ball\+::\+Ground\+::\+\_\+poly\+Shape\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The polygon shape for fixture definition. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Ground_ae0f69c7246807ac3f5613f198b4aa5cc}\label{classHeadBall_1_1Ground_ae0f69c7246807ac3f5613f198b4aa5cc}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!\_shape@{\_shape}}
 \index{\_shape@{\_shape}!HeadBall::Ground@{HeadBall::Ground}}
 \doxysubsubsection{\texorpdfstring{\_shape}{\_shape}}
 {\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Head\+Ball\+::\+Ground\+::\+\_\+shape\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The SFML shape of the ground. 
+
 \mbox{\Hypertarget{classHeadBall_1_1Ground_ae830bd2b05c4da5984ea6c5348cc0eaf}\label{classHeadBall_1_1Ground_ae830bd2b05c4da5984ea6c5348cc0eaf}} 
 \index{HeadBall::Ground@{HeadBall::Ground}!\_world@{\_world}}
 \index{\_world@{\_world}!HeadBall::Ground@{HeadBall::Ground}}
 \doxysubsubsection{\texorpdfstring{\_world}{\_world}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaceHeadBall_a3970f1f57225eecdfe88fb926eb3f064}{World\+Ref}} Head\+Ball\+::\+Ground\+::\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Shared Pointer of Box2D World. 
 
 
 

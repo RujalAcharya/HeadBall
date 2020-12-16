@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['p1score_503',['p1Score',['../structHeadBall_1_1ScoreTimeData.html#ad13d645e14bb8fb015ef7bec4623b62c',1,'HeadBall::ScoreTimeData']]],
-  ['p2score_504',['p2Score',['../structHeadBall_1_1ScoreTimeData.html#a8e818c702b2990c8e566e9b5f55c91ef',1,'HeadBall::ScoreTimeData']]],
-  ['pi_505',['PI',['../namespaceConverter.html#a9ffff6f0c8d5f7f62c858f2596b43b3c',1,'Converter']]],
-  ['ppm_506',['PPM',['../namespaceConverter.html#a37352f0ac1e940be1b3fae18a9dce7ca',1,'Converter']]]
+  ['t_537',['t',['../classHeadBall_1_1TimeManager.html#a880c91d14167e0be2a77e8243b954149',1,'HeadBall::TimeManager::t()'],['../classHeadBall_1_1TimeManager.html#a986ba8fa9e6a91c7b66109e0e5842692',1,'HeadBall::TimeManager::T()']]],
+  ['temptime_538',['tempTime',['../classHeadBall_1_1TimeManager.html#a3002df5989d8b8f0ad3384e8714adee7',1,'HeadBall::TimeManager']]],
+  ['time_539',['time',['../structHeadBall_1_1ScoreTimeData.html#a018682a0d7ba98d5ebf17ab0cc5abf33',1,'HeadBall::ScoreTimeData']]]
 ];
