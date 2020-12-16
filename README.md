@@ -12,7 +12,7 @@ Asmin Silwal
 
 Prajwol Pradhan
 
-Sanjay KC
+Sanjay K.C
 
 
 You can have a look at the online documentation of the project using [this link](https://rujalacharya.github.io/HeadBall/).
