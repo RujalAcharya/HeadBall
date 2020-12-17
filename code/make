@@ -6,10 +6,10 @@ libraries = "-lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -lbox2d"
 
 normal_flags = "-std=c++2a -O2 -pipe"
 
-extern_libraries =  "-LExternal/lib  -IExternal/include"
-
 # debugging_flags = " -Wall -fsanitize=address -g -ASAN_OPTIONS=new_delete_type_mismatch=0"
 debugging_flags = ""
+
+extern_libraries = ""
 
 os.system("export HEADBALL=${PWD}/External/lib")
 os.system("export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${HEADBALL}")
