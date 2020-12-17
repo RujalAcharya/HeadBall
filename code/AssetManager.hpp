@@ -86,7 +86,7 @@ namespace HeadBall {
              * @brief Check whether the Font is present in `map`
              * 
              * @param fontName Name of Font object
-             * @return true if Font is not present
+             * @return true if Font is present
              * @return false if Font is not present
              */
             bool isFontPresent(std::string fontName);
@@ -95,7 +95,7 @@ namespace HeadBall {
              * @brief Check whether the Sound is present in `map`
              * 
              * @param soundName Name of Sound object
-             * @return true if Sound is not present
+             * @return true if Sound is present
              * @return false if Sound is not present
              */
             bool isSoundPresent(std::string soundName);
