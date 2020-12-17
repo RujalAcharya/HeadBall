@@ -8,4 +8,4 @@ libs="-lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -lbox2d"
 export HEADBALL=${PWD}/External/lib
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${HEADBALL}
 
-echo 'Compiling...' ; time g++ ${flags} ${files} -o headball ${paths} ${libs} && echo '----------Running...'; ./headball
+echo 'Compiling...' ; time g++ ${flags} ${files} -o headball ${paths} ${libs} && echo -e '----------\nRunning...'; ./headball
