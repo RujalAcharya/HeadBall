@@ -1,64 +1,131 @@
-%\documentclass[12pt, draft]{report}
+% \documentclass[12pt, draft]{report}
 \documentclass[12pt, final]{report}
 
-% generate code for custom page size:
-% https://www.parcog.com/CustomPaperSize.html
-
-\renewcommand{\thesection}{\arabic{section}}
-
 % for page geometry/layout
-%\usepackage[a4paper, left=1.5in, right=1in, top=1in, bottom=1in]{geometry}
 \usepackage[a4paper, margin=1in, left=1.5in]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 
 % for times new roman font
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
 
-% one and a half line spacing throughout the document
+% for non-indented paragraphs separated by an empty line
+\usepackage{parskip}
+
+% for one and a half line spacing throughout the document
 \usepackage{setspace}
 \onehalfspacing
 
 % for using graphics/images
 \usepackage{graphicx}
-\graphicspath{ {./graphics/} }
+\graphicspath{./graphics/}
+
+\usepackage{float}
 
 % for including subfiles
 \usepackage{subfiles}
 
-% for placeholder text
-\usepackage{blindtext}
-\usepackage{lipsum}
+% for making the contents of ToC clickable
+\usepackage[hidelinks]{hyperref}
+\hypersetup{allcolors=black}
+
+% for code syntax-highlighting
+\usepackage{minted}
+
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+            
+\makeatletter
+\renewcommand{\fnum@figure}{fig. \thefigure}
+\makeatother
+
+% centers all the headers for table of contents, list of figures and list of tables
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\Huge\bfseries}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+\renewcommand{\cftlottitlefont}{\hspace*{\fill}\Huge\bfseries}
+\renewcommand{\cftafterlottitle}{\hspace*{\fill}}
+\renewcommand{\cftloftitlefont}{\hspace*{\fill}\Huge\bfseries}
+\renewcommand{\cftafterloftitle}{\hspace*{\fill}}
+
+
+
+
+\usepackage{multirow}
+\usepackage{multicol}
+
+
+\usepackage{subcaption}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+
+
+
+
+% make all the chapter titles centered:
+\usepackage{xpatch}
+
+\makeatletter
+
+\xpatchcmd{\@makeschapterhead}{%
+  \Huge \bfseries  #1\par\nobreak%
+ }{%
+  \Huge \bfseries\centering #1\par\nobreak%
+ }{\typeout{Patched makeschapterhead}}{\typeout{patching of @makeschapterhead failed}}
+
+\xpatchcmd{\@makechapterhead}{%
+  \huge\bfseries \@chapapp\space \thechapter
+ }{%
+  \huge\bfseries\centering \@chapapp\space \thechapter
+ }{\typeout{Patched
+@makechapterhead}}{\typeout{Patching of @makechapterhead failed}}
+
+\makeatother
+
+
+
+
+
+
+% change the depth of subsections so that subsubsections can also be numbered
+\setcounter{secnumdepth}{3}
+
 
 \begin{document}
 
 \subfile{pre_I_cover_page}
 
 \pagenumbering{roman}
-%\setcounter{chapter}{4}
-
 \subfile{pre_II_abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 
 \subfile{pre_III_acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
 
-%currently the page number shown is iv(last page of contents page)
+
+\newpage
+
+\renewcommand{\contentsname}{\centering Table of Contents}
 \tableofcontents
-\addcontentsline{toc}{chapter}{Contents}
+% \addcontentsline{toc}{chapter}{Table of Contents}
+
+\newpage
 
 \listoffigures
 \addcontentsline{toc}{chapter}{List of Figures}
 
-\listoftables
+\newpage
+
+\listoftables{}
 \addcontentsline{toc}{chapter}{List of Tables}
 
 \subfile{pre_IV_abbreviations}
-
+\addcontentsline{toc}{chapter}{Abbreviations}
 
 \subfile{ch_1_-_introduction}
-\pagenumbering{arabic}	
-% shifted this line here because abbreviations page also had arabic numbering when it was after that page
 
 \subfile{ch_2_-_problem_analysis}
 
@@ -72,8 +139,10 @@
 
 \subfile{ch_7_-_conclusions}
 
-\subfile{pst_I_references}
-\addcontentsline{toc}{chapter}{References}
+
+\bibliographystyle{ieeetr}  % IEEE format for citation
+\bibliography{pst_I_references}
+\addcontentsline{toc}{chapter}{Bibliography}
 
 \subfile{pst_II_appendix_A}
 \addcontentsline{toc}{chapter}{Appendix A}

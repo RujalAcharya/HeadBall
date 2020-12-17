@@ -6,6 +6,7 @@
 *.lof
 *lot
 *.pdf
+subfile_template.tex
 
 # Exclude these from ignoring
 !main.pdf
