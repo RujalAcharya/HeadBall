@@ -11,6 +11,9 @@ extern_libraries =  "-LExternal/lib  -IExternal/include"
 # debugging_flags = " -Wall -fsanitize=address -g -ASAN_OPTIONS=new_delete_type_mismatch=0"
 debugging_flags = ""
 
+os.system("export HEADBALL=${PWD}/External/lib")
+os.system("export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${HEADBALL}")
+
 os.system(f"echo 'Compiler: g++ \nFlags: {normal_flags} \nDebugging flags: {debugging_flags} \nCompiling...' ; time g++ {normal_flags} {debugging_flags} {files} -o main {extern_libraries} {libraries} && echo '\n----------\nRunning...'; ./main")
 
 # comment above line and uncomment below for clang++
