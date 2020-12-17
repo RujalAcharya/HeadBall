@@ -10,7 +10,7 @@ This is a simple football like game made in C++ using SFML and Box2D.
 
 # Project Report:
 PDF version of the project report is available at:
-[project_report.pdf](https://github.com/RujalAcharya/HeadBall/tree/main/project_report.pdf)
+[project_report.pdf](https://raw.githubusercontent.com/RujalAcharya/HeadBall/main/project_report.pdf)
 
 Complete LaTeX source code of the project report is available in another branch: <br>
 https://github.com/RujalAcharya/HeadBall/tree/report
