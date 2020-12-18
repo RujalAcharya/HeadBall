@@ -20,7 +20,7 @@ https://github.com/RujalAcharya/HeadBall/tree/main/report/src
 Complete online documentation of the project is available at: <br>
 https://rujalacharya.github.io/HeadBall.
 
-Doxygen-generated source code of the documentation in LaTeX as well as HTML version are also available here: <br>
+Doxygen-generated source code of the documentation (in HTML version) is also available here: <br>
 https://github.com/RujalAcharya/HeadBall/tree/main/docs
 
 
