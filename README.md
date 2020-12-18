@@ -12,16 +12,16 @@ This is a simple football like game made in C++ using SFML and Box2D.
 PDF version of the project report is available at:
 [project_report.pdf](https://raw.githubusercontent.com/RujalAcharya/HeadBall/main/project_report.pdf)
 
-Complete LaTeX source code of the project report is available in another branch: <br>
-https://github.com/RujalAcharya/HeadBall/tree/report
+Complete LaTeX source code of the project report is available here: <br>
+https://github.com/RujalAcharya/HeadBall/tree/main/report/src
 
 
 # Documentation:
 Complete online documentation of the project is available at: <br>
 https://rujalacharya.github.io/HeadBall.
 
-Doxygen-generated source code of the documentation in LaTeX as well as HTML version are also available in another branch: <br>
-https://github.com/RujalAcharya/HeadBall/tree/documentation
+Doxygen-generated source code of the documentation in LaTeX as well as HTML version are also available here: <br>
+https://github.com/RujalAcharya/HeadBall/tree/main/docs
 
 
 # Compiling and Executing:

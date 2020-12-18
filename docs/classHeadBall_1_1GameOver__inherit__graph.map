@@ -1,0 +1,4 @@
+<map id="HeadBall::GameOver" name="HeadBall::GameOver">
+<area shape="rect" id="node1" title="Class for game over or full&#45;time state." alt="" coords="5,233,168,487"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="25,5,149,185"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="HeadBall::HalfTime" name="HeadBall::HalfTime">
+<area shape="rect" id="node1" title="Class for Half Time State." alt="" coords="5,233,153,457"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="17,5,141,185"/>
+</map>

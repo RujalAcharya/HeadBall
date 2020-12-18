@@ -1,0 +1,4 @@
+<map id="HeadBall::SplashScreen" name="HeadBall::SplashScreen">
+<area shape="rect" id="node1" title="Class for the Splash Screen." alt="" coords="5,233,181,428"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="31,5,155,185"/>
+</map>

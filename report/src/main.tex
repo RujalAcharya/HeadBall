@@ -1,0 +1,150 @@
+% \documentclass[12pt, draft]{report}
+\documentclass[12pt, final]{report}
+
+% for page geometry/layout
+\usepackage[a4paper, margin=1in, left=1.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% for times new roman font
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% for non-indented paragraphs separated by an empty line
+\usepackage{parskip}
+
+% for one and a half line spacing throughout the document
+\usepackage{setspace}
+\onehalfspacing
+
+% for using graphics/images
+\usepackage{graphicx}
+\graphicspath{./graphics/}
+
+\usepackage{float}
+
+% for including subfiles
+\usepackage{subfiles}
+
+% for making the contents of ToC clickable
+\usepackage[hidelinks]{hyperref}
+\hypersetup{allcolors=black}
+
+% for code syntax-highlighting
+\usepackage{minted}
+
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+            
+\makeatletter
+\renewcommand{\fnum@figure}{fig. \thefigure}
+\makeatother
+
+% centers all the headers for table of contents, list of figures and list of tables
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\Huge\bfseries}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+\renewcommand{\cftlottitlefont}{\hspace*{\fill}\Huge\bfseries}
+\renewcommand{\cftafterlottitle}{\hspace*{\fill}}
+\renewcommand{\cftloftitlefont}{\hspace*{\fill}\Huge\bfseries}
+\renewcommand{\cftafterloftitle}{\hspace*{\fill}}
+
+
+
+
+\usepackage{multirow}
+\usepackage{multicol}
+
+
+\usepackage{subcaption}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+
+
+
+
+% make all the chapter titles centered:
+\usepackage{xpatch}
+
+\makeatletter
+
+\xpatchcmd{\@makeschapterhead}{%
+  \Huge \bfseries  #1\par\nobreak%
+ }{%
+  \Huge \bfseries\centering #1\par\nobreak%
+ }{\typeout{Patched makeschapterhead}}{\typeout{patching of @makeschapterhead failed}}
+
+\xpatchcmd{\@makechapterhead}{%
+  \huge\bfseries \@chapapp\space \thechapter
+ }{%
+  \huge\bfseries\centering \@chapapp\space \thechapter
+ }{\typeout{Patched
+@makechapterhead}}{\typeout{Patching of @makechapterhead failed}}
+
+\makeatother
+
+
+
+
+
+
+% change the depth of subsections so that subsubsections can also be numbered
+\setcounter{secnumdepth}{3}
+
+
+\begin{document}
+
+\subfile{pre_I_cover_page}
+
+\pagenumbering{roman}
+\subfile{pre_II_abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\subfile{pre_III_acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+
+\newpage
+
+\renewcommand{\contentsname}{\centering Table of Contents}
+\tableofcontents
+% \addcontentsline{toc}{chapter}{Table of Contents}
+
+\newpage
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\newpage
+
+\listoftables{}
+\addcontentsline{toc}{chapter}{List of Tables}
+
+\subfile{pre_IV_abbreviations}
+\addcontentsline{toc}{chapter}{Abbreviations}
+
+\subfile{ch_1_-_introduction}
+
+\subfile{ch_2_-_problem_analysis}
+
+\subfile{ch_3_-_review_of_related_literatures}
+
+\subfile{ch_4_-_algorithm_dev_and_flowchart}
+
+\subfile{ch_5_-_implementation_and_coding}
+
+\subfile{ch_6_-_results_and_discussion}
+
+\subfile{ch_7_-_conclusions}
+
+
+\bibliographystyle{ieeetr}  % IEEE format for citation
+\bibliography{pst_I_references}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\subfile{pst_II_appendix_A}
+\addcontentsline{toc}{chapter}{Appendix A}
+
+\end{document}

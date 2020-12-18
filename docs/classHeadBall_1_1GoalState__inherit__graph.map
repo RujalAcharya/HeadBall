@@ -1,0 +1,4 @@
+<map id="HeadBall::GoalState" name="HeadBall::GoalState">
+<area shape="rect" id="node1" title="Derived class of State class with visibility mode public that checks whether the player has scored go..." alt="" coords="5,233,168,443"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="25,5,149,185"/>
+</map>

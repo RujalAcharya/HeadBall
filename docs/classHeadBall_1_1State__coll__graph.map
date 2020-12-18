@@ -1,0 +1,3 @@
+<map id="HeadBall::State" name="HeadBall::State">
+<area shape="rect" id="node1" title="Abstract based class which inherits all the states of the game." alt="" coords="5,5,129,185"/>
+</map>

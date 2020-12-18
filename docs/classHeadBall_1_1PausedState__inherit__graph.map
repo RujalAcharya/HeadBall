@@ -1,0 +1,4 @@
+<map id="HeadBall::PausedState" name="HeadBall::PausedState">
+<area shape="rect" id="node1" title="Class for the screen to be displayed when game is paused." alt="" coords="5,233,176,457"/>
+<area shape="rect" id="node2" href="$classHeadBall_1_1State.html" title="Abstract based class which inherits all the states of the game." alt="" coords="29,5,153,185"/>
+</map>
