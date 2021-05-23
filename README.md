@@ -26,7 +26,7 @@ https://github.com/RujalAcharya/HeadBall/tree/main/docs
 
 
 # Compiling and Executing:
-## Linux:
+## GNU/Linux:
 1. First clone this repository:
    
    ```bash
